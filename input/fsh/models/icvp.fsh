@@ -14,4 +14,4 @@ Description:  "Data elements for the Model International Certificate of Vaccinat
 * nid 1..1 string "National Identification Document" "National Identification Document"
 * guardian 1..1 string "Parent/Guardian" "Name of Parent or Guardian"
 * disease 1..1 string "Disease" "Name of disease or condition vaccinated or received prophylaxis against"
-* vaccineDetails 1..* vaccineDetails "Vaccine Details" "Vaccine Details"
+* vaccineDetails 1..* ModelVaccineDetails "Vaccine Details" "Vaccine Details"
