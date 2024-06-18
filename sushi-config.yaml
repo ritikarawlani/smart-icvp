@@ -1,8 +1,8 @@
-id: who.fhir.smart-ig-empty
+id: who.fhir.smart-icvp
 canonical: http://worldhealthorganization.github.io/smart
-name: SMART
-title: SMART Empty IG
-description: An empty Implementation Guide to be used as a starting point for building SMART Guidelines Implementation Guides
+name: ICVP
+title: SMART ICVP
+description: SMART Guidelines for International Certificate for Vaccination or Prophylaxis
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.3.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
