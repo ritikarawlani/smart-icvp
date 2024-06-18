@@ -7,9 +7,8 @@
 ![QA hints](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2FWorldHealthOrganization.github.io%2Fsmart-ig-empty%2Fqa.json&query=%24.hints&logoColor=yellow&label=QA%20hints&color=yellow)
 <!--/badges-->
 
-# WHO SMART GUIDELINES - EMPTY IG
-
-This is an empty framework, to be used to create SMART Implementation Guides.
+# WHO SMART ICVP
+This is a DRAFT SMART Guideline for International certificate of vaccination or prophylaxis
 
 
 ## Changes and feedback
