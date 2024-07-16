@@ -14,4 +14,4 @@ Description:  "Vaccine Data elements for the Model International Certificate of 
 * manufacturerId 0..1 Identifier "Manufacture ID" "Manufacturer ID"
 * manufacturer 1..1 string "Name of Manufacturer of vaccine" "Name Manufacturer of vaccine"
 * batchNo 1..1 string "Batch No" "Batch No"
-* validityPeriod 1..1 period "Certificate validity period" "Certificate validity period"
+* validityPeriod 1..1 Period "Certificate validity period" "Certificate validity period"
