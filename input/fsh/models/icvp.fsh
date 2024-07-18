@@ -8,10 +8,9 @@ Description:  "Data elements for the Model International Certificate of Vaccinat
 * ^experimental = true
 
 * name 1..1 string "Name" "The full name of the client"
-* dob 1..1 string "Date of Birth" "Date of Birth"
+* dob 1..1 date "Date of Birth" "Date of Birth"
 * sex 1..1 code "Sex" "Sex"
 * nationality 1..1 code "Nationality" "Nationality"
-* nid 1..1 string "National Identification Document" "National Identification Document"
-* guardian 1..1 string "Parent/Guardian" "Name of Parent or Guardian"
-* disease 1..1 string "Disease" "Name of disease or condition vaccinated or received prophylaxis against"
+* nid 0..1 string "National Identification Document" "National Identification Document"
+* guardian 0..1 string "Parent/Guardian" "Name of Parent or Guardian"
 * vaccineDetails 1..* ModelVaccineDetails "Vaccine Details" "Vaccine Details"
