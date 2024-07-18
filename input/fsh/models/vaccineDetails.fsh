@@ -17,15 +17,10 @@ Description:  "Vaccine Data elements for the Model International Certificate of 
 * manufacturer 1..1 string "Name of Manufacturer of vaccine" "Name Manufacturer of vaccine"
 * batchNo 1..1 string "Batch No" "Batch No"
 * validityPeriod 1..1 Period "Certificate validity period" "Certificate validity period"
-  * issuer obeys mustHaveIssuerOrClinician
-  * clinicianName obeys mustHaveIssuerOrClinician
+* issuer obeys mustHaveIssuerOrClinician
+* clinicianName obeys mustHaveIssuerOrClinician
 
 Invariant: mustHaveIssuerOrClinician
 Description: "Either issuer or clinicianName must be present"
 Expression: "issuer.exists() or clinicianName.exists()"
-
-// Apply the invariant to the logical model
-* ^constraint[0].key = "mustHaveIssuerOrClinician"
-* ^constraint[0].severity = #error
-* ^constraint[0].human = "Either issuer or clinicianName must be present"
-* ^constraint[0].expression = "issuer.exists() or clinicianName.exists()"
+Severity: #error

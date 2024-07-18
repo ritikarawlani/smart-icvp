@@ -26,15 +26,10 @@ Description:     "Data elements for the Digital Vaccination Certificate Core Dat
     * val 1..1 Period "Certificate Validity period"
     * cn 0..1 string "Name of supervising clinician"
     * is 0..1 string "Certificate issuer (organization name)"
-      * is obeys mustHaveIsOrCn
-      * cn obeys mustHaveIsOrCn
+    * is obeys mustHaveIsOrCn
+    * cn obeys mustHaveIsOrCn
 
 Invariant: mustHaveIsOrCn
 Description: "Either issuer or clinicianName must be present"
 Expression: "is.exists() or cn.exists()"
-
-// Apply the invariant to the logical model
-* ^constraint[0].key = "mustHaveIsOrCn"
-* ^constraint[0].severity = #error
-* ^constraint[0].human = "Either issuer or clinicianName must be present"
-* ^constraint[0].expression = "is.exists() or cn.exists()"
+Severity: #error
