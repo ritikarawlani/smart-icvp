@@ -6,6 +6,7 @@ Usage: #example
 * name = "Test Patient"
 * dob = "2023-02-04"
 * sex =  #female
+* nationality = #IND
 * vaccineDetails.disease.display = "Yellow fever"
 * vaccineDetails.vaccineClassification.text = "YF"
 * vaccineDetails.date = "2024-01-23"
