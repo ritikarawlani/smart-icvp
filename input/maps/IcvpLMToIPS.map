@@ -7,7 +7,7 @@ uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias IPS as target
 group IcvpLMToIPS(source lm : ICVPLogicalModel, target ips : IPS) {
   lm -> ips.type = 'document' "set ips type";
   lm -> uuid() as bid, ips.id = bid "set id";
-  lm -> dateTime() as timestamp, ips.timestamp = timestamp "set timestamp";
+//  lm -> dateTime() as timestamp, ips.timestamp = timestamp "set timestamp";
   lm -> uuid() as cid, uuid() as pid, uuid() as prid, uuid() as oid then {  
     lm -> bundle.entry as entry,  entry.resource = create('Composition') as composition,  entry.fullUrl = append('urn:uuid:', cid) then {
         lm -> lm then LmToComposition(lm, composition,  cid,  pid,  prid,  oid ) "set";
