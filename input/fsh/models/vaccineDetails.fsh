@@ -7,6 +7,7 @@ Description:  "Vaccine Data elements for the Model International Certificate of 
 * ^status = #active
 * ^experimental = true
 
+* doseNumber 1..1 CodeableConcept "Dose Number" "Dose Number"
 * disease 1..1 Coding "Disease" "Name of disease or condition vaccinated or received prophylaxis against"
 * vaccineClassification 1..1 CodeableConcept "Vaccine code" "Vaccine or prophylaxis classification code"
 * vaccineTradeItem 0..1 Identifier "vaccine trade item id" "Vaccine trade item id"

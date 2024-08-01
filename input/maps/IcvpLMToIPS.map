@@ -1,5 +1,5 @@
 map "http://worldhealthorganization.github.io/smart-icvp/StructureMap/IcvpLMToIPS" = "IcvpLMToIPS"
-uses "http://worldhealthorganization.github.io/smart-icvp/StructureDefinition/ModelICVP" alias ICVPLogicalModel as source
+uses "http://worldhealthorganization.github.io/smart/StructureDefinition/ModelICVP" alias ICVPLogicalModel as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias IPS as target
 
 
@@ -7,19 +7,19 @@ uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias IPS as target
 group IcvpLMToIPS(source lm : ICVPLogicalModel, target ips : IPS) {
   lm -> ips.type = 'document' "set ips type";
   lm -> uuid() as bid, ips.id = bid "set id";
-//  lm -> dateTime() as timestamp, ips.timestamp = timestamp "set timestamp";
-  lm -> uuid() as cid, uuid() as pid, uuid() as prid, uuid() as oid then {  
-    lm -> bundle.entry as entry,  entry.resource = create('Composition') as composition,  entry.fullUrl = append('urn:uuid:', cid) then {
-        lm -> lm then LmToComposition(lm, composition,  cid,  pid,  prid,  oid ) "set";
-        lm -> bundle.entry as entry, entry.fullUrl = append('urn:uuid:', pid), create('Patient') as patient then {
+  lm -> now() as timestamp,uuid() as cid, uuid() as pid, uuid() as prid, uuid() as oid then {  
+    lm -> ips.timestamp = timestamp "set timestamp";
+    lm -> ips.entry as entry,  entry.resource = create('Composition') as composition,  entry.fullUrl = append('urn:uuid:', cid) then {
+        lm -> lm then LmToComposition(lm, composition,  timestamp,cid,  pid,  prid,  oid ) "set";
+        lm -> ips.entry as entry, entry.fullUrl = append('urn:uuid:', pid), create('Patient') as patient then {
             lm -> lm then DemographicsToPatient(lm, patient, pid) "create patient";
             lm -> entry.resource = patient "set patient as entry";
         } "map patient resource";
-   /*     lm -> bundle.entry as entry, entry.fullUrl = append('urn:uuid:', prid), create('Practitioner') as practitioner then {
+   /*     lm -> ips.entry as entry, entry.fullUrl = append('urn:uuid:', prid), create('Practitioner') as practitioner then {
             lm.ReportingSource as reportingSource -> reportingSource then ReportingSourceToPractitioner(reportingSource, practitioner, prid) "create practitioner";
             lm -> entry.resource = practitioner "set practitioner as entry";
         } "map practitioner resource" ;
-        lm -> bundle.entry as entry, entry.fullUrl = append('urn:uuid:', oid), create('Organization') as organization then {
+        lm -> ips.entry as entry, entry.fullUrl = append('urn:uuid:', oid), create('Organization') as organization then {
             lm.ReportingSource as reportingSource -> reportingSource then ReportingSourceToOrganization(reportingSource, organization, oid) "create organization";
             lm -> entry.resource = organization "set organization as entry";
         } "map organization resource"; */
@@ -27,20 +27,15 @@ group IcvpLMToIPS(source lm : ICVPLogicalModel, target ips : IPS) {
   } "set entries" ;
 }
 
-group LmToComposition(source lm : ICVPLogicalModel, target composition : Composition, source cid, source pid, source prid, source oid, source eid) {
+group LmToComposition(source lm : ICVPLogicalModel, target composition : Composition,source timestamp, source cid, source pid, source prid, source oid) {
   cid -> composition.id = cid "set id";
   lm -> composition.status = "final" "set status";
+  timestamp -> composition.date = timestamp "set composition date";
   lm -> composition.title = "International Patient Summary" "set title";
   lm -> create('Coding') as coding, coding.code = "60591-5", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  composition.type = code "set type";
   lm -> composition.subject as subject then {
     lm -> subject.reference= append('Patient/',pid) "set subject";
-  } "set subject";/*
-  lm -> composition.author as practitioner then {
-    lm -> practitioner.reference = append('Practitioner/', prid) "set author practitioner";
-  } "set author practitioner";
-  lm -> composition.author as institution then {
-    lm -> institution.reference = append('Organization/', oid) "set author institution";
-  } "set author org"; */
+  } "set subject";
 }
 
 
@@ -51,25 +46,23 @@ group DemographicsToPatient(source lm:ICVPLogicalModel , target patient: Patient
  } "Set name";
  lm.dob as dob -> patient.birthDate = dob "set date of birth";
  lm.sex as sex -> patient.gender = sex "set sex";
+ lm.nid as id -> patient.identifier as identifier, identifier.value = id "set national identifier";
+ lm.guardian as guardian -> patient.contact as parentContact, parentContact.name as parentName then {
+  guardian -> guardian then humanNameToHumanName(guardian, parentName) "copy name";
+ } "set guardian name";
 }
 
-/*
 
-group ReportingSourceToPractitioner (source reportingSource: ReportingSourceLogicalModel, target practitioner: Practitioner, source prid) {
-prid -> practitioner.id = prid "set id";
-reportingSource.ReportedBy as name -> practitioner.name as humanName, humanName.text = name "set name";
+group humanNameToHumanName (source sourceName, target targetName: HumanName) {
+  sourceName.use as use -> targetName.use = use "Copy use";
+  sourceName.text as text -> targetName.text = text "Copy text";
+  sourceName.family as family -> targetName.family = family "Copy family";
+  sourceName.given as given -> targetName.given = given "Copy given";
+  sourceName.prefix as prefix -> targetName.prefix = prefix "Copy prefix";
+  sourceName.suffix as suffix -> targetName.suffix = suffix "Copy suffix";
+  
+  // Copy the period using the previously defined group function
+  sourceName.period as sourcePeriod -> targetName.period as targetPeriod then {
+    sourcePeriod -> sourcePeriod then periodToPeriod(sourcePeriod, targetPeriod) "Copy period";
+  } "copy period";
 }
-
-group ReportingSourceToOrganization (source reportingSource: ReportingSourceLogicalModel, target organization: Organization, source oid) {
-oid -> organization.id = oid "set id";
-reportingSource.HealthServiceName as name -> organization.name = name "set name";
-reportingSource.HealthServiceTelephone as phoneSource -> organization.contact as contactDetails, contactDetails.telecom as phoneTarget then {
-  phoneSource -> phoneSource then contactPointToContactPoint(phoneSource, phoneTarget) "set org contact"; 
-} "set phone";
-
-reportingSource.PlaceOfReporting as locationSource -> organization.contact as contactDetails, contactDetails.address as locationTarget then {
-  locationSource -> locationSource then contactPointToContactPoint(locationSource, locationTarget) "set org address"; 
-} "set address";
-
-}
-*/
