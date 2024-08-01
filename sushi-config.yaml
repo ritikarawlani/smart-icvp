@@ -258,3 +258,4 @@ menu:
 #   setId: always # always | standalone-only
 dependencies:
   who.base: current
+  hl7.fhir.uv.ips: 2.0.0-ballot
