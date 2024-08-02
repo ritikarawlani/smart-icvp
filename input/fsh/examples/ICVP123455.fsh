@@ -14,5 +14,5 @@ Usage: #example
 * vaccineDetails.manufacturer = "PFIZER"
 * vaccineDetails.batchNo = "12345"
 * vaccineDetails.validityPeriod.start = "2024-01-31"
-* vaccineDetails.doseNumber.text ="first"
+* vaccineDetails.doseNumber.text = "first"
 
