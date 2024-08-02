@@ -1,5 +1,5 @@
 id: who.fhir.smart-icvp
-canonical: http://worldhealthorganization.github.io/smart
+canonical: http://worldhealthorganization.github.io/smart-icvp
 name: ICVP
 title: SMART ICVP
 description: SMART Guidelines for International Certificate for Vaccination or Prophylaxis
