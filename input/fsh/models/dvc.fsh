@@ -1,6 +1,6 @@
 Logical:         DVC
-Title:           "Payload for Digital Vaccination Certificate - DVC CBOR Web Token Logical Model"
-Description:     "Data elements for the Digital Vaccination Certificate Core Data Set."
+Title:           "DVC Payload"
+Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Token Logical Model"
 
 * ^url = "http://smart.who.int/icvp/StructureDefinition/DVC"
 * ^version = "1"

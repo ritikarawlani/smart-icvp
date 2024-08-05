@@ -1,5 +1,5 @@
 Logical: ModelICVP
-Title: "Model International Certificate of Vaccination or Prophylaxis"
+Title: "ICVP"
 Description:  "Data elements for the Model International Certificate of Vaccination or Prophylaxis."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
