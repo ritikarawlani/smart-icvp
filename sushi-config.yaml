@@ -259,3 +259,7 @@ menu:
 dependencies:
   who.base: current
   hl7.fhir.uv.ips: current
+  ihe.iti.mcsd: 
+   id: IHE_ITI_mCSD
+   uri: https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd 
+   version: 3.8.0
