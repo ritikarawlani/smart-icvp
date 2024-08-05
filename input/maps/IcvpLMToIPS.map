@@ -3,7 +3,7 @@ uses "http://worldhealthorganization.github.io/smart/StructureDefinition/ModelIC
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias IPS as target
 
 
-
+// create Bundle
 group IcvpLMToIPS(source lm : ICVPLogicalModel, target ips : IPS) {
   lm -> ips.type = 'document' "set ips type";
   lm -> uuid() as bid, ips.id = bid "set id";
@@ -27,6 +27,7 @@ group IcvpLMToIPS(source lm : ICVPLogicalModel, target ips : IPS) {
   } "set entries" ;
 }
 
+// create Composition
 group LmToComposition(source lm : ICVPLogicalModel, target composition : Composition,source timestamp, source cid, source pid, source prid, source oid) {
   cid -> composition.id = cid "set id";
   lm -> composition.status = "final" "set status";
@@ -38,7 +39,7 @@ group LmToComposition(source lm : ICVPLogicalModel, target composition : Composi
   } "set subject";
 }
 
-
+// create Patient
 group DemographicsToPatient(source lm:ICVPLogicalModel , target patient: Patient, source pid) {
  pid -> patient.id = pid "set patient id";
  lm.name as sourceName -> patient.name as targetName then {
@@ -52,7 +53,23 @@ group DemographicsToPatient(source lm:ICVPLogicalModel , target patient: Patient
  } "set guardian name";
 }
 
+// create author
 
+
+// create sectionMedications
+group createSectionMedications(source lm:ICVPLogicalModel, target med : BackboneElement, source mid ) {
+mid -> med.id = mid "set medication id";
+lm -> med.title = "Medication Summary Section" "set medication title";
+lm -> create('Coding') as coding, coding.code = "10160-0", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  med.code = code "set code";
+
+}
+
+// create sectionAllergies
+
+// create sectionProblems
+
+// create sectionImmunizations
+//helper function
 group humanNameToHumanName (source sourceName, target targetName: HumanName) {
   sourceName.use as use -> targetName.use = use "Copy use";
   sourceName.text as text -> targetName.text = text "Copy text";
