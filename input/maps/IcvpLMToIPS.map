@@ -7,10 +7,10 @@ uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias IPS as target
 group IcvpLMToIPS(source lm : ICVPLogicalModel, target ips : IPS) {
   lm -> ips.type = 'document' "set ips type";
   lm -> uuid() as bid, ips.id = bid "set id";
-  lm -> (now()) as timestamp,uuid() as cid, uuid() as pid, uuid() as prid, uuid() as oid then {  
+  lm -> (now()) as timestamp,uuid() as cid, uuid() as pid, uuid() as prid, uuid() as oid, uuid() as mid, uuid() as aid, uuid() as proid, uuid() as immid then {  
     lm -> ips.timestamp = timestamp "set timestamp";
     lm -> ips.entry as entry,  entry.resource = create('Composition') as composition,  entry.fullUrl = append('urn:uuid:', cid) then {
-        lm -> lm then LmToComposition(lm, composition,  timestamp,cid,  pid,  prid,  oid ) "set";
+        lm -> lm then LmToComposition(lm, composition,  timestamp,cid,  pid,  prid,  oid, mid, aid, proid, immid ) "set";
         lm -> ips.entry as entry, entry.fullUrl = append('urn:uuid:', pid), create('Patient') as patient then {
             lm -> lm then DemographicsToPatient(lm, patient, pid) "create patient";
             lm -> entry.resource = patient "set patient as entry";
@@ -28,7 +28,7 @@ group IcvpLMToIPS(source lm : ICVPLogicalModel, target ips : IPS) {
 }
 
 // create Composition
-group LmToComposition(source lm : ICVPLogicalModel, target composition : Composition,source timestamp, source cid, source pid, source prid, source oid) {
+group LmToComposition(source lm : ICVPLogicalModel, target composition : Composition,source timestamp, source cid, source pid, source prid, source oid, source mid, source aid, source proid, source immid) {
   cid -> composition.id = cid "set id";
   lm -> composition.status = "final" "set status";
   timestamp -> composition.date = timestamp "set composition date";
@@ -37,6 +37,10 @@ group LmToComposition(source lm : ICVPLogicalModel, target composition : Composi
   lm -> composition.subject as subject then {
     lm -> subject.reference= append('Patient/',pid) "set subject";
   } "set subject";
+  lm -> composition.section as medication then createSectionMedications(lm, medication, mid) "create medication";
+  lm -> composition.section as allergies then createSectionAllergies(lm, allergies, aid) "create allergies";
+  lm -> composition.section as problems then createSectionProblems(lm, problems, proid) "create problems";
+  lm then createSectionImmunizations(lm, ips, composition, immid, pid) "create immunizations";
 }
 
 // create Patient
@@ -61,14 +65,51 @@ group createSectionMedications(source lm:ICVPLogicalModel, target med : Backbone
 mid -> med.id = mid "set medication id";
 lm -> med.title = "Medication Summary Section" "set medication title";
 lm -> create('Coding') as coding, coding.code = "10160-0", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  med.code = code "set code";
-
+lm -> create('Coding') as coding, coding.code = "unavailable", coding.system = "http://hl7.org/fhir/ValueSet/list-empty-reason", create('CodeableConcept') as code, code.coding = coding,  med.emptyReason = code "set code";
 }
 
 // create sectionAllergies
+group createSectionAllergies(source lm:ICVPLogicalModel, target all : BackboneElement, source aid ) {
+aid -> all.id = aid "set allergy id";
+lm -> all.title = "Allergies Section" "set allergy title";
+lm -> create('Coding') as coding, coding.code = "48765-2", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  all.code = code "set code";
+lm -> create('Coding') as coding, coding.code = "unavailable", coding.system = "http://hl7.org/fhir/ValueSet/list-empty-reason", create('CodeableConcept') as code, code.coding = coding,  all.emptyReason = code "set code";
+}
 
 // create sectionProblems
+group createSectionProblems(source lm:ICVPLogicalModel, target prb : BackboneElement, source proid ) {
+proid -> prb.id = proid "set problems id";
+lm -> prb.title = "Problems Section" "set problem title";
+lm -> create('Coding') as coding, coding.code = "11450-4", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  prb.code = code "set code";
+lm -> create('Coding') as coding, coding.code = "unavailable", coding.system = "http://hl7.org/fhir/ValueSet/list-empty-reason", create('CodeableConcept') as code, code.coding = coding,  prb.emptyReason = code "set code";
+}
 
 // create sectionImmunizations
+group createSectionImmunizations(source lm:ICVPLogicalModel, target bundle: Bundle, target composition: Composition, source immid, source pid ) {
+lm -> composition.section as imm then {
+  immid -> imm.id = immid "set immunizations id";
+  lm -> imm.title = "Immunizations Section" "set Immunization title";
+  lm -> create('Coding') as coding, coding.code = "11369-6", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  imm.code = code "set code";
+  lm.vaccineDetails as vax -> uuid() as id, bundle.entry as entry, entry.fullUrl = append('urn:uuid:', id), imm.entry as sectionEntry, sectionEntry.reference = append('Immunization/', id), entry.resource = create('Immunization') as immunization then createImmunizationResource(vax, bundle, immunization, pid ) "set immz";
+  }
+}
+
+group createImmunizationResource (source vax : vaccineDetails, target immunization : Immunization, source pid) {
+    vax -> immunization.id = id "set id";
+    vax -> immunization.status = "completed" "set status";
+    vax.vaccineClassification as vaccine -> immunization.vaccineCode = vaccine "set vaccine code";
+    vax.date as date -> immunization.occurenceDateTime = date "set date";
+    vax.batchNo as batchNo -> immunization.lotNumber = batchNo "set batchNo";
+    vax -> immunization.protocolApplied as protocol then {
+      vax.doseNumber as doseNo then {
+        doseNo.display as text -> protocol.doseNumberString = text "set dose No";
+      }
+      vax.disease as disease -> create('Coding') as coding, coding = disease, create('CodeableConcept') as code, code.coding = coding,  protocol.targetDisease = code "set target disease";
+    } "set protocol applied";
+    vax -> immunization.patient as subject, subject.reference = append('Patient/',pid) "set subject";
+  
+}
+
 //helper function
 group humanNameToHumanName (source sourceName, target targetName: HumanName) {
   sourceName.use as use -> targetName.use = use "Copy use";
