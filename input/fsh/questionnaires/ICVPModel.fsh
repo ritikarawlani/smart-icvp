@@ -3,6 +3,7 @@ InstanceOf: sdc-questionnaire-extr-smap
 Description: "Questionnaire for ICVP Logical Model"
 Title: "ICVP Model Questionnaire"
 Usage: #definition
+* status = #draft
 
 * insert Question(name, Full Name of the client, string, false, true)
 * insert Question(dob, Date of Birth, date, false, true)
