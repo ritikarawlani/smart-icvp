@@ -95,14 +95,13 @@ lm -> composition.section as imm then {
 }
 
 group createImmunizationResource (source vax : vaccineDetails, target immunization : Immunization, source pid) {
-  //  vax -> immunization.id = id "set id";
     vax -> immunization.status = "completed" "set status";
     vax.vaccineClassification as vaccine -> immunization.vaccineCode = vaccine "set vaccine code";
     //vax.date as date -> immunization.occurrenceDateTime = date "set date";
     vax.batchNo as batchNo -> immunization.lotNumber = batchNo "set batchNo";
     vax -> immunization.protocolApplied as protocol then {
       vax.doseNumber as doseNo then {
-        doseNo.display as text -> protocol.doseNumberString = text "set dose No";
+        doseNo.text as text -> protocol.doseNumberString = text "set dose No";
       } "set dose no";
     /*  vax.disease as disease -> create('Coding') as coding, coding = disease, create('CodeableConcept') as code, code.coding = coding,  protocol.targetDisease = code "set target disease"; */
     } "set protocol applied";

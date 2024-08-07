@@ -1,7 +1,7 @@
 ValueSet: DVCVaccines
 Id: DVC-vaccineClassification
 Title : "DVC - Vaccines"
-Description: "This value set includes codes from ICF"
+Description: "This value set includes codes from ICD"
 
 
 * $ICD11#XM29K4	"Cholera vaccines"
