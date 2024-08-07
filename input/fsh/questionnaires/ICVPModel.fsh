@@ -4,6 +4,8 @@ Description: "Questionnaire for ICVP Logical Model"
 Title: "ICVP Model Questionnaire"
 Usage: #definition
 * status = #draft
+* contained[+] = http://terminology.hl7.org/ValueSet/v2-0001
+
 
 * insert Question(name, Full Name of the client, string, false, true)
 * insert Question(dob, Date of Birth, date, false, true)
