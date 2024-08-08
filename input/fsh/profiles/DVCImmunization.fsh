@@ -22,7 +22,6 @@ Description: "This profile represents Immunization record for Digital Vaccine Ce
 * protocolApplied[protocolAppliedAuthority].targetDisease from DiseaseTargeted (preferred)
 * protocolApplied[protocolAppliedAuthority].targetDisease ^label = "Disease or agent targeted"
 * protocolApplied[protocolAppliedAuthority].extension contains doseNumber named doseNumber 1..1 MS
-* protocolApplied[protocolAppliedAuthority].doseNumber[x] ^label = "Dose number"
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] 0..1 
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] only positiveInt
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] ^label = "Total doses"
