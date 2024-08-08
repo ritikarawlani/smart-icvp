@@ -1,6 +1,6 @@
 CodeSystem: DiseaseTargeted
 Title : "Disease Targeted"
-Description: ""
+Description: "Disease Targeted Code System"
 
 * #Cholera "Cholera" "Cholera"
 * #HaemophilusInfluenzaeB "Haemophilus influenzae B" "Haemophilus influenzae B"
