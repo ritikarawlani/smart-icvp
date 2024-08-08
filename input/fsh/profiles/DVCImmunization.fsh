@@ -22,14 +22,13 @@ Description: "This profile represents Immunization record for Digital Vaccine Ce
 * protocolApplied[protocolAppliedAuthority].targetDisease from DiseaseTargeted (preferred)
 * protocolApplied[protocolAppliedAuthority].targetDisease ^label = "Disease or agent targeted"
 * protocolApplied[protocolAppliedAuthority].doseNumber[x] 1..1 MS
-* protocolApplied[protocolAppliedAuthority].doseNumber[x] ^slicing.discriminator.type = #type
-* protocolApplied[protocolAppliedAuthority].doseNumber[x] ^slicing.discriminator.path = "CodeableConcept"
-* protocolApplied[protocolAppliedAuthority].doseNumber[x] contains doseNumberCodeableConcept 1..1 MS
-* protocolApplied[protocolAppliedAuthority].doseNumber[x] ^slicing.rules = #open
+* protocolApplied[protocolAppliedAuthority].doseNumber[x].extension contains $doseNumberCodeableConcept named doseNumberCodeableConcept 1..1
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] 0..1 
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] only positiveInt
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] ^label = "Total doses"
 
+
+Alias: $doseNumberCodeableConcept = http://worldhealthorganization.github.io/smart-icvp/StructureDefinition/doseNumberCodeableConcept
 Extension: doseNumberCodeableConcept
 Description: "doseNumber"
 * value[x] only CodeableConcept
