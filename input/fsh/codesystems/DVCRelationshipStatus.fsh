@@ -1,6 +1,6 @@
 CodeSystem: DVCRelationshipStatus
 Title : "Relationship Status for Contact in Patient"
-Description: ""
+Description: "Relationship Status for Contact in Patient"
 
 * #Parent "Parent" "Parent"
 * #Guardian "Guardian" "Guardian"

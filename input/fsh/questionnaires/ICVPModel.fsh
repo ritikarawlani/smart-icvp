@@ -8,7 +8,7 @@ Usage: #definition
 * contained[+] = http://hl7.org/fhir/ValueSet/country
 * contained[+] = ICVPDiseaseTargeted
 * contained[+] = ICVPVaccineCodes
-
+* contained[+] = doseNumber
 
 * insert Question(name, Full Name of the client, string, false, true)
 * insert Question(dob, Date of Birth, date, false, true)
@@ -20,7 +20,8 @@ Usage: #definition
 * insert Question(guardian, Name of Parent or Guardian, string, false, false)
 * insert Question(vaccinDetails,Vaccine Certificate Details,group, true, true)
 * item[=]
-  * insert Question(doseNumber, Dose Number, string, false, true)
+  * insert Question(doseNumber, Dose Number, choice, false, true)
+  * item[=].answerValueSet = Canonical(doseNumber)
   * insert Question(disease, Name of disease of condition vaccinated or received prophylaxis against, choice, false, true)
   * item[=].answerValueSet = Canonical(ICVPDiseaseTargeted)
   * insert Question(vaccineClassification, Vaccine or Prophylaxis classification code, choice, false, true)

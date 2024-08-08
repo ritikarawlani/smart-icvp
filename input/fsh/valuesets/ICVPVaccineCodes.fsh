@@ -1,5 +1,4 @@
 ValueSet: ICVPVaccineCodes
-Id: ICVP-vaccineCodes
 Title : "ICVP - Vaccine Codes"
 Description: "This value set includes codes from ICVP"
 
