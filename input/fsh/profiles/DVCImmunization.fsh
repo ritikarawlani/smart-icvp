@@ -19,11 +19,14 @@ Description: "This profile represents Immunization record for Digital Vaccine Ce
 * protocolApplied ^slicing.rules = #open
 * protocolApplied contains protocolAppliedAuthority 1.. MS
 * protocolApplied[protocolAppliedAuthority].authority only Reference(MCSDJurisdictionOrganization)
-//* protocolApplied[protocolAppliedAuthority].targetDisease from WHODDCCDiseaseTargetedCOVID19 (preferred)
+* protocolApplied[protocolAppliedAuthority].targetDisease from DiseaseTargeted (preferred)
 * protocolApplied[protocolAppliedAuthority].targetDisease ^label = "Disease or agent targeted"
-* protocolApplied[protocolAppliedAuthority].doseNumber[x] 1..1 MS
-* protocolApplied[protocolAppliedAuthority].doseNumber[x] only positiveInt
+* protocolApplied[protocolAppliedAuthority].extension contains doseNumber named doseNumber 1..1 MS
 * protocolApplied[protocolAppliedAuthority].doseNumber[x] ^label = "Dose number"
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] 0..1 
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] only positiveInt
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] ^label = "Total doses"
+
+Extension: doseNumber
+Description: "doseNumber"
+* value[x] only CodeableConcept
