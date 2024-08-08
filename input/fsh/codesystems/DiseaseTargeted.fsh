@@ -1,0 +1,16 @@
+CodeSystem: DiseaseTargeted
+Title : "Disease Targeted"
+Description: ""
+
+* #Cholera "Cholera" "Cholera"
+* #HaemophilusInfluenzaeB "Haemophilus influenzae B" "Haemophilus influenzae B"
+* #Diphtheria "Diphtheria" "Diphtheria"
+* #Pertussis "Pertussis" "Pertussis"
+* #Poliomyelitis "Poliomyelitis" "Poliomyelitis"
+* #Typhoid "Typhoid" "Typhoid"
+* #YellowFever "Yellow Fever" "Yellow Fever"
+* #Dengue "Dengue" "Dengue"
+* #Ebola "Ebola" "Ebola"
+* #Mumps "Mumps" "Mumps"
+* #Rubella "Rubella" "Rubella"
+* #Encephalitis "Encephalitis" "Encephalitis"

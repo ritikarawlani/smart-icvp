@@ -1,6 +1,6 @@
-Logical: ModelICVP
-Title: "ICVP"
-Description:  "Data elements for the Model International Certificate of Vaccination or Prophylaxis."
+Logical: ModelDVC
+Title: "DVC"
+Description:  "Data elements for Digital Vaccination Certificate."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true

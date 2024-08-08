@@ -1,6 +1,6 @@
 Logical: ModelVaccineDetails
-Title: "ICVP - Vaccine Details"
-Description:  "Vaccine Data elements for the Model International Certificate of Vaccination or Prophylaxis."
+Title: "DVC - Vaccine Details"
+Description:  "Vaccine Data elements for the Digital Vaccination Certificates"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
@@ -8,8 +8,11 @@ Description:  "Vaccine Data elements for the Model International Certificate of 
 * ^experimental = true
 
 * doseNumber 1..1 CodeableConcept "Dose Number" "Dose Number"
+* doseNumber from doseNumber (required)
 * disease 1..1 Coding "Disease" "Name of disease or condition vaccinated or received prophylaxis against"
+* disease from DiseaseTargeted (required)
 * vaccineClassification 1..1 CodeableConcept "Vaccine code" "Vaccine or prophylaxis classification code"
+* vaccineClassification from DVCVaccines (required)
 * vaccineTradeItem 0..1 Identifier "vaccine trade item id" "Vaccine trade item id"
 * date 1..1 date "Date" "Date of vaccine"
 * clinicianName 0..1 string "Name of supervising clinician" "Name of supervising clinician, or relevant authority responsible for issuing this certificate, or for overseeing the administering centre"
