@@ -1,4 +1,4 @@
-Alias: $DiseaseTargeted = http://worldhealthorganization.github.io/smart-icvp/CodeSystem/DiseaseTargeted
+Alias: $DiseaseTargeted = http://smart.who.int/icvp/CodeSystem/DiseaseTargeted
 ValueSet: DiseaseTargeted
 Title : "Disease Targeted"
 Description: "Value set for all diseases"

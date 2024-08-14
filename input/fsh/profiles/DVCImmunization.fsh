@@ -28,7 +28,7 @@ Description: "This profile represents Immunization record for Digital Vaccine Ce
 * protocolApplied[protocolAppliedAuthority].seriesDoses[x] ^label = "Total doses"
 
 
-Alias: $doseNumberCodeableConcept = http://worldhealthorganization.github.io/smart-icvp/StructureDefinition/doseNumberCodeableConcept
+Alias: $doseNumberCodeableConcept = http://smart.who.int/icvp/StructureDefinition/doseNumberCodeableConcept
 Extension: doseNumberCodeableConcept
 Description: "doseNumber"
 * value[x] only CodeableConcept

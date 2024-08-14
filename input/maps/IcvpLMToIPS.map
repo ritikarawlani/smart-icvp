@@ -1,4 +1,4 @@
-map "http://worldhealthorganization.github.io/smart-icvp/StructureMap/IcvpLMToIPS" = "IcvpLMToIPS"
+map "http://smart.who.int/icvp/StructureMap/IcvpLMToIPS" = "IcvpLMToIPS"
 uses "http://worldhealthorganization.github.io/smart/StructureDefinition/ModelICVP" alias ICVPLogicalModel as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias IPS as target
 

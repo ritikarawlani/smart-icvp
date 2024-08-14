@@ -1,4 +1,4 @@
-Alias: $doseNumber = http://worldhealthorganization.github.io/smart-icvp/CodeSystem/doseNumber
+Alias: $doseNumber = http://smart.who.int/icvp/CodeSystem/doseNumber
 ValueSet: doseNumber
 Title : "Dose Number"
 Description: "Dose Number value set"
