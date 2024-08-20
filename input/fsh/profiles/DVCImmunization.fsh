@@ -23,9 +23,7 @@ Description: "This profile represents Immunization record for Digital Vaccine Ce
 * protocolApplied[protocolAppliedAuthority].targetDisease ^label = "Disease or agent targeted"
 * protocolApplied[protocolAppliedAuthority].doseNumber[x] 1..1 MS
 * protocolApplied[protocolAppliedAuthority].doseNumber[x].extension contains $doseNumberCodeableConcept named doseNumberCodeableConcept 1..1
-* protocolApplied[protocolAppliedAuthority].seriesDoses[x] 0..1 
-* protocolApplied[protocolAppliedAuthority].seriesDoses[x] only positiveInt
-* protocolApplied[protocolAppliedAuthority].seriesDoses[x] ^label = "Total doses"
+
 
 
 Alias: $doseNumberCodeableConcept = http://smart.who.int/icvp/StructureDefinition/doseNumberCodeableConcept
