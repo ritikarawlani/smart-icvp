@@ -9,6 +9,8 @@ Usage: #definition
 * contained[+] = ICVPDiseaseTargeted
 * contained[+] = ICVPVaccineCodes
 * contained[+] = doseNumber
+* contained[+] = DVCRelationshipStatus
+
 
 * insert Question(name, Full Name of the client, string, false, true)
 * insert Question(dob, Date of Birth, date, false, true)
