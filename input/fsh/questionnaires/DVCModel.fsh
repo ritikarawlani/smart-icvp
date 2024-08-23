@@ -9,6 +9,7 @@ Usage: #definition
 * contained[+] = DiseaseTargeted
 * contained[+] = DVCVaccines
 * contained[+] = doseNumber
+* contained[+] = DVCRelationshipStatus
 
 
 * insert Question(name, Full Name of the client, string, false, true)
