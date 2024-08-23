@@ -18,7 +18,11 @@ Usage: #definition
 * insert Question(nationality, Nationality, choice, false, false)
 * item[=].answerValueSet = "http://hl7.org/fhir/ValueSet/country" 
 * insert Question(nid, National Identification Document, string, false, false)
-* insert Question(guardian, Name of Parent or Guardian, string, false, false)
+* insert Question(guardian, Parent or Guardian Details, group, false, false)
+* item[=]
+  * insert Question(guardianName, Name of Parent or Guardian, string, false, false)
+  * insert Question(guardianRelationship, Relationship Status, choice, false, false)
+  * item[=].answerValueSet = Canonical(DVCRelationshipStatus)
 * insert Question(vaccinDetails,Vaccine Certificate Details,group, true, true)
 * item[=]
   * insert Question(doseNumber, Dose Number, choice, false, true)
