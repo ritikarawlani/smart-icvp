@@ -5,7 +5,7 @@ Title: "ICVP Model Questionnaire"
 Usage: #definition
 * status = #draft
 * contained[+] = http://terminology.hl7.org/ValueSet/v2-0001
-* contained[+] = http://hl7.org/fhir/ValueSet/country
+* contained[+] = http://terminology.hl7.org/ValueSet/v3-Country
 * contained[+] = ICVPDiseaseTargeted
 * contained[+] = ICVPVaccineCodes
 * contained[+] = doseNumber
