@@ -15,7 +15,7 @@ Usage: #definition
 * insert Question(name, Full Name of the client, string, false, true)
 * insert Question(dob, Date of Birth, date, false, true)
 * insert Question(sex, Sex, choice, false, false)
-* item[=].answerValueSet = Canonical("http://terminology.hl7.org/ValueSet/v2-0001")
+* item[=].answerValueSet = "http://terminology.hl7.org/ValueSet/v2-0001"
 * insert Question(nationality, Nationality, choice, false, false)
 * item[=].answerValueSet = "http://terminology.hl7.org/ValueSet/v3-Country" 
 * insert Question(nid, National Identification Document, string, false, false)
