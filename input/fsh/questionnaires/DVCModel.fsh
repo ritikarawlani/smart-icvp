@@ -24,7 +24,7 @@ Usage: #definition
   * insert Question(guardianName, Name of Parent or Guardian, string, false, false)
   * insert Question(guardianRelationship, Relationship Status, choice, false, false)
   * item[=].answerValueSet = Canonical(DVCRelationshipStatus)
-* insert Question(vaccinDetails,Vaccine Certificate Details,group, true, true)
+* insert Question(vaccineDetails,Vaccine Certificate Details,group, true, true)
 * item[=]
   * insert Question(doseNumber, Dose Number, choice, false, true)
   * item[=].answerValueSet = Canonical(doseNumber)
