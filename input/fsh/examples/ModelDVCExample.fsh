@@ -12,7 +12,6 @@ Usage: #example
 * vaccineDetails[=].disease.system = "http://id.who.int/icd/release/11/mms"
 * vaccineDetails[=].vaccineClassification.coding.display = "Measles vaccines"
 * vaccineDetails[=].vaccineClassification.coding.code = #XM28X5
-* vaccineDetails[=].vaccineClassification.coding.code = #XM28X5
 * vaccineDetails[=].vaccineClassification.coding.system = "http://id.who.int/icd/release/11/mms"
 * vaccineDetails[=].date = "2024-01-23"
 * vaccineDetails[=].clinicianName = "DR. A"
