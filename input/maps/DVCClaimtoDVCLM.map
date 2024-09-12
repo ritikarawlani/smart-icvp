@@ -14,7 +14,7 @@ group DVCClaimtoDVCLM(source src : DVCPayload, target tgt : DVCModel) {
 }
 
 group mapVaccineDetails(source src : BackboneElement , target tgt : ModelVaccineDetails ) {
- src.tg as tg ->  create('Coding') as coding, coding.code = tg, coding.system = "http://id.who.int/icd/release/11/mms", create('CodeableConcept') as code, code.coding = coding,  tgt.disease = code "rule8";
+ src.tg as tg ->  create('Coding') as coding, coding.code = tg, coding.system = "http://id.who.int/icd/release/11/mms",  tgt.disease = coding "rule8";
  src.vp as vp -> create('Coding') as coding, coding.code = vp, coding.system = "http://id.who.int/icd/release/11/mms", create('CodeableConcept') as code, code.coding = coding,  tgt.vaccineClassification = code "rule9";
  src.mp as mp ->  create('Identifier') as id, id.value = mp, tgt.vaccineTradeItem = id "rule10";
  src.ma as ma -> tgt.manufacturer = ma "rule11";
@@ -27,10 +27,9 @@ group mapVaccineDetails(source src : BackboneElement , target tgt : ModelVaccine
   src -> tgt.validityPeriod = period "rule17";
  } "rule18";
  src.cn as cn -> tgt.clinicianName = cn "rule19";
- //src.is
-
+ src.is as is -> tgt.issuer as issuer,  issuer.reference = append('Organization/',is) "rule21";
+ src.dn as dn -> create('Coding') as coding, coding.code = dn, coding.system = "http://smart.who.int/icvp/CodeSystem/doseNumber", create('CodeableConcept') as code, code.coding = coding,  tgt.doseNumber = code "rule20";
 }
-
 
 //helper function
 group generateNarrativeText(source src: Section, target text: string) {
