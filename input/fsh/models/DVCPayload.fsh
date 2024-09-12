@@ -4,7 +4,6 @@ Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Tok
 
 * ^url = "http://smart.who.int/icvp/StructureDefinition/DVC"
 * ^version = "1"
-* ^abstract = true
 * ^status = #draft
 
 * n 1..1 string "Person name"

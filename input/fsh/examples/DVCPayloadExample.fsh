@@ -7,6 +7,7 @@ Usage: #example
 * dob = "2023-02-04"
 * s = #female
 * ntl = #IND 
+* v.dn = #FirstDose
 * v.tg = #1f03
 * v.vp = #XM28X5
 * v.dt = "2024-01-23"
