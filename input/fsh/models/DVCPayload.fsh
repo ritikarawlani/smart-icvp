@@ -15,6 +15,7 @@ Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Tok
 * gn 0..1 string "Parent or Guardian Name"
  // Vaccination group -------------------------------------------------------
 * v 1..1 BackboneElement "Vaccination Group (see element details)"
+  * dn 1..1 code "Dose Number"
   * tg 1..1 code "Name of disease or condition vaccinated or received prophylaxis against"
   * vp 1..1 code "Vaccine or prophylaxis classification code"
   * mp 0..1 id "Vaccine Trade item id"
@@ -25,7 +26,7 @@ Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Tok
   * vls 0..1 date "Certificate Validity periods start date"
   * vle 0..1 date "Certificate Validity periods end date"
   * cn 0..1 string "Name of supervising clinician"
-  * is 0..1 string "Certificate issuer (organization name)"
+  * is 0..1 id "Certificate issuer id (referenced organization)"
   * is obeys mustHaveIsOrCn
   * cn obeys mustHaveIsOrCn
 

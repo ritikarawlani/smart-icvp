@@ -48,7 +48,7 @@ group DemographicsToPatient(source lm:ICVPLogicalModel , target patient: Patient
  pid -> patient.id = pid "setPatientId";
  lm.name as sourceName -> patient.name as targetName then {
   sourceName -> sourceName then humanNameToHumanName(sourceName, targetName) "CopyName";
- } "Set name";
+ } "Setname";
  lm.dob as dob -> patient.birthDate = dob "setDateofBirth";
  lm.sex as sex -> patient.gender = sex "setSex";
  lm.nid as id -> patient.identifier as identifier, identifier.value = id "setNationalIdentifier";
@@ -62,7 +62,7 @@ group DemographicsToPatient(source lm:ICVPLogicalModel , target patient: Patient
 
 // create sectionMedications
 group createSectionMedications(source lm:ICVPLogicalModel, target med : BackboneElement, source mid ) {
-mid -> med.id = mid "set medication id";
+mid -> med.id = mid "setmedicationid";
 lm -> med.title = "Medication Summary Section" "setMedicationTitle";
 lm -> create('Coding') as coding, coding.code = "10160-0", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  med.code = code "setCode";
 lm -> create('Coding') as coding, coding.code = "unavailable", coding.system = "http://hl7.org/fhir/ValueSet/list-empty-reason", create('CodeableConcept') as code, code.coding = coding,  med.emptyReason = code "setCode";
@@ -89,6 +89,7 @@ group createSectionImmunizations(source lm:ICVPLogicalModel, target bundle: Bund
 lm -> composition.section as imm then {
   immid -> imm.id = immid "setImmunizationsId";
   lm -> imm.title = "Immunizations Section" "setImmunizationTitle";
+  lm -> imm.text as text then generateNarrativeText(imm,text) "setText";
   lm -> create('Coding') as coding, coding.code = "11369-6", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  imm.code = code "setCode";
   lm.vaccineDetails as vax -> uuid() as id, bundle.entry as entry, entry.fullUrl = append('urn:uuid:', id), imm.entry as sectionEntry, sectionEntry.reference = append('Immunization/', id), entry.resource = create('Immunization') as immunization , immunization.id = id then createImmunizationResource(vax, immunization, pid ) "setImmz";
   } "set";
@@ -96,7 +97,7 @@ lm -> composition.section as imm then {
 
 group createImmunizationResource (source vax : vaccineDetails, target immunization : Immunization, source pid) {
     vax -> immunization.status = "completed" "setStatus";
-    vax.vaccineClassification as vaccine -> immunization.vaccineCode = vaccine "set vaccine code";
+    vax.vaccineClassification as vaccine -> immunization.vaccineCode = vaccine "setvaccinecode";
     //vax.date as date -> immunization.occurrenceDateTime = date "setDate";
     vax.batchNo as batchNo -> immunization.lotNumber = batchNo "setBatchNo";
     vax -> immunization.protocolApplied as protocol then {
@@ -110,6 +111,11 @@ group createImmunizationResource (source vax : vaccineDetails, target immunizati
 }
 
 //helper function
+group generateNarrativeText(source src: Section, target text: string) {
+ src -> text.status = "empty" "setstatus";
+ src -> text.div = "narrative not available" "setdiv";
+
+}
 group humanNameToHumanName (source sourceName, target targetName: HumanName) {
   sourceName.use as use -> targetName.use = use "CopyUse";
   sourceName.text as text -> targetName.text = text "CopyText";
@@ -122,4 +128,9 @@ group humanNameToHumanName (source sourceName, target targetName: HumanName) {
   sourceName.period as sourcePeriod -> targetName.period as targetPeriod then {
     sourcePeriod -> sourcePeriod then periodToPeriod(sourcePeriod, targetPeriod) "CopyPeriod";
   } "copyPeriod";
+}
+
+group periodToPeriod (source sourcePeriod , target targetPeriod: Period) {
+  sourcePeriod.start as start -> targetPeriod.start = start "set period start";
+  sourcePeriod.end as end -> targetPeriod.end = end "set period end";
 }
