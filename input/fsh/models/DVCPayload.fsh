@@ -2,7 +2,7 @@ Logical:         DVCPayload
 Title:           "DVC HCERT Payload"
 Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Token Logical Model"
 
-* ^url = "http://smart.who.int/icvp/StructureDefinition/DVC"
+* ^url = "http://smart.who.int/icvp/StructureDefinition/DVCPayload"
 * ^version = "1"
 * ^status = #draft
 
