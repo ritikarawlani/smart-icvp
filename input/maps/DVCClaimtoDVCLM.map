@@ -1,5 +1,5 @@
 map "http://smart.who.int/icvp/StructureMap/DVCClaimtoDVCLM" = "DVCClaimtoDVCLM"
-uses "http://smart.who.int/icvp/StructureDefinition/DVC" alias DVCPayload as source
+uses "http://smart.who.int/icvp/StructureDefinition/DVCPayload" alias DVCPayload as source
 uses "http://smart.who.int/icvp/StructureDefinition/ModelDVC" alias DVCModel as target
 uses "http://smart.who.int/icvp/StructureDefinition/ModelVaccineDetails" alias ModelVaccineDetails as target
 
