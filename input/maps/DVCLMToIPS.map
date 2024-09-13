@@ -1,4 +1,4 @@
-map "http://smart.who.int/icvp/StructureMap/DVCLMLMToIPS" = "DVCLMToIPS"
+map "http://smart.who.int/icvp/StructureMap/DVCLMToIPS" = "DVCLMToIPS"
 uses "http://smart.who.int/icvp/StructureDefinition/ModelDVC" alias DVCLogicalModel as source
 uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias IPS as target
 
