@@ -8,7 +8,7 @@ Usage: #example
 * s = #female
 * ntl = #IND 
 * v.dn = #FirstDose
-* v.tg = #1f03
+* v.tg = #1F03
 * v.vp = #XM28X5
 * v.dt = "2024-01-23"
 * v.cn = "Dr. A"

@@ -15,3 +15,9 @@ Description:  "Data elements for Digital Vaccination Certificate."
 * guardian 0..1 string "Parent/Guardian" "Name of Parent or Guardian"
 * issuer 0..1 Reference(Organization) "Document issuer" "Document issuer"
 * vaccineDetails 1..* ModelVaccineDetails "Vaccine Details" "Vaccine Details"
+* obeys mustHaveIssuerOrClinician
+
+Invariant: mustHaveIssuerOrClinician
+Description: "Either issuer or clinicianName must be present"
+Expression: "vaccineDetails.issuer.exists() or vaccineDetails.clinicianName.exists()"
+Severity: #error

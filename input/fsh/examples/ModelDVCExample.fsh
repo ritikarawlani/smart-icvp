@@ -8,7 +8,7 @@ Usage: #example
 * sex =  #female
 * nationality = #IND
 * vaccineDetails[0].disease.display = "Measles"
-* vaccineDetails[=].disease.code = #1f03
+* vaccineDetails[=].disease.code = #1F03
 * vaccineDetails[=].disease.system = "http://id.who.int/icd/release/11/mms"
 * vaccineDetails[=].vaccineClassification.coding.display = "Measles vaccines"
 * vaccineDetails[=].vaccineClassification.coding.code = #XM28X5

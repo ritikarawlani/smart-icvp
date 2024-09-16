@@ -26,10 +26,9 @@ Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Tok
   * vle 0..1 date "Certificate Validity periods end date"
   * cn 0..1 string "Name of supervising clinician"
   * is 0..1 id "Certificate issuer id (referenced organization)"
-  * is obeys mustHaveIsOrCn
-  * cn obeys mustHaveIsOrCn
+* obeys mustHaveIsOrCn
 
 Invariant: mustHaveIsOrCn
 Description: "Either issuer or clinicianName must be present"
-Expression: "is.exists() or cn.exists()"
+Expression: "v.is.exists() or v.cn.exists()"
 Severity: #error

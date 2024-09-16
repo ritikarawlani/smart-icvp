@@ -21,10 +21,4 @@ Description:  "Vaccine Data elements for the Digital Vaccination Certificates"
 * manufacturer 1..1 string "Name of Manufacturer of vaccine" "Name Manufacturer of vaccine"
 * batchNo 1..1 string "Batch No" "Batch No"
 * validityPeriod 0..1 Period "Certificate validity period" "Certificate validity period"
-* issuer obeys mustHaveIssuerOrClinician
-* clinicianName obeys mustHaveIssuerOrClinician
 
-Invariant: mustHaveIssuerOrClinician
-Description: "Either issuer or clinicianName must be present"
-Expression: "issuer.exists() or clinicianName.exists()"
-Severity: #error
