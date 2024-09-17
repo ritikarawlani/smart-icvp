@@ -15,10 +15,9 @@ publisher:
   url: http://who.int
   # email: test@example.org
 
-
-# meta:
- # profile:
-  #  - SMARTImplementationGuide
+meta:
+  profile:
+    - SGImplementationGuide
 
 pages:
   index.md:
@@ -257,7 +256,7 @@ menu:
 #
 #   setId: always # always | standalone-only
 dependencies:
-  smart.who.int.base: current
+  smart.who.int.base: current$br-update-dependencies
   hl7.fhir.uv.ips: current
   hl7.fhir.uv.sdc: 3.0.0
   ihe.iti.mcsd: 
