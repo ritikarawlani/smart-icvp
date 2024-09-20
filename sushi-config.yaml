@@ -256,7 +256,7 @@ menu:
 #
 #   setId: always # always | standalone-only
 dependencies:
-  smart.who.int.base: current
+  smart.who.int.base: 0.1.0
   hl7.fhir.uv.ips: current
   hl7.fhir.uv.sdc: 3.0.0
   ihe.iti.mcsd: 
