@@ -122,7 +122,7 @@ group createImmunizationResource (source vax : vaccineDetails, target immunizati
 //helper function
 group generateNarrativeText(source src: Section, target text: string) {
  src -> text.status = "empty" "setstatus";
- src -> text.div = "<div>narrative not available</div>" "setdiv";
+ src -> text.div = '<div xmlns="http://www.w3.org/1999/xhtml">Narrative not available</div>' "setdiv";
 
 }
 group humanNameToHumanName (source sourceName, target targetName: HumanName) {
