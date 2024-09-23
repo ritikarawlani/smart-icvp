@@ -12,7 +12,7 @@ group DVCLMToIPS(source lm : DVCLogicalModel, target ips : IPS) {
     lm -> ips.entry as entry,  entry.resource = create('Composition') as composition,  entry.fullUrl = append('urn:uuid:', cid) then {
         lm -> lm then LmToComposition(lm, ips, composition,  timestamp,cid,  pid, mid, aid, proid, immid ) "set";
         lm -> ips.entry as entry, entry.fullUrl = append('urn:uuid:', pid), create('Patient') as patient then {
-            lm -> lm then DemographicsToPatient(lm, patient, pid) "createPatient";
+            lm then DemographicsToPatient(lm, patient, pid) "createPatient";
             lm -> entry.resource = patient "setPatientEntry";
         } "mapPatientResource";
         lm.issuer as issuer then {
@@ -135,7 +135,7 @@ group humanNameToHumanName (source sourceName, target targetName: HumanName) {
   
   // Copy the period using the previously defined group function
   sourceName.period as sourcePeriod -> targetName.period as targetPeriod then {
-    sourcePeriod -> sourcePeriod then periodToPeriod(sourcePeriod, targetPeriod) "CopyPeriod";
+    sourcePeriod then periodToPeriod(sourcePeriod, targetPeriod) "CopyPeriod";
   } "copyPeriod";
 }
 
