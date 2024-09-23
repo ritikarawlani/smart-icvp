@@ -49,15 +49,11 @@ group LmToComposition(source lm : DVCLogicalModel, target ips : Bundle, target c
 // create Patient
 group DemographicsToPatient(source lm:DVCLogicalModel , target patient: Patient, source pid) {
  pid -> patient.id = pid "setPatientId";
- lm.name as sourceName -> patient.name as targetName then {
-  sourceName -> sourceName then humanNameToHumanName(sourceName, targetName) "CopyName";
- } "Setname";
+ lm.name as sourceName -> patient.name as targetName then nameToHumanName(sourceName, targetName) "Setname";
  lm.dob as dob -> patient.birthDate = dob "setDateofBirth";
  lm.sex as sex -> patient.gender = sex "setSex";
  lm.nid as id -> patient.identifier as identifier, identifier.value = id "setNationalIdentifier";
- lm.guardian as guardian -> patient.contact as parentContact, parentContact.name as parentName then {
-  guardian -> guardian then humanNameToHumanName(guardian, parentName) "copyName";
- } "setGuardianName";
+ lm.guardian as guardian -> patient.contact as parentContact, parentContact.name as parentName then nameToHumanName(guardian, parentName) "setGuardianName";
 }
 
 // create author
@@ -123,8 +119,12 @@ group createImmunizationResource (source vax : vaccineDetails, target immunizati
 group generateNarrativeText(source src: Section, target text: string) {
  src -> text.status = "empty" "setstatus";
  src -> text.div = '<div xmlns="http://www.w3.org/1999/xhtml">Narrative not available</div>' "setdiv";
-
 }
+
+group nameToHumanName (source sourceName, target targetName: HumanName) {
+  sourceName as patientName -> targetName.text = patientName "Patient Name";
+}
+
 group humanNameToHumanName (source sourceName, target targetName: HumanName) {
   sourceName.use as use -> targetName.use = use "CopyUse";
   sourceName.text as text -> targetName.text = text "CopyText";
