@@ -90,14 +90,13 @@ lm -> create('Coding') as coding, coding.code = "unavailable", coding.system = "
 
 // create sectionImmunizations
 group createSectionImmunizations(source lm:DVCLogicalModel, target bundle: Bundle, target composition: Composition, source immid, source pid ) {
-lm -> composition.section as imm then {
-  immid -> imm.id = immid "setImmunizationsId";
-  lm -> imm.title = "Immunizations Section" "setImmunizationTitle";
-  lm -> imm.text as text then generateNarrativeText(imm,text) "setText";
-  lm -> create('Coding') as coding, coding.code = "11369-6", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  imm.code = code "setCode";
-  lm.vaccineDetails as vax -> uuid() as id, bundle.entry as entry, entry.fullUrl = append('urn:uuid:', id), imm.entry as sectionEntry, sectionEntry.reference = append('urn:uuid:', id), entry.resource = create('Immunization') as immunization , immunization.id = id then createImmunizationResource(vax, immunization, pid ) "setImmz";
+  lm -> composition.section as imm then {
+    immid -> imm.id = immid "setImmunizationsId";
+    lm -> imm.title = "Immunizations Section" "setImmunizationTitle";
+    lm -> imm.text as text then generateNarrativeText(imm,text) "setText";
+    lm -> create('Coding') as coding, coding.code = "11369-6", coding.system = "http://loinc.org", create('CodeableConcept') as code, code.coding = coding,  imm.code = code "setCode";
+    lm.vaccineDetails as vax -> uuid() as id, bundle.entry as entry, entry.fullUrl = append('urn:uuid:', id), imm.entry as sectionEntry, sectionEntry.reference = append('urn:uuid:', id), entry.resource = create('Immunization') as immunization , immunization.id = id then createImmunizationResource(vax, immunization, pid ) "setImmz";
   } "set";
-
 }
 
 group createImmunizationResource (source vax : vaccineDetails, target immunization : Immunization, source pid) {
