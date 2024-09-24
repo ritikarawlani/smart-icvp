@@ -7,7 +7,7 @@ uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias IPS as target
 group DVCLMToIPS(source lm : DVCLogicalModel, target ips : IPS) {
   lm -> ips.type = 'document' "setIPSType";
   lm -> uuid() as bid, ips.identifier as id, id.value = bid, id.system = "urn:oid:2.16.724.4.8.10.200.10" "setId";
-  lm -> uuid() as cid, uuid() as pid, uuid() as mid, uuid() as aid, uuid() as proid, uuid() as immid then {  
+  lm -> uuid() as cid, uuid() as pid, uuid() as mid, uuid() as aid, uuid() as proid, uuid() as immid then {
     lm -> ips.entry as entry,  entry.resource = create('Composition') as composition,  entry.fullUrl = append('urn:uuid:', cid) then {
         lm then LmToComposition(lm, ips, composition, cid,  pid, mid, aid, proid, immid ) "set LmToComposition";
         lm -> ips.entry as entry, entry.fullUrl = append('urn:uuid:', pid), create('Patient') as patient then {
@@ -18,7 +18,7 @@ group DVCLMToIPS(source lm : DVCLogicalModel, target ips : IPS) {
           issuer.reference as id -> ips.entry as entry, entry.fullUrl = append('urn:uuid:', id), create('Organization') as organization then {
              lm -> organization then createAuthor(issuer, organization) "createOrganization";
             lm -> entry.resource = organization "setOrganizationEntry";
-        } "mapOrganizationResource"; 
+        } "mapOrganizationResource";
         } "ss";
     } "mapCompositionResource";
   } "setEntries" ;
@@ -117,7 +117,9 @@ group createImmunizationResource (source vax : vaccineDetails, target immunizati
     vax.batchNo as batchNo -> immunization.lotNumber = batchNo "setBatchNo";
     vax -> immunization.protocolApplied as protocol then {
       vax.doseNumber as doseNo then {
-        doseNo.text as text -> protocol.doseNumber = text "setDoseNo";
+        doseNo.coding as coding then {
+          coding.code as code  -> protocol.doseNumber = code "setDoseNo";
+        } "setDoseNo";
       } "setDoseNo";
     /*  vax.disease as disease -> create('Coding') as coding, coding = disease, create('CodeableConcept') as code, code.coding = coding,  protocol.targetDisease = code "setTargetDisease"; */
     } "setProtocolApplied";
@@ -142,7 +144,7 @@ group humanNameToHumanName (source sourceName, target targetName: HumanName) {
   sourceName.given as given -> targetName.given = given "CopyGiven";
   sourceName.prefix as prefix -> targetName.prefix = prefix "CopyPrefix";
   sourceName.suffix as suffix -> targetName.suffix = suffix "CopySuffix";
-  
+
   // Copy the period using the previously defined group function
   sourceName.period as sourcePeriod -> targetName.period as targetPeriod then {
     sourcePeriod then periodToPeriod(sourcePeriod, targetPeriod) "CopyPeriod";
