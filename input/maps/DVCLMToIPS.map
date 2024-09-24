@@ -122,7 +122,7 @@ group createImmunizationResource (source vax : vaccineDetails, target immunizati
     /*  vax.disease as disease -> create('Coding') as coding, coding = disease, create('CodeableConcept') as code, code.coding = coding,  protocol.targetDisease = code "setTargetDisease"; */
     } "setProtocolApplied";
     vax -> immunization.patient as subject, subject.reference = append('urn:uuid:',pid) "setSubject";
-  
+    vax.manufacturerId as maId -> create('Reference') as maRef, maRef.identifier = maId, immunization.manufacturer = maRef "set Manufacturer";
 }
 
 //helper function
