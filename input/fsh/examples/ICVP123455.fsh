@@ -7,7 +7,7 @@ Usage: #example
 * dob = "2023-02-04"
 * sex =  #female
 * nationality = #IND
-* vaccineDetails[=].vaccineClassification.text = "Yellow Fever Vaccines"
+* vaccineDetails[0].vaccineClassification.text = "Yellow Fever Vaccines"
 * vaccineDetails[=].vaccineClassification.coding.code = #XM0N24
 * vaccineDetails[=].date = "2024-05-23"
 * vaccineDetails[=].clinicianName = "DR A"
@@ -18,6 +18,6 @@ Usage: #example
 * vaccineDetails[=].doseNumber.coding.code = #FirstDose
 * vaccineDetails[=].doseNumber.coding.display = "First Dose"
 * vaccineDetails[=].doseNumber.coding.system = "http://smart.who.int/icvp/CodeSystem/doseNumber"
-* vaccineDetails[0].disease.display = "Yellow Fever"
+* vaccineDetails[=].disease.display = "Yellow Fever"
 * vaccineDetails[=].disease.code = #1D47
 * vaccineDetails[=].disease.system = "http://id.who.int/icd/release/11/mms"
