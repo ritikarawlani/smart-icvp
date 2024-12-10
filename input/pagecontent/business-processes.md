@@ -58,7 +58,4 @@ The business processes included in the DAK are shown in the following figure. Pr
 
 <div>
   <img src="verification of icvp.svg" alt = "A. Verifying an ICVP Claim" style = "width:85%"></img>
-
-  <img src="verification of certificate.svg" alt = "A. Verifying the Certificate" style = "width:85%"></img>
-
 </div>
