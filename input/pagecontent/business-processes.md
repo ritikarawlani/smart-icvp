@@ -32,13 +32,14 @@ The following table describes the workflows of the included processes.
       <td><strong>Individuals interacting to complete the process</strong></td>
       <td><strong>A concrete statement describing what the process seeks to achieve</strong></td>
     </tr>
-      <tr class="even">
+    <tr class="even">
       <td>A</td>
       <td>Verifying an ICVP claim</td>
       <td>ICVP.A</td>
       <td></td>
       <td></td>
-      <tr class="even">
+    </tr>
+    <tr class="even">
       <td>B</td>
       <td>Issuing an ICVP</td>
       <td>ICVP.B</td>
