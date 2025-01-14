@@ -8,17 +8,15 @@ Description:  "Vaccine Data elements for the Paper Model International Certifica
 * ^status = #active
 * ^experimental = true
 
-* disease from ICVPDiseaseTargeted (required)
-* vaccineClassification from ICVPVaccineCodes (required)
+
 
 Logical: pICVP
 Parent: ModelDVC
 Title: "pICVP"
-Description:  "Data elements for the Model International Certificate of Vaccination or Prophylaxis."
+Description:  "Data elements for the Paper Model International Certificate of Vaccination or Prophylaxis."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition"
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^status = #active
 * ^experimental = true
 
-* vaccineDetails only pICVPVaccineDetails

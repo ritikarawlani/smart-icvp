@@ -8,8 +8,7 @@ Description:  "Vaccine Data elements for the Digital Model International Certifi
 * ^status = #active
 * ^experimental = true
 
-* disease from ICVPDiseaseTargeted (required)
-* vaccineClassification from ICVPVaccineCodes (required)
+
 * certificateId 1..1 id "Certificate ID" "Certificate ID"
 * doseNumber 1..1 CodeableConcept "Dose Number" "Dose Number"
 * doseNumber from doseNumber (required)
