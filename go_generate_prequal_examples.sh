@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-
 #  1:Date of Prequalification
 #  2:Vaccine Type
 #  3:Commercial Name
@@ -10,8 +9,9 @@
 #  6:Manufacturer
 #  7:Responsible NRA
 
+#awk -F',' '{
+awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
 
-awk -F',' '{
 
   VAXTYPES["Yellow Fever"] = "YellowFever"
   VAXTYPES["Polio Vaccine - Oral (OPV) Monovalent Type 1"] = "PolioOralMonovalentT1"
@@ -29,53 +29,52 @@ awk -F',' '{
   VAX=gensub(/"/, "", "g" , $2);
 
   if (! (VAX in VAXTYPES))  {
-    print "# Skipping Row " NR " (" VAX ")"
+    print "// Skipping Row " NR " (" VAX ")"
     next
   }
   VAXTYPE = VAXTYPES[VAX]
-  print "# VAXTYPE="VAXTYPE
+
   CMD="echo -n " $1$2$3$4$5$6$7 " | md5sum | sed \"s/\\s*-*//g\" "
   CMD|getline MD5
   close(CMD)
 
 
   print ""
-  print "# Source Record Row #: " NR
-  print "#  Date of Prequalification: " $1
-  print "#  Vaccine Type: " $2
-  print "#  Commercial Name: " $3
-  print "#  Presentation: " $4
-  print "#  No. of doses: " $5
-  print "#  Manufacturer: " $6
-  print "#  Responsible NRA: " $7
-  print "#  md5(): " MD5
-  print "#"
+  print "// Source Record Row //: " NR
+  print "//  Date of Prequalification: " $1
+  print "//  Vaccine Type: " $2
+  print "//  Commercial Name: " $3
+  print "//  Presentation: " $4
+  print "//  No. of doses: " $5
+  print "//  Manufacturer: " $6
+  print "//  Responsible NRA: " $7
+  print "//  md5(): " MD5
+  print "//"
   print "Instance: "VAXTYPE"Product"MD5
   print "InstanceOf: TradeProductModel"
   print "* status = #active"
   print "* tradeProductName"
   print "  * nameType = #official"
-  print "  * name = \"" gensub('/\"/',"","g",$2)  "\""
-  print "* manufacturerName = \"" gensub('/\"/',"","g",$6)  "\""
-  print "* doseQuantity = " $5
+  print "  * name = \""   VAX  "\""
+  print "* manufacturerName = \""gensub(/"/, "", "g" , $6)"\""
+  print "* doseQuantity = " $5 ''doses''"
   print "* associatedProduct"
   print "  * genericProduct = Reference(" VAXTYPE ")"
-  print "  * quantityValue = 1"
-  print "* countryOfOrigin = \"" gensub('/\"/',"","g",$7)  "\""
+  print "  * quantityValue = 1 ''doses''"
+  print "* countryOfOrigin.valueCodeableConcept = \""gensub(/"/, "", "g" , $7)"\""
   print ""
   print "Instance: "VAXTYPE"PreQual" MD5
   print "InstanceOf: RegulatedTradeProductModel"
   print "* status = #active"
-  print "* jurisdicition = \"" gensub('/\"/',"","g",$7) "\""
+  print "* jurisdiction.valueCodableConcept = \""gensub('/\"/',"","g",$7)"\""
+  print "* holder"
+  print "  * name = \"WHO\""
+  print "  * identifier "
+  print "    * value = \"WHO\""
   print "* validityPeriod.start = " $1 
   print "* associatedTradeProduct  = Reference("VAXTYPE"Product"MD5")"
 
-}' prequalified_vaccines.csv > ../examples/prequal_database_products.fsh
+}' input/data/prequalified_vaccines.csv >  input/fsh/examples/prequal_database_products.fsh
 
-
-
-
-
-
-
+echo done generating prequal db examples
 

@@ -1,21 +1,3 @@
-
-
-declare -a VAXICD
-VAXICD["Yellow Fever"] = "#XM0N24"
-VAXICD["Polio Vaccine - Oral (OPV) Monovalent Type 1"] = "#XM0N50"
-VAXICD["Polio Vaccine - Oral (OPV) Monovalent Type 2"] = "#XM0N50"
-VAXICD["Polio Vaccine - Oral (OPV) Monovalent Type 3"] = "#XM0N50"
-VAXICD["Polio Vaccine - Inactivated (IPV)"] = "#XM0N50"
-VAXICD["Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"] = "#XM0N50" 
-VAXICD["Polio Vaccine - Inactivated Sabin (sIPV)"] = "#XM0N50" 
-VAXICD["Polio Vaccine - Novel Oral (nOPV) Type 2"] = "#XM0N50" 
-VAXICD["Polio Vaccine - Oral (OPV) Trivalent"] = "#XM0N50"
-#//  VAXICD["Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"] = "DTPHepHaemPolioGeneirc"
-VAXICD["Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"] = "#XM84S1"
-)
-
-
-
 Instance: PolioVax
 InstanceOf: GenericProductModel
 * status = #active
