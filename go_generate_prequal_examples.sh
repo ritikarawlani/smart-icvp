@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 
 #  1:Date of Prequalification
@@ -34,6 +35,9 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   }
   VAXTYPE = VAXTYPES[VAX]
 
+  # change dd/mm/yyyy 2/3/2015 to yyyy/mm/dd 2015/3/2
+  VDATE = gensub(/^([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/,"\\3-\\2-\\1","g",$1)
+
   CMD="echo -n " $1$2$3$4$5$6$7 " | md5sum | sed \"s/\\s*-*//g\" "
   CMD|getline MD5
   close(CMD)
@@ -52,29 +56,32 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   print "//"
   print "Instance: "VAXTYPE"Product"MD5
   print "InstanceOf: TradeProductModel"
+  print "Usage: #example"
   print "* status = #active"
   print "* tradeProductName"
   print "  * nameType = #official"
   print "  * name = \""   VAX  "\""
   print "* manufacturerName = \""gensub(/"/, "", "g" , $6)"\""
-  print "* doseQuantity = " $5 ''doses''"
-  print "* associatedProduct"
+  print "* doseQuantity =  " $5  " '\''doses'\''"
+  print "* associatedGenericProduct"
   print "  * genericProduct = Reference(" VAXTYPE ")"
-  print "  * quantityValue = 1 ''doses''"
-  print "* countryOfOrigin.valueCodeableConcept = \""gensub(/"/, "", "g" , $7)"\""
+  print "  * quantity = 1  '\''doses'\''"
+  print "* countryOfOrigin.coding.display = \""gensub(/"/, "", "g" , $7)"\""
+  print "* unitOfUse.coding.code = #doses"
   print ""
   print "Instance: "VAXTYPE"PreQual" MD5
   print "InstanceOf: RegulatedTradeProductModel"
+  print "Usage: #example"
   print "* status = #active"
-  print "* jurisdiction.valueCodableConcept = \""gensub('/\"/',"","g",$7)"\""
+  print "* jurisdiction.coding.display = \""gensub('/\"/',"","g",$7)"\""
   print "* holder"
   print "  * name = \"WHO\""
   print "  * identifier "
   print "    * value = \"WHO\""
-  print "* validityPeriod.start = " $1 
+  print "* validityPeriod.start = "VDATE
   print "* associatedTradeProduct  = Reference("VAXTYPE"Product"MD5")"
 
 }' input/data/prequalified_vaccines.csv >  input/fsh/examples/prequal_database_products.fsh
 
-echo done generating prequal db examples
+echo really done generating prequal db examples
 
