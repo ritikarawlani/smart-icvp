@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-
 #  1:Date of Prequalification
 #  2:Vaccine Type
 #  3:Commercial Name
@@ -10,7 +9,57 @@ set -e
 #  6:Manufacturer
 #  7:Responsible NRA
 
-#awk -F',' '{
+
+#generate manufacturers
+
+echo "Alias \$orgType=http://terminology.hl7.org/CodeSystem/organization-type" >  input/fsh/examples/prequal_database_manufacturers.fsh
+
+awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
+
+  NR>1  {
+    print gensub(/"/, "", "g" , $6)
+  }' input/data/prequalified_vaccines.csv | \
+    sort | \
+    uniq | \
+    awk  '{
+
+  CMD="md5 -s \""$0"\""
+  CMD|getline MD5
+  close(CMD)
+  print ""
+  print "Instance: Manufacturer"MD5
+  print "InstanceOf: IHE.mCSD.Organization"
+  print "Usage: #example"
+  print "* status = #active"
+  print "* name = \""$0"\""
+  print "* type = $orgType#other"
+
+}' >>  input/fsh/examples/prequal_database_manufacturers.fsh
+
+
+#generate prequal holder 
+echo "Alias \$orgType=http://terminology.hl7.org/CodeSystem/organization-type" >  input/fsh/examples/prequal_database_holders.fsh
+awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>7  {
+    print gensub(/"/, "", "g" , $7)
+}' input/data/prequalified_vaccines.csv | \
+    sort | \
+    uniq | \
+    awk '{
+
+
+  CMD="md5 -s \""$0"\""
+  CMD|getline MD5
+  close(CMD)
+  print ""
+  print "Instance: Holder"MD5
+  print "InstanceOf: IHE.mCSD.Organization"
+  print "Usage: #example"
+  print "* status = #active"
+  print "* name = \""$0"\""
+  print "* type = $orgType#govt"
+}' >>  input/fsh/examples/prequal_database_holders.fsh
+
+# generate TradeProducts and RegulatedTradeProducts
 awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
 
 
@@ -38,21 +87,35 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   # change dd/mm/yyyy 2/3/2015 to yyyy/mm/dd 2015/3/2
   VDATE = gensub(/^([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/,"\\3-\\2-\\1","g",$1)
 
-  CMD="echo -n " $1$2$3$4$5$6$7 " | md5sum | sed \"s/\\s*-*//g\" "
+  STRIPPED=gensub(/"/, "", "g" , $1$2$3$4$5$6$7)
+  CMD="md5 -s \""STRIPPED"\""
   CMD|getline MD5
   close(CMD)
+
+  MANUFACTURER=gensub(/"/, "", "g" , $6)
+  CMD="md5 -s \""MANUFACTURER"\""
+  CMD|getline MD5MANUFACTURER
+  close(CMD)
+
+  HOLDER=gensub(/"/, "", "g" , $7)
+  CMD="md5 -s \""HOLDER"\""
+  CMD|getline MD5HOLDER
+  close(CMD)
+
+  COUNTRY=gensub(/"/, "", "g" , $7)
+
 
 
   print ""
   print "// Source Record Row //: " NR
-  print "//  Date of Prequalification: " $1
-  print "//  Vaccine Type: " $2
-  print "//  Commercial Name: " $3
-  print "//  Presentation: " $4
-  print "//  No. of doses: " $5
-  print "//  Manufacturer: " $6
-  print "//  Responsible NRA: " $7
-  print "//  md5(): " MD5
+  print "//  Date of Prequalification: ("$1")"
+  print "//  Vaccine Type: ("VAX")"
+  print "//  Commercial Name: ("$3")"
+  print "//  Presentation: ("$4")"
+  print "//  No. of doses: ("$5")"
+  print "//  Manufacturer: ("MANUFACTURER")"
+  print "//  Responsible NRA: ("HOLDER")"
+  print "//  md5(ROW): " MD5
   print "//"
   print "Instance: "VAXTYPE"Product"MD5
   print "InstanceOf: TradeProductModel"
@@ -61,25 +124,21 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   print "* tradeProductName"
   print "  * nameType = #official"
   print "  * name = \""   VAX  "\""
-  print "* manufacturerName = \""gensub(/"/, "", "g" , $6)"\""
+  print "* manufacturer = Reference(Manufacturer"MD5MANUFACTURER") // "MANUFACTURER
   print "* doseQuantity =  " $5  " '\''doses'\''"
   print "* associatedGenericProduct"
   print "  * genericProduct = Reference(" VAXTYPE ")"
   print "  * quantity = 1  '\''doses'\''"
-  print "* countryOfOrigin.coding.display = \""gensub(/"/, "", "g" , $7)"\""
   print "* unitOfUse.coding.code = #doses"
   print ""
   print "Instance: "VAXTYPE"PreQual" MD5
   print "InstanceOf: RegulatedTradeProductModel"
   print "Usage: #example"
   print "* status = #active"
-  print "* jurisdiction.coding.display = \""gensub('/\"/',"","g",$7)"\""
-  print "* holder"
-  print "  * name = \"WHO\""
-  print "  * identifier "
-  print "    * value = \"WHO\""
+  print "* jurisdiction.coding.display = \"WHO\""
+  print "* holder = Reference(Holder"MD5HOLDER") // "HOLDER
   print "* validityPeriod.start = "VDATE
-  print "* associatedTradeProduct  = Reference("VAXTYPE"Product"MD5")"
+  print "* associatedTradeProduct  = Reference("VAXTYPE"Product"MD5") " 
 
 }' input/data/prequalified_vaccines.csv >  input/fsh/examples/prequal_database_products.fsh
 
