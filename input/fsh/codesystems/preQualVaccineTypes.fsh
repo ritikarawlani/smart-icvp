@@ -1,0 +1,15 @@
+CodeSystem: preQualVaccineType
+Title : "WHO PreQualificaiton Vaccine Types"
+Description: "WHO PreQualificaiton Vaccine Types"
+
+* #YellowFever" "Yellow Fever" 
+* #PolioOralMonovalentT1" "Polio Vaccine - Oral (OPV) Monovalent Type 1" 
+* #PolioOralMonovalentT2" "Polio Vaccine - Oral (OPV) Monovalent Type 2" 
+* #PolioOralMonovalentT3" "Polio Vaccine - Oral (OPV) Monovalent Type 3" 
+* #PolioInactived" "Polio Vaccine - Inactivated (IPV)" 
+* #PolioOralBivalentT1T3" "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3" 
+* #PolioInactivatedSabin" "Polio Vaccine - Inactivated Sabin (sIPV)" 
+* #PolioNovelOralT2" "Polio Vaccine - Novel Oral (nOPV) Type 2" 
+* #PolioOralTrivalent" "Polio Vaccine - Oral (OPV) Trivalent" 
+* #DTPHepHaemPolio" "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)" 
+* #DTPacellularHepHaemP "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)" 

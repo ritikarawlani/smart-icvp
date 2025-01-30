@@ -10,9 +10,10 @@ set -e
 #  7:Responsible NRA
 
 
+
 #generate manufacturers
 
-echo "Alias \$orgType=http://terminology.hl7.org/CodeSystem/organization-type" >  input/fsh/examples/prequal_database_manufacturers.fsh
+echo "Alias: \$orgType = http://terminology.hl7.org/CodeSystem/organization-type" >  input/fsh/examples/prequal_database_manufacturers.fsh
 
 awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
 
@@ -30,7 +31,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
   print "Instance: Manufacturer"MD5
   print "InstanceOf: IHE.mCSD.Organization"
   print "Usage: #example"
-  print "* status = #active"
+  print "* active = true"
   print "* name = \""$0"\""
   print "* type = $orgType#other"
 
@@ -38,7 +39,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
 
 
 #generate prequal holder 
-echo "Alias \$orgType=http://terminology.hl7.org/CodeSystem/organization-type" >  input/fsh/examples/prequal_database_holders.fsh
+echo "Alias: \$orgType = http://terminology.hl7.org/CodeSystem/organization-type" >  input/fsh/examples/prequal_database_holders.fsh
 awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>7  {
     print gensub(/"/, "", "g" , $7)
 }' input/data/prequalified_vaccines.csv | \
@@ -54,7 +55,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>7  {
   print "Instance: Holder"MD5
   print "InstanceOf: IHE.mCSD.Organization"
   print "Usage: #example"
-  print "* status = #active"
+  print "* active = true"
   print "* name = \""$0"\""
   print "* type = $orgType#govt"
 }' >>  input/fsh/examples/prequal_database_holders.fsh
@@ -126,9 +127,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   print "  * name = \""   VAX  "\""
   print "* manufacturer = Reference(Manufacturer"MD5MANUFACTURER") // "MANUFACTURER
   print "* doseQuantity =  " $5  " '\''doses'\''"
-  print "* associatedGenericProduct"
-  print "  * genericProduct = Reference(" VAXTYPE ")"
-  print "  * quantity = 1  '\''doses'\''"
+  print "* classification = #"VAXTYPE 
   print "* unitOfUse.coding.code = #doses"
   print ""
   print "Instance: "VAXTYPE"PreQual" MD5
@@ -138,7 +137,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   print "* jurisdiction.coding.display = \"WHO\""
   print "* holder = Reference(Holder"MD5HOLDER") // "HOLDER
   print "* validityPeriod.start = "VDATE
-  print "* associatedTradeProduct  = Reference("VAXTYPE"Product"MD5") " 
+  print "* tradeProduct  = Reference("VAXTYPE"Product"MD5") " 
 
 }' input/data/prequalified_vaccines.csv >  input/fsh/examples/prequal_database_products.fsh
 
