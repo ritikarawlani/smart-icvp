@@ -185,8 +185,7 @@ NR > 1{
   print "//"
   print ""
   print "Instance: PreQualDB"MD5
-  print "InstanceOf: PreQualDB"
-  print "* number.value = \""MD5"\""
+  print "InstanceOf: PreQualDBwithIDs"
   print "* dateOfPrequal = "VDATE
   print "* vaccineType = #"SHORTVAXTYPE 
   print "* commercialName = \""COMMERCIALNAME"\""
@@ -196,7 +195,9 @@ NR > 1{
   }   
   print "* manufacturer.text = \""MANUFACTURER"\""
   print "* responsibleNRA.text = \""HOLDER"\""
-  print ""    
+  print "* index.value = \""MD5"\""
+  print "* manufacturerReference = Reference(Manufacturer"MD5MANUFACTURER") "
+  print "* responsibleNRAReference = Reference(Holder"MD5HOLDER") // "HOLDER
   print ""    
   print "Instance: "SHORTVAXTYPE"Product"MD5
   print "InstanceOf: Product"

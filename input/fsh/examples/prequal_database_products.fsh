@@ -11,8 +11,7 @@
 //
 
 Instance: PreQualDB3b4c8fb60dbc268ce712ccd18d3e1eda
-InstanceOf: PreQualDB
-* number.value = "3b4c8fb60dbc268ce712ccd18d3e1eda"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2025-01-16
 * vaccineType = #HepatitisBPaediatric
 * commercialName = "BEVAC®"
@@ -20,7 +19,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "3b4c8fb60dbc268ce712ccd18d3e1eda"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HepatitisBPaediatricProduct3b4c8fb60dbc268ce712ccd18d3e1eda
 InstanceOf: Product
@@ -57,8 +58,7 @@ Usage: #example
 //
 
 Instance: PreQualDB107bb8b8523b457fd8b314e8da053e7b
-InstanceOf: PreQualDB
-* number.value = "107bb8b8523b457fd8b314e8da053e7b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2025-01-20
 * vaccineType = #HepatitisB
 * commercialName = "BEVAC®"
@@ -66,7 +66,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "107bb8b8523b457fd8b314e8da053e7b"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HepatitisBProduct107bb8b8523b457fd8b314e8da053e7b
 InstanceOf: Product
@@ -103,8 +105,7 @@ Usage: #example
 //
 
 Instance: PreQualDB3e7983f5e2ac26b60c942284ab0e6011
-InstanceOf: PreQualDB
-* number.value = "3e7983f5e2ac26b60c942284ab0e6011"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1998-04-01
 * vaccineType = #Haemophilusinfluenzaetyp
 * commercialName = "Act-HIB"
@@ -112,7 +113,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "3e7983f5e2ac26b60c942284ab0e6011"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: HaemophilusinfluenzaetypProduct3e7983f5e2ac26b60c942284ab0e6011
 InstanceOf: Product
@@ -149,8 +152,7 @@ Usage: #example
 //
 
 Instance: PreQualDB3204e5e77752897a53b0c49be8406abc
-InstanceOf: PreQualDB
-* number.value = "3204e5e77752897a53b0c49be8406abc"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-05-08
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Adacel"
@@ -158,7 +160,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Pasteur Limited"
 * responsibleNRA.text = "Health Canada - Santé Canada"
-
+* index.value = "3204e5e77752897a53b0c49be8406abc"
+* manufacturerReference = Reference(Manufacturercba236f3aad4f457150e3cc5990e00e4) 
+* responsibleNRAReference = Reference(Holder7843fc4c2ba4a16be181e1dee79c6805) // Health Canada - Santé Canada
 
 Instance: DiphtheriaTetanusPertussProduct3204e5e77752897a53b0c49be8406abc
 InstanceOf: Product
@@ -195,8 +199,7 @@ Usage: #example
 //
 
 Instance: PreQualDB90b781fb1c689a8c21b60ad0f6b383cf
-InstanceOf: PreQualDB
-* number.value = "90b781fb1c689a8c21b60ad0f6b383cf"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1999-03-11
 * vaccineType = #DiphtheriaTetanus
 * commercialName = "Adsorbed DT Vaccine"
@@ -204,7 +207,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "90b781fb1c689a8c21b60ad0f6b383cf"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: DiphtheriaTetanusProduct90b781fb1c689a8c21b60ad0f6b383cf
 InstanceOf: Product
@@ -241,8 +246,7 @@ Usage: #example
 //
 
 Instance: PreQualDB5df76ad2762fb42402017f6000630b1c
-InstanceOf: PreQualDB
-* number.value = "5df76ad2762fb42402017f6000630b1c"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-02-07
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Afluria®"
@@ -250,7 +254,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Seqirus Limited"
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
-
+* index.value = "5df76ad2762fb42402017f6000630b1c"
+* manufacturerReference = Reference(Manufacturer414bf493c71eaa3be2581a09156c72c4) 
+* responsibleNRAReference = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 
 Instance: InfluenzaseasonalTrivaleProduct5df76ad2762fb42402017f6000630b1c
 InstanceOf: Product
@@ -287,8 +293,7 @@ Usage: #example
 //
 
 Instance: PreQualDBdc536799e702057a5e3ee045de6681ee
-InstanceOf: PreQualDB
-* number.value = "dc536799e702057a5e3ee045de6681ee"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-03-05
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "Afluria® Quadrivalent"
@@ -296,7 +301,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Seqirus Limited"
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
-
+* index.value = "dc536799e702057a5e3ee045de6681ee"
+* manufacturerReference = Reference(Manufacturer414bf493c71eaa3be2581a09156c72c4) 
+* responsibleNRAReference = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 
 Instance: InfluenzaseasonalQuadrivProductdc536799e702057a5e3ee045de6681ee
 InstanceOf: Product
@@ -333,8 +340,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9a55dd92d50eb438a6e8d0eb7acd38ef
-InstanceOf: PreQualDB
-* number.value = "9a55dd92d50eb438a6e8d0eb7acd38ef"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-02-14
 * vaccineType = #Varicella
 * commercialName = "BARYCELA inj."
@@ -342,7 +348,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GC Biopharma Corp."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "9a55dd92d50eb438a6e8d0eb7acd38ef"
+* manufacturerReference = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: VaricellaProduct9a55dd92d50eb438a6e8d0eb7acd38ef
 InstanceOf: Product
@@ -379,8 +387,7 @@ Usage: #example
 //
 
 Instance: PreQualDBba09997b8269ec1594196a7fbbaaeecb
-InstanceOf: PreQualDB
-* number.value = "ba09997b8269ec1594196a7fbbaaeecb"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1987-01-01
 * vaccineType = #BCG
 * commercialName = "BCG Freeze Dried Glutamate vaccine"
@@ -388,7 +395,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Japan BCG Laboratory"
 * responsibleNRA.text = "Pharmaceutical and Medical Devices Agency"
-
+* index.value = "ba09997b8269ec1594196a7fbbaaeecb"
+* manufacturerReference = Reference(Manufacturer334025546a397e71698d7423a6bd98d6) 
+* responsibleNRAReference = Reference(Holderc25909019e5d05da99724b9b42633022) // Pharmaceutical and Medical Devices Agency
 
 Instance: BCGProductba09997b8269ec1594196a7fbbaaeecb
 InstanceOf: Product
@@ -425,8 +434,7 @@ Usage: #example
 //
 
 Instance: PreQualDB81c2bd7553b2f16c96ed8d042af64094
-InstanceOf: PreQualDB
-* number.value = "81c2bd7553b2f16c96ed8d042af64094"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1987-01-01
 * vaccineType = #BCG
 * commercialName = "BCG Freeze Dried Glutamate vaccine"
@@ -434,7 +442,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Japan BCG Laboratory"
 * responsibleNRA.text = "Pharmaceutical and Medical Devices Agency"
-
+* index.value = "81c2bd7553b2f16c96ed8d042af64094"
+* manufacturerReference = Reference(Manufacturer334025546a397e71698d7423a6bd98d6) 
+* responsibleNRAReference = Reference(Holderc25909019e5d05da99724b9b42633022) // Pharmaceutical and Medical Devices Agency
 
 Instance: BCGProduct81c2bd7553b2f16c96ed8d042af64094
 InstanceOf: Product
@@ -471,8 +481,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe3a086aba84af36fb31666325e935908
-InstanceOf: PreQualDB
-* number.value = "e3a086aba84af36fb31666325e935908"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2003-05-29
 * vaccineType = #BCG
 * commercialName = "BCG Vaccine"
@@ -480,7 +489,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "e3a086aba84af36fb31666325e935908"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: BCGProducte3a086aba84af36fb31666325e935908
 InstanceOf: Product
@@ -517,8 +528,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4a1489ddfba63269b7d9a1ebcabef84f
-InstanceOf: PreQualDB
-* number.value = "4a1489ddfba63269b7d9a1ebcabef84f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-12-03
 * vaccineType = #BCG
 * commercialName = "BCG Vaccine"
@@ -526,7 +536,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "GreenSignal Bio Pharma Pvt Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4a1489ddfba63269b7d9a1ebcabef84f"
+* manufacturerReference = Reference(Manufacturerce2c4cc477f0be37762e7c163ae38619) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: BCGProduct4a1489ddfba63269b7d9a1ebcabef84f
 InstanceOf: Product
@@ -563,8 +575,7 @@ Usage: #example
 //
 
 Instance: PreQualDB40fc9ea4f56a5e2643723550911b5024
-InstanceOf: PreQualDB
-* number.value = "40fc9ea4f56a5e2643723550911b5024"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1991-02-01
 * vaccineType = #BCG
 * commercialName = "BCG Vaccine"
@@ -572,7 +583,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)"
 * responsibleNRA.text = "Bulgarian Drug Agency"
-
+* index.value = "40fc9ea4f56a5e2643723550911b5024"
+* manufacturerReference = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) 
+* responsibleNRAReference = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 
 Instance: BCGProduct40fc9ea4f56a5e2643723550911b5024
 InstanceOf: Product
@@ -609,8 +622,7 @@ Usage: #example
 //
 
 Instance: PreQualDB256e9aefbc9bccb5d49e9abb6317e6a0
-InstanceOf: PreQualDB
-* number.value = "256e9aefbc9bccb5d49e9abb6317e6a0"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1991-02-01
 * vaccineType = #BCG
 * commercialName = "BCG Vaccine"
@@ -618,7 +630,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)"
 * responsibleNRA.text = "Bulgarian Drug Agency"
-
+* index.value = "256e9aefbc9bccb5d49e9abb6317e6a0"
+* manufacturerReference = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) 
+* responsibleNRAReference = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 
 Instance: BCGProduct256e9aefbc9bccb5d49e9abb6317e6a0
 InstanceOf: Product
@@ -655,8 +669,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb13feb9e2073e24a424fd6e8757baf2d
-InstanceOf: PreQualDB
-* number.value = "b13feb9e2073e24a424fd6e8757baf2d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1994-09-27
 * vaccineType = #BCG
 * commercialName = "BCG Vaccine AJV"
@@ -664,7 +677,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "AJ Vaccines A/S"
 * responsibleNRA.text = "Danish Medicines Agency"
-
+* index.value = "b13feb9e2073e24a424fd6e8757baf2d"
+* manufacturerReference = Reference(Manufacturer2861c762e570422c9a439d2e146ef1e9) 
+* responsibleNRAReference = Reference(Holder1a0e5ea84210f3aa10f60f001c703d0a) // Danish Medicines Agency
 
 Instance: BCGProductb13feb9e2073e24a424fd6e8757baf2d
 InstanceOf: Product
@@ -701,8 +716,7 @@ Usage: #example
 //
 
 Instance: PreQualDB0ff8be478cfd3fd1128ab4f3e8bff7d6
-InstanceOf: PreQualDB
-* number.value = "0ff8be478cfd3fd1128ab4f3e8bff7d6"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2025-01-16
 * vaccineType = #HepatitisBPaediatric
 * commercialName = "BEVAC®"
@@ -710,7 +724,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "0ff8be478cfd3fd1128ab4f3e8bff7d6"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HepatitisBPaediatricProduct0ff8be478cfd3fd1128ab4f3e8bff7d6
 InstanceOf: Product
@@ -747,8 +763,7 @@ Usage: #example
 //
 
 Instance: PreQualDB127348c5ee6f2190201d8b80708951da
-InstanceOf: PreQualDB
-* number.value = "127348c5ee6f2190201d8b80708951da"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2025-01-16
 * vaccineType = #HepatitisB
 * commercialName = "BEVAC®"
@@ -756,7 +771,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "127348c5ee6f2190201d8b80708951da"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HepatitisBProduct127348c5ee6f2190201d8b80708951da
 InstanceOf: Product
@@ -793,8 +810,7 @@ Usage: #example
 //
 
 Instance: PreQualDB3ae90922fe538f89ce1fd3e76b8c0609
-InstanceOf: PreQualDB
-* number.value = "3ae90922fe538f89ce1fd3e76b8c0609"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-10-09
 * vaccineType = #Covid19
 * commercialName = "BIMERVAX"
@@ -802,7 +818,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "HIPRA HUMAN HEALTH, S.L.U"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "3ae90922fe538f89ce1fd3e76b8c0609"
+* manufacturerReference = Reference(Manufacturerbd99ce55512e9b74ff81f3da5264924c) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: Covid19Product3ae90922fe538f89ce1fd3e76b8c0609
 InstanceOf: Product
@@ -839,8 +857,7 @@ Usage: #example
 //
 
 Instance: PreQualDB70dd357b6e2a76ef58c303440ca6b122
-InstanceOf: PreQualDB
-* number.value = "70dd357b6e2a76ef58c303440ca6b122"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-03-20
 * vaccineType = #PolioVaccineOralOPVTriva
 * commercialName = "BIOPOLIO"
@@ -848,7 +865,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "70dd357b6e2a76ef58c303440ca6b122"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVTrivaProduct70dd357b6e2a76ef58c303440ca6b122
 InstanceOf: Product
@@ -885,8 +904,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd7254358b1748a5d3cddd9b75dd07d57
-InstanceOf: PreQualDB
-* number.value = "d7254358b1748a5d3cddd9b75dd07d57"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-03-20
 * vaccineType = #PolioVaccineOralOPVTriva
 * commercialName = "BIOPOLIO"
@@ -894,7 +912,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "d7254358b1748a5d3cddd9b75dd07d57"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVTrivaProductd7254358b1748a5d3cddd9b75dd07d57
 InstanceOf: Product
@@ -931,8 +951,7 @@ Usage: #example
 //
 
 Instance: PreQualDBcf5662c281218ca179357df3e9e414ac
-InstanceOf: PreQualDB
-* number.value = "cf5662c281218ca179357df3e9e414ac"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-08-25
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "BIOPOLIO B1/3"
@@ -940,7 +959,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "cf5662c281218ca179357df3e9e414ac"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVBivalProductcf5662c281218ca179357df3e9e414ac
 InstanceOf: Product
@@ -977,8 +998,7 @@ Usage: #example
 //
 
 Instance: PreQualDB42d1155e2d6ee0c1b54aca384a2c5e7e
-InstanceOf: PreQualDB
-* number.value = "42d1155e2d6ee0c1b54aca384a2c5e7e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-03-20
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "BIOPOLIO B1/3"
@@ -986,7 +1006,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "42d1155e2d6ee0c1b54aca384a2c5e7e"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVBivalProduct42d1155e2d6ee0c1b54aca384a2c5e7e
 InstanceOf: Product
@@ -1023,8 +1045,7 @@ Usage: #example
 //
 
 Instance: PreQualDB23c7b98c9946add033b5e9cb81308cf0
-InstanceOf: PreQualDB
-* number.value = "23c7b98c9946add033b5e9cb81308cf0"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-11-16
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)"
@@ -1032,7 +1053,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Panacea Biotec Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "23c7b98c9946add033b5e9cb81308cf0"
+* manufacturerReference = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVBivalProduct23c7b98c9946add033b5e9cb81308cf0
 InstanceOf: Product
@@ -1069,8 +1092,7 @@ Usage: #example
 //
 
 Instance: PreQualDBede6bd9749ec7d4dcc601439edafca9b
-InstanceOf: PreQualDB
-* number.value = "ede6bd9749ec7d4dcc601439edafca9b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-12-07
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)"
@@ -1078,7 +1100,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Panacea Biotec Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "ede6bd9749ec7d4dcc601439edafca9b"
+* manufacturerReference = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVBivalProductede6bd9749ec7d4dcc601439edafca9b
 InstanceOf: Product
@@ -1115,8 +1139,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf93751fae6a7f3178d96589e6382e3ed
-InstanceOf: PreQualDB
-* number.value = "f93751fae6a7f3178d96589e6382e3ed"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-11-05
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)"
@@ -1124,7 +1147,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "f93751fae6a7f3178d96589e6382e3ed"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: PolioVaccineOralOPVBivalProductf93751fae6a7f3178d96589e6382e3ed
 InstanceOf: Product
@@ -1161,8 +1186,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa72a5ac164a25ab5d52a2a1c20164eb2
-InstanceOf: PreQualDB
-* number.value = "a72a5ac164a25ab5d52a2a1c20164eb2"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-05-26
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)"
@@ -1170,7 +1194,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "a72a5ac164a25ab5d52a2a1c20164eb2"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: PolioVaccineOralOPVBivalProducta72a5ac164a25ab5d52a2a1c20164eb2
 InstanceOf: Product
@@ -1207,8 +1233,7 @@ Usage: #example
 //
 
 Instance: PreQualDB3521e0a2725fab5dba5f6dd12c43baa9
-InstanceOf: PreQualDB
-* number.value = "3521e0a2725fab5dba5f6dd12c43baa9"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-03-19
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent type 1&3 Oral Poliomyelitis vaccine, IP (bOPV1&3)"
@@ -1216,7 +1241,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Haffkine Bio Pharmaceutical Corporation Ltd"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "3521e0a2725fab5dba5f6dd12c43baa9"
+* manufacturerReference = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVBivalProduct3521e0a2725fab5dba5f6dd12c43baa9
 InstanceOf: Product
@@ -1253,8 +1280,7 @@ Usage: #example
 //
 
 Instance: PreQualDB76096f580a17bec6d7bb9712e73672f7
-InstanceOf: PreQualDB
-* number.value = "76096f580a17bec6d7bb9712e73672f7"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-07-09
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Boostrix"
@@ -1262,7 +1288,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "76096f580a17bec6d7bb9712e73672f7"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: DiphtheriaTetanusPertussProduct76096f580a17bec6d7bb9712e73672f7
 InstanceOf: Product
@@ -1299,8 +1327,7 @@ Usage: #example
 //
 
 Instance: PreQualDB708d6c96bb350aaf0c5967e9099232f3
-InstanceOf: PreQualDB
-* number.value = "708d6c96bb350aaf0c5967e9099232f3"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-10-14
 * vaccineType = #HumanPapillomavirusBival
 * commercialName = "Cecolin®"
@@ -1308,7 +1335,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Xiamen Innovax Biotech Co. Ltd."
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "708d6c96bb350aaf0c5967e9099232f3"
+* manufacturerReference = Reference(Manufacturer1ffde88ffa07a2969e1a8bff52432630) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: HumanPapillomavirusBivalProduct708d6c96bb350aaf0c5967e9099232f3
 InstanceOf: Product
@@ -1345,8 +1374,7 @@ Usage: #example
 //
 
 Instance: PreQualDB46e71632bc1f0d27b6ec31fd3162f2a4
-InstanceOf: PreQualDB
-* number.value = "46e71632bc1f0d27b6ec31fd3162f2a4"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-12-17
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Celtura"
@@ -1354,7 +1382,9 @@ InstanceOf: PreQualDB
 * numDoses = 17
 * manufacturer.text = "Seqirus GmbH"
 * responsibleNRA.text = "Paul-Ehrlich-Institut"
-
+* index.value = "46e71632bc1f0d27b6ec31fd3162f2a4"
+* manufacturerReference = Reference(Manufacturerd740cbcbdd2ed62079ddaa68974fc588) 
+* responsibleNRAReference = Reference(Holder496e3f94d192563455fb8baea40c6b3b) // Paul-Ehrlich-Institut
 
 Instance: InfluenzaPandemicH1N1Product46e71632bc1f0d27b6ec31fd3162f2a4
 InstanceOf: Product
@@ -1391,8 +1421,7 @@ Usage: #example
 //
 
 Instance: PreQualDB3cf0dd78886ac5740ebcb8fc05452c83
-InstanceOf: PreQualDB
-* number.value = "3cf0dd78886ac5740ebcb8fc05452c83"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-07-08
 * vaccineType = #HumanPapillomavirusBival
 * commercialName = "Cervarix"
@@ -1400,7 +1429,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "3cf0dd78886ac5740ebcb8fc05452c83"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: HumanPapillomavirusBivalProduct3cf0dd78886ac5740ebcb8fc05452c83
 InstanceOf: Product
@@ -1437,8 +1468,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb1c76231b4bd8ca88a016e1456182ece
-InstanceOf: PreQualDB
-* number.value = "b1c76231b4bd8ca88a016e1456182ece"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-07-08
 * vaccineType = #HumanPapillomavirusBival
 * commercialName = "Cervarix"
@@ -1446,7 +1476,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "b1c76231b4bd8ca88a016e1456182ece"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: HumanPapillomavirusBivalProductb1c76231b4bd8ca88a016e1456182ece
 InstanceOf: Product
@@ -1483,15 +1515,16 @@ Usage: #example
 //
 
 Instance: PreQualDBc58e60f49c11ec4731c99de19dc1bca0
-InstanceOf: PreQualDB
-* number.value = "c58e60f49c11ec4731c99de19dc1bca0"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-10-09
 * vaccineType = #Covid19
 * commercialName = "Comirnaty®"
 * presentation.coding.code = #Vial
 * manufacturer.text = "BioNTech Manufacturing GmbH"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "c58e60f49c11ec4731c99de19dc1bca0"
+* manufacturerReference = Reference(Manufacturer86dfcfa49ee9bc21ba7d3f39bcd16088) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: Covid19Productc58e60f49c11ec4731c99de19dc1bca0
 InstanceOf: Product
@@ -1527,8 +1560,7 @@ Usage: #example
 //
 
 Instance: PreQualDBcb448560268a80673801d8da01d80b25
-InstanceOf: PreQualDB
-* number.value = "cb448560268a80673801d8da01d80b25"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-12-19
 * vaccineType = #Malaria
 * commercialName = "CYVAC"
@@ -1536,7 +1568,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "cb448560268a80673801d8da01d80b25"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MalariaProductcb448560268a80673801d8da01d80b25
 InstanceOf: Product
@@ -1573,8 +1607,7 @@ Usage: #example
 //
 
 Instance: PreQualDB28248a8d939b280b9d0577db0beb69c6
-InstanceOf: PreQualDB
-* number.value = "28248a8d939b280b9d0577db0beb69c6"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-03-25
 * vaccineType = #DengueTetravalentliveatt
 * commercialName = "Dengvaxia"
@@ -1582,7 +1615,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "28248a8d939b280b9d0577db0beb69c6"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: DengueTetravalentliveattProduct28248a8d939b280b9d0577db0beb69c6
 InstanceOf: Product
@@ -1619,8 +1654,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa1f48c48594839f34b11ee3dffd4761b
-InstanceOf: PreQualDB
-* number.value = "a1f48c48594839f34b11ee3dffd4761b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-05-09
 * vaccineType = #DiphtheriaTetanus
 * commercialName = "Diftet"
@@ -1628,7 +1662,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)"
 * responsibleNRA.text = "Bulgarian Drug Agency"
-
+* index.value = "a1f48c48594839f34b11ee3dffd4761b"
+* manufacturerReference = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) 
+* responsibleNRAReference = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 
 Instance: DiphtheriaTetanusProducta1f48c48594839f34b11ee3dffd4761b
 InstanceOf: Product
@@ -1665,8 +1701,7 @@ Usage: #example
 //
 
 Instance: PreQualDBfd45a6c50d184daf3eb44628f359c83b
-InstanceOf: PreQualDB
-* number.value = "fd45a6c50d184daf3eb44628f359c83b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-05-09
 * vaccineType = #DiphtheriaTetanus
 * commercialName = "Diftet"
@@ -1674,7 +1709,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)"
 * responsibleNRA.text = "Bulgarian Drug Agency"
-
+* index.value = "fd45a6c50d184daf3eb44628f359c83b"
+* manufacturerReference = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) 
+* responsibleNRAReference = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 
 Instance: DiphtheriaTetanusProductfd45a6c50d184daf3eb44628f359c83b
 InstanceOf: Product
@@ -1711,8 +1748,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4719b50a92c26cb0c08f55ca5b666971
-InstanceOf: PreQualDB
-* number.value = "4719b50a92c26cb0c08f55ca5b666971"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanus
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric)"
@@ -1720,7 +1756,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4719b50a92c26cb0c08f55ca5b666971"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusProduct4719b50a92c26cb0c08f55ca5b666971
 InstanceOf: Product
@@ -1757,8 +1795,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf94f47641354ca6b1116c9721e1a847f
-InstanceOf: PreQualDB
-* number.value = "f94f47641354ca6b1116c9721e1a847f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanus
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed (Pediatric)"
@@ -1766,7 +1803,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "f94f47641354ca6b1116c9721e1a847f"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusProductf94f47641354ca6b1116c9721e1a847f
 InstanceOf: Product
@@ -1803,8 +1842,7 @@ Usage: #example
 //
 
 Instance: PreQualDB2fb6d35611d65986ac394a9d546549fe
-InstanceOf: PreQualDB
-* number.value = "2fb6d35611d65986ac394a9d546549fe"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanus
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed (Pediatric)"
@@ -1812,7 +1850,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "2fb6d35611d65986ac394a9d546549fe"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusProduct2fb6d35611d65986ac394a9d546549fe
 InstanceOf: Product
@@ -1849,8 +1889,7 @@ Usage: #example
 //
 
 Instance: PreQualDBce5c75fd99a961fed17cf56c253389e6
-InstanceOf: PreQualDB
-* number.value = "ce5c75fd99a961fed17cf56c253389e6"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
@@ -1858,7 +1897,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "ce5c75fd99a961fed17cf56c253389e6"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusreducedProductce5c75fd99a961fed17cf56c253389e6
 InstanceOf: Product
@@ -1895,8 +1936,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6ca9cfe80051ec9e89771a2d09bf4d56
-InstanceOf: PreQualDB
-* number.value = "6ca9cfe80051ec9e89771a2d09bf4d56"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
@@ -1904,7 +1944,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "6ca9cfe80051ec9e89771a2d09bf4d56"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusreducedProduct6ca9cfe80051ec9e89771a2d09bf4d56
 InstanceOf: Product
@@ -1941,8 +1983,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa2b59f278d46b0db7093dccf52ced90b
-InstanceOf: PreQualDB
-* number.value = "a2b59f278d46b0db7093dccf52ced90b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
@@ -1950,7 +1991,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "a2b59f278d46b0db7093dccf52ced90b"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusreducedProducta2b59f278d46b0db7093dccf52ced90b
 InstanceOf: Product
@@ -1987,8 +2030,7 @@ Usage: #example
 //
 
 Instance: PreQualDB09e30bc35a2a92c163e3edb54f5c8f10
-InstanceOf: PreQualDB
-* number.value = "09e30bc35a2a92c163e3edb54f5c8f10"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
@@ -1996,7 +2038,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "09e30bc35a2a92c163e3edb54f5c8f10"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct09e30bc35a2a92c163e3edb54f5c8f10
 InstanceOf: Product
@@ -2033,8 +2077,7 @@ Usage: #example
 //
 
 Instance: PreQualDB1f7329ae4ac6f2b51c3b6f5525de81db
-InstanceOf: PreQualDB
-* number.value = "1f7329ae4ac6f2b51c3b6f5525de81db"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
@@ -2042,7 +2085,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "1f7329ae4ac6f2b51c3b6f5525de81db"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct1f7329ae4ac6f2b51c3b6f5525de81db
 InstanceOf: Product
@@ -2079,8 +2124,7 @@ Usage: #example
 //
 
 Instance: PreQualDB93bf52248b752271cca1dedb9a640572
-InstanceOf: PreQualDB
-* number.value = "93bf52248b752271cca1dedb9a640572"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
@@ -2088,7 +2132,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "93bf52248b752271cca1dedb9a640572"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct93bf52248b752271cca1dedb9a640572
 InstanceOf: Product
@@ -2125,8 +2171,7 @@ Usage: #example
 //
 
 Instance: PreQualDBaeb7432799438f4e0fa33b88bf2c5de1
-InstanceOf: PreQualDB
-* number.value = "aeb7432799438f4e0fa33b88bf2c5de1"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-06-23
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis and Haemophilus influenzae type b Conjugate Vaccine"
@@ -2134,7 +2179,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "aeb7432799438f4e0fa33b88bf2c5de1"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProductaeb7432799438f4e0fa33b88bf2c5de1
 InstanceOf: Product
@@ -2171,8 +2218,7 @@ Usage: #example
 //
 
 Instance: PreQualDB28429da79320456db7ac417af4eee5fe
-InstanceOf: PreQualDB
-* number.value = "28429da79320456db7ac417af4eee5fe"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-05-26
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
@@ -2180,7 +2226,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "28429da79320456db7ac417af4eee5fe"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct28429da79320456db7ac417af4eee5fe
 InstanceOf: Product
@@ -2217,8 +2265,7 @@ Usage: #example
 //
 
 Instance: PreQualDB359c7b70b2b729ff61b62454cac26399
-InstanceOf: PreQualDB
-* number.value = "359c7b70b2b729ff61b62454cac26399"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-05-26
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
@@ -2226,7 +2273,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "359c7b70b2b729ff61b62454cac26399"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct359c7b70b2b729ff61b62454cac26399
 InstanceOf: Product
@@ -2263,8 +2312,7 @@ Usage: #example
 //
 
 Instance: PreQualDB3742fe526119e70cbc08c40984f44347
-InstanceOf: PreQualDB
-* number.value = "3742fe526119e70cbc08c40984f44347"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-05-26
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
@@ -2272,7 +2320,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "3742fe526119e70cbc08c40984f44347"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct3742fe526119e70cbc08c40984f44347
 InstanceOf: Product
@@ -2309,8 +2359,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4b68c8d782d875e2006042980a94e868
-InstanceOf: PreQualDB
-* number.value = "4b68c8d782d875e2006042980a94e868"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-09-22
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
@@ -2318,7 +2367,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4b68c8d782d875e2006042980a94e868"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct4b68c8d782d875e2006042980a94e868
 InstanceOf: Product
@@ -2355,8 +2406,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9cadbcb1a81c4b665edd7ab85a96bc63
-InstanceOf: PreQualDB
-* number.value = "9cadbcb1a81c4b665edd7ab85a96bc63"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-09-22
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
@@ -2364,7 +2414,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "9cadbcb1a81c4b665edd7ab85a96bc63"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct9cadbcb1a81c4b665edd7ab85a96bc63
 InstanceOf: Product
@@ -2401,8 +2453,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb111c2be0e72525d66bbc13cdb40ad8b
-InstanceOf: PreQualDB
-* number.value = "b111c2be0e72525d66bbc13cdb40ad8b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-09-22
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
@@ -2410,7 +2461,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "b111c2be0e72525d66bbc13cdb40ad8b"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProductb111c2be0e72525d66bbc13cdb40ad8b
 InstanceOf: Product
@@ -2447,8 +2500,7 @@ Usage: #example
 //
 
 Instance: PreQualDB5a1c64b0918ba68ee54b56d7ef5bae28
-InstanceOf: PreQualDB
-* number.value = "5a1c64b0918ba68ee54b56d7ef5bae28"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-04-06
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "DTP Vaccine"
@@ -2456,7 +2508,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "5a1c64b0918ba68ee54b56d7ef5bae28"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: DiphtheriaTetanusPertussProduct5a1c64b0918ba68ee54b56d7ef5bae28
 InstanceOf: Product
@@ -2493,8 +2547,7 @@ Usage: #example
 //
 
 Instance: PreQualDB67cf732b92f42b627310de679fc37172
-InstanceOf: PreQualDB
-* number.value = "67cf732b92f42b627310de679fc37172"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-10-25
 * vaccineType = #cholerainactivatedoral
 * commercialName = "Dukoral"
@@ -2502,7 +2555,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Valneva Sweden AB"
 * responsibleNRA.text = "Medical Products Agency"
-
+* index.value = "67cf732b92f42b627310de679fc37172"
+* manufacturerReference = Reference(Manufacturer946755682abcfbfe1b4b612a3649f2ef) 
+* responsibleNRAReference = Reference(Holder8913347cddb70b882ded62c093ec157b) // Medical Products Agency
 
 Instance: cholerainactivatedoralProduct67cf732b92f42b627310de679fc37172
 InstanceOf: Product
@@ -2539,8 +2594,7 @@ Usage: #example
 //
 
 Instance: PreQualDB12fb747f41e6d859143205f2bd28df6d
-InstanceOf: PreQualDB
-* number.value = "12fb747f41e6d859143205f2bd28df6d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-10-02
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Easyfive-TT"
@@ -2548,7 +2602,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Panacea Biotec Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "12fb747f41e6d859143205f2bd28df6d"
+* manufacturerReference = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct12fb747f41e6d859143205f2bd28df6d
 InstanceOf: Product
@@ -2585,8 +2641,7 @@ Usage: #example
 //
 
 Instance: PreQualDB2d58e4391e9ba4d20ca0c3d8c72d96f7
-InstanceOf: PreQualDB
-* number.value = "2d58e4391e9ba4d20ca0c3d8c72d96f7"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-10-02
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Easyfive-TT"
@@ -2594,7 +2649,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Panacea Biotec Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "2d58e4391e9ba4d20ca0c3d8c72d96f7"
+* manufacturerReference = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct2d58e4391e9ba4d20ca0c3d8c72d96f7
 InstanceOf: Product
@@ -2631,8 +2688,7 @@ Usage: #example
 //
 
 Instance: PreQualDB594c3e399230cd3c8949f4d30879bf91
-InstanceOf: PreQualDB
-* number.value = "594c3e399230cd3c8949f4d30879bf91"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1987-01-01
 * vaccineType = #HepatitisB
 * commercialName = "Engerix"
@@ -2640,7 +2696,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "594c3e399230cd3c8949f4d30879bf91"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: HepatitisBProduct594c3e399230cd3c8949f4d30879bf91
 InstanceOf: Product
@@ -2677,8 +2735,7 @@ Usage: #example
 //
 
 Instance: PreQualDBbaee204457903ebd01599fce4334ac80
-InstanceOf: PreQualDB
-* number.value = "baee204457903ebd01599fce4334ac80"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1987-01-01
 * vaccineType = #HepatitisB
 * commercialName = "Engerix"
@@ -2686,7 +2743,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "baee204457903ebd01599fce4334ac80"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: HepatitisBProductbaee204457903ebd01599fce4334ac80
 InstanceOf: Product
@@ -2723,8 +2782,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4e0888033034c9cb0faa4311d710e6e1
-InstanceOf: PreQualDB
-* number.value = "4e0888033034c9cb0faa4311d710e6e1"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1987-01-01
 * vaccineType = #HepatitisB
 * commercialName = "Engerix"
@@ -2732,7 +2790,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "4e0888033034c9cb0faa4311d710e6e1"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: HepatitisBProduct4e0888033034c9cb0faa4311d710e6e1
 InstanceOf: Product
@@ -2769,8 +2829,7 @@ Usage: #example
 //
 
 Instance: PreQualDB572546ba96967b25cb56ce1c3118d492
-InstanceOf: PreQualDB
-* number.value = "572546ba96967b25cb56ce1c3118d492"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-11-12
 * vaccineType = #EbolaZairerVSVGZEBOVGPli
 * commercialName = "ERVEBO"
@@ -2778,7 +2837,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Merck Sharp & Dohme LLC"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "572546ba96967b25cb56ce1c3118d492"
+* manufacturerReference = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: EbolaZairerVSVGZEBOVGPliProduct572546ba96967b25cb56ce1c3118d492
 InstanceOf: Product
@@ -2815,8 +2876,7 @@ Usage: #example
 //
 
 Instance: PreQualDBeb16babfc019543822b1248f0c4f5efb
-InstanceOf: PreQualDB
-* number.value = "eb16babfc019543822b1248f0c4f5efb"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-02-10
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Eupenta"
@@ -2824,7 +2884,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "LG Chem Ltd"
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "eb16babfc019543822b1248f0c4f5efb"
+* manufacturerReference = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: DiphtheriaTetanusPertussProducteb16babfc019543822b1248f0c4f5efb
 InstanceOf: Product
@@ -2861,8 +2923,7 @@ Usage: #example
 //
 
 Instance: PreQualDB1eed9868d0ea11bb49b16959c60a360b
-InstanceOf: PreQualDB
-* number.value = "1eed9868d0ea11bb49b16959c60a360b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-02-10
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Eupenta"
@@ -2870,7 +2931,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "LG Chem Ltd"
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "1eed9868d0ea11bb49b16959c60a360b"
+* manufacturerReference = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: DiphtheriaTetanusPertussProduct1eed9868d0ea11bb49b16959c60a360b
 InstanceOf: Product
@@ -2907,8 +2970,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4973b233658a4cbd408c0de40f17b98e
-InstanceOf: PreQualDB
-* number.value = "4973b233658a4cbd408c0de40f17b98e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-06-01
 * vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Eupolio Inj."
@@ -2916,7 +2978,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "LG Chem Ltd"
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "4973b233658a4cbd408c0de40f17b98e"
+* manufacturerReference = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: PolioVaccineInactivatedSProduct4973b233658a4cbd408c0de40f17b98e
 InstanceOf: Product
@@ -2953,8 +3017,7 @@ Usage: #example
 //
 
 Instance: PreQualDB98053b33525df31d7d71d278c5b0f85b
-InstanceOf: PreQualDB
-* number.value = "98053b33525df31d7d71d278c5b0f85b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-12-21
 * vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Eupolio Inj."
@@ -2962,7 +3025,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "LG Chem Ltd"
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "98053b33525df31d7d71d278c5b0f85b"
+* manufacturerReference = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: PolioVaccineInactivatedSProduct98053b33525df31d7d71d278c5b0f85b
 InstanceOf: Product
@@ -2999,8 +3064,7 @@ Usage: #example
 //
 
 Instance: PreQualDB2f67741943758ea5dfb72a62491029d3
-InstanceOf: PreQualDB
-* number.value = "2f67741943758ea5dfb72a62491029d3"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-01-21
 * vaccineType = #HepatitisBPaediatric
 * commercialName = "Euvax B"
@@ -3008,7 +3072,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "LG Chem Ltd"
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "2f67741943758ea5dfb72a62491029d3"
+* manufacturerReference = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: HepatitisBPaediatricProduct2f67741943758ea5dfb72a62491029d3
 InstanceOf: Product
@@ -3045,8 +3111,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe2e3b2a7cba0d70695341bf7856bb722
-InstanceOf: PreQualDB
-* number.value = "e2e3b2a7cba0d70695341bf7856bb722"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1996-11-22
 * vaccineType = #HepatitisB
 * commercialName = "Euvax B"
@@ -3054,7 +3119,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "LG Chem Ltd"
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "e2e3b2a7cba0d70695341bf7856bb722"
+* manufacturerReference = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: HepatitisBProducte2e3b2a7cba0d70695341bf7856bb722
 InstanceOf: Product
@@ -3091,8 +3158,7 @@ Usage: #example
 //
 
 Instance: PreQualDBad623683c89828ab3cd5016eb43f305f
-InstanceOf: PreQualDB
-* number.value = "ad623683c89828ab3cd5016eb43f305f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1996-11-22
 * vaccineType = #HepatitisB
 * commercialName = "Euvax B"
@@ -3100,7 +3166,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "LG Chem Ltd"
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "ad623683c89828ab3cd5016eb43f305f"
+* manufacturerReference = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: HepatitisBProductad623683c89828ab3cd5016eb43f305f
 InstanceOf: Product
@@ -3137,8 +3205,7 @@ Usage: #example
 //
 
 Instance: PreQualDB2817f0e799351ef77ce3685a3a4cd622
-InstanceOf: PreQualDB
-* number.value = "2817f0e799351ef77ce3685a3a4cd622"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-12-23
 * vaccineType = #cholerainactivatedoral
 * commercialName = "Euvichol"
@@ -3146,7 +3213,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "EuBiologics Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "2817f0e799351ef77ce3685a3a4cd622"
+* manufacturerReference = Reference(Manufacturer8de51899c0f1de0e1d12f8e6113dab08) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: cholerainactivatedoralProduct2817f0e799351ef77ce3685a3a4cd622
 InstanceOf: Product
@@ -3183,8 +3252,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3326ad219eb68bb1c23ce4e4f197d8e
-InstanceOf: PreQualDB
-* number.value = "a3326ad219eb68bb1c23ce4e4f197d8e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-08-11
 * vaccineType = #cholerainactivatedoral
 * commercialName = "Euvichol-Plus"
@@ -3192,7 +3260,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "EuBiologics Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "a3326ad219eb68bb1c23ce4e4f197d8e"
+* manufacturerReference = Reference(Manufacturer8de51899c0f1de0e1d12f8e6113dab08) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: cholerainactivatedoralProducta3326ad219eb68bb1c23ce4e4f197d8e
 InstanceOf: Product
@@ -3229,8 +3299,7 @@ Usage: #example
 //
 
 Instance: PreQualDBfab82b73d83b7722faee7d748f504c5a
-InstanceOf: PreQualDB
-* number.value = "fab82b73d83b7722faee7d748f504c5a"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-04-12
 * vaccineType = #cholerainactivatedoral
 * commercialName = "Euvichol®-S"
@@ -3238,7 +3307,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "EuBiologics Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "fab82b73d83b7722faee7d748f504c5a"
+* manufacturerReference = Reference(Manufacturer8de51899c0f1de0e1d12f8e6113dab08) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: cholerainactivatedoralProductfab82b73d83b7722faee7d748f504c5a
 InstanceOf: Product
@@ -3275,8 +3346,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa89f2f55b13476e29d6da6bcb5142d75
-InstanceOf: PreQualDB
-* number.value = "a89f2f55b13476e29d6da6bcb5142d75"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2025-01-09
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "FLU-M®"
@@ -3284,7 +3354,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Saint Petersburg Scientific Research Institute of Vaccines and Serums of the FMBA of Russia"
 * responsibleNRA.text = "Centro para el Control Estatal de la Calidad de los Medicamentos"
-
+* index.value = "a89f2f55b13476e29d6da6bcb5142d75"
+* manufacturerReference = Reference(Manufacturer8ab31a781c8d4c81ccd71cece39e4654) 
+* responsibleNRAReference = Reference(Holder882e1c1bff3f30753e4f4da0e0917ec0) // Centro para el Control Estatal de la Calidad de los Medicamentos
 
 Instance: InfluenzaseasonalTrivaleProducta89f2f55b13476e29d6da6bcb5142d75
 InstanceOf: Product
@@ -3321,8 +3393,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb8bd577779a9b5257ed0af90ebc14af2
-InstanceOf: PreQualDB
-* number.value = "b8bd577779a9b5257ed0af90ebc14af2"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-11-04
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "Fluzone Quadrivalent (labelled as FluQuadri in other markets)"
@@ -3330,7 +3401,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Pasteur Inc."
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
-
+* index.value = "b8bd577779a9b5257ed0af90ebc14af2"
+* manufacturerReference = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) 
+* responsibleNRAReference = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 
 Instance: InfluenzaseasonalQuadrivProductb8bd577779a9b5257ed0af90ebc14af2
 InstanceOf: Product
@@ -3367,8 +3440,7 @@ Usage: #example
 //
 
 Instance: PreQualDB75711711764268cf68c1a5c9c64e32e1
-InstanceOf: PreQualDB
-* number.value = "75711711764268cf68c1a5c9c64e32e1"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-11-04
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "Fluzone Quadrivalent (labelled as FluQuadri in other markets)"
@@ -3376,7 +3448,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur Inc."
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
-
+* index.value = "75711711764268cf68c1a5c9c64e32e1"
+* manufacturerReference = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) 
+* responsibleNRAReference = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 
 Instance: InfluenzaseasonalQuadrivProduct75711711764268cf68c1a5c9c64e32e1
 InstanceOf: Product
@@ -3413,8 +3487,7 @@ Usage: #example
 //
 
 Instance: PreQualDB46209cdc7449e49203b2a95792b84b24
-InstanceOf: PreQualDB
-* number.value = "46209cdc7449e49203b2a95792b84b24"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-07-09
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Fluzone® (Fluprevli™ in other markets)"
@@ -3422,7 +3495,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur Inc."
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
-
+* index.value = "46209cdc7449e49203b2a95792b84b24"
+* manufacturerReference = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) 
+* responsibleNRAReference = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 
 Instance: InfluenzaseasonalTrivaleProduct46209cdc7449e49203b2a95792b84b24
 InstanceOf: Product
@@ -3459,8 +3534,7 @@ Usage: #example
 //
 
 Instance: PreQualDBff84c4accf7ef0320c23b92afff79857
-InstanceOf: PreQualDB
-* number.value = "ff84c4accf7ef0320c23b92afff79857"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-12-16
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Focetria"
@@ -3468,7 +3542,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Seqirus Vaccines Limited"
 * responsibleNRA.text = "CBER/FDA"
-
+* index.value = "ff84c4accf7ef0320c23b92afff79857"
+* manufacturerReference = Reference(Manufacturerfe4fadac9251b55f416ee57a84018bfe) 
+* responsibleNRAReference = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 
 Instance: InfluenzaPandemicH1N1Productff84c4accf7ef0320c23b92afff79857
 InstanceOf: Product
@@ -3505,8 +3581,7 @@ Usage: #example
 //
 
 Instance: PreQualDB62c786cf817b9e1bc004016d9127dc88
-InstanceOf: PreQualDB
-* number.value = "62c786cf817b9e1bc004016d9127dc88"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-02-09
 * vaccineType = #HumanPapillomavirusNinev
 * commercialName = "Gardasil 9"
@@ -3514,7 +3589,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Merck Sharp & Dohme LLC"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "62c786cf817b9e1bc004016d9127dc88"
+* manufacturerReference = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: HumanPapillomavirusNinevProduct62c786cf817b9e1bc004016d9127dc88
 InstanceOf: Product
@@ -3551,8 +3628,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe5bba5ce02f9f36d136570b210caafda
-InstanceOf: PreQualDB
-* number.value = "e5bba5ce02f9f36d136570b210caafda"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-05-20
 * vaccineType = #HumanPapillomavirusQuadr
 * commercialName = "Gardasil"
@@ -3560,7 +3636,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Merck Sharp & Dohme LLC"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "e5bba5ce02f9f36d136570b210caafda"
+* manufacturerReference = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: HumanPapillomavirusQuadrProducte5bba5ce02f9f36d136570b210caafda
 InstanceOf: Product
@@ -3597,8 +3675,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9efdee3070cf4423d7f67b4f0688eb6d
-InstanceOf: PreQualDB
-* number.value = "9efdee3070cf4423d7f67b4f0688eb6d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-04-12
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "GC FLU  inj"
@@ -3606,7 +3683,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GC Biopharma Corp."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "9efdee3070cf4423d7f67b4f0688eb6d"
+* manufacturerReference = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalTrivaleProduct9efdee3070cf4423d7f67b4f0688eb6d
 InstanceOf: Product
@@ -3643,8 +3722,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd000cbe0858ef13d327819b556a60cf8
-InstanceOf: PreQualDB
-* number.value = "d000cbe0858ef13d327819b556a60cf8"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2012-11-07
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "GC FLU Multi inj."
@@ -3652,7 +3730,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "GC Biopharma Corp."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "d000cbe0858ef13d327819b556a60cf8"
+* manufacturerReference = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalTrivaleProductd000cbe0858ef13d327819b556a60cf8
 InstanceOf: Product
@@ -3689,8 +3769,7 @@ Usage: #example
 //
 
 Instance: PreQualDB89ec04a26c0e9729ffc48a7071f553b1
-InstanceOf: PreQualDB
-* number.value = "89ec04a26c0e9729ffc48a7071f553b1"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-12-21
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "GC FLU Quadrivalent inj."
@@ -3698,7 +3777,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GC Biopharma Corp."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "89ec04a26c0e9729ffc48a7071f553b1"
+* manufacturerReference = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalQuadrivProduct89ec04a26c0e9729ffc48a7071f553b1
 InstanceOf: Product
@@ -3735,8 +3816,7 @@ Usage: #example
 //
 
 Instance: PreQualDB43c19f57e0a46abb7a95870013ac5c7d
-InstanceOf: PreQualDB
-* number.value = "43c19f57e0a46abb7a95870013ac5c7d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-04-03
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "GC FLU Quadrivalent Multi inj."
@@ -3744,7 +3824,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "GC Biopharma Corp."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "43c19f57e0a46abb7a95870013ac5c7d"
+* manufacturerReference = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalQuadrivProduct43c19f57e0a46abb7a95870013ac5c7d
 InstanceOf: Product
@@ -3781,8 +3863,7 @@ Usage: #example
 //
 
 Instance: PreQualDB19991c4edc490fed743fc6c12cb1174e
-InstanceOf: PreQualDB
-* number.value = "19991c4edc490fed743fc6c12cb1174e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-05-11
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Green Flu-S"
@@ -3790,7 +3871,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GC Biopharma Corp."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "19991c4edc490fed743fc6c12cb1174e"
+* manufacturerReference = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaPandemicH1N1Product19991c4edc490fed743fc6c12cb1174e
 InstanceOf: Product
@@ -3827,8 +3910,7 @@ Usage: #example
 //
 
 Instance: PreQualDB440cad7be125a9ef4d8629d5a9bad7fb
-InstanceOf: PreQualDB
-* number.value = "440cad7be125a9ef4d8629d5a9bad7fb"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2008-11-17
 * vaccineType = #Haemophilusinfluenzaetyp
 * commercialName = "Haemophilus influenzae type b Conjugate Vaccine"
@@ -3836,7 +3918,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "440cad7be125a9ef4d8629d5a9bad7fb"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HaemophilusinfluenzaetypProduct440cad7be125a9ef4d8629d5a9bad7fb
 InstanceOf: Product
@@ -3873,8 +3957,7 @@ Usage: #example
 //
 
 Instance: PreQualDBfd182f59ce3db1fde7546539d04930af
-InstanceOf: PreQualDB
-* number.value = "fd182f59ce3db1fde7546539d04930af"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-07-19
 * vaccineType = #HepatitisAHumanDiploidCe
 * commercialName = "Havrix 1440 Adult"
@@ -3882,7 +3965,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "fd182f59ce3db1fde7546539d04930af"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: HepatitisAHumanDiploidCeProductfd182f59ce3db1fde7546539d04930af
 InstanceOf: Product
@@ -3919,8 +4004,7 @@ Usage: #example
 //
 
 Instance: PreQualDB439d8674406bfe3331e8c584388d856a
-InstanceOf: PreQualDB
-* number.value = "439d8674406bfe3331e8c584388d856a"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-07-19
 * vaccineType = #HepatitisAHumanDiploidCe
 * commercialName = "Havrix 720 Junior"
@@ -3928,7 +4012,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "439d8674406bfe3331e8c584388d856a"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: HepatitisAHumanDiploidCeProduct439d8674406bfe3331e8c584388d856a
 InstanceOf: Product
@@ -3965,8 +4051,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa5faa151828304427a06c494c914cf51
-InstanceOf: PreQualDB
-* number.value = "a5faa151828304427a06c494c914cf51"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-12-22
 * vaccineType = #HepatitisAHumanDiploidCe
 * commercialName = "HEALIVE"
@@ -3974,7 +4059,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sinovac Biotech Co. Ltd"
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "a5faa151828304427a06c494c914cf51"
+* manufacturerReference = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: HepatitisAHumanDiploidCeProducta5faa151828304427a06c494c914cf51
 InstanceOf: Product
@@ -4011,8 +4098,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9a88ce73248fd8e938fc40dd1b1cad9d
-InstanceOf: PreQualDB
-* number.value = "9a88ce73248fd8e938fc40dd1b1cad9d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-12-22
 * vaccineType = #HepatitisAHumanDiploidCe
 * commercialName = "HEALIVE"
@@ -4020,7 +4106,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sinovac Biotech Co. Ltd"
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "9a88ce73248fd8e938fc40dd1b1cad9d"
+* manufacturerReference = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: HepatitisAHumanDiploidCeProduct9a88ce73248fd8e938fc40dd1b1cad9d
 InstanceOf: Product
@@ -4057,8 +4145,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6f56adbbe44c19ee8fd892cafe152a05
-InstanceOf: PreQualDB
-* number.value = "6f56adbbe44c19ee8fd892cafe152a05"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-12-11
 * vaccineType = #HepatitisB
 * commercialName = "Heberbiovac HB"
@@ -4066,7 +4153,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Centro de Ingenieria Genetica y Biotecnologia"
 * responsibleNRA.text = "Centro para el Control Estatal de la Calidad de los Medicamentos"
-
+* index.value = "6f56adbbe44c19ee8fd892cafe152a05"
+* manufacturerReference = Reference(Manufacturered6da65a10ba47d41a68dc24525ab5c4) 
+* responsibleNRAReference = Reference(Holder882e1c1bff3f30753e4f4da0e0917ec0) // Centro para el Control Estatal de la Calidad de los Medicamentos
 
 Instance: HepatitisBProduct6f56adbbe44c19ee8fd892cafe152a05
 InstanceOf: Product
@@ -4103,8 +4192,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb218e01437f3ce950353d6c52a241104
-InstanceOf: PreQualDB
-* number.value = "b218e01437f3ce950353d6c52a241104"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-12-11
 * vaccineType = #HepatitisB
 * commercialName = "Heberbiovac HB"
@@ -4112,7 +4200,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Centro de Ingenieria Genetica y Biotecnologia"
 * responsibleNRA.text = "Centro para el Control Estatal de la Calidad de los Medicamentos"
-
+* index.value = "b218e01437f3ce950353d6c52a241104"
+* manufacturerReference = Reference(Manufacturered6da65a10ba47d41a68dc24525ab5c4) 
+* responsibleNRAReference = Reference(Holder882e1c1bff3f30753e4f4da0e0917ec0) // Centro para el Control Estatal de la Calidad de los Medicamentos
 
 Instance: HepatitisBProductb218e01437f3ce950353d6c52a241104
 InstanceOf: Product
@@ -4149,8 +4239,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd702fb501b984b0379d1a35b39f2d5dd
-InstanceOf: PreQualDB
-* number.value = "d702fb501b984b0379d1a35b39f2d5dd"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2004-11-12
 * vaccineType = #HepatitisB
 * commercialName = "Hepatitis B Vaccine (rDNA) (Adult)"
@@ -4158,7 +4247,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "d702fb501b984b0379d1a35b39f2d5dd"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HepatitisBProductd702fb501b984b0379d1a35b39f2d5dd
 InstanceOf: Product
@@ -4195,8 +4286,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe4253985b0bcbc8859afba7512e1a06c
-InstanceOf: PreQualDB
-* number.value = "e4253985b0bcbc8859afba7512e1a06c"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2004-11-12
 * vaccineType = #HepatitisB
 * commercialName = "Hepatitis B Vaccine (rDNA) (Adult)"
@@ -4204,7 +4294,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "e4253985b0bcbc8859afba7512e1a06c"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HepatitisBProducte4253985b0bcbc8859afba7512e1a06c
 InstanceOf: Product
@@ -4241,8 +4333,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb7de623fa4cd6f43a65ebc73002acb6b
-InstanceOf: PreQualDB
-* number.value = "b7de623fa4cd6f43a65ebc73002acb6b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2004-11-12
 * vaccineType = #HepatitisB
 * commercialName = "Hepatitis B Vaccine (rDNA) (Paediatric)"
@@ -4250,7 +4341,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "b7de623fa4cd6f43a65ebc73002acb6b"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HepatitisBProductb7de623fa4cd6f43a65ebc73002acb6b
 InstanceOf: Product
@@ -4287,8 +4380,7 @@ Usage: #example
 //
 
 Instance: PreQualDB722bf15d368cf65b16fbc534778a93a4
-InstanceOf: PreQualDB
-* number.value = "722bf15d368cf65b16fbc534778a93a4"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2004-11-12
 * vaccineType = #HepatitisB
 * commercialName = "Hepatitis B Vaccine (rDNA) (Paedriatic)"
@@ -4296,7 +4388,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "722bf15d368cf65b16fbc534778a93a4"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: HepatitisBProduct722bf15d368cf65b16fbc534778a93a4
 InstanceOf: Product
@@ -4333,8 +4427,7 @@ Usage: #example
 //
 
 Instance: PreQualDB485e4da6b08de97dd47deb76977c0096
-InstanceOf: PreQualDB
-* number.value = "485e4da6b08de97dd47deb76977c0096"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-03-21
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "HEXASIIL"
@@ -4342,7 +4435,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "485e4da6b08de97dd47deb76977c0096"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct485e4da6b08de97dd47deb76977c0096
 InstanceOf: Product
@@ -4379,8 +4474,7 @@ Usage: #example
 //
 
 Instance: PreQualDB8649cf4eaa2f780ea94bd7bb4ad1ee14
-InstanceOf: PreQualDB
-* number.value = "8649cf4eaa2f780ea94bd7bb4ad1ee14"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-03-21
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "HEXASIIL"
@@ -4388,7 +4482,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "8649cf4eaa2f780ea94bd7bb4ad1ee14"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct8649cf4eaa2f780ea94bd7bb4ad1ee14
 InstanceOf: Product
@@ -4425,8 +4521,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd33e45f59fce778b20ca845bfc9c4069
-InstanceOf: PreQualDB
-* number.value = "d33e45f59fce778b20ca845bfc9c4069"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-12-19
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Hexaxim"
@@ -4434,7 +4529,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "d33e45f59fce778b20ca845bfc9c4069"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: DiphtheriaTetanusPertussProductd33e45f59fce778b20ca845bfc9c4069
 InstanceOf: Product
@@ -4471,8 +4568,7 @@ Usage: #example
 //
 
 Instance: PreQualDB21668840cd6b06f65014b682cf2ba700
-InstanceOf: PreQualDB
-* number.value = "21668840cd6b06f65014b682cf2ba700"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-05-25
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "IL-YANG FLU Vaccine INJ."
@@ -4480,7 +4576,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "IL-YANG PHARMACEUTICAL CO., LTD."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "21668840cd6b06f65014b682cf2ba700"
+* manufacturerReference = Reference(Manufacturerf9f224bc27689ea68ccb637fbb1bdcbe) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalTrivaleProduct21668840cd6b06f65014b682cf2ba700
 InstanceOf: Product
@@ -4517,8 +4615,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6a7e1bc10d8222ece1c3687f5dd111bd
-InstanceOf: PreQualDB
-* number.value = "6a7e1bc10d8222ece1c3687f5dd111bd"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-09-18
 * vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "IMOJEV MD"
@@ -4526,7 +4623,9 @@ InstanceOf: PreQualDB
 * numDoses = 4
 * manufacturer.text = "Global Biotech Products Co., Ltd"
 * responsibleNRA.text = "Thai Food and Drug Administration"
-
+* index.value = "6a7e1bc10d8222ece1c3687f5dd111bd"
+* manufacturerReference = Reference(Manufacturerec552798f4f5cdcf689ae9f0a1b981c9) 
+* responsibleNRAReference = Reference(Holdere8eb5f70e506c7842b83c70e164f250b) // Thai Food and Drug Administration
 
 Instance: JapaneseEncephalitisVaccProduct6a7e1bc10d8222ece1c3687f5dd111bd
 InstanceOf: Product
@@ -4563,8 +4662,7 @@ Usage: #example
 //
 
 Instance: PreQualDB2ee2df079049becbdb4b335d7f12f0cf
-InstanceOf: PreQualDB
-* number.value = "2ee2df079049becbdb4b335d7f12f0cf"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1997-07-22
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "IMOVAX dT adult"
@@ -4572,7 +4670,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "2ee2df079049becbdb4b335d7f12f0cf"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: DiphtheriaTetanusreducedProduct2ee2df079049becbdb4b335d7f12f0cf
 InstanceOf: Product
@@ -4609,8 +4709,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd326dc377e5bfa346bdef779f69f25c6
-InstanceOf: PreQualDB
-* number.value = "d326dc377e5bfa346bdef779f69f25c6"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2005-12-09
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "IMOVAX POLIO"
@@ -4618,7 +4717,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "d326dc377e5bfa346bdef779f69f25c6"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: PolioVaccineInactivatedIProductd326dc377e5bfa346bdef779f69f25c6
 InstanceOf: Product
@@ -4655,8 +4756,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf6cb784aa5dfdce08f5a78b5527abc89
-InstanceOf: PreQualDB
-* number.value = "f6cb784aa5dfdce08f5a78b5527abc89"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-09-13
 * vaccineType = #SmallpoxandMpoxvaccineLi
 * commercialName = "Imvanex® (also approved under the name of JYNNEOS by the USFDA and IMVAMUNE by Health Canada)"
@@ -4664,7 +4764,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Bavarian Nordic A/S"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "f6cb784aa5dfdce08f5a78b5527abc89"
+* manufacturerReference = Reference(Manufacturerb10be994cf96fb2336833b00f003c781) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: SmallpoxandMpoxvaccineLiProductf6cb784aa5dfdce08f5a78b5527abc89
 InstanceOf: Product
@@ -4701,8 +4803,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9ad0ddf702ff73fc825cbb2fa6b7fe05
-InstanceOf: PreQualDB
-* number.value = "9ad0ddf702ff73fc825cbb2fa6b7fe05"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-01-28
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
@@ -4710,7 +4811,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Pasteur Inc."
 * responsibleNRA.text = "CBER/FDA"
-
+* index.value = "9ad0ddf702ff73fc825cbb2fa6b7fe05"
+* manufacturerReference = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) 
+* responsibleNRAReference = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 
 Instance: InfluenzaPandemicH1N1Product9ad0ddf702ff73fc825cbb2fa6b7fe05
 InstanceOf: Product
@@ -4747,8 +4850,7 @@ Usage: #example
 //
 
 Instance: PreQualDB75e0929085f8d8c0ad44c23e6f046cfd
-InstanceOf: PreQualDB
-* number.value = "75e0929085f8d8c0ad44c23e6f046cfd"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-01-28
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
@@ -4756,7 +4858,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur Inc."
 * responsibleNRA.text = "CBER/FDA"
-
+* index.value = "75e0929085f8d8c0ad44c23e6f046cfd"
+* manufacturerReference = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) 
+* responsibleNRAReference = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 
 Instance: InfluenzaPandemicH1N1Product75e0929085f8d8c0ad44c23e6f046cfd
 InstanceOf: Product
@@ -4793,8 +4897,7 @@ Usage: #example
 //
 
 Instance: PreQualDB2bc9f68ddd32e2ae7e08a3145bd845a5
-InstanceOf: PreQualDB
-* number.value = "2bc9f68ddd32e2ae7e08a3145bd845a5"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-02-25
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
@@ -4802,7 +4905,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "MedImmune"
 * responsibleNRA.text = "CBER/FDA"
-
+* index.value = "2bc9f68ddd32e2ae7e08a3145bd845a5"
+* manufacturerReference = Reference(Manufacturerbb9ce89d45920603ccfcff0bfebb8001) 
+* responsibleNRAReference = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 
 Instance: InfluenzaPandemicH1N1Product2bc9f68ddd32e2ae7e08a3145bd845a5
 InstanceOf: Product
@@ -4839,8 +4944,7 @@ Usage: #example
 //
 
 Instance: PreQualDB75933de52159c3c6d7af8ecb4ee1846c
-InstanceOf: PreQualDB
-* number.value = "75933de52159c3c6d7af8ecb4ee1846c"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-04-26
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "influenza trivalent vaccine (split virion, inactivated)"
@@ -4848,7 +4952,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Instituto Butantan"
 * responsibleNRA.text = "Agencia Nacional da Vigilancia Sanitaria"
-
+* index.value = "75933de52159c3c6d7af8ecb4ee1846c"
+* manufacturerReference = Reference(Manufacturerb106bc6348d33747910cb3b5f5cba551) 
+* responsibleNRAReference = Reference(Holder4f8fc03badb0c3d6e38e661418a4934c) // Agencia Nacional da Vigilancia Sanitaria
 
 Instance: InfluenzaseasonalTrivaleProduct75933de52159c3c6d7af8ecb4ee1846c
 InstanceOf: Product
@@ -4885,8 +4991,7 @@ Usage: #example
 //
 
 Instance: PreQualDB59b650df0c7bf6ee7565c5fd17f0400f
-InstanceOf: PreQualDB
-* number.value = "59b650df0c7bf6ee7565c5fd17f0400f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-06-09
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Influenza Vaccine (Split virion, inactivated)"
@@ -4894,7 +4999,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Hualan Biological Bacterin Inc."
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "59b650df0c7bf6ee7565c5fd17f0400f"
+* manufacturerReference = Reference(Manufacturer9665a97e22c6e4be184702aa67d9cbe9) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: InfluenzaseasonalTrivaleProduct59b650df0c7bf6ee7565c5fd17f0400f
 InstanceOf: Product
@@ -4931,8 +5038,7 @@ Usage: #example
 //
 
 Instance: PreQualDBee7b5dad7c62430504355239680f96be
-InstanceOf: PreQualDB
-* number.value = "ee7b5dad7c62430504355239680f96be"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-10-20
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Influenza Vaccine (Split Virion), Inactivated"
@@ -4940,7 +5046,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Changchun Institute of Biological Products Co., Ltd"
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "ee7b5dad7c62430504355239680f96be"
+* manufacturerReference = Reference(Manufactureref4ebd6887468425e609c837fd64c975) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: InfluenzaseasonalTrivaleProductee7b5dad7c62430504355239680f96be
 InstanceOf: Product
@@ -4977,8 +5085,7 @@ Usage: #example
 //
 
 Instance: PreQualDBc9c2b451e091197b2a248c49eaaa1b97
-InstanceOf: PreQualDB
-* number.value = "c9c2b451e091197b2a248c49eaaa1b97"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-02-19
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "Influvac® Tetra"
@@ -4986,7 +5093,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Abbott Biologicals BV"
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
-
+* index.value = "c9c2b451e091197b2a248c49eaaa1b97"
+* manufacturerReference = Reference(Manufacturerd2113c7f14dd346f92ebf77f96935322) 
+* responsibleNRAReference = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 
 Instance: InfluenzaseasonalQuadrivProductc9c2b451e091197b2a248c49eaaa1b97
 InstanceOf: Product
@@ -5023,8 +5132,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9ed323685ea94d800d5351889a0aa0ed
-InstanceOf: PreQualDB
-* number.value = "9ed323685ea94d800d5351889a0aa0ed"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-12-23
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "IPV Vaccine AJV"
@@ -5032,7 +5140,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "AJ Vaccines A/S"
 * responsibleNRA.text = "Danish Medicines Agency"
-
+* index.value = "9ed323685ea94d800d5351889a0aa0ed"
+* manufacturerReference = Reference(Manufacturer2861c762e570422c9a439d2e146ef1e9) 
+* responsibleNRAReference = Reference(Holder1a0e5ea84210f3aa10f60f001c703d0a) // Danish Medicines Agency
 
 Instance: PolioVaccineInactivatedIProduct9ed323685ea94d800d5351889a0aa0ed
 InstanceOf: Product
@@ -5069,8 +5179,7 @@ Usage: #example
 //
 
 Instance: PreQualDB56c9764b13eacf4b65de0f018cec0596
-InstanceOf: PreQualDB
-* number.value = "56c9764b13eacf4b65de0f018cec0596"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-10-08
 * vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
@@ -5078,7 +5187,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Chengdu Institute of Biological Products Co.,Ltd"
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "56c9764b13eacf4b65de0f018cec0596"
+* manufacturerReference = Reference(Manufacturer8ca6c2b4b28bd7ccdf56e1771bbe1c50) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: JapaneseEncephalitisVaccProduct56c9764b13eacf4b65de0f018cec0596
 InstanceOf: Product
@@ -5115,8 +5226,7 @@ Usage: #example
 //
 
 Instance: PreQualDB99742dd9e458be23d518d1e1706774a9
-InstanceOf: PreQualDB
-* number.value = "99742dd9e458be23d518d1e1706774a9"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-10-08
 * vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
@@ -5124,7 +5234,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Chengdu Institute of Biological Products Co.,Ltd"
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "99742dd9e458be23d518d1e1706774a9"
+* manufacturerReference = Reference(Manufacturer8ca6c2b4b28bd7ccdf56e1771bbe1c50) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: JapaneseEncephalitisVaccProduct99742dd9e458be23d518d1e1706774a9
 InstanceOf: Product
@@ -5161,8 +5273,7 @@ Usage: #example
 //
 
 Instance: PreQualDBcadc07ae976f7cde20ba89dc11d2c12f
-InstanceOf: PreQualDB
-* number.value = "cadc07ae976f7cde20ba89dc11d2c12f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-08-03
 * vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "JEEV® (3µg)"
@@ -5170,7 +5281,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "cadc07ae976f7cde20ba89dc11d2c12f"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: JapaneseEncephalitisVaccProductcadc07ae976f7cde20ba89dc11d2c12f
 InstanceOf: Product
@@ -5207,8 +5320,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe6be4176d71df74dad9d3b6d9d05a265
-InstanceOf: PreQualDB
-* number.value = "e6be4176d71df74dad9d3b6d9d05a265"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-10-02
 * vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "JEEV® (3µg)"
@@ -5216,7 +5328,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "e6be4176d71df74dad9d3b6d9d05a265"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: JapaneseEncephalitisVaccProducte6be4176d71df74dad9d3b6d9d05a265
 InstanceOf: Product
@@ -5253,8 +5367,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4917ad5f6acb3a73d0ba8068571fe0f7
-InstanceOf: PreQualDB
-* number.value = "4917ad5f6acb3a73d0ba8068571fe0f7"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-07-12
 * vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "JEEV® (6µg)"
@@ -5262,7 +5375,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4917ad5f6acb3a73d0ba8068571fe0f7"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: JapaneseEncephalitisVaccProduct4917ad5f6acb3a73d0ba8068571fe0f7
 InstanceOf: Product
@@ -5299,8 +5414,7 @@ Usage: #example
 //
 
 Instance: PreQualDB021b190392c943db9cce63d9cdc78d77
-InstanceOf: PreQualDB
-* number.value = "021b190392c943db9cce63d9cdc78d77"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-10-02
 * vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "JEEV® (6µg)"
@@ -5308,7 +5422,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "021b190392c943db9cce63d9cdc78d77"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: JapaneseEncephalitisVaccProduct021b190392c943db9cce63d9cdc78d77
 InstanceOf: Product
@@ -5345,8 +5461,7 @@ Usage: #example
 //
 
 Instance: PreQualDB271947fd20dba509c9c2a337ac499eb3
-InstanceOf: PreQualDB
-* number.value = "271947fd20dba509c9c2a337ac499eb3"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-09-24
 * vaccineType = #MeaslesandRubella
 * commercialName = "Measles and Rubella Vaccine (Live) (Attenuated, Freeze Dried)"
@@ -5354,7 +5469,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "271947fd20dba509c9c2a337ac499eb3"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesandRubellaProduct271947fd20dba509c9c2a337ac499eb3
 InstanceOf: Product
@@ -5391,8 +5508,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6cb6e8a1192b0a2c6482798baf9947db
-InstanceOf: PreQualDB
-* number.value = "6cb6e8a1192b0a2c6482798baf9947db"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-09-24
 * vaccineType = #MeaslesandRubella
 * commercialName = "Measles and Rubella Vaccine (Live) (Attenuated, Freeze Dried)"
@@ -5400,7 +5516,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "6cb6e8a1192b0a2c6482798baf9947db"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesandRubellaProduct6cb6e8a1192b0a2c6482798baf9947db
 InstanceOf: Product
@@ -5437,8 +5555,7 @@ Usage: #example
 //
 
 Instance: PreQualDB5e5b0bdfdcb0976ff48f867ed5a43e08
-InstanceOf: PreQualDB
-* number.value = "5e5b0bdfdcb0976ff48f867ed5a43e08"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-09-24
 * vaccineType = #MeaslesandRubella
 * commercialName = "Measles and Rubella Vaccine (Live) (Attenuated, Freeze Dried)"
@@ -5446,7 +5563,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "5e5b0bdfdcb0976ff48f867ed5a43e08"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesandRubellaProduct5e5b0bdfdcb0976ff48f867ed5a43e08
 InstanceOf: Product
@@ -5483,8 +5602,7 @@ Usage: #example
 //
 
 Instance: PreQualDB87304fa472eb1b8d9d15df778df88d8b
-InstanceOf: PreQualDB
-* number.value = "87304fa472eb1b8d9d15df778df88d8b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2000-07-18
 * vaccineType = #MeaslesandRubella
 * commercialName = "Measles and Rubella Vaccine, Live, Attenuated"
@@ -5492,7 +5610,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "87304fa472eb1b8d9d15df778df88d8b"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesandRubellaProduct87304fa472eb1b8d9d15df778df88d8b
 InstanceOf: Product
@@ -5529,8 +5649,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf6fc191f46034e4780f34807c6d2f18d
-InstanceOf: PreQualDB
-* number.value = "f6fc191f46034e4780f34807c6d2f18d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2000-07-18
 * vaccineType = #MeaslesandRubella
 * commercialName = "Measles and Rubella Vaccine, Live, Attenuated"
@@ -5538,7 +5657,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "f6fc191f46034e4780f34807c6d2f18d"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesandRubellaProductf6fc191f46034e4780f34807c6d2f18d
 InstanceOf: Product
@@ -5575,8 +5696,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4d2ae2b6169339d72255fae6b03498e3
-InstanceOf: PreQualDB
-* number.value = "4d2ae2b6169339d72255fae6b03498e3"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2000-07-18
 * vaccineType = #MeaslesandRubella
 * commercialName = "Measles and Rubella Vaccine, Live, Attenuated"
@@ -5584,7 +5704,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4d2ae2b6169339d72255fae6b03498e3"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesandRubellaProduct4d2ae2b6169339d72255fae6b03498e3
 InstanceOf: Product
@@ -5621,8 +5743,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb88cb6b54193174e15901a0a4b023d19
-InstanceOf: PreQualDB
-* number.value = "b88cb6b54193174e15901a0a4b023d19"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2000-07-18
 * vaccineType = #MeaslesandRubella
 * commercialName = "Measles and Rubella Vaccine, Live, Attenuated"
@@ -5630,7 +5751,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "b88cb6b54193174e15901a0a4b023d19"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesandRubellaProductb88cb6b54193174e15901a0a4b023d19
 InstanceOf: Product
@@ -5667,8 +5790,7 @@ Usage: #example
 //
 
 Instance: PreQualDB13ceb31d154e2f9da1be5f9442dd1f3e
-InstanceOf: PreQualDB
-* number.value = "13ceb31d154e2f9da1be5f9442dd1f3e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-09-04
 * vaccineType = #Measles
 * commercialName = "Measles vaccine"
@@ -5676,7 +5798,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "13ceb31d154e2f9da1be5f9442dd1f3e"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: MeaslesProduct13ceb31d154e2f9da1be5f9442dd1f3e
 InstanceOf: Product
@@ -5713,8 +5837,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9e23ae98b383fbca355a8dd7175a05ce
-InstanceOf: PreQualDB
-* number.value = "9e23ae98b383fbca355a8dd7175a05ce"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1997-04-09
 * vaccineType = #Measles
 * commercialName = "Measles vaccine"
@@ -5722,7 +5845,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "9e23ae98b383fbca355a8dd7175a05ce"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: MeaslesProduct9e23ae98b383fbca355a8dd7175a05ce
 InstanceOf: Product
@@ -5759,8 +5884,7 @@ Usage: #example
 //
 
 Instance: PreQualDB8b56f4fcbe8c68d16b9f4f7f9a147749
-InstanceOf: PreQualDB
-* number.value = "8b56f4fcbe8c68d16b9f4f7f9a147749"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1993-02-15
 * vaccineType = #Measles
 * commercialName = "Measles Vaccine, Live, Attenuated"
@@ -5768,7 +5892,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "8b56f4fcbe8c68d16b9f4f7f9a147749"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesProduct8b56f4fcbe8c68d16b9f4f7f9a147749
 InstanceOf: Product
@@ -5805,8 +5931,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4311c19ac2038fff2939a0c9ee306273
-InstanceOf: PreQualDB
-* number.value = "4311c19ac2038fff2939a0c9ee306273"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1993-02-15
 * vaccineType = #Measles
 * commercialName = "Measles Vaccine, Live, Attenuated"
@@ -5814,7 +5939,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4311c19ac2038fff2939a0c9ee306273"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesProduct4311c19ac2038fff2939a0c9ee306273
 InstanceOf: Product
@@ -5851,8 +5978,7 @@ Usage: #example
 //
 
 Instance: PreQualDB394e77a46b6249d3c30dbfb4a573e02a
-InstanceOf: PreQualDB
-* number.value = "394e77a46b6249d3c30dbfb4a573e02a"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1993-02-15
 * vaccineType = #Measles
 * commercialName = "Measles Vaccine, Live, Attenuated"
@@ -5860,7 +5986,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "394e77a46b6249d3c30dbfb4a573e02a"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesProduct394e77a46b6249d3c30dbfb4a573e02a
 InstanceOf: Product
@@ -5897,8 +6025,7 @@ Usage: #example
 //
 
 Instance: PreQualDBce48cb342536451734478255352cd662
-InstanceOf: PreQualDB
-* number.value = "ce48cb342536451734478255352cd662"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1993-02-15
 * vaccineType = #Measles
 * commercialName = "Measles Vaccine, Live, Attenuated"
@@ -5906,7 +6033,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "ce48cb342536451734478255352cd662"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesProductce48cb342536451734478255352cd662
 InstanceOf: Product
@@ -5943,8 +6072,7 @@ Usage: #example
 //
 
 Instance: PreQualDB87d3bc106afba6ef59390af5f64ff812
-InstanceOf: PreQualDB
-* number.value = "87d3bc106afba6ef59390af5f64ff812"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2003-08-08
 * vaccineType = #MeaslesMumpsandRubella
 * commercialName = "Measles, Mumps and Rubella Vaccine, Live, Attenuated"
@@ -5952,7 +6080,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "87d3bc106afba6ef59390af5f64ff812"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesMumpsandRubellaProduct87d3bc106afba6ef59390af5f64ff812
 InstanceOf: Product
@@ -5989,8 +6119,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf3330f47327824f378d60eb0bc2473be
-InstanceOf: PreQualDB
-* number.value = "f3330f47327824f378d60eb0bc2473be"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2003-08-08
 * vaccineType = #MeaslesMumpsandRubella
 * commercialName = "Measles, Mumps and Rubella Vaccine, Live, Attenuated"
@@ -5998,7 +6127,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "f3330f47327824f378d60eb0bc2473be"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesMumpsandRubellaProductf3330f47327824f378d60eb0bc2473be
 InstanceOf: Product
@@ -6035,8 +6166,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb3491419bf3a41b487e7628cf332b226
-InstanceOf: PreQualDB
-* number.value = "b3491419bf3a41b487e7628cf332b226"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2003-08-08
 * vaccineType = #MeaslesMumpsandRubella
 * commercialName = "Measles, Mumps and Rubella Vaccine, Live, Attenuated"
@@ -6044,7 +6174,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "b3491419bf3a41b487e7628cf332b226"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesMumpsandRubellaProductb3491419bf3a41b487e7628cf332b226
 InstanceOf: Product
@@ -6081,8 +6213,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf265a0038acdd07284ef1f45eeefbea5
-InstanceOf: PreQualDB
-* number.value = "f265a0038acdd07284ef1f45eeefbea5"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2003-08-08
 * vaccineType = #MeaslesMumpsandRubella
 * commercialName = "Measles, Mumps and Rubella Vaccine, Live, Attenuated"
@@ -6090,7 +6221,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "f265a0038acdd07284ef1f45eeefbea5"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeaslesMumpsandRubellaProductf265a0038acdd07284ef1f45eeefbea5
 InstanceOf: Product
@@ -6127,8 +6260,7 @@ Usage: #example
 //
 
 Instance: PreQualDB07b17ac143be49b488788542af5029a1
-InstanceOf: PreQualDB
-* number.value = "07b17ac143be49b488788542af5029a1"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-03-21
 * vaccineType = #MeningococcalACYW135conj
 * commercialName = "Menactra"
@@ -6136,7 +6268,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Pasteur Inc."
 * responsibleNRA.text = "CBER/FDA"
-
+* index.value = "07b17ac143be49b488788542af5029a1"
+* manufacturerReference = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) 
+* responsibleNRAReference = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 
 Instance: MeningococcalACYW135conjProduct07b17ac143be49b488788542af5029a1
 InstanceOf: Product
@@ -6173,8 +6307,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4a48211ad14f81c082effc8d3e70e259
-InstanceOf: PreQualDB
-* number.value = "4a48211ad14f81c082effc8d3e70e259"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-07-06
 * vaccineType = #MenigococcalACYWXPolysac
 * commercialName = "MenFive™"
@@ -6182,7 +6315,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4a48211ad14f81c082effc8d3e70e259"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MenigococcalACYWXPolysacProduct4a48211ad14f81c082effc8d3e70e259
 InstanceOf: Product
@@ -6219,8 +6354,7 @@ Usage: #example
 //
 
 Instance: PreQualDB93c01db9966db02cbff5f9f554a7cf2b
-InstanceOf: PreQualDB
-* number.value = "93c01db9966db02cbff5f9f554a7cf2b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-07-06
 * vaccineType = #MenigococcalACYWXPolysac
 * commercialName = "MenFive™"
@@ -6228,7 +6362,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "93c01db9966db02cbff5f9f554a7cf2b"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MenigococcalACYWXPolysacProduct93c01db9966db02cbff5f9f554a7cf2b
 InstanceOf: Product
@@ -6265,8 +6401,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd7efb0a67a79b36058ac74f4a7919d9a
-InstanceOf: PreQualDB
-* number.value = "d7efb0a67a79b36058ac74f4a7919d9a"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-12-30
 * vaccineType = #MeningococcalAConjugate5
 * commercialName = "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg"
@@ -6274,7 +6409,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "d7efb0a67a79b36058ac74f4a7919d9a"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeningococcalAConjugate5Productd7efb0a67a79b36058ac74f4a7919d9a
 InstanceOf: Product
@@ -6311,8 +6448,7 @@ Usage: #example
 //
 
 Instance: PreQualDB42537006144d056ef08a6fc0979008aa
-InstanceOf: PreQualDB
-* number.value = "42537006144d056ef08a6fc0979008aa"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-06-23
 * vaccineType = #MeningococcalAConjugate1
 * commercialName = "Meningococcal A Conjugate MenAfriVac"
@@ -6320,7 +6456,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "42537006144d056ef08a6fc0979008aa"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MeningococcalAConjugate1Product42537006144d056ef08a6fc0979008aa
 InstanceOf: Product
@@ -6357,8 +6495,7 @@ Usage: #example
 //
 
 Instance: PreQualDBac37e246375ebaa6610a13a12edf2c98
-InstanceOf: PreQualDB
-* number.value = "ac37e246375ebaa6610a13a12edf2c98"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2022-01-28
 * vaccineType = #MeningococcalACYW135Teta
 * commercialName = "MenQuadfi"
@@ -6366,7 +6503,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Pasteur Inc."
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "ac37e246375ebaa6610a13a12edf2c98"
+* manufacturerReference = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: MeningococcalACYW135TetaProductac37e246375ebaa6610a13a12edf2c98
 InstanceOf: Product
@@ -6403,8 +6542,7 @@ Usage: #example
 //
 
 Instance: PreQualDB749366c68fd56a27b8e93b2271974df4
-InstanceOf: PreQualDB
-* number.value = "749366c68fd56a27b8e93b2271974df4"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-07-31
 * vaccineType = #MeningococcalACYW135conj
 * commercialName = "Menveo"
@@ -6412,7 +6550,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Vaccines S.r.l."
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "749366c68fd56a27b8e93b2271974df4"
+* manufacturerReference = Reference(Manufacturer678c4e5ce93124225bcbea0ae277657f) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: MeningococcalACYW135conjProduct749366c68fd56a27b8e93b2271974df4
 InstanceOf: Product
@@ -6449,8 +6589,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6b2b4cf5bbc143adb3de579888125267
-InstanceOf: PreQualDB
-* number.value = "6b2b4cf5bbc143adb3de579888125267"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-11-03
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1)"
@@ -6458,7 +6597,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "6b2b4cf5bbc143adb3de579888125267"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: PolioVaccineOralOPVMonovProduct6b2b4cf5bbc143adb3de579888125267
 InstanceOf: Product
@@ -6495,8 +6636,7 @@ Usage: #example
 //
 
 Instance: PreQualDB1314f3a622cbae516279dabc6e1abb37
-InstanceOf: PreQualDB
-* number.value = "1314f3a622cbae516279dabc6e1abb37"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-06-21
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Monovalent Oral Poliomyelitis Vaccine Type 2"
@@ -6504,7 +6644,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "1314f3a622cbae516279dabc6e1abb37"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: PolioVaccineOralOPVMonovProduct1314f3a622cbae516279dabc6e1abb37
 InstanceOf: Product
@@ -6541,8 +6683,7 @@ Usage: #example
 //
 
 Instance: PreQualDB8f91e1eaf754f5b0a02bf5f70dbdf596
-InstanceOf: PreQualDB
-* number.value = "8f91e1eaf754f5b0a02bf5f70dbdf596"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-11-03
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Monovalent type 1 Oral Poliomyelitis vaccine, IP (mOPV1)"
@@ -6550,7 +6691,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Haffkine Bio Pharmaceutical Corporation Ltd"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "8f91e1eaf754f5b0a02bf5f70dbdf596"
+* manufacturerReference = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVMonovProduct8f91e1eaf754f5b0a02bf5f70dbdf596
 InstanceOf: Product
@@ -6587,8 +6730,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9e7d38c2db163e840be0ccd26e42e2dd
-InstanceOf: PreQualDB
-* number.value = "9e7d38c2db163e840be0ccd26e42e2dd"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2022-07-15
 * vaccineType = #Malaria
 * commercialName = "Mosquirix"
@@ -6596,7 +6738,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "9e7d38c2db163e840be0ccd26e42e2dd"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: MalariaProduct9e7d38c2db163e840be0ccd26e42e2dd
 InstanceOf: Product
@@ -6633,8 +6777,7 @@ Usage: #example
 //
 
 Instance: PreQualDBc0a304667cb0844ba02916c1b4c36253
-InstanceOf: PreQualDB
-* number.value = "c0a304667cb0844ba02916c1b4c36253"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-04-27
 * vaccineType = #EbolavaccineMVABNFilorec
 * commercialName = "Mvabea"
@@ -6642,7 +6785,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Janssen Cilag International N.V."
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "c0a304667cb0844ba02916c1b4c36253"
+* manufacturerReference = Reference(Manufacturer424af495e78f8d5efdacca2db1db8f9b) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: EbolavaccineMVABNFilorecProductc0a304667cb0844ba02916c1b4c36253
 InstanceOf: Product
@@ -6679,8 +6824,7 @@ Usage: #example
 //
 
 Instance: PreQualDB95dd021427d11cc5b1e993a2346ae125
-InstanceOf: PreQualDB
-* number.value = "95dd021427d11cc5b1e993a2346ae125"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-03-26
 * vaccineType = #YellowFever
 * commercialName = "n/a"
@@ -6688,7 +6832,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of Sciences"
 * responsibleNRA.text = "Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation"
-
+* index.value = "95dd021427d11cc5b1e993a2346ae125"
+* manufacturerReference = Reference(Manufacturer9f078889f4903702762d00303f0ff713) 
+* responsibleNRAReference = Reference(Holderf8a24c02753aa7a5f43198884d058a6b) // Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation
 
 Instance: YellowFeverProduct95dd021427d11cc5b1e993a2346ae125
 InstanceOf: Product
@@ -6725,8 +6871,7 @@ Usage: #example
 //
 
 Instance: PreQualDBded6dc4f66c4eec9178bd13b7fdba477
-InstanceOf: PreQualDB
-* number.value = "ded6dc4f66c4eec9178bd13b7fdba477"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-03-26
 * vaccineType = #YellowFever
 * commercialName = "n/a"
@@ -6734,7 +6879,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of Sciences"
 * responsibleNRA.text = "Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation"
-
+* index.value = "ded6dc4f66c4eec9178bd13b7fdba477"
+* manufacturerReference = Reference(Manufacturer9f078889f4903702762d00303f0ff713) 
+* responsibleNRAReference = Reference(Holderf8a24c02753aa7a5f43198884d058a6b) // Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation
 
 Instance: YellowFeverProductded6dc4f66c4eec9178bd13b7fdba477
 InstanceOf: Product
@@ -6771,8 +6918,7 @@ Usage: #example
 //
 
 Instance: PreQualDB42c7d74ee190836754548484817630fb
-InstanceOf: PreQualDB
-* number.value = "42c7d74ee190836754548484817630fb"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-03-26
 * vaccineType = #YellowFever
 * commercialName = "n/a"
@@ -6780,7 +6926,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of Sciences"
 * responsibleNRA.text = "Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation"
-
+* index.value = "42c7d74ee190836754548484817630fb"
+* manufacturerReference = Reference(Manufacturer9f078889f4903702762d00303f0ff713) 
+* responsibleNRAReference = Reference(Holderf8a24c02753aa7a5f43198884d058a6b) // Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation
 
 Instance: YellowFeverProduct42c7d74ee190836754548484817630fb
 InstanceOf: Product
@@ -6817,8 +6965,7 @@ Usage: #example
 //
 
 Instance: PreQualDB259be5c5f4f8733e41bd023acb3ae54d
-InstanceOf: PreQualDB
-* number.value = "259be5c5f4f8733e41bd023acb3ae54d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2012-11-26
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze-Dried"
@@ -6826,7 +6973,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "259be5c5f4f8733e41bd023acb3ae54d"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: InfluenzaPandemicH1N1Product259be5c5f4f8733e41bd023acb3ae54d
 InstanceOf: Product
@@ -6863,8 +7012,7 @@ Usage: #example
 //
 
 Instance: PreQualDB23a326304ea2be5388d9842c9cbb427d
-InstanceOf: PreQualDB
-* number.value = "23a326304ea2be5388d9842c9cbb427d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2012-11-26
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze-Dried"
@@ -6872,7 +7020,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "23a326304ea2be5388d9842c9cbb427d"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: InfluenzaPandemicH1N1Product23a326304ea2be5388d9842c9cbb427d
 InstanceOf: Product
@@ -6909,8 +7059,7 @@ Usage: #example
 //
 
 Instance: PreQualDB26599a49559057a0e371cec5d178f650
-InstanceOf: PreQualDB
-* number.value = "26599a49559057a0e371cec5d178f650"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2015-09-30
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Nasovac-S Influenza Vaccine, Live, Attenuated (Human)"
@@ -6918,7 +7067,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "26599a49559057a0e371cec5d178f650"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: InfluenzaseasonalTrivaleProduct26599a49559057a0e371cec5d178f650
 InstanceOf: Product
@@ -6955,8 +7106,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4053086b444e4441a7c5ebcad4e55c7b
-InstanceOf: PreQualDB
-* number.value = "4053086b444e4441a7c5ebcad4e55c7b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-08-31
 * vaccineType = #MeningococcalACYW135conj
 * commercialName = "Nimenrix"
@@ -6964,7 +7114,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Pfizer Europe MA EEIG"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "4053086b444e4441a7c5ebcad4e55c7b"
+* manufacturerReference = Reference(Manufacturer4c7bd357ca5e34506d2325abf61a6d5c) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: MeningococcalACYW135conjProduct4053086b444e4441a7c5ebcad4e55c7b
 InstanceOf: Product
@@ -7001,8 +7153,7 @@ Usage: #example
 //
 
 Instance: PreQualDB65e9ec90be91668e4ae2d52bec02f209
-InstanceOf: PreQualDB
-* number.value = "65e9ec90be91668e4ae2d52bec02f209"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-07-06
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "none"
@@ -7010,7 +7161,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "65e9ec90be91668e4ae2d52bec02f209"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: DiphtheriaTetanusreducedProduct65e9ec90be91668e4ae2d52bec02f209
 InstanceOf: Product
@@ -7047,8 +7200,7 @@ Usage: #example
 //
 
 Instance: PreQualDB03e2e246b44859298212f066b3ece2be
-InstanceOf: PreQualDB
-* number.value = "03e2e246b44859298212f066b3ece2be"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-09-17
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
@@ -7056,7 +7208,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "03e2e246b44859298212f066b3ece2be"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusreducedProduct03e2e246b44859298212f066b3ece2be
 InstanceOf: Product
@@ -7093,8 +7247,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4b4bf9ea54c0fd19a8decf32b590d2de
-InstanceOf: PreQualDB
-* number.value = "4b4bf9ea54c0fd19a8decf32b590d2de"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-09-17
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
@@ -7102,7 +7255,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4b4bf9ea54c0fd19a8decf32b590d2de"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusreducedProduct4b4bf9ea54c0fd19a8decf32b590d2de
 InstanceOf: Product
@@ -7139,8 +7294,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe2513625b766eaeb7478eebdae534eb6
-InstanceOf: PreQualDB
-* number.value = "e2513625b766eaeb7478eebdae534eb6"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-03-09
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
@@ -7148,7 +7302,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "e2513625b766eaeb7478eebdae534eb6"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusreducedProducte2513625b766eaeb7478eebdae534eb6
 InstanceOf: Product
@@ -7185,8 +7341,7 @@ Usage: #example
 //
 
 Instance: PreQualDB5e6555819e9717cb895e1c68cef9925d
-InstanceOf: PreQualDB
-* number.value = "5e6555819e9717cb895e1c68cef9925d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2012-07-12
 * vaccineType = #TetanusToxoid
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt."
@@ -7194,7 +7349,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "5e6555819e9717cb895e1c68cef9925d"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TetanusToxoidProduct5e6555819e9717cb895e1c68cef9925d
 InstanceOf: Product
@@ -7231,8 +7388,7 @@ Usage: #example
 //
 
 Instance: PreQualDBea62b196bf0d2dde3fbb5617b630701a
-InstanceOf: PreQualDB
-* number.value = "ea62b196bf0d2dde3fbb5617b630701a"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2012-07-12
 * vaccineType = #TetanusToxoid
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt."
@@ -7240,7 +7396,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "ea62b196bf0d2dde3fbb5617b630701a"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TetanusToxoidProductea62b196bf0d2dde3fbb5617b630701a
 InstanceOf: Product
@@ -7277,8 +7435,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa0bd5e726e53f8c53a493467c82f7cd9
-InstanceOf: PreQualDB
-* number.value = "a0bd5e726e53f8c53a493467c82f7cd9"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-12-21
 * vaccineType = #TetanusToxoid
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt."
@@ -7286,7 +7443,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "a0bd5e726e53f8c53a493467c82f7cd9"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TetanusToxoidProducta0bd5e726e53f8c53a493467c82f7cd9
 InstanceOf: Product
@@ -7323,8 +7482,7 @@ Usage: #example
 //
 
 Instance: PreQualDB237f17e96cc17d6d7a912cbe4e6ac109
-InstanceOf: PreQualDB
-* number.value = "237f17e96cc17d6d7a912cbe4e6ac109"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2012-05-18
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
@@ -7332,7 +7490,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "237f17e96cc17d6d7a912cbe4e6ac109"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct237f17e96cc17d6d7a912cbe4e6ac109
 InstanceOf: Product
@@ -7369,8 +7529,7 @@ Usage: #example
 //
 
 Instance: PreQualDB025d4a1113d25f34789f1b63a1d4c8a1
-InstanceOf: PreQualDB
-* number.value = "025d4a1113d25f34789f1b63a1d4c8a1"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-11-27
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
@@ -7378,7 +7537,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "025d4a1113d25f34789f1b63a1d4c8a1"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct025d4a1113d25f34789f1b63a1d4c8a1
 InstanceOf: Product
@@ -7415,8 +7576,7 @@ Usage: #example
 //
 
 Instance: PreQualDB620c76720b271dbea669eaa6682bea0e
-InstanceOf: PreQualDB
-* number.value = "620c76720b271dbea669eaa6682bea0e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-11-27
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
@@ -7424,7 +7584,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "620c76720b271dbea669eaa6682bea0e"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct620c76720b271dbea669eaa6682bea0e
 InstanceOf: Product
@@ -7461,8 +7623,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6b6da598a5243bc82961c974d198b5f2
-InstanceOf: PreQualDB
-* number.value = "6b6da598a5243bc82961c974d198b5f2"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2012-05-18
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
@@ -7470,7 +7631,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "6b6da598a5243bc82961c974d198b5f2"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct6b6da598a5243bc82961c974d198b5f2
 InstanceOf: Product
@@ -7507,8 +7670,7 @@ Usage: #example
 //
 
 Instance: PreQualDB7031531d074faa9b756f0142a85fe1a5
-InstanceOf: PreQualDB
-* number.value = "7031531d074faa9b756f0142a85fe1a5"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-09-01
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted)."
@@ -7516,7 +7678,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "7031531d074faa9b756f0142a85fe1a5"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct7031531d074faa9b756f0142a85fe1a5
 InstanceOf: Product
@@ -7553,8 +7717,7 @@ Usage: #example
 //
 
 Instance: PreQualDB173ff9463a8e21454f5f8b77c8f3dd34
-InstanceOf: PreQualDB
-* number.value = "173ff9463a8e21454f5f8b77c8f3dd34"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-09-01
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted)."
@@ -7562,7 +7725,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "173ff9463a8e21454f5f8b77c8f3dd34"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct173ff9463a8e21454f5f8b77c8f3dd34
 InstanceOf: Product
@@ -7599,8 +7764,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4b73b5c11f95be231559f05e3d36fdfb
-InstanceOf: PreQualDB
-* number.value = "4b73b5c11f95be231559f05e3d36fdfb"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-07-31
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC"
@@ -7608,7 +7772,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4b73b5c11f95be231559f05e3d36fdfb"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProduct4b73b5c11f95be231559f05e3d36fdfb
 InstanceOf: Product
@@ -7645,8 +7811,7 @@ Usage: #example
 //
 
 Instance: PreQualDBc9cf1c20b532e0fe75714876da1f4a20
-InstanceOf: PreQualDB
-* number.value = "c9cf1c20b532e0fe75714876da1f4a20"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-07-31
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC"
@@ -7654,7 +7819,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "c9cf1c20b532e0fe75714876da1f4a20"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: DiphtheriaTetanusPertussProductc9cf1c20b532e0fe75714876da1f4a20
 InstanceOf: Product
@@ -7691,8 +7858,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe65316944cbf44cd53a931bcf1a9b84e
-InstanceOf: PreQualDB
-* number.value = "e65316944cbf44cd53a931bcf1a9b84e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-01-14
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "ORAL MONOVALENT TYPE 2 POLIOMYELITIS VACCINE (mOPV2)"
@@ -7700,7 +7866,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "e65316944cbf44cd53a931bcf1a9b84e"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: PolioVaccineOralOPVMonovProducte65316944cbf44cd53a931bcf1a9b84e
 InstanceOf: Product
@@ -7737,8 +7905,7 @@ Usage: #example
 //
 
 Instance: PreQualDB257be1ac0783a7b3d341afdb8cb40cd7
-InstanceOf: PreQualDB
-* number.value = "257be1ac0783a7b3d341afdb8cb40cd7"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-08-31
 * vaccineType = #PolioVaccineOralOPVTriva
 * commercialName = "Oral Poliomyelitis Vaccines (Oral Drops)"
@@ -7746,7 +7913,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "257be1ac0783a7b3d341afdb8cb40cd7"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: PolioVaccineOralOPVTrivaProduct257be1ac0783a7b3d341afdb8cb40cd7
 InstanceOf: Product
@@ -7783,8 +7952,7 @@ Usage: #example
 //
 
 Instance: PreQualDB06b4345aa879ee56217791b845127c50
-InstanceOf: PreQualDB
-* number.value = "06b4345aa879ee56217791b845127c50"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-12-18
 * vaccineType = #InfluenzaPandemicH5N1
 * commercialName = "Pandemic Live Attenuated Vaccine"
@@ -7792,7 +7960,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "AstraZeneca Pharmaceuticals LP."
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "06b4345aa879ee56217791b845127c50"
+* manufacturerReference = Reference(Manufacturer967d3d36fa4b4a47b110511d7f596d9a) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: InfluenzaPandemicH5N1Product06b4345aa879ee56217791b845127c50
 InstanceOf: Product
@@ -7829,8 +7999,7 @@ Usage: #example
 //
 
 Instance: PreQualDB419758a8ade11f5d91b68ee96bdb4b47
-InstanceOf: PreQualDB
-* number.value = "419758a8ade11f5d91b68ee96bdb4b47"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-01-22
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Panenza"
@@ -7838,7 +8007,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "419758a8ade11f5d91b68ee96bdb4b47"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: InfluenzaPandemicH1N1Product419758a8ade11f5d91b68ee96bdb4b47
 InstanceOf: Product
@@ -7875,8 +8046,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6fdea1bee1bc671366583db8d4d5e5a8
-InstanceOf: PreQualDB
-* number.value = "6fdea1bee1bc671366583db8d4d5e5a8"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-12-01
 * vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Panvax"
@@ -7884,7 +8054,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Seqirus Limited"
 * responsibleNRA.text = "Therapeutic Goods Administration"
-
+* index.value = "6fdea1bee1bc671366583db8d4d5e5a8"
+* manufacturerReference = Reference(Manufacturer414bf493c71eaa3be2581a09156c72c4) 
+* responsibleNRAReference = Reference(Holdera19fa8208437c02d8a7db64f5d62c226) // Therapeutic Goods Administration
 
 Instance: InfluenzaPandemicH1N1Product6fdea1bee1bc671366583db8d4d5e5a8
 InstanceOf: Product
@@ -7921,8 +8093,7 @@ Usage: #example
 //
 
 Instance: PreQualDB19bceea70750407b17840ebc8b098010
-InstanceOf: PreQualDB
-* number.value = "19bceea70750407b17840ebc8b098010"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-12-19
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Pentabio"
@@ -7930,7 +8101,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "19bceea70750407b17840ebc8b098010"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: DiphtheriaTetanusPertussProduct19bceea70750407b17840ebc8b098010
 InstanceOf: Product
@@ -7967,8 +8140,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf52f4568faac4a81f0ba44350720046b
-InstanceOf: PreQualDB
-* number.value = "f52f4568faac4a81f0ba44350720046b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-12-19
 * vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Pentabio"
@@ -7976,7 +8148,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "f52f4568faac4a81f0ba44350720046b"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: DiphtheriaTetanusPertussProductf52f4568faac4a81f0ba44350720046b
 InstanceOf: Product
@@ -8013,8 +8187,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf7cd3e0473cc796a6c1b2f28a3e9fe49
-InstanceOf: PreQualDB
-* number.value = "f7cd3e0473cc796a6c1b2f28a3e9fe49"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-04-21
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Picovax"
@@ -8022,7 +8195,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "AJ Vaccines A/S"
 * responsibleNRA.text = "Danish Medicines Agency"
-
+* index.value = "f7cd3e0473cc796a6c1b2f28a3e9fe49"
+* manufacturerReference = Reference(Manufacturer2861c762e570422c9a439d2e146ef1e9) 
+* responsibleNRAReference = Reference(Holder1a0e5ea84210f3aa10f60f001c703d0a) // Danish Medicines Agency
 
 Instance: PolioVaccineInactivatedIProductf7cd3e0473cc796a6c1b2f28a3e9fe49
 InstanceOf: Product
@@ -8059,8 +8234,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa5a7ec9bf14112507de5750a57bd73da
-InstanceOf: PreQualDB
-* number.value = "a5a7ec9bf14112507de5750a57bd73da"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-12-18
 * vaccineType = #Pneumococcalconjugate
 * commercialName = "PNEUMOSIL®"
@@ -8068,7 +8242,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "a5a7ec9bf14112507de5750a57bd73da"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PneumococcalconjugateProducta5a7ec9bf14112507de5750a57bd73da
 InstanceOf: Product
@@ -8105,8 +8281,7 @@ Usage: #example
 //
 
 Instance: PreQualDB705f24287646c865aca37808d017054d
-InstanceOf: PreQualDB
-* number.value = "705f24287646c865aca37808d017054d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-12-18
 * vaccineType = #Pneumococcalconjugate
 * commercialName = "PNEUMOSIL®"
@@ -8114,7 +8289,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "705f24287646c865aca37808d017054d"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PneumococcalconjugateProduct705f24287646c865aca37808d017054d
 InstanceOf: Product
@@ -8151,8 +8328,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf3ce4732b1e45a16d23606f763c80340
-InstanceOf: PreQualDB
-* number.value = "f3ce4732b1e45a16d23606f763c80340"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-01-19
 * vaccineType = #Pneumococcalconjugate
 * commercialName = "PNEUMOSIL"
@@ -8160,7 +8336,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "f3ce4732b1e45a16d23606f763c80340"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PneumococcalconjugateProductf3ce4732b1e45a16d23606f763c80340
 InstanceOf: Product
@@ -8197,8 +8375,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4648a4b6d1840eaff023f19fd965e00f
-InstanceOf: PreQualDB
-* number.value = "4648a4b6d1840eaff023f19fd965e00f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-10-29
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono T1"
@@ -8206,7 +8383,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "4648a4b6d1840eaff023f19fd965e00f"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: PolioVaccineOralOPVMonovProduct4648a4b6d1840eaff023f19fd965e00f
 InstanceOf: Product
@@ -8243,8 +8422,7 @@ Usage: #example
 //
 
 Instance: PreQualDB59bf6e6638359d3ffee0d752ecb4cef6
-InstanceOf: PreQualDB
-* number.value = "59bf6e6638359d3ffee0d752ecb4cef6"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-10-29
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono T1"
@@ -8252,7 +8430,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "59bf6e6638359d3ffee0d752ecb4cef6"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: PolioVaccineOralOPVMonovProduct59bf6e6638359d3ffee0d752ecb4cef6
 InstanceOf: Product
@@ -8289,8 +8469,7 @@ Usage: #example
 //
 
 Instance: PreQualDB842d974d46519183fe1a32dadb7dc0c8
-InstanceOf: PreQualDB
-* number.value = "842d974d46519183fe1a32dadb7dc0c8"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-10-05
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono Three (oral)"
@@ -8298,7 +8477,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "842d974d46519183fe1a32dadb7dc0c8"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: PolioVaccineOralOPVMonovProduct842d974d46519183fe1a32dadb7dc0c8
 InstanceOf: Product
@@ -8335,8 +8516,7 @@ Usage: #example
 //
 
 Instance: PreQualDB67373800372f840cf41ba721b864809b
-InstanceOf: PreQualDB
-* number.value = "67373800372f840cf41ba721b864809b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-10-05
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono Three (oral)"
@@ -8344,7 +8524,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "67373800372f840cf41ba721b864809b"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: PolioVaccineOralOPVMonovProduct67373800372f840cf41ba721b864809b
 InstanceOf: Product
@@ -8381,8 +8563,7 @@ Usage: #example
 //
 
 Instance: PreQualDB316bda2890397e5d5c8f6bd6daca17b2
-InstanceOf: PreQualDB
-* number.value = "316bda2890397e5d5c8f6bd6daca17b2"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-05-11
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono Two (oral)"
@@ -8390,7 +8571,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "316bda2890397e5d5c8f6bd6daca17b2"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: PolioVaccineOralOPVMonovProduct316bda2890397e5d5c8f6bd6daca17b2
 InstanceOf: Product
@@ -8427,8 +8610,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe17e788736b15bc3134190fc95999323
-InstanceOf: PreQualDB
-* number.value = "e17e788736b15bc3134190fc95999323"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-05-11
 * vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono Two (oral)"
@@ -8436,7 +8618,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "e17e788736b15bc3134190fc95999323"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: PolioVaccineOralOPVMonovProducte17e788736b15bc3134190fc95999323
 InstanceOf: Product
@@ -8473,8 +8657,7 @@ Usage: #example
 //
 
 Instance: PreQualDBc29e53e8046c41eed131d9a1266f0388
-InstanceOf: PreQualDB
-* number.value = "c29e53e8046c41eed131d9a1266f0388"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-10-29
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Polio Sabin One and Three"
@@ -8482,7 +8665,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "c29e53e8046c41eed131d9a1266f0388"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: PolioVaccineOralOPVBivalProductc29e53e8046c41eed131d9a1266f0388
 InstanceOf: Product
@@ -8519,8 +8704,7 @@ Usage: #example
 //
 
 Instance: PreQualDB32b7151f4bb6680929ab3cc234aa0bfd
-InstanceOf: PreQualDB
-* number.value = "32b7151f4bb6680929ab3cc234aa0bfd"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-10-29
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Polio Sabin One and Three"
@@ -8528,7 +8712,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "32b7151f4bb6680929ab3cc234aa0bfd"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: PolioVaccineOralOPVBivalProduct32b7151f4bb6680929ab3cc234aa0bfd
 InstanceOf: Product
@@ -8565,8 +8751,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf7021252eb8b4bf61bbe3bd4b896e77d
-InstanceOf: PreQualDB
-* number.value = "f7021252eb8b4bf61bbe3bd4b896e77d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-12-06
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis vaccine"
@@ -8574,7 +8759,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Bilthoven Biologicals B.V."
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
-
+* index.value = "f7021252eb8b4bf61bbe3bd4b896e77d"
+* manufacturerReference = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) 
+* responsibleNRAReference = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 
 Instance: PolioVaccineInactivatedIProductf7021252eb8b4bf61bbe3bd4b896e77d
 InstanceOf: Product
@@ -8611,8 +8798,7 @@ Usage: #example
 //
 
 Instance: PreQualDB54b1cae84db8613eaeefaf06aa55a6e9
-InstanceOf: PreQualDB
-* number.value = "54b1cae84db8613eaeefaf06aa55a6e9"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-07-29
 * vaccineType = #PolioVaccineNovelOralnOP
 * commercialName = "Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2"
@@ -8620,7 +8806,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "54b1cae84db8613eaeefaf06aa55a6e9"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineNovelOralnOPProduct54b1cae84db8613eaeefaf06aa55a6e9
 InstanceOf: Product
@@ -8657,8 +8845,7 @@ Usage: #example
 //
 
 Instance: PreQualDB47c6363d4eaf1b8a710f73def9bf29f6
-InstanceOf: PreQualDB
-* number.value = "47c6363d4eaf1b8a710f73def9bf29f6"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-12-27
 * vaccineType = #PolioVaccineNovelOralnOP
 * commercialName = "Polio Vaccine - Novel Oral (nOPV) Type 2"
@@ -8666,7 +8853,9 @@ InstanceOf: PreQualDB
 * numDoses = 50
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "47c6363d4eaf1b8a710f73def9bf29f6"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: PolioVaccineNovelOralnOPProduct47c6363d4eaf1b8a710f73def9bf29f6
 InstanceOf: Product
@@ -8703,8 +8892,7 @@ Usage: #example
 //
 
 Instance: PreQualDB76330e8a95782f9f0ea96ed8df410912
-InstanceOf: PreQualDB
-* number.value = "76330e8a95782f9f0ea96ed8df410912"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-07-29
 * vaccineType = #PolioVaccineNovelOralnOP
 * commercialName = "Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2"
@@ -8712,7 +8900,9 @@ InstanceOf: PreQualDB
 * numDoses = 50
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "76330e8a95782f9f0ea96ed8df410912"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineNovelOralnOPProduct76330e8a95782f9f0ea96ed8df410912
 InstanceOf: Product
@@ -8749,8 +8939,7 @@ Usage: #example
 //
 
 Instance: PreQualDB96b2460444287b692b2289a59f9d8ff0
-InstanceOf: PreQualDB
-* number.value = "96b2460444287b692b2289a59f9d8ff0"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-10-28
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis Vaccine (Inactivated)"
@@ -8758,7 +8947,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "96b2460444287b692b2289a59f9d8ff0"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineInactivatedIProduct96b2460444287b692b2289a59f9d8ff0
 InstanceOf: Product
@@ -8795,8 +8986,7 @@ Usage: #example
 //
 
 Instance: PreQualDB748ca7add0fd187501dd3a12c1d2c7ec
-InstanceOf: PreQualDB
-* number.value = "748ca7add0fd187501dd3a12c1d2c7ec"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-10-28
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis Vaccine (Inactivated)"
@@ -8804,7 +8994,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "748ca7add0fd187501dd3a12c1d2c7ec"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineInactivatedIProduct748ca7add0fd187501dd3a12c1d2c7ec
 InstanceOf: Product
@@ -8841,8 +9033,7 @@ Usage: #example
 //
 
 Instance: PreQualDB186e9a5e7f8d849190410641a6352d91
-InstanceOf: PreQualDB
-* number.value = "186e9a5e7f8d849190410641a6352d91"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-10-28
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis Vaccine (Inactivated)"
@@ -8850,7 +9041,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "186e9a5e7f8d849190410641a6352d91"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineInactivatedIProduct186e9a5e7f8d849190410641a6352d91
 InstanceOf: Product
@@ -8887,8 +9080,7 @@ Usage: #example
 //
 
 Instance: PreQualDB82aa38d8c40107a51160a14e219d0796
-InstanceOf: PreQualDB
-* number.value = "82aa38d8c40107a51160a14e219d0796"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-07-11
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis Vaccine (Inactivated)"
@@ -8896,7 +9088,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "82aa38d8c40107a51160a14e219d0796"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineInactivatedIProduct82aa38d8c40107a51160a14e219d0796
 InstanceOf: Product
@@ -8933,8 +9127,7 @@ Usage: #example
 //
 
 Instance: PreQualDB756b50d1047d7e92674342044a986a4e
-InstanceOf: PreQualDB
-* number.value = "756b50d1047d7e92674342044a986a4e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-12-21
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Poliomyelitis Vaccine (live, oral attenuated, human Diploid Cell), type 1 and 3"
@@ -8942,7 +9135,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Beijing Institute of Biological Products Co., Ltd."
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "756b50d1047d7e92674342044a986a4e"
+* manufacturerReference = Reference(Manufacturer2d992993bbbada34f402e9f6bcf502f9) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: PolioVaccineOralOPVBivalProduct756b50d1047d7e92674342044a986a4e
 InstanceOf: Product
@@ -8979,8 +9174,7 @@ Usage: #example
 //
 
 Instance: PreQualDBee81d656f40e814fe6127f50b03bcc14
-InstanceOf: PreQualDB
-* number.value = "ee81d656f40e814fe6127f50b03bcc14"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-10-22
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Poliomyelitis Vaccine (Oral), Bivalent types 1 and 3"
@@ -8988,7 +9182,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "ee81d656f40e814fe6127f50b03bcc14"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVBivalProductee81d656f40e814fe6127f50b03bcc14
 InstanceOf: Product
@@ -9025,8 +9221,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9d40322fd2d0521e4fcc74d7aefba759
-InstanceOf: PreQualDB
-* number.value = "9d40322fd2d0521e4fcc74d7aefba759"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2013-02-04
 * vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Poliomyelitis Vaccine (Oral), Bivalent types 1 and 3"
@@ -9034,7 +9229,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "9d40322fd2d0521e4fcc74d7aefba759"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVBivalProduct9d40322fd2d0521e4fcc74d7aefba759
 InstanceOf: Product
@@ -9071,8 +9268,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6ba6c7e79492766c1300067676e9b373
-InstanceOf: PreQualDB
-* number.value = "6ba6c7e79492766c1300067676e9b373"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2022-06-06
 * vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
@@ -9080,7 +9276,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sinovac Biotech Co. Ltd"
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "6ba6c7e79492766c1300067676e9b373"
+* manufacturerReference = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: PolioVaccineInactivatedSProduct6ba6c7e79492766c1300067676e9b373
 InstanceOf: Product
@@ -9117,8 +9315,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf270bc4b812c58c3c151b4801d1df3e4
-InstanceOf: PreQualDB
-* number.value = "f270bc4b812c58c3c151b4801d1df3e4"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2022-02-15
 * vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
@@ -9126,7 +9323,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Beijing Institute of Biological Products Co., Ltd."
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "f270bc4b812c58c3c151b4801d1df3e4"
+* manufacturerReference = Reference(Manufacturer2d992993bbbada34f402e9f6bcf502f9) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: PolioVaccineInactivatedSProductf270bc4b812c58c3c151b4801d1df3e4
 InstanceOf: Product
@@ -9163,8 +9362,7 @@ Usage: #example
 //
 
 Instance: PreQualDBee376e242477548f8dc005b49480172e
-InstanceOf: PreQualDB
-* number.value = "ee376e242477548f8dc005b49480172e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-08-29
 * vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
@@ -9172,7 +9370,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Sinovac Biotech Co. Ltd"
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "ee376e242477548f8dc005b49480172e"
+* manufacturerReference = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: PolioVaccineInactivatedSProductee376e242477548f8dc005b49480172e
 InstanceOf: Product
@@ -9209,8 +9409,7 @@ Usage: #example
 //
 
 Instance: PreQualDBc500d5a6129d6e855e24e22ca1215100
-InstanceOf: PreQualDB
-* number.value = "c500d5a6129d6e855e24e22ca1215100"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2014-11-28
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis vaccine multidose"
@@ -9218,7 +9417,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Bilthoven Biologicals B.V."
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
-
+* index.value = "c500d5a6129d6e855e24e22ca1215100"
+* manufacturerReference = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) 
+* responsibleNRAReference = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 
 Instance: PolioVaccineInactivatedIProductc500d5a6129d6e855e24e22ca1215100
 InstanceOf: Product
@@ -9255,8 +9456,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9b966db885a1921afe76256a18641d8d
-InstanceOf: PreQualDB
-* number.value = "9b966db885a1921afe76256a18641d8d"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-02-29
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis vaccine multidose"
@@ -9264,7 +9464,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Bilthoven Biologicals B.V."
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
-
+* index.value = "9b966db885a1921afe76256a18641d8d"
+* manufacturerReference = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) 
+* responsibleNRAReference = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 
 Instance: PolioVaccineInactivatedIProduct9b966db885a1921afe76256a18641d8d
 InstanceOf: Product
@@ -9301,8 +9503,7 @@ Usage: #example
 //
 
 Instance: PreQualDBabb65c70eb19b87f6aee9e60a2df9058
-InstanceOf: PreQualDB
-* number.value = "abb65c70eb19b87f6aee9e60a2df9058"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-02-02
 * vaccineType = #PolioVaccineOralOPVTriva
 * commercialName = "Polioviral vaccine"
@@ -9310,7 +9511,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Haffkine Bio Pharmaceutical Corporation Ltd"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "abb65c70eb19b87f6aee9e60a2df9058"
+* manufacturerReference = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineOralOPVTrivaProductabb65c70eb19b87f6aee9e60a2df9058
 InstanceOf: Product
@@ -9347,8 +9550,7 @@ Usage: #example
 //
 
 Instance: PreQualDB52cb0331ee15a5368691e411bb39b2b5
-InstanceOf: PreQualDB
-* number.value = "52cb0331ee15a5368691e411bb39b2b5"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-08-20
 * vaccineType = #Pneumococcalconjugate
 * commercialName = "Prevenar 13"
@@ -9356,7 +9558,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Pfizer Europe MA EEIG"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "52cb0331ee15a5368691e411bb39b2b5"
+* manufacturerReference = Reference(Manufacturer4c7bd357ca5e34506d2325abf61a6d5c) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: PneumococcalconjugateProduct52cb0331ee15a5368691e411bb39b2b5
 InstanceOf: Product
@@ -9393,8 +9597,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa4d3060d51a3236ccf43ed403ee4e206
-InstanceOf: PreQualDB
-* number.value = "a4d3060d51a3236ccf43ed403ee4e206"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2016-07-14
 * vaccineType = #Pneumococcalconjugate
 * commercialName = "Prevenar 13 Multidose Vial"
@@ -9402,7 +9605,9 @@ InstanceOf: PreQualDB
 * numDoses = 4
 * manufacturer.text = "Pfizer Europe MA EEIG"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "a4d3060d51a3236ccf43ed403ee4e206"
+* manufacturerReference = Reference(Manufacturer4c7bd357ca5e34506d2325abf61a6d5c) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: PneumococcalconjugateProducta4d3060d51a3236ccf43ed403ee4e206
 InstanceOf: Product
@@ -9439,8 +9644,7 @@ Usage: #example
 //
 
 Instance: PreQualDB753abc68ba8b295375d86e9b0d1b91dc
-InstanceOf: PreQualDB
-* number.value = "753abc68ba8b295375d86e9b0d1b91dc"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-03-09
 * vaccineType = #MeaslesMumpsandRubella
 * commercialName = "Priorix"
@@ -9448,7 +9652,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "753abc68ba8b295375d86e9b0d1b91dc"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: MeaslesMumpsandRubellaProduct753abc68ba8b295375d86e9b0d1b91dc
 InstanceOf: Product
@@ -9485,8 +9691,7 @@ Usage: #example
 //
 
 Instance: PreQualDBbfbb88a62ced18e23fe643f6eee52e2f
-InstanceOf: PreQualDB
-* number.value = "bfbb88a62ced18e23fe643f6eee52e2f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-12-21
 * vaccineType = #MeaslesMumpsandRubella
 * commercialName = "Priorix"
@@ -9494,7 +9699,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "bfbb88a62ced18e23fe643f6eee52e2f"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: MeaslesMumpsandRubellaProductbfbb88a62ced18e23fe643f6eee52e2f
 InstanceOf: Product
@@ -9531,8 +9738,7 @@ Usage: #example
 //
 
 Instance: PreQualDB72e07792f80ca772d9f34bd2f7912816
-InstanceOf: PreQualDB
-* number.value = "72e07792f80ca772d9f34bd2f7912816"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-05-09
 * vaccineType = #DengueTetravalentliveatt
 * commercialName = "Qdenga"
@@ -9540,7 +9746,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Takeda GmbH."
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "72e07792f80ca772d9f34bd2f7912816"
+* manufacturerReference = Reference(Manufacturer5f32e67b1efb37f098e1afd1fe7b6a6c) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: DengueTetravalentliveattProduct72e07792f80ca772d9f34bd2f7912816
 InstanceOf: Product
@@ -9577,8 +9785,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9113d2945e9e823a910c744b6a3c49dc
-InstanceOf: PreQualDB
-* number.value = "9113d2945e9e823a910c744b6a3c49dc"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-04-26
 * vaccineType = #Haemophilusinfluenzaetyp
 * commercialName = "Quimi-Hib"
@@ -9586,7 +9793,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Centro de Ingenieria Genetica y Biotecnologia"
 * responsibleNRA.text = "Centro para el Control Estatal de la Calidad de los Medicamentos"
-
+* index.value = "9113d2945e9e823a910c744b6a3c49dc"
+* manufacturerReference = Reference(Manufacturered6da65a10ba47d41a68dc24525ab5c4) 
+* responsibleNRAReference = Reference(Holder882e1c1bff3f30753e4f4da0e0917ec0) // Centro para el Control Estatal de la Calidad de los Medicamentos
 
 Instance: HaemophilusinfluenzaetypProduct9113d2945e9e823a910c744b6a3c49dc
 InstanceOf: Product
@@ -9623,8 +9832,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd28d68a6bb34fe945afb8b24f6430b16
-InstanceOf: PreQualDB
-* number.value = "d28d68a6bb34fe945afb8b24f6430b16"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-12-19
 * vaccineType = #Malaria
 * commercialName = "CYVAC"
@@ -9632,7 +9840,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "d28d68a6bb34fe945afb8b24f6430b16"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: MalariaProductd28d68a6bb34fe945afb8b24f6430b16
 InstanceOf: Product
@@ -9669,8 +9879,7 @@ Usage: #example
 //
 
 Instance: PreQualDB0418856e480b361dafef71b468d1e18b
-InstanceOf: PreQualDB
-* number.value = "0418856e480b361dafef71b468d1e18b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-12-20
 * vaccineType = #Rabies
 * commercialName = "Rabies Vaccine Inactivated (Freeze Dried)(RABIVAX-S)"
@@ -9678,7 +9887,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "0418856e480b361dafef71b468d1e18b"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RabiesProduct0418856e480b361dafef71b468d1e18b
 InstanceOf: Product
@@ -9715,8 +9926,7 @@ Usage: #example
 //
 
 Instance: PreQualDB3c030e6060e1e8ea524edf07e6c12230
-InstanceOf: PreQualDB
-* number.value = "3c030e6060e1e8ea524edf07e6c12230"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-01-06
 * vaccineType = #MeaslesMumpsandRubella
 * commercialName = "rHA M-M-R II"
@@ -9724,7 +9934,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Merck Sharp & Dohme LLC"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "3c030e6060e1e8ea524edf07e6c12230"
+* manufacturerReference = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: MeaslesMumpsandRubellaProduct3c030e6060e1e8ea524edf07e6c12230
 InstanceOf: Product
@@ -9761,8 +9973,7 @@ Usage: #example
 //
 
 Instance: PreQualDB19bdb407e511b8e34f021c17cc55c83b
-InstanceOf: PreQualDB
-* number.value = "19bdb407e511b8e34f021c17cc55c83b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-03-12
 * vaccineType = #Rotavirus
 * commercialName = "Rotarix"
@@ -9770,7 +9981,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "19bdb407e511b8e34f021c17cc55c83b"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: RotavirusProduct19bdb407e511b8e34f021c17cc55c83b
 InstanceOf: Product
@@ -9807,8 +10020,7 @@ Usage: #example
 //
 
 Instance: PreQualDB69ca2da9fd832080d56b4a1b033a36b6
-InstanceOf: PreQualDB
-* number.value = "69ca2da9fd832080d56b4a1b033a36b6"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-02-14
 * vaccineType = #Rotavirus
 * commercialName = "Rotarix"
@@ -9816,7 +10028,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "69ca2da9fd832080d56b4a1b033a36b6"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: RotavirusProduct69ca2da9fd832080d56b4a1b033a36b6
 InstanceOf: Product
@@ -9853,8 +10067,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa1a42d16771c6f7eddf535770e0c3a48
-InstanceOf: PreQualDB
-* number.value = "a1a42d16771c6f7eddf535770e0c3a48"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-03-12
 * vaccineType = #Rotavirus
 * commercialName = "Rotarix"
@@ -9862,7 +10075,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
-
+* index.value = "a1a42d16771c6f7eddf535770e0c3a48"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 
 Instance: RotavirusProducta1a42d16771c6f7eddf535770e0c3a48
 InstanceOf: Product
@@ -9899,8 +10114,7 @@ Usage: #example
 //
 
 Instance: PreQualDB5589b2856011fcd746dd96e1d7a5ad11
-InstanceOf: PreQualDB
-* number.value = "5589b2856011fcd746dd96e1d7a5ad11"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-09-21
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTASIIL"
@@ -9908,7 +10122,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "5589b2856011fcd746dd96e1d7a5ad11"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProduct5589b2856011fcd746dd96e1d7a5ad11
 InstanceOf: Product
@@ -9945,8 +10161,7 @@ Usage: #example
 //
 
 Instance: PreQualDB76bb7d36ac4e4124b886c2739fafa0fe
-InstanceOf: PreQualDB
-* number.value = "76bb7d36ac4e4124b886c2739fafa0fe"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-09-21
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTASIIL"
@@ -9954,7 +10169,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "76bb7d36ac4e4124b886c2739fafa0fe"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProduct76bb7d36ac4e4124b886c2739fafa0fe
 InstanceOf: Product
@@ -9991,8 +10208,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd18080620be3e30e481010fcb4571081
-InstanceOf: PreQualDB
-* number.value = "d18080620be3e30e481010fcb4571081"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2023-09-13
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTASIIL-Liquid"
@@ -10000,7 +10216,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "d18080620be3e30e481010fcb4571081"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProductd18080620be3e30e481010fcb4571081
 InstanceOf: Product
@@ -10037,8 +10255,7 @@ Usage: #example
 //
 
 Instance: PreQualDBc61ab098ad0a985665c75596c7951e79
-InstanceOf: PreQualDB
-* number.value = "c61ab098ad0a985665c75596c7951e79"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-10-08
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTASIIL-Liquid"
@@ -10046,7 +10263,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "c61ab098ad0a985665c75596c7951e79"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProductc61ab098ad0a985665c75596c7951e79
 InstanceOf: Product
@@ -10083,8 +10302,7 @@ Usage: #example
 //
 
 Instance: PreQualDB33cd55252b50bd9b01ab9911b4ed1e87
-InstanceOf: PreQualDB
-* number.value = "33cd55252b50bd9b01ab9911b4ed1e87"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-02-18
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTASIIL-Liquid"
@@ -10092,7 +10310,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "33cd55252b50bd9b01ab9911b4ed1e87"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProduct33cd55252b50bd9b01ab9911b4ed1e87
 InstanceOf: Product
@@ -10129,8 +10349,7 @@ Usage: #example
 //
 
 Instance: PreQualDB3bd7563ae41bfa76f53d6e5a3fee8b88
-InstanceOf: PreQualDB
-* number.value = "3bd7563ae41bfa76f53d6e5a3fee8b88"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-01-28
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTASIIL®Thermo"
@@ -10138,7 +10357,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "3bd7563ae41bfa76f53d6e5a3fee8b88"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProduct3bd7563ae41bfa76f53d6e5a3fee8b88
 InstanceOf: Product
@@ -10175,8 +10396,7 @@ Usage: #example
 //
 
 Instance: PreQualDB08403959d40159b3ad41e37479e81213
-InstanceOf: PreQualDB
-* number.value = "08403959d40159b3ad41e37479e81213"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-01-28
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTASIIL®Thermo"
@@ -10184,7 +10404,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "08403959d40159b3ad41e37479e81213"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProduct08403959d40159b3ad41e37479e81213
 InstanceOf: Product
@@ -10221,8 +10443,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe0ea41b269748c647d480fbfc11d1c61
-InstanceOf: PreQualDB
-* number.value = "e0ea41b269748c647d480fbfc11d1c61"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2008-10-07
 * vaccineType = #Rotavirus
 * commercialName = "Rotateq"
@@ -10230,7 +10451,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Merck Sharp & Dohme LLC"
 * responsibleNRA.text = "CBER/FDA"
-
+* index.value = "e0ea41b269748c647d480fbfc11d1c61"
+* manufacturerReference = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) 
+* responsibleNRAReference = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 
 Instance: RotavirusProducte0ea41b269748c647d480fbfc11d1c61
 InstanceOf: Product
@@ -10267,8 +10490,7 @@ Usage: #example
 //
 
 Instance: PreQualDBc2a86284ce32c8069b3e2dcf6f13adfc
-InstanceOf: PreQualDB
-* number.value = "c2a86284ce32c8069b3e2dcf6f13adfc"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-01-05
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "Rotavac"
@@ -10276,7 +10498,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "c2a86284ce32c8069b3e2dcf6f13adfc"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProductc2a86284ce32c8069b3e2dcf6f13adfc
 InstanceOf: Product
@@ -10313,8 +10537,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3b987745acabd74dd0a621fedff1695
-InstanceOf: PreQualDB
-* number.value = "a3b987745acabd74dd0a621fedff1695"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-01-05
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "Rotavac"
@@ -10322,7 +10545,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "a3b987745acabd74dd0a621fedff1695"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProducta3b987745acabd74dd0a621fedff1695
 InstanceOf: Product
@@ -10359,8 +10584,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb31be180ffbe94df67414b9daa4f3450
-InstanceOf: PreQualDB
-* number.value = "b31be180ffbe94df67414b9daa4f3450"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-06-18
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTAVAC 5D®"
@@ -10368,7 +10592,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "b31be180ffbe94df67414b9daa4f3450"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProductb31be180ffbe94df67414b9daa4f3450
 InstanceOf: Product
@@ -10405,8 +10631,7 @@ Usage: #example
 //
 
 Instance: PreQualDBcedb0273bc21274f194d9ca6726c1979
-InstanceOf: PreQualDB
-* number.value = "cedb0273bc21274f194d9ca6726c1979"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-06-18
 * vaccineType = #Rotavirusliveattenuated
 * commercialName = "ROTAVAC 5D®"
@@ -10414,7 +10639,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "cedb0273bc21274f194d9ca6726c1979"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RotavirusliveattenuatedProductcedb0273bc21274f194d9ca6726c1979
 InstanceOf: Product
@@ -10451,8 +10678,7 @@ Usage: #example
 //
 
 Instance: PreQualDB8861de735f2f92429fa06f8c75953408
-InstanceOf: PreQualDB
-* number.value = "8861de735f2f92429fa06f8c75953408"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-09-01
 * vaccineType = #Rubella
 * commercialName = "Rubella Vaccine, Live, Attenuated"
@@ -10460,7 +10686,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "8861de735f2f92429fa06f8c75953408"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RubellaProduct8861de735f2f92429fa06f8c75953408
 InstanceOf: Product
@@ -10497,8 +10725,7 @@ Usage: #example
 //
 
 Instance: PreQualDBefbaaa392dc71d5bb1f3f0d3da96a40c
-InstanceOf: PreQualDB
-* number.value = "efbaaa392dc71d5bb1f3f0d3da96a40c"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-09-01
 * vaccineType = #Rubella
 * commercialName = "Rubella Vaccine, Live, Attenuated"
@@ -10506,7 +10733,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "efbaaa392dc71d5bb1f3f0d3da96a40c"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RubellaProductefbaaa392dc71d5bb1f3f0d3da96a40c
 InstanceOf: Product
@@ -10543,8 +10772,7 @@ Usage: #example
 //
 
 Instance: PreQualDB505a264a1d839868780cae83ee6c9494
-InstanceOf: PreQualDB
-* number.value = "505a264a1d839868780cae83ee6c9494"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-09-01
 * vaccineType = #Rubella
 * commercialName = "Rubella Vaccine, Live, Attenuated"
@@ -10552,7 +10780,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "505a264a1d839868780cae83ee6c9494"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RubellaProduct505a264a1d839868780cae83ee6c9494
 InstanceOf: Product
@@ -10589,8 +10819,7 @@ Usage: #example
 //
 
 Instance: PreQualDBde9c00e616358f1c418f1abd5c7acdd4
-InstanceOf: PreQualDB
-* number.value = "de9c00e616358f1c418f1abd5c7acdd4"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-09-01
 * vaccineType = #Rubella
 * commercialName = "Rubella Vaccine, Live, Attenuated"
@@ -10598,7 +10827,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "de9c00e616358f1c418f1abd5c7acdd4"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RubellaProductde9c00e616358f1c418f1abd5c7acdd4
 InstanceOf: Product
@@ -10635,8 +10866,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb772d8562aa5a13f13c190fe90fd7bd4
-InstanceOf: PreQualDB
-* number.value = "b772d8562aa5a13f13c190fe90fd7bd4"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-05-25
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Serinflu"
@@ -10644,7 +10874,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Abbott Biologicals BV"
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
-
+* index.value = "b772d8562aa5a13f13c190fe90fd7bd4"
+* manufacturerReference = Reference(Manufacturerd2113c7f14dd346f92ebf77f96935322) 
+* responsibleNRAReference = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 
 Instance: InfluenzaseasonalTrivaleProductb772d8562aa5a13f13c190fe90fd7bd4
 InstanceOf: Product
@@ -10681,8 +10913,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd3f4255e6ba67498743a26665553a7db
-InstanceOf: PreQualDB
-* number.value = "d3f4255e6ba67498743a26665553a7db"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-09-29
 * vaccineType = #cholerainactivatedoral
 * commercialName = "Shanchol"
@@ -10690,7 +10921,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Healthcare India Private Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "d3f4255e6ba67498743a26665553a7db"
+* manufacturerReference = Reference(Manufacturera48efaff80414137ccbaa002140195c6) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: cholerainactivatedoralProductd3f4255e6ba67498743a26665553a7db
 InstanceOf: Product
@@ -10727,8 +10960,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe62fe3a055634b5be7fab5fb1ed0a06a
-InstanceOf: PreQualDB
-* number.value = "e62fe3a055634b5be7fab5fb1ed0a06a"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-10-01
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "ShanIPV™"
@@ -10736,7 +10968,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Sanofi Healthcare India Private Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "e62fe3a055634b5be7fab5fb1ed0a06a"
+* manufacturerReference = Reference(Manufacturera48efaff80414137ccbaa002140195c6) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineInactivatedIProducte62fe3a055634b5be7fab5fb1ed0a06a
 InstanceOf: Product
@@ -10773,8 +11007,7 @@ Usage: #example
 //
 
 Instance: PreQualDB09cfaf377450bd8a7720ffc4074251b2
-InstanceOf: PreQualDB
-* number.value = "09cfaf377450bd8a7720ffc4074251b2"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2022-04-22
 * vaccineType = #PolioVaccineInactivatedI
 * commercialName = "ShanIPV™"
@@ -10782,7 +11015,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Healthcare India Private Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "09cfaf377450bd8a7720ffc4074251b2"
+* manufacturerReference = Reference(Manufacturera48efaff80414137ccbaa002140195c6) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: PolioVaccineInactivatedIProduct09cfaf377450bd8a7720ffc4074251b2
 InstanceOf: Product
@@ -10819,8 +11054,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa72d752a75badd7e33bb96f261eac666
-InstanceOf: PreQualDB
-* number.value = "a72d752a75badd7e33bb96f261eac666"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2022-10-14
 * vaccineType = #YellowFever
 * commercialName = "SinSaVac™"
@@ -10828,7 +11062,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of Sciences"
 * responsibleNRA.text = "Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation"
-
+* index.value = "a72d752a75badd7e33bb96f261eac666"
+* manufacturerReference = Reference(Manufacturer9f078889f4903702762d00303f0ff713) 
+* responsibleNRAReference = Reference(Holderf8a24c02753aa7a5f43198884d058a6b) // Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation
 
 Instance: YellowFeverProducta72d752a75badd7e33bb96f261eac666
 InstanceOf: Product
@@ -10865,8 +11101,7 @@ Usage: #example
 //
 
 Instance: PreQualDB44ab81d91df0da99c769de14c18717ce
-InstanceOf: PreQualDB
-* number.value = "44ab81d91df0da99c769de14c18717ce"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-12-27
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "SKYCellflu Quadrivalent inj."
@@ -10874,7 +11109,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "SK Bioscience Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "44ab81d91df0da99c769de14c18717ce"
+* manufacturerReference = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalQuadrivProduct44ab81d91df0da99c769de14c18717ce
 InstanceOf: Product
@@ -10911,8 +11148,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf3381c7abe4477ccbb4b840f72e416db
-InstanceOf: PreQualDB
-* number.value = "f3381c7abe4477ccbb4b840f72e416db"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-12-27
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "SKYCellflu Quadrivalent Multi inj."
@@ -10920,7 +11156,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "SK Bioscience Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "f3381c7abe4477ccbb4b840f72e416db"
+* manufacturerReference = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalQuadrivProductf3381c7abe4477ccbb4b840f72e416db
 InstanceOf: Product
@@ -10957,8 +11195,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf19316839fecd5b707bd519e75a70325
-InstanceOf: PreQualDB
-* number.value = "f19316839fecd5b707bd519e75a70325"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-05-15
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "SKYCellflu® inj."
@@ -10966,7 +11203,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "SK Bioscience Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "f19316839fecd5b707bd519e75a70325"
+* manufacturerReference = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalTrivaleProductf19316839fecd5b707bd519e75a70325
 InstanceOf: Product
@@ -11003,8 +11242,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4f2078f43c644358e8e5026514ac396f
-InstanceOf: PreQualDB
-* number.value = "4f2078f43c644358e8e5026514ac396f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-04-08
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "SKYCellflu® Multi inj."
@@ -11012,7 +11250,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "SK Bioscience Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "4f2078f43c644358e8e5026514ac396f"
+* manufacturerReference = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: InfluenzaseasonalTrivaleProduct4f2078f43c644358e8e5026514ac396f
 InstanceOf: Product
@@ -11049,8 +11289,7 @@ Usage: #example
 //
 
 Instance: PreQualDBfe8a25ec702dcdb5f22c286e2464b284
-InstanceOf: PreQualDB
-* number.value = "fe8a25ec702dcdb5f22c286e2464b284"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-02-21
 * vaccineType = #TyphoidConjugate
 * commercialName = "SKYTyphoid Multi Inj."
@@ -11058,7 +11297,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "SK Bioscience Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "fe8a25ec702dcdb5f22c286e2464b284"
+* manufacturerReference = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: TyphoidConjugateProductfe8a25ec702dcdb5f22c286e2464b284
 InstanceOf: Product
@@ -11095,8 +11336,7 @@ Usage: #example
 //
 
 Instance: PreQualDB9cf60763a11c2d4ac8808025061688f9
-InstanceOf: PreQualDB
-* number.value = "9cf60763a11c2d4ac8808025061688f9"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-12-09
 * vaccineType = #Varicella
 * commercialName = "SKYVaricella Inj."
@@ -11104,7 +11344,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "SK Bioscience Co., Ltd."
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
-
+* index.value = "9cf60763a11c2d4ac8808025061688f9"
+* manufacturerReference = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) 
+* responsibleNRAReference = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 
 Instance: VaricellaProduct9cf60763a11c2d4ac8808025061688f9
 InstanceOf: Product
@@ -11141,8 +11383,7 @@ Usage: #example
 //
 
 Instance: PreQualDB7e6bac61531f2943ec146a5152f26de8
-InstanceOf: PreQualDB
-* number.value = "7e6bac61531f2943ec146a5152f26de8"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-03-20
 * vaccineType = #YellowFever
 * commercialName = "Stabilized Yellow Fever Vaccine"
@@ -11150,7 +11391,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Institut Pasteur de Dakar"
 * responsibleNRA.text = "Ministère de la Santé publique"
-
+* index.value = "7e6bac61531f2943ec146a5152f26de8"
+* manufacturerReference = Reference(Manufacturerfca41003618e5d38b1d6e5d20833ca98) 
+* responsibleNRAReference = Reference(Holder3035628061665a8f22ec1b8f2fabf749) // Ministère de la Santé publique
 
 Instance: YellowFeverProduct7e6bac61531f2943ec146a5152f26de8
 InstanceOf: Product
@@ -11187,8 +11430,7 @@ Usage: #example
 //
 
 Instance: PreQualDB83b74943e21289d183eb515e4f69d62e
-InstanceOf: PreQualDB
-* number.value = "83b74943e21289d183eb515e4f69d62e"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-03-20
 * vaccineType = #YellowFever
 * commercialName = "Stabilized Yellow Fever Vaccine"
@@ -11196,7 +11438,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Institut Pasteur de Dakar"
 * responsibleNRA.text = "Ministère de la Santé publique"
-
+* index.value = "83b74943e21289d183eb515e4f69d62e"
+* manufacturerReference = Reference(Manufacturerfca41003618e5d38b1d6e5d20833ca98) 
+* responsibleNRAReference = Reference(Holder3035628061665a8f22ec1b8f2fabf749) // Ministère de la Santé publique
 
 Instance: YellowFeverProduct83b74943e21289d183eb515e4f69d62e
 InstanceOf: Product
@@ -11233,8 +11477,7 @@ Usage: #example
 //
 
 Instance: PreQualDB2c594b69b8b6b5d4b77a22d7ef6ae760
-InstanceOf: PreQualDB
-* number.value = "2c594b69b8b6b5d4b77a22d7ef6ae760"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-03-20
 * vaccineType = #YellowFever
 * commercialName = "Stabilized Yellow Fever Vaccine"
@@ -11242,7 +11485,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Institut Pasteur de Dakar"
 * responsibleNRA.text = "Ministère de la Santé publique"
-
+* index.value = "2c594b69b8b6b5d4b77a22d7ef6ae760"
+* manufacturerReference = Reference(Manufacturerfca41003618e5d38b1d6e5d20833ca98) 
+* responsibleNRAReference = Reference(Holder3035628061665a8f22ec1b8f2fabf749) // Ministère de la Santé publique
 
 Instance: YellowFeverProduct2c594b69b8b6b5d4b77a22d7ef6ae760
 InstanceOf: Product
@@ -11279,8 +11524,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa640b9f1e3bf870989c9f7498a0ae5a1
-InstanceOf: PreQualDB
-* number.value = "a640b9f1e3bf870989c9f7498a0ae5a1"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1987-01-01
 * vaccineType = #YellowFever
 * commercialName = "STAMARIL"
@@ -11288,7 +11532,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "a640b9f1e3bf870989c9f7498a0ae5a1"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: YellowFeverProducta640b9f1e3bf870989c9f7498a0ae5a1
 InstanceOf: Product
@@ -11325,8 +11571,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb925c217720363c9de4a5c27b1342e70
-InstanceOf: PreQualDB
-* number.value = "b925c217720363c9de4a5c27b1342e70"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2009-10-30
 * vaccineType = #Pneumococcalconjugate
 * commercialName = "Synflorix"
@@ -11334,7 +11579,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "b925c217720363c9de4a5c27b1342e70"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: PneumococcalconjugateProductb925c217720363c9de4a5c27b1342e70
 InstanceOf: Product
@@ -11371,8 +11618,7 @@ Usage: #example
 //
 
 Instance: PreQualDB390d0d0ab13b050a73ba08a965ab7f00
-InstanceOf: PreQualDB
-* number.value = "390d0d0ab13b050a73ba08a965ab7f00"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2010-03-19
 * vaccineType = #Pneumococcalconjugate
 * commercialName = "Synflorix"
@@ -11380,7 +11626,9 @@ InstanceOf: PreQualDB
 * numDoses = 2
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "390d0d0ab13b050a73ba08a965ab7f00"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: PneumococcalconjugateProduct390d0d0ab13b050a73ba08a965ab7f00
 InstanceOf: Product
@@ -11417,8 +11665,7 @@ Usage: #example
 //
 
 Instance: PreQualDBceec6ac8c1f16431464b9ca2276dda60
-InstanceOf: PreQualDB
-* number.value = "ceec6ac8c1f16431464b9ca2276dda60"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-10-16
 * vaccineType = #Pneumococcalconjugate
 * commercialName = "Synflorix"
@@ -11426,7 +11673,9 @@ InstanceOf: PreQualDB
 * numDoses = 4
 * manufacturer.text = "GlaxoSmithKline Biologicals SA"
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "ceec6ac8c1f16431464b9ca2276dda60"
+* manufacturerReference = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: PneumococcalconjugateProductceec6ac8c1f16431464b9ca2276dda60
 InstanceOf: Product
@@ -11463,8 +11712,7 @@ Usage: #example
 //
 
 Instance: PreQualDB1942024dbb931d5afdc37d89b552645b
-InstanceOf: PreQualDB
-* number.value = "1942024dbb931d5afdc37d89b552645b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-05-09
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Tetadif"
@@ -11472,7 +11720,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)"
 * responsibleNRA.text = "Bulgarian Drug Agency"
-
+* index.value = "1942024dbb931d5afdc37d89b552645b"
+* manufacturerReference = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) 
+* responsibleNRAReference = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 
 Instance: DiphtheriaTetanusreducedProduct1942024dbb931d5afdc37d89b552645b
 InstanceOf: Product
@@ -11509,8 +11759,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6126bbb0791131c7ad563b276e0e66b2
-InstanceOf: PreQualDB
-* number.value = "6126bbb0791131c7ad563b276e0e66b2"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-05-09
 * vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Tetadif"
@@ -11518,7 +11767,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)"
 * responsibleNRA.text = "Bulgarian Drug Agency"
-
+* index.value = "6126bbb0791131c7ad563b276e0e66b2"
+* manufacturerReference = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) 
+* responsibleNRAReference = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 
 Instance: DiphtheriaTetanusreducedProduct6126bbb0791131c7ad563b276e0e66b2
 InstanceOf: Product
@@ -11555,8 +11806,7 @@ Usage: #example
 //
 
 Instance: PreQualDBe12c0a907404c592dba9ca5198a83295
-InstanceOf: PreQualDB
-* number.value = "e12c0a907404c592dba9ca5198a83295"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #TetanusToxoid
 * commercialName = "Tetanus  Toxoid Vaccine Adsorbed"
@@ -11564,7 +11814,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "e12c0a907404c592dba9ca5198a83295"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TetanusToxoidProducte12c0a907404c592dba9ca5198a83295
 InstanceOf: Product
@@ -11601,8 +11853,7 @@ Usage: #example
 //
 
 Instance: PreQualDB2e0759953193311b47285c83952a2754
-InstanceOf: PreQualDB
-* number.value = "2e0759953193311b47285c83952a2754"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #TetanusToxoid
 * commercialName = "Tetanus  Toxoid Vaccine Adsorbed"
@@ -11610,7 +11861,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "2e0759953193311b47285c83952a2754"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TetanusToxoidProduct2e0759953193311b47285c83952a2754
 InstanceOf: Product
@@ -11647,8 +11900,7 @@ Usage: #example
 //
 
 Instance: PreQualDB0508af4c4b5c71b3248308bd1c7fdfd8
-InstanceOf: PreQualDB
-* number.value = "0508af4c4b5c71b3248308bd1c7fdfd8"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1995-04-04
 * vaccineType = #TetanusToxoid
 * commercialName = "Tetanus  Toxoid Vaccine Adsorbed"
@@ -11656,7 +11908,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Serum Institute of India Pvt. Ltd."
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "0508af4c4b5c71b3248308bd1c7fdfd8"
+* manufacturerReference = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TetanusToxoidProduct0508af4c4b5c71b3248308bd1c7fdfd8
 InstanceOf: Product
@@ -11693,8 +11947,7 @@ Usage: #example
 //
 
 Instance: PreQualDB30030d41c203959a0e4f72efdfb4029c
-InstanceOf: PreQualDB
-* number.value = "30030d41c203959a0e4f72efdfb4029c"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-05-09
 * vaccineType = #TetanusToxoid
 * commercialName = "Tetatox"
@@ -11702,7 +11955,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)"
 * responsibleNRA.text = "Bulgarian Drug Agency"
-
+* index.value = "30030d41c203959a0e4f72efdfb4029c"
+* manufacturerReference = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) 
+* responsibleNRAReference = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 
 Instance: TetanusToxoidProduct30030d41c203959a0e4f72efdfb4029c
 InstanceOf: Product
@@ -11739,8 +11994,7 @@ Usage: #example
 //
 
 Instance: PreQualDBbf71a77a2ec336315fb2a794b462ba67
-InstanceOf: PreQualDB
-* number.value = "bf71a77a2ec336315fb2a794b462ba67"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2006-05-09
 * vaccineType = #TetanusToxoid
 * commercialName = "Tetatox"
@@ -11748,7 +12002,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)"
 * responsibleNRA.text = "Bulgarian Drug Agency"
-
+* index.value = "bf71a77a2ec336315fb2a794b462ba67"
+* manufacturerReference = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) 
+* responsibleNRAReference = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 
 Instance: TetanusToxoidProductbf71a77a2ec336315fb2a794b462ba67
 InstanceOf: Product
@@ -11785,8 +12041,7 @@ Usage: #example
 //
 
 Instance: PreQualDB900a99c81c4bab7447d599a596472f8f
-InstanceOf: PreQualDB
-* number.value = "900a99c81c4bab7447d599a596472f8f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1999-03-11
 * vaccineType = #TetanusToxoid
 * commercialName = "TT vaccine"
@@ -11794,7 +12049,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "900a99c81c4bab7447d599a596472f8f"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: TetanusToxoidProduct900a99c81c4bab7447d599a596472f8f
 InstanceOf: Product
@@ -11831,8 +12088,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb70448685011fa7f00ccf7d2be93f78f
-InstanceOf: PreQualDB
-* number.value = "b70448685011fa7f00ccf7d2be93f78f"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 1999-03-11
 * vaccineType = #TetanusToxoid
 * commercialName = "TT vaccine"
@@ -11840,7 +12096,9 @@ InstanceOf: PreQualDB
 * numDoses = 20
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "b70448685011fa7f00ccf7d2be93f78f"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: TetanusToxoidProductb70448685011fa7f00ccf7d2be93f78f
 InstanceOf: Product
@@ -11877,8 +12135,7 @@ Usage: #example
 //
 
 Instance: PreQualDB5deeb5fe56bfbee263ba6f982b9a7d72
-InstanceOf: PreQualDB
-* number.value = "5deeb5fe56bfbee263ba6f982b9a7d72"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2003-10-29
 * vaccineType = #TetanusToxoid
 * commercialName = "TT vaccine"
@@ -11886,7 +12143,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "PT Bio Farma (Persero)"
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
-
+* index.value = "5deeb5fe56bfbee263ba6f982b9a7d72"
+* manufacturerReference = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) 
+* responsibleNRAReference = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 
 Instance: TetanusToxoidProduct5deeb5fe56bfbee263ba6f982b9a7d72
 InstanceOf: Product
@@ -11923,8 +12182,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4aa01964b7fa3a11f25f12c457c63642
-InstanceOf: PreQualDB
-* number.value = "4aa01964b7fa3a11f25f12c457c63642"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-12-22
 * vaccineType = #TyphoidConjugate
 * commercialName = "Typbar-TCV"
@@ -11932,7 +12190,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4aa01964b7fa3a11f25f12c457c63642"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TyphoidConjugateProduct4aa01964b7fa3a11f25f12c457c63642
 InstanceOf: Product
@@ -11969,8 +12229,7 @@ Usage: #example
 //
 
 Instance: PreQualDB5e16c37cad0eeaaf7cbf14bd2837b298
-InstanceOf: PreQualDB
-* number.value = "5e16c37cad0eeaaf7cbf14bd2837b298"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2017-12-22
 * vaccineType = #TyphoidConjugate
 * commercialName = "Typbar-TCV"
@@ -11978,7 +12237,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Bharat Biotech International Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "5e16c37cad0eeaaf7cbf14bd2837b298"
+* manufacturerReference = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TyphoidConjugateProduct5e16c37cad0eeaaf7cbf14bd2837b298
 InstanceOf: Product
@@ -12015,8 +12276,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4c6979abe6c7b445b1579044cffde18b
-InstanceOf: PreQualDB
-* number.value = "4c6979abe6c7b445b1579044cffde18b"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-12-04
 * vaccineType = #TyphoidConjugate
 * commercialName = "TYPHIBEV®"
@@ -12024,7 +12284,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "4c6979abe6c7b445b1579044cffde18b"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TyphoidConjugateProduct4c6979abe6c7b445b1579044cffde18b
 InstanceOf: Product
@@ -12061,8 +12323,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa50e9ffd93738d72b7733c9f636d2f64
-InstanceOf: PreQualDB
-* number.value = "a50e9ffd93738d72b7733c9f636d2f64"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-12-04
 * vaccineType = #TyphoidConjugate
 * commercialName = "TYPHIBEV®"
@@ -12070,7 +12331,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Biological E. Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "a50e9ffd93738d72b7733c9f636d2f64"
+* manufacturerReference = Reference(Manufacturer890d3908ec053a76141fdda37d251358) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TyphoidConjugateProducta50e9ffd93738d72b7733c9f636d2f64
 InstanceOf: Product
@@ -12107,8 +12370,7 @@ Usage: #example
 //
 
 Instance: PreQualDB242f368896eeb18598db217a7f13d3bd
-InstanceOf: PreQualDB
-* number.value = "242f368896eeb18598db217a7f13d3bd"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2022-11-03
 * vaccineType = #Varicella
 * commercialName = "Varicella Vaccine, Live"
@@ -12116,7 +12378,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sinovac (Dalian) Vaccine Technology Co., Ltd."
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "242f368896eeb18598db217a7f13d3bd"
+* manufacturerReference = Reference(Manufacturerab5a8b3393b8406c6e6712f543bca8c1) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: VaricellaProduct242f368896eeb18598db217a7f13d3bd
 InstanceOf: Product
@@ -12153,8 +12417,7 @@ Usage: #example
 //
 
 Instance: PreQualDB6fd355c4cfcbb0c1b09e4f14421c450c
-InstanceOf: PreQualDB
-* number.value = "6fd355c4cfcbb0c1b09e4f14421c450c"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2018-02-09
 * vaccineType = #Varicella
 * commercialName = "Varivax"
@@ -12162,7 +12425,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Merck Sharp & Dohme LLC"
 * responsibleNRA.text = "CBER/FDA"
-
+* index.value = "6fd355c4cfcbb0c1b09e4f14421c450c"
+* manufacturerReference = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) 
+* responsibleNRAReference = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 
 Instance: VaricellaProduct6fd355c4cfcbb0c1b09e4f14421c450c
 InstanceOf: Product
@@ -12199,8 +12464,7 @@ Usage: #example
 //
 
 Instance: PreQualDBfc90a87e7b7b2bc9e61c0e81f26e0499
-InstanceOf: PreQualDB
-* number.value = "fc90a87e7b7b2bc9e61c0e81f26e0499"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2011-06-30
 * vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Vaxigrip"
@@ -12208,7 +12472,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "fc90a87e7b7b2bc9e61c0e81f26e0499"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: InfluenzaseasonalTrivaleProductfc90a87e7b7b2bc9e61c0e81f26e0499
 InstanceOf: Product
@@ -12245,8 +12511,7 @@ Usage: #example
 //
 
 Instance: PreQualDB308795d47110f2d3404894a50fcfd086
-InstanceOf: PreQualDB
-* number.value = "308795d47110f2d3404894a50fcfd086"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2020-10-15
 * vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "VaxigripTetra"
@@ -12254,7 +12519,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "308795d47110f2d3404894a50fcfd086"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: InfluenzaseasonalQuadrivProduct308795d47110f2d3404894a50fcfd086
 InstanceOf: Product
@@ -12291,8 +12558,7 @@ Usage: #example
 //
 
 Instance: PreQualDB901ba1736d695959035688f7615c8f86
-InstanceOf: PreQualDB
-* number.value = "901ba1736d695959035688f7615c8f86"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2019-02-06
 * vaccineType = #Rabies
 * commercialName = "VaxiRab N"
@@ -12300,7 +12566,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Zydus Lifesciences Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "901ba1736d695959035688f7615c8f86"
+* manufacturerReference = Reference(Manufacturer797ce508ea82f3ddfc60bcdf98e217d9) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: RabiesProduct901ba1736d695959035688f7615c8f86
 InstanceOf: Product
@@ -12337,8 +12605,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf783bdc2dcc495f19b42046bd7af72d4
-InstanceOf: PreQualDB
-* number.value = "f783bdc2dcc495f19b42046bd7af72d4"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2005-06-22
 * vaccineType = #Rabies
 * commercialName = "VERORAB"
@@ -12346,7 +12613,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Sanofi Pasteur"
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
-
+* index.value = "f783bdc2dcc495f19b42046bd7af72d4"
+* manufacturerReference = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) 
+* responsibleNRAReference = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 
 Instance: RabiesProductf783bdc2dcc495f19b42046bd7af72d4
 InstanceOf: Product
@@ -12383,8 +12652,7 @@ Usage: #example
 //
 
 Instance: PreQualDB78425b1ecfc4c878d41013a9577cb8c5
-InstanceOf: PreQualDB
-* number.value = "78425b1ecfc4c878d41013a9577cb8c5"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-08-02
 * vaccineType = #HumanPapillomavirusBival
 * commercialName = "Walrinvax®"
@@ -12392,7 +12660,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Yuxi Zerun Biotechnology Co., Ltd"
 * responsibleNRA.text = "National Medical Products Administration"
-
+* index.value = "78425b1ecfc4c878d41013a9577cb8c5"
+* manufacturerReference = Reference(Manufacturera0a9fdcc73416a522cb3985e47a4cc05) 
+* responsibleNRAReference = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 
 Instance: HumanPapillomavirusBivalProduct78425b1ecfc4c878d41013a9577cb8c5
 InstanceOf: Product
@@ -12429,8 +12699,7 @@ Usage: #example
 //
 
 Instance: PreQualDB687886afca59bc5df06e1dd4c0613080
-InstanceOf: PreQualDB
-* number.value = "687886afca59bc5df06e1dd4c0613080"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-10-17
 * vaccineType = #YellowFever
 * commercialName = "Yellow Fever"
@@ -12438,7 +12707,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Bio-Manguinhos/Fiocruz"
 * responsibleNRA.text = "Agencia Nacional da Vigilancia Sanitaria"
-
+* index.value = "687886afca59bc5df06e1dd4c0613080"
+* manufacturerReference = Reference(Manufacturer51a62ec68a89ce14cf95679495b66719) 
+* responsibleNRAReference = Reference(Holder4f8fc03badb0c3d6e38e661418a4934c) // Agencia Nacional da Vigilancia Sanitaria
 
 Instance: YellowFeverProduct687886afca59bc5df06e1dd4c0613080
 InstanceOf: Product
@@ -12475,8 +12746,7 @@ Usage: #example
 //
 
 Instance: PreQualDB4e129a70f41a1880e67260e06b25330c
-InstanceOf: PreQualDB
-* number.value = "4e129a70f41a1880e67260e06b25330c"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2007-12-10
 * vaccineType = #YellowFever
 * commercialName = "Yellow Fever"
@@ -12484,7 +12754,9 @@ InstanceOf: PreQualDB
 * numDoses = 10
 * manufacturer.text = "Bio-Manguinhos/Fiocruz"
 * responsibleNRA.text = "Agencia Nacional da Vigilancia Sanitaria"
-
+* index.value = "4e129a70f41a1880e67260e06b25330c"
+* manufacturerReference = Reference(Manufacturer51a62ec68a89ce14cf95679495b66719) 
+* responsibleNRAReference = Reference(Holder4f8fc03badb0c3d6e38e661418a4934c) // Agencia Nacional da Vigilancia Sanitaria
 
 Instance: YellowFeverProduct4e129a70f41a1880e67260e06b25330c
 InstanceOf: Product
@@ -12521,8 +12793,7 @@ Usage: #example
 //
 
 Instance: PreQualDBb16c68782d6fcb1e171cae388f96083a
-InstanceOf: PreQualDB
-* number.value = "b16c68782d6fcb1e171cae388f96083a"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2001-10-17
 * vaccineType = #YellowFever
 * commercialName = "Yellow Fever"
@@ -12530,7 +12801,9 @@ InstanceOf: PreQualDB
 * numDoses = 50
 * manufacturer.text = "Bio-Manguinhos/Fiocruz"
 * responsibleNRA.text = "Agencia Nacional da Vigilancia Sanitaria"
-
+* index.value = "b16c68782d6fcb1e171cae388f96083a"
+* manufacturerReference = Reference(Manufacturer51a62ec68a89ce14cf95679495b66719) 
+* responsibleNRAReference = Reference(Holder4f8fc03badb0c3d6e38e661418a4934c) // Agencia Nacional da Vigilancia Sanitaria
 
 Instance: YellowFeverProductb16c68782d6fcb1e171cae388f96083a
 InstanceOf: Product
@@ -12567,8 +12840,7 @@ Usage: #example
 //
 
 Instance: PreQualDBf39fc141db4912f2b5fb9c96843686db
-InstanceOf: PreQualDB
-* number.value = "f39fc141db4912f2b5fb9c96843686db"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2021-04-27
 * vaccineType = #EbolavaccineAd26ZEBOVGPr
 * commercialName = "Zabdeno"
@@ -12576,7 +12848,9 @@ InstanceOf: PreQualDB
 * numDoses = 1
 * manufacturer.text = "Janssen Cilag International N.V."
 * responsibleNRA.text = "European Medicines Agency"
-
+* index.value = "f39fc141db4912f2b5fb9c96843686db"
+* manufacturerReference = Reference(Manufacturer424af495e78f8d5efdacca2db1db8f9b) 
+* responsibleNRAReference = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 
 Instance: EbolavaccineAd26ZEBOVGPrProductf39fc141db4912f2b5fb9c96843686db
 InstanceOf: Product
@@ -12613,8 +12887,7 @@ Usage: #example
 //
 
 Instance: PreQualDBd2e0cf253cbd053cf902a41be1e956b3
-InstanceOf: PreQualDB
-* number.value = "d2e0cf253cbd053cf902a41be1e956b3"
+InstanceOf: PreQualDBwithIDs
 * dateOfPrequal = 2024-10-21
 * vaccineType = #TyphoidConjugate
 * commercialName = "ZyVac®"
@@ -12622,7 +12895,9 @@ InstanceOf: PreQualDB
 * numDoses = 5
 * manufacturer.text = "Zydus Lifesciences Limited"
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
-
+* index.value = "d2e0cf253cbd053cf902a41be1e956b3"
+* manufacturerReference = Reference(Manufacturer797ce508ea82f3ddfc60bcdf98e217d9) 
+* responsibleNRAReference = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 
 Instance: TyphoidConjugateProductd2e0cf253cbd053cf902a41be1e956b3
 InstanceOf: Product
