@@ -8,7 +8,7 @@ Description:  "Vaccine Data elements for the Digital Vaccination Certificates"
 * ^experimental = true
 
 * doseNumber 1..1 CodeableConcept "Dose Number" "Dose Number"
-* doseNumber from doseNumber (required)
+* doseNumber from DoseNumber (required)
 * disease 1..1 Coding "Disease" "Name of disease or condition vaccinated or received prophylaxis against"
 * disease from DiseaseTargeted (required)
 * vaccineClassification 1..1 CodeableConcept "Vaccine code" "Vaccine or prophylaxis classification code"

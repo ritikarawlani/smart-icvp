@@ -20,7 +20,7 @@ Usage: #example
 * vaccineDetails[=].validityPeriod.start = "2024-01-31"
 * vaccineDetails[=].doseNumber.coding.code = #FirstDose
 * vaccineDetails[=].doseNumber.coding.display = "First Dose"
-* vaccineDetails[=].doseNumber.coding.system = "http://smart.who.int/icvp/CodeSystem/doseNumber"
+* vaccineDetails[=].doseNumber.coding.system = "http://smart.who.int/icvp/CodeSystem/DoseNumber"
 
 
 

@@ -1,4 +1,4 @@
-CodeSystem: preQualVaccineType
+CodeSystem: PreQualVaccineType
 Title : "WHO PreQualificaiton Vaccine Types"
 Description: "WHO PreQualificaiton Vaccine Types"
 

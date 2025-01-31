@@ -8,7 +8,7 @@ Usage: #definition
 * contained[+] = http://terminology.hl7.org/ValueSet/v3-Country
 * contained[+] = DiseaseTargeted
 * contained[+] = DVCVaccines
-* contained[+] = doseNumber
+* contained[+] = DoseNumber
 * contained[+] = DVCRelationshipStatus
 
 
@@ -26,8 +26,8 @@ Usage: #definition
   * item[=].answerValueSet = Canonical(DVCRelationshipStatus)
 * insert Question(vaccineDetails,Vaccine Certificate Details,group, true, true)
 * item[=]
-  * insert Question(doseNumber, Dose Number, choice, false, true)
-  * item[=].answerValueSet = Canonical(doseNumber)
+  * insert Question(DoseNumber, Dose Number, choice, false, true)
+  * item[=].answerValueSet = Canonical(DoseNumber)
   * insert Question(disease, Name of disease of condition vaccinated or received prophylaxis against, choice, false, true)
   * item[=].answerValueSet = Canonical(DiseaseTargeted)
   * insert Question(vaccineClassification, Vaccine or Prophylaxis classification code, choice, false, true)

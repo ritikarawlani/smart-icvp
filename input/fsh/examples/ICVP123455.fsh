@@ -17,7 +17,7 @@ Usage: #example
 * vaccineDetails[=].doseNumber.text = "second"
 * vaccineDetails[=].doseNumber.coding.code = #FirstDose
 * vaccineDetails[=].doseNumber.coding.display = "First Dose"
-* vaccineDetails[=].doseNumber.coding.system = "http://smart.who.int/icvp/CodeSystem/doseNumber"
+* vaccineDetails[=].doseNumber.coding.system = "http://smart.who.int/icvp/CodeSystem/DoseNumber"
 * vaccineDetails[=].disease.display = "Yellow Fever"
 * vaccineDetails[=].disease.code = #1D47
 * vaccineDetails[=].disease.system = "http://id.who.int/icd/release/11/mms"
