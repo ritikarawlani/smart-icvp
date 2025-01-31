@@ -15,15 +15,13 @@ Columns of the CSV are as follows
   7:Responsible NRA
 
 """
-Corresponds to the following coll"
-Characteristics: #can-be-target
 
 * number 1..1 Identifier "The identifier of the prequalificaiton for the product"
-* dateOfPrequal 1..1 date"Date of Prequalification (DD/MM/YY)"
-* vaccineType 1..1 "Vaccine Type"
+* dateOfPrequal 1..1 dateTime "Date of Prequalification (DD/MM/YY)"
+* vaccineType 1..1 CodeableConcept "Vaccine Type"
 * commercialName 1..1 string "Commercial Name"
-* presentation 1..1 "Presentation"
-* numDoses 1..1 decimal SimpleQuantiy "No. of doses:
+* presentation 1..1 CodeableConcept "Presentation"
+* numDoses 1..1 decimal "Number of doses"
 * manufacturer 1..1 CodeableConcept "Manufacturer"
 * responsibleNRA 1..1 CodeableConcept "Responsible NRA"
 
