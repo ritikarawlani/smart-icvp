@@ -106,7 +106,7 @@ Instance: PreQualDB3e7983f5e2ac26b60c942284ab0e6011
 InstanceOf: PreQualDB
 * number.value = "3e7983f5e2ac26b60c942284ab0e6011"
 * dateOfPrequal = 1998-04-01
-* vaccineType = #Haemophilusinfluenzaetypeb
+* vaccineType = #Haemophilusinfluenzaetyp
 * commercialName = "Act-HIB"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -114,7 +114,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
 
 
-Instance: HaemophilusinfluenzaetypebProduct3e7983f5e2ac26b60c942284ab0e6011
+Instance: HaemophilusinfluenzaetypProduct3e7983f5e2ac26b60c942284ab0e6011
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -123,11 +123,11 @@ Usage: #example
   * value = "Act-HIB"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  1 'doses'
-* classification = #Haemophilusinfluenzaetypeb
+* classification = #Haemophilusinfluenzaetyp
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HaemophilusinfluenzaetypebPreQual3e7983f5e2ac26b60c942284ab0e6011
+Instance: HaemophilusinfluenzaetypPreQual3e7983f5e2ac26b60c942284ab0e6011
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -135,7 +135,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 1998-04-01
-* product  = Reference(HaemophilusinfluenzaetypebProduct3e7983f5e2ac26b60c942284ab0e6011) 
+* product  = Reference(HaemophilusinfluenzaetypProduct3e7983f5e2ac26b60c942284ab0e6011) 
 
 // Source Record Row //: 5
 //  Date of Prequalification: (08/05/2017)
@@ -152,7 +152,7 @@ Instance: PreQualDB3204e5e77752897a53b0c49be8406abc
 InstanceOf: PreQualDB
 * number.value = "3204e5e77752897a53b0c49be8406abc"
 * dateOfPrequal = 2017-05-08
-* vaccineType = #DiphtheriaTetanusPertussisacellular
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Adacel"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -160,7 +160,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Health Canada - Santé Canada"
 
 
-Instance: DiphtheriaTetanusPertussisProduct3204e5e77752897a53b0c49be8406abc
+Instance: DiphtheriaTetanusPertussProduct3204e5e77752897a53b0c49be8406abc
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -169,11 +169,11 @@ Usage: #example
   * value = "Adacel"
 * manufacturer = Reference(Manufacturercba236f3aad4f457150e3cc5990e00e4) // Sanofi Pasteur Limited
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussisacellular
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual3204e5e77752897a53b0c49be8406abc
+Instance: DiphtheriaTetanusPertussPreQual3204e5e77752897a53b0c49be8406abc
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -181,7 +181,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder7843fc4c2ba4a16be181e1dee79c6805) // Health Canada - Santé Canada
 * validityPeriod.start = 2017-05-08
-* product  = Reference(DiphtheriaTetanusPertussisProduct3204e5e77752897a53b0c49be8406abc) 
+* product  = Reference(DiphtheriaTetanusPertussProduct3204e5e77752897a53b0c49be8406abc) 
 
 // Source Record Row //: 6
 //  Date of Prequalification: (11/03/1999)
@@ -244,7 +244,7 @@ Instance: PreQualDB5df76ad2762fb42402017f6000630b1c
 InstanceOf: PreQualDB
 * number.value = "5df76ad2762fb42402017f6000630b1c"
 * dateOfPrequal = 2020-02-07
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Afluria®"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -252,7 +252,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
 
 
-Instance: InfluenzaseasonalTrivalentProduct5df76ad2762fb42402017f6000630b1c
+Instance: InfluenzaseasonalTrivaleProduct5df76ad2762fb42402017f6000630b1c
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -261,11 +261,11 @@ Usage: #example
   * value = "Afluria®"
 * manufacturer = Reference(Manufacturer414bf493c71eaa3be2581a09156c72c4) // Seqirus Limited
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQual5df76ad2762fb42402017f6000630b1c
+Instance: InfluenzaseasonalTrivalePreQual5df76ad2762fb42402017f6000630b1c
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -273,7 +273,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 * validityPeriod.start = 2020-02-07
-* product  = Reference(InfluenzaseasonalTrivalentProduct5df76ad2762fb42402017f6000630b1c) 
+* product  = Reference(InfluenzaseasonalTrivaleProduct5df76ad2762fb42402017f6000630b1c) 
 
 // Source Record Row //: 8
 //  Date of Prequalification: (05/03/2019)
@@ -290,7 +290,7 @@ Instance: PreQualDBdc536799e702057a5e3ee045de6681ee
 InstanceOf: PreQualDB
 * number.value = "dc536799e702057a5e3ee045de6681ee"
 * dateOfPrequal = 2019-03-05
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "Afluria® Quadrivalent"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -298,7 +298,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
 
 
-Instance: InfluenzaseasonalQuadrivalProductdc536799e702057a5e3ee045de6681ee
+Instance: InfluenzaseasonalQuadrivProductdc536799e702057a5e3ee045de6681ee
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -307,11 +307,11 @@ Usage: #example
   * value = "Afluria® Quadrivalent"
 * manufacturer = Reference(Manufacturer414bf493c71eaa3be2581a09156c72c4) // Seqirus Limited
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQualdc536799e702057a5e3ee045de6681ee
+Instance: InfluenzaseasonalQuadrivPreQualdc536799e702057a5e3ee045de6681ee
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -319,7 +319,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 * validityPeriod.start = 2019-03-05
-* product  = Reference(InfluenzaseasonalQuadrivalProductdc536799e702057a5e3ee045de6681ee) 
+* product  = Reference(InfluenzaseasonalQuadrivProductdc536799e702057a5e3ee045de6681ee) 
 
 // Source Record Row //: 9
 //  Date of Prequalification: (14/02/2023)
@@ -796,7 +796,7 @@ Instance: PreQualDB3ae90922fe538f89ce1fd3e76b8c0609
 InstanceOf: PreQualDB
 * number.value = "3ae90922fe538f89ce1fd3e76b8c0609"
 * dateOfPrequal = 2023-10-09
-* vaccineType = #Covid
+* vaccineType = #Covid19
 * commercialName = "BIMERVAX"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -804,7 +804,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: CovidProduct3ae90922fe538f89ce1fd3e76b8c0609
+Instance: Covid19Product3ae90922fe538f89ce1fd3e76b8c0609
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -813,11 +813,11 @@ Usage: #example
   * value = "BIMERVAX"
 * manufacturer = Reference(Manufacturerbd99ce55512e9b74ff81f3da5264924c) // HIPRA HUMAN HEALTH, S.L.U
 * doseQuantity =  1 'doses'
-* classification = #Covid
+* classification = #Covid19
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: CovidPreQual3ae90922fe538f89ce1fd3e76b8c0609
+Instance: Covid19PreQual3ae90922fe538f89ce1fd3e76b8c0609
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -825,7 +825,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2023-10-09
-* product  = Reference(CovidProduct3ae90922fe538f89ce1fd3e76b8c0609) 
+* product  = Reference(Covid19Product3ae90922fe538f89ce1fd3e76b8c0609) 
 
 // Source Record Row //: 20
 //  Date of Prequalification: (20/03/2015)
@@ -842,7 +842,7 @@ Instance: PreQualDB70dd357b6e2a76ef58c303440ca6b122
 InstanceOf: PreQualDB
 * number.value = "70dd357b6e2a76ef58c303440ca6b122"
 * dateOfPrequal = 2015-03-20
-* vaccineType = #PolioVaccineOralOPVTrivalent
+* vaccineType = #PolioVaccineOralOPVTriva
 * commercialName = "BIOPOLIO"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -850,7 +850,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVTrivaleProduct70dd357b6e2a76ef58c303440ca6b122
+Instance: PolioVaccineOralOPVTrivaProduct70dd357b6e2a76ef58c303440ca6b122
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -859,11 +859,11 @@ Usage: #example
   * value = "BIOPOLIO"
 * manufacturer = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) // Bharat Biotech International Limited
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVTrivalent
+* classification = #PolioVaccineOralOPVTriva
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVTrivalePreQual70dd357b6e2a76ef58c303440ca6b122
+Instance: PolioVaccineOralOPVTrivaPreQual70dd357b6e2a76ef58c303440ca6b122
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -871,7 +871,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2015-03-20
-* product  = Reference(PolioVaccineOralOPVTrivaleProduct70dd357b6e2a76ef58c303440ca6b122) 
+* product  = Reference(PolioVaccineOralOPVTrivaProduct70dd357b6e2a76ef58c303440ca6b122) 
 
 // Source Record Row //: 21
 //  Date of Prequalification: (20/03/2015)
@@ -888,7 +888,7 @@ Instance: PreQualDBd7254358b1748a5d3cddd9b75dd07d57
 InstanceOf: PreQualDB
 * number.value = "d7254358b1748a5d3cddd9b75dd07d57"
 * dateOfPrequal = 2015-03-20
-* vaccineType = #PolioVaccineOralOPVTrivalent
+* vaccineType = #PolioVaccineOralOPVTriva
 * commercialName = "BIOPOLIO"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -896,7 +896,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVTrivaleProductd7254358b1748a5d3cddd9b75dd07d57
+Instance: PolioVaccineOralOPVTrivaProductd7254358b1748a5d3cddd9b75dd07d57
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -905,11 +905,11 @@ Usage: #example
   * value = "BIOPOLIO"
 * manufacturer = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) // Bharat Biotech International Limited
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVTrivalent
+* classification = #PolioVaccineOralOPVTriva
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVTrivalePreQuald7254358b1748a5d3cddd9b75dd07d57
+Instance: PolioVaccineOralOPVTrivaPreQuald7254358b1748a5d3cddd9b75dd07d57
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -917,7 +917,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2015-03-20
-* product  = Reference(PolioVaccineOralOPVTrivaleProductd7254358b1748a5d3cddd9b75dd07d57) 
+* product  = Reference(PolioVaccineOralOPVTrivaProductd7254358b1748a5d3cddd9b75dd07d57) 
 
 // Source Record Row //: 22
 //  Date of Prequalification: (25/08/2017)
@@ -934,7 +934,7 @@ Instance: PreQualDBcf5662c281218ca179357df3e9e414ac
 InstanceOf: PreQualDB
 * number.value = "cf5662c281218ca179357df3e9e414ac"
 * dateOfPrequal = 2017-08-25
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "BIOPOLIO B1/3"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -942,7 +942,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVBivalenProductcf5662c281218ca179357df3e9e414ac
+Instance: PolioVaccineOralOPVBivalProductcf5662c281218ca179357df3e9e414ac
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -951,11 +951,11 @@ Usage: #example
   * value = "BIOPOLIO B1/3"
 * manufacturer = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) // Bharat Biotech International Limited
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQualcf5662c281218ca179357df3e9e414ac
+Instance: PolioVaccineOralOPVBivalPreQualcf5662c281218ca179357df3e9e414ac
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -963,7 +963,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2017-08-25
-* product  = Reference(PolioVaccineOralOPVBivalenProductcf5662c281218ca179357df3e9e414ac) 
+* product  = Reference(PolioVaccineOralOPVBivalProductcf5662c281218ca179357df3e9e414ac) 
 
 // Source Record Row //: 23
 //  Date of Prequalification: (20/03/2015)
@@ -980,7 +980,7 @@ Instance: PreQualDB42d1155e2d6ee0c1b54aca384a2c5e7e
 InstanceOf: PreQualDB
 * number.value = "42d1155e2d6ee0c1b54aca384a2c5e7e"
 * dateOfPrequal = 2015-03-20
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "BIOPOLIO B1/3"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -988,7 +988,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVBivalenProduct42d1155e2d6ee0c1b54aca384a2c5e7e
+Instance: PolioVaccineOralOPVBivalProduct42d1155e2d6ee0c1b54aca384a2c5e7e
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -997,11 +997,11 @@ Usage: #example
   * value = "BIOPOLIO B1/3"
 * manufacturer = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) // Bharat Biotech International Limited
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQual42d1155e2d6ee0c1b54aca384a2c5e7e
+Instance: PolioVaccineOralOPVBivalPreQual42d1155e2d6ee0c1b54aca384a2c5e7e
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1009,7 +1009,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2015-03-20
-* product  = Reference(PolioVaccineOralOPVBivalenProduct42d1155e2d6ee0c1b54aca384a2c5e7e) 
+* product  = Reference(PolioVaccineOralOPVBivalProduct42d1155e2d6ee0c1b54aca384a2c5e7e) 
 
 // Source Record Row //: 24
 //  Date of Prequalification: (16/11/2021)
@@ -1026,7 +1026,7 @@ Instance: PreQualDB23c7b98c9946add033b5e9cb81308cf0
 InstanceOf: PreQualDB
 * number.value = "23c7b98c9946add033b5e9cb81308cf0"
 * dateOfPrequal = 2021-11-16
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -1034,7 +1034,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVBivalenProduct23c7b98c9946add033b5e9cb81308cf0
+Instance: PolioVaccineOralOPVBivalProduct23c7b98c9946add033b5e9cb81308cf0
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1043,11 +1043,11 @@ Usage: #example
   * value = "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)"
 * manufacturer = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) // Panacea Biotec Ltd.
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQual23c7b98c9946add033b5e9cb81308cf0
+Instance: PolioVaccineOralOPVBivalPreQual23c7b98c9946add033b5e9cb81308cf0
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1055,7 +1055,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2021-11-16
-* product  = Reference(PolioVaccineOralOPVBivalenProduct23c7b98c9946add033b5e9cb81308cf0) 
+* product  = Reference(PolioVaccineOralOPVBivalProduct23c7b98c9946add033b5e9cb81308cf0) 
 
 // Source Record Row //: 25
 //  Date of Prequalification: (07/12/2018)
@@ -1072,7 +1072,7 @@ Instance: PreQualDBede6bd9749ec7d4dcc601439edafca9b
 InstanceOf: PreQualDB
 * number.value = "ede6bd9749ec7d4dcc601439edafca9b"
 * dateOfPrequal = 2018-12-07
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -1080,7 +1080,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVBivalenProductede6bd9749ec7d4dcc601439edafca9b
+Instance: PolioVaccineOralOPVBivalProductede6bd9749ec7d4dcc601439edafca9b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1089,11 +1089,11 @@ Usage: #example
   * value = "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)"
 * manufacturer = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) // Panacea Biotec Ltd.
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQualede6bd9749ec7d4dcc601439edafca9b
+Instance: PolioVaccineOralOPVBivalPreQualede6bd9749ec7d4dcc601439edafca9b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1101,7 +1101,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2018-12-07
-* product  = Reference(PolioVaccineOralOPVBivalenProductede6bd9749ec7d4dcc601439edafca9b) 
+* product  = Reference(PolioVaccineOralOPVBivalProductede6bd9749ec7d4dcc601439edafca9b) 
 
 // Source Record Row //: 26
 //  Date of Prequalification: (05/11/2015)
@@ -1118,7 +1118,7 @@ Instance: PreQualDBf93751fae6a7f3178d96589e6382e3ed
 InstanceOf: PreQualDB
 * number.value = "f93751fae6a7f3178d96589e6382e3ed"
 * dateOfPrequal = 2015-11-05
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -1126,7 +1126,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: PolioVaccineOralOPVBivalenProductf93751fae6a7f3178d96589e6382e3ed
+Instance: PolioVaccineOralOPVBivalProductf93751fae6a7f3178d96589e6382e3ed
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1135,11 +1135,11 @@ Usage: #example
   * value = "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQualf93751fae6a7f3178d96589e6382e3ed
+Instance: PolioVaccineOralOPVBivalPreQualf93751fae6a7f3178d96589e6382e3ed
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1147,7 +1147,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2015-11-05
-* product  = Reference(PolioVaccineOralOPVBivalenProductf93751fae6a7f3178d96589e6382e3ed) 
+* product  = Reference(PolioVaccineOralOPVBivalProductf93751fae6a7f3178d96589e6382e3ed) 
 
 // Source Record Row //: 27
 //  Date of Prequalification: (26/05/2010)
@@ -1164,7 +1164,7 @@ Instance: PreQualDBa72a5ac164a25ab5d52a2a1c20164eb2
 InstanceOf: PreQualDB
 * number.value = "a72a5ac164a25ab5d52a2a1c20164eb2"
 * dateOfPrequal = 2010-05-26
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -1172,7 +1172,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: PolioVaccineOralOPVBivalenProducta72a5ac164a25ab5d52a2a1c20164eb2
+Instance: PolioVaccineOralOPVBivalProducta72a5ac164a25ab5d52a2a1c20164eb2
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1181,11 +1181,11 @@ Usage: #example
   * value = "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQuala72a5ac164a25ab5d52a2a1c20164eb2
+Instance: PolioVaccineOralOPVBivalPreQuala72a5ac164a25ab5d52a2a1c20164eb2
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1193,7 +1193,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2010-05-26
-* product  = Reference(PolioVaccineOralOPVBivalenProducta72a5ac164a25ab5d52a2a1c20164eb2) 
+* product  = Reference(PolioVaccineOralOPVBivalProducta72a5ac164a25ab5d52a2a1c20164eb2) 
 
 // Source Record Row //: 28
 //  Date of Prequalification: (19/03/2010)
@@ -1210,7 +1210,7 @@ Instance: PreQualDB3521e0a2725fab5dba5f6dd12c43baa9
 InstanceOf: PreQualDB
 * number.value = "3521e0a2725fab5dba5f6dd12c43baa9"
 * dateOfPrequal = 2010-03-19
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Bivalent type 1&3 Oral Poliomyelitis vaccine, IP (bOPV1&3)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -1218,7 +1218,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVBivalenProduct3521e0a2725fab5dba5f6dd12c43baa9
+Instance: PolioVaccineOralOPVBivalProduct3521e0a2725fab5dba5f6dd12c43baa9
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1227,11 +1227,11 @@ Usage: #example
   * value = "Bivalent type 1&3 Oral Poliomyelitis vaccine, IP (bOPV1&3)"
 * manufacturer = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) // Haffkine Bio Pharmaceutical Corporation Ltd
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQual3521e0a2725fab5dba5f6dd12c43baa9
+Instance: PolioVaccineOralOPVBivalPreQual3521e0a2725fab5dba5f6dd12c43baa9
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1239,7 +1239,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-03-19
-* product  = Reference(PolioVaccineOralOPVBivalenProduct3521e0a2725fab5dba5f6dd12c43baa9) 
+* product  = Reference(PolioVaccineOralOPVBivalProduct3521e0a2725fab5dba5f6dd12c43baa9) 
 
 // Source Record Row //: 29
 //  Date of Prequalification: (09/07/2013)
@@ -1256,7 +1256,7 @@ Instance: PreQualDB76096f580a17bec6d7bb9712e73672f7
 InstanceOf: PreQualDB
 * number.value = "76096f580a17bec6d7bb9712e73672f7"
 * dateOfPrequal = 2013-07-09
-* vaccineType = #DiphtheriaTetanusPertussisacellular
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Boostrix"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -1264,7 +1264,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: DiphtheriaTetanusPertussisProduct76096f580a17bec6d7bb9712e73672f7
+Instance: DiphtheriaTetanusPertussProduct76096f580a17bec6d7bb9712e73672f7
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1273,11 +1273,11 @@ Usage: #example
   * value = "Boostrix"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussisacellular
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual76096f580a17bec6d7bb9712e73672f7
+Instance: DiphtheriaTetanusPertussPreQual76096f580a17bec6d7bb9712e73672f7
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1285,7 +1285,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2013-07-09
-* product  = Reference(DiphtheriaTetanusPertussisProduct76096f580a17bec6d7bb9712e73672f7) 
+* product  = Reference(DiphtheriaTetanusPertussProduct76096f580a17bec6d7bb9712e73672f7) 
 
 // Source Record Row //: 30
 //  Date of Prequalification: (14/10/2021)
@@ -1302,7 +1302,7 @@ Instance: PreQualDB708d6c96bb350aaf0c5967e9099232f3
 InstanceOf: PreQualDB
 * number.value = "708d6c96bb350aaf0c5967e9099232f3"
 * dateOfPrequal = 2021-10-14
-* vaccineType = #HumanPapillomavirusBivalent
+* vaccineType = #HumanPapillomavirusBival
 * commercialName = "Cecolin®"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -1310,7 +1310,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: HumanPapillomavirusBivalenProduct708d6c96bb350aaf0c5967e9099232f3
+Instance: HumanPapillomavirusBivalProduct708d6c96bb350aaf0c5967e9099232f3
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1319,11 +1319,11 @@ Usage: #example
   * value = "Cecolin®"
 * manufacturer = Reference(Manufacturer1ffde88ffa07a2969e1a8bff52432630) // Xiamen Innovax Biotech Co. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #HumanPapillomavirusBivalent
+* classification = #HumanPapillomavirusBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HumanPapillomavirusBivalenPreQual708d6c96bb350aaf0c5967e9099232f3
+Instance: HumanPapillomavirusBivalPreQual708d6c96bb350aaf0c5967e9099232f3
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1331,7 +1331,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2021-10-14
-* product  = Reference(HumanPapillomavirusBivalenProduct708d6c96bb350aaf0c5967e9099232f3) 
+* product  = Reference(HumanPapillomavirusBivalProduct708d6c96bb350aaf0c5967e9099232f3) 
 
 // Source Record Row //: 31
 //  Date of Prequalification: (17/12/2009)
@@ -1348,7 +1348,7 @@ Instance: PreQualDB46e71632bc1f0d27b6ec31fd3162f2a4
 InstanceOf: PreQualDB
 * number.value = "46e71632bc1f0d27b6ec31fd3162f2a4"
 * dateOfPrequal = 2009-12-17
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Celtura"
 * presentation.coding.code = #Vial
 * numDoses = 17
@@ -1356,7 +1356,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Paul-Ehrlich-Institut"
 
 
-Instance: InfluenzaPandemicHNProduct46e71632bc1f0d27b6ec31fd3162f2a4
+Instance: InfluenzaPandemicH1N1Product46e71632bc1f0d27b6ec31fd3162f2a4
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1365,11 +1365,11 @@ Usage: #example
   * value = "Celtura"
 * manufacturer = Reference(Manufacturerd740cbcbdd2ed62079ddaa68974fc588) // Seqirus GmbH
 * doseQuantity =  17 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaPandemicHNPreQual46e71632bc1f0d27b6ec31fd3162f2a4
+Instance: InfluenzaPandemicH1N1PreQual46e71632bc1f0d27b6ec31fd3162f2a4
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1377,7 +1377,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder496e3f94d192563455fb8baea40c6b3b) // Paul-Ehrlich-Institut
 * validityPeriod.start = 2009-12-17
-* product  = Reference(InfluenzaPandemicHNProduct46e71632bc1f0d27b6ec31fd3162f2a4) 
+* product  = Reference(InfluenzaPandemicH1N1Product46e71632bc1f0d27b6ec31fd3162f2a4) 
 
 // Source Record Row //: 32
 //  Date of Prequalification: (08/07/2009)
@@ -1394,7 +1394,7 @@ Instance: PreQualDB3cf0dd78886ac5740ebcb8fc05452c83
 InstanceOf: PreQualDB
 * number.value = "3cf0dd78886ac5740ebcb8fc05452c83"
 * dateOfPrequal = 2009-07-08
-* vaccineType = #HumanPapillomavirusBivalent
+* vaccineType = #HumanPapillomavirusBival
 * commercialName = "Cervarix"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -1402,7 +1402,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: HumanPapillomavirusBivalenProduct3cf0dd78886ac5740ebcb8fc05452c83
+Instance: HumanPapillomavirusBivalProduct3cf0dd78886ac5740ebcb8fc05452c83
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1411,11 +1411,11 @@ Usage: #example
   * value = "Cervarix"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  1 'doses'
-* classification = #HumanPapillomavirusBivalent
+* classification = #HumanPapillomavirusBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HumanPapillomavirusBivalenPreQual3cf0dd78886ac5740ebcb8fc05452c83
+Instance: HumanPapillomavirusBivalPreQual3cf0dd78886ac5740ebcb8fc05452c83
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1423,7 +1423,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-07-08
-* product  = Reference(HumanPapillomavirusBivalenProduct3cf0dd78886ac5740ebcb8fc05452c83) 
+* product  = Reference(HumanPapillomavirusBivalProduct3cf0dd78886ac5740ebcb8fc05452c83) 
 
 // Source Record Row //: 33
 //  Date of Prequalification: (08/07/2009)
@@ -1440,7 +1440,7 @@ Instance: PreQualDBb1c76231b4bd8ca88a016e1456182ece
 InstanceOf: PreQualDB
 * number.value = "b1c76231b4bd8ca88a016e1456182ece"
 * dateOfPrequal = 2009-07-08
-* vaccineType = #HumanPapillomavirusBivalent
+* vaccineType = #HumanPapillomavirusBival
 * commercialName = "Cervarix"
 * presentation.coding.code = #Vial
 * numDoses = 2
@@ -1448,7 +1448,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: HumanPapillomavirusBivalenProductb1c76231b4bd8ca88a016e1456182ece
+Instance: HumanPapillomavirusBivalProductb1c76231b4bd8ca88a016e1456182ece
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1457,11 +1457,11 @@ Usage: #example
   * value = "Cervarix"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  2 'doses'
-* classification = #HumanPapillomavirusBivalent
+* classification = #HumanPapillomavirusBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HumanPapillomavirusBivalenPreQualb1c76231b4bd8ca88a016e1456182ece
+Instance: HumanPapillomavirusBivalPreQualb1c76231b4bd8ca88a016e1456182ece
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1469,7 +1469,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-07-08
-* product  = Reference(HumanPapillomavirusBivalenProductb1c76231b4bd8ca88a016e1456182ece) 
+* product  = Reference(HumanPapillomavirusBivalProductb1c76231b4bd8ca88a016e1456182ece) 
 
 // Source Record Row //: 34
 //  Date of Prequalification: (09/10/2024)
@@ -1486,14 +1486,14 @@ Instance: PreQualDBc58e60f49c11ec4731c99de19dc1bca0
 InstanceOf: PreQualDB
 * number.value = "c58e60f49c11ec4731c99de19dc1bca0"
 * dateOfPrequal = 2024-10-09
-* vaccineType = #Covid
+* vaccineType = #Covid19
 * commercialName = "Comirnaty®"
 * presentation.coding.code = #Vial
 * manufacturer.text = "BioNTech Manufacturing GmbH"
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: CovidProductc58e60f49c11ec4731c99de19dc1bca0
+Instance: Covid19Productc58e60f49c11ec4731c99de19dc1bca0
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1501,11 +1501,11 @@ Usage: #example
   * nameType = #official
   * value = "Comirnaty®"
 * manufacturer = Reference(Manufacturer86dfcfa49ee9bc21ba7d3f39bcd16088) // BioNTech Manufacturing GmbH
-* classification = #Covid
+* classification = #Covid19
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: CovidPreQualc58e60f49c11ec4731c99de19dc1bca0
+Instance: Covid19PreQualc58e60f49c11ec4731c99de19dc1bca0
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1513,7 +1513,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2024-10-09
-* product  = Reference(CovidProductc58e60f49c11ec4731c99de19dc1bca0) 
+* product  = Reference(Covid19Productc58e60f49c11ec4731c99de19dc1bca0) 
 
 // Source Record Row //: 35
 //  Date of Prequalification: (19/12/2023)
@@ -1576,7 +1576,7 @@ Instance: PreQualDB28248a8d939b280b9d0577db0beb69c6
 InstanceOf: PreQualDB
 * number.value = "28248a8d939b280b9d0577db0beb69c6"
 * dateOfPrequal = 2020-03-25
-* vaccineType = #DengueTetravalentliveattenuated
+* vaccineType = #DengueTetravalentliveatt
 * commercialName = "Dengvaxia"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * numDoses = 5
@@ -1584,7 +1584,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
 
 
-Instance: DengueTetravalentliveattenProduct28248a8d939b280b9d0577db0beb69c6
+Instance: DengueTetravalentliveattProduct28248a8d939b280b9d0577db0beb69c6
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1593,11 +1593,11 @@ Usage: #example
   * value = "Dengvaxia"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  5 'doses'
-* classification = #DengueTetravalentliveattenuated
+* classification = #DengueTetravalentliveatt
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Twovialsetactiveexcipient
 
-Instance: DengueTetravalentliveattenPreQual28248a8d939b280b9d0577db0beb69c6
+Instance: DengueTetravalentliveattPreQual28248a8d939b280b9d0577db0beb69c6
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1605,7 +1605,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 2020-03-25
-* product  = Reference(DengueTetravalentliveattenProduct28248a8d939b280b9d0577db0beb69c6) 
+* product  = Reference(DengueTetravalentliveattProduct28248a8d939b280b9d0577db0beb69c6) 
 
 // Source Record Row //: 37
 //  Date of Prequalification: (09/05/2006)
@@ -1852,7 +1852,7 @@ Instance: PreQualDBce5c75fd99a961fed17cf56c253389e6
 InstanceOf: PreQualDB
 * number.value = "ce5c75fd99a961fed17cf56c253389e6"
 * dateOfPrequal = 1995-04-04
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -1860,7 +1860,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusreducedanProductce5c75fd99a961fed17cf56c253389e6
+Instance: DiphtheriaTetanusreducedProductce5c75fd99a961fed17cf56c253389e6
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1869,11 +1869,11 @@ Usage: #example
   * value = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQualce5c75fd99a961fed17cf56c253389e6
+Instance: DiphtheriaTetanusreducedPreQualce5c75fd99a961fed17cf56c253389e6
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1881,7 +1881,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 1995-04-04
-* product  = Reference(DiphtheriaTetanusreducedanProductce5c75fd99a961fed17cf56c253389e6) 
+* product  = Reference(DiphtheriaTetanusreducedProductce5c75fd99a961fed17cf56c253389e6) 
 
 // Source Record Row //: 43
 //  Date of Prequalification: (04/04/1995)
@@ -1898,7 +1898,7 @@ Instance: PreQualDB6ca9cfe80051ec9e89771a2d09bf4d56
 InstanceOf: PreQualDB
 * number.value = "6ca9cfe80051ec9e89771a2d09bf4d56"
 * dateOfPrequal = 1995-04-04
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -1906,7 +1906,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusreducedanProduct6ca9cfe80051ec9e89771a2d09bf4d56
+Instance: DiphtheriaTetanusreducedProduct6ca9cfe80051ec9e89771a2d09bf4d56
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1915,11 +1915,11 @@ Usage: #example
   * value = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  20 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQual6ca9cfe80051ec9e89771a2d09bf4d56
+Instance: DiphtheriaTetanusreducedPreQual6ca9cfe80051ec9e89771a2d09bf4d56
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1927,7 +1927,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 1995-04-04
-* product  = Reference(DiphtheriaTetanusreducedanProduct6ca9cfe80051ec9e89771a2d09bf4d56) 
+* product  = Reference(DiphtheriaTetanusreducedProduct6ca9cfe80051ec9e89771a2d09bf4d56) 
 
 // Source Record Row //: 44
 //  Date of Prequalification: (04/04/1995)
@@ -1944,7 +1944,7 @@ Instance: PreQualDBa2b59f278d46b0db7093dccf52ced90b
 InstanceOf: PreQualDB
 * number.value = "a2b59f278d46b0db7093dccf52ced90b"
 * dateOfPrequal = 1995-04-04
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
 * presentation.coding.code = #Ampoule
 * numDoses = 1
@@ -1952,7 +1952,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusreducedanProducta2b59f278d46b0db7093dccf52ced90b
+Instance: DiphtheriaTetanusreducedProducta2b59f278d46b0db7093dccf52ced90b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -1961,11 +1961,11 @@ Usage: #example
   * value = "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Ampoule
 
-Instance: DiphtheriaTetanusreducedanPreQuala2b59f278d46b0db7093dccf52ced90b
+Instance: DiphtheriaTetanusreducedPreQuala2b59f278d46b0db7093dccf52ced90b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -1973,7 +1973,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 1995-04-04
-* product  = Reference(DiphtheriaTetanusreducedanProducta2b59f278d46b0db7093dccf52ced90b) 
+* product  = Reference(DiphtheriaTetanusreducedProducta2b59f278d46b0db7093dccf52ced90b) 
 
 // Source Record Row //: 45
 //  Date of Prequalification: (04/04/1995)
@@ -1990,7 +1990,7 @@ Instance: PreQualDB09e30bc35a2a92c163e3edb54f5c8f10
 InstanceOf: PreQualDB
 * number.value = "09e30bc35a2a92c163e3edb54f5c8f10"
 * dateOfPrequal = 1995-04-04
-* vaccineType = #DiphtheriaTetanusPertussiswholecell
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -1998,7 +1998,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct09e30bc35a2a92c163e3edb54f5c8f10
+Instance: DiphtheriaTetanusPertussProduct09e30bc35a2a92c163e3edb54f5c8f10
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2007,11 +2007,11 @@ Usage: #example
   * value = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecell
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual09e30bc35a2a92c163e3edb54f5c8f10
+Instance: DiphtheriaTetanusPertussPreQual09e30bc35a2a92c163e3edb54f5c8f10
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2019,7 +2019,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 1995-04-04
-* product  = Reference(DiphtheriaTetanusPertussisProduct09e30bc35a2a92c163e3edb54f5c8f10) 
+* product  = Reference(DiphtheriaTetanusPertussProduct09e30bc35a2a92c163e3edb54f5c8f10) 
 
 // Source Record Row //: 46
 //  Date of Prequalification: (04/04/1995)
@@ -2036,7 +2036,7 @@ Instance: PreQualDB1f7329ae4ac6f2b51c3b6f5525de81db
 InstanceOf: PreQualDB
 * number.value = "1f7329ae4ac6f2b51c3b6f5525de81db"
 * dateOfPrequal = 1995-04-04
-* vaccineType = #DiphtheriaTetanusPertussiswholecell
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -2044,7 +2044,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct1f7329ae4ac6f2b51c3b6f5525de81db
+Instance: DiphtheriaTetanusPertussProduct1f7329ae4ac6f2b51c3b6f5525de81db
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2053,11 +2053,11 @@ Usage: #example
   * value = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  20 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecell
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual1f7329ae4ac6f2b51c3b6f5525de81db
+Instance: DiphtheriaTetanusPertussPreQual1f7329ae4ac6f2b51c3b6f5525de81db
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2065,7 +2065,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 1995-04-04
-* product  = Reference(DiphtheriaTetanusPertussisProduct1f7329ae4ac6f2b51c3b6f5525de81db) 
+* product  = Reference(DiphtheriaTetanusPertussProduct1f7329ae4ac6f2b51c3b6f5525de81db) 
 
 // Source Record Row //: 47
 //  Date of Prequalification: (04/04/1995)
@@ -2082,7 +2082,7 @@ Instance: PreQualDB93bf52248b752271cca1dedb9a640572
 InstanceOf: PreQualDB
 * number.value = "93bf52248b752271cca1dedb9a640572"
 * dateOfPrequal = 1995-04-04
-* vaccineType = #DiphtheriaTetanusPertussiswholecell
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
 * presentation.coding.code = #Ampoule
 * numDoses = 1
@@ -2090,7 +2090,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct93bf52248b752271cca1dedb9a640572
+Instance: DiphtheriaTetanusPertussProduct93bf52248b752271cca1dedb9a640572
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2099,11 +2099,11 @@ Usage: #example
   * value = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecell
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Ampoule
 
-Instance: DiphtheriaTetanusPertussisPreQual93bf52248b752271cca1dedb9a640572
+Instance: DiphtheriaTetanusPertussPreQual93bf52248b752271cca1dedb9a640572
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2111,7 +2111,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 1995-04-04
-* product  = Reference(DiphtheriaTetanusPertussisProduct93bf52248b752271cca1dedb9a640572) 
+* product  = Reference(DiphtheriaTetanusPertussProduct93bf52248b752271cca1dedb9a640572) 
 
 // Source Record Row //: 48
 //  Date of Prequalification: (23/06/2010)
@@ -2128,7 +2128,7 @@ Instance: PreQualDBaeb7432799438f4e0fa33b88bf2c5de1
 InstanceOf: PreQualDB
 * number.value = "aeb7432799438f4e0fa33b88bf2c5de1"
 * dateOfPrequal = 2010-06-23
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis and Haemophilus influenzae type b Conjugate Vaccine"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 1
@@ -2136,7 +2136,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProductaeb7432799438f4e0fa33b88bf2c5de1
+Instance: DiphtheriaTetanusPertussProductaeb7432799438f4e0fa33b88bf2c5de1
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2145,11 +2145,11 @@ Usage: #example
   * value = "Diphtheria, Tetanus, Pertussis and Haemophilus influenzae type b Conjugate Vaccine"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: DiphtheriaTetanusPertussisPreQualaeb7432799438f4e0fa33b88bf2c5de1
+Instance: DiphtheriaTetanusPertussPreQualaeb7432799438f4e0fa33b88bf2c5de1
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2157,7 +2157,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-06-23
-* product  = Reference(DiphtheriaTetanusPertussisProductaeb7432799438f4e0fa33b88bf2c5de1) 
+* product  = Reference(DiphtheriaTetanusPertussProductaeb7432799438f4e0fa33b88bf2c5de1) 
 
 // Source Record Row //: 49
 //  Date of Prequalification: (26/05/2010)
@@ -2174,7 +2174,7 @@ Instance: PreQualDB28429da79320456db7ac417af4eee5fe
 InstanceOf: PreQualDB
 * number.value = "28429da79320456db7ac417af4eee5fe"
 * dateOfPrequal = 2010-05-26
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 1
@@ -2182,7 +2182,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct28429da79320456db7ac417af4eee5fe
+Instance: DiphtheriaTetanusPertussProduct28429da79320456db7ac417af4eee5fe
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2191,11 +2191,11 @@ Usage: #example
   * value = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: DiphtheriaTetanusPertussisPreQual28429da79320456db7ac417af4eee5fe
+Instance: DiphtheriaTetanusPertussPreQual28429da79320456db7ac417af4eee5fe
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2203,7 +2203,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-05-26
-* product  = Reference(DiphtheriaTetanusPertussisProduct28429da79320456db7ac417af4eee5fe) 
+* product  = Reference(DiphtheriaTetanusPertussProduct28429da79320456db7ac417af4eee5fe) 
 
 // Source Record Row //: 50
 //  Date of Prequalification: (26/05/2010)
@@ -2220,7 +2220,7 @@ Instance: PreQualDB359c7b70b2b729ff61b62454cac26399
 InstanceOf: PreQualDB
 * number.value = "359c7b70b2b729ff61b62454cac26399"
 * dateOfPrequal = 2010-05-26
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 2
@@ -2228,7 +2228,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct359c7b70b2b729ff61b62454cac26399
+Instance: DiphtheriaTetanusPertussProduct359c7b70b2b729ff61b62454cac26399
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2237,11 +2237,11 @@ Usage: #example
   * value = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  2 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: DiphtheriaTetanusPertussisPreQual359c7b70b2b729ff61b62454cac26399
+Instance: DiphtheriaTetanusPertussPreQual359c7b70b2b729ff61b62454cac26399
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2249,7 +2249,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-05-26
-* product  = Reference(DiphtheriaTetanusPertussisProduct359c7b70b2b729ff61b62454cac26399) 
+* product  = Reference(DiphtheriaTetanusPertussProduct359c7b70b2b729ff61b62454cac26399) 
 
 // Source Record Row //: 51
 //  Date of Prequalification: (26/05/2010)
@@ -2266,7 +2266,7 @@ Instance: PreQualDB3742fe526119e70cbc08c40984f44347
 InstanceOf: PreQualDB
 * number.value = "3742fe526119e70cbc08c40984f44347"
 * dateOfPrequal = 2010-05-26
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 10
@@ -2274,7 +2274,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct3742fe526119e70cbc08c40984f44347
+Instance: DiphtheriaTetanusPertussProduct3742fe526119e70cbc08c40984f44347
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2283,11 +2283,11 @@ Usage: #example
   * value = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: DiphtheriaTetanusPertussisPreQual3742fe526119e70cbc08c40984f44347
+Instance: DiphtheriaTetanusPertussPreQual3742fe526119e70cbc08c40984f44347
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2295,7 +2295,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-05-26
-* product  = Reference(DiphtheriaTetanusPertussisProduct3742fe526119e70cbc08c40984f44347) 
+* product  = Reference(DiphtheriaTetanusPertussProduct3742fe526119e70cbc08c40984f44347) 
 
 // Source Record Row //: 52
 //  Date of Prequalification: (22/09/2010)
@@ -2312,7 +2312,7 @@ Instance: PreQualDB4b68c8d782d875e2006042980a94e868
 InstanceOf: PreQualDB
 * number.value = "4b68c8d782d875e2006042980a94e868"
 * dateOfPrequal = 2010-09-22
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -2320,7 +2320,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct4b68c8d782d875e2006042980a94e868
+Instance: DiphtheriaTetanusPertussProduct4b68c8d782d875e2006042980a94e868
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2329,11 +2329,11 @@ Usage: #example
   * value = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual4b68c8d782d875e2006042980a94e868
+Instance: DiphtheriaTetanusPertussPreQual4b68c8d782d875e2006042980a94e868
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2341,7 +2341,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-09-22
-* product  = Reference(DiphtheriaTetanusPertussisProduct4b68c8d782d875e2006042980a94e868) 
+* product  = Reference(DiphtheriaTetanusPertussProduct4b68c8d782d875e2006042980a94e868) 
 
 // Source Record Row //: 53
 //  Date of Prequalification: (22/09/2010)
@@ -2358,7 +2358,7 @@ Instance: PreQualDB9cadbcb1a81c4b665edd7ab85a96bc63
 InstanceOf: PreQualDB
 * number.value = "9cadbcb1a81c4b665edd7ab85a96bc63"
 * dateOfPrequal = 2010-09-22
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
 * presentation.coding.code = #Vial
 * numDoses = 2
@@ -2366,7 +2366,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct9cadbcb1a81c4b665edd7ab85a96bc63
+Instance: DiphtheriaTetanusPertussProduct9cadbcb1a81c4b665edd7ab85a96bc63
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2375,11 +2375,11 @@ Usage: #example
   * value = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  2 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual9cadbcb1a81c4b665edd7ab85a96bc63
+Instance: DiphtheriaTetanusPertussPreQual9cadbcb1a81c4b665edd7ab85a96bc63
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2387,7 +2387,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-09-22
-* product  = Reference(DiphtheriaTetanusPertussisProduct9cadbcb1a81c4b665edd7ab85a96bc63) 
+* product  = Reference(DiphtheriaTetanusPertussProduct9cadbcb1a81c4b665edd7ab85a96bc63) 
 
 // Source Record Row //: 54
 //  Date of Prequalification: (22/09/2010)
@@ -2404,7 +2404,7 @@ Instance: PreQualDBb111c2be0e72525d66bbc13cdb40ad8b
 InstanceOf: PreQualDB
 * number.value = "b111c2be0e72525d66bbc13cdb40ad8b"
 * dateOfPrequal = 2010-09-22
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -2412,7 +2412,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProductb111c2be0e72525d66bbc13cdb40ad8b
+Instance: DiphtheriaTetanusPertussProductb111c2be0e72525d66bbc13cdb40ad8b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2421,11 +2421,11 @@ Usage: #example
   * value = "Diphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQualb111c2be0e72525d66bbc13cdb40ad8b
+Instance: DiphtheriaTetanusPertussPreQualb111c2be0e72525d66bbc13cdb40ad8b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2433,7 +2433,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-09-22
-* product  = Reference(DiphtheriaTetanusPertussisProductb111c2be0e72525d66bbc13cdb40ad8b) 
+* product  = Reference(DiphtheriaTetanusPertussProductb111c2be0e72525d66bbc13cdb40ad8b) 
 
 // Source Record Row //: 55
 //  Date of Prequalification: (06/04/2001)
@@ -2450,7 +2450,7 @@ Instance: PreQualDB5a1c64b0918ba68ee54b56d7ef5bae28
 InstanceOf: PreQualDB
 * number.value = "5a1c64b0918ba68ee54b56d7ef5bae28"
 * dateOfPrequal = 2001-04-06
-* vaccineType = #DiphtheriaTetanusPertussiswholecell
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "DTP Vaccine"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -2458,7 +2458,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: DiphtheriaTetanusPertussisProduct5a1c64b0918ba68ee54b56d7ef5bae28
+Instance: DiphtheriaTetanusPertussProduct5a1c64b0918ba68ee54b56d7ef5bae28
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2467,11 +2467,11 @@ Usage: #example
   * value = "DTP Vaccine"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecell
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual5a1c64b0918ba68ee54b56d7ef5bae28
+Instance: DiphtheriaTetanusPertussPreQual5a1c64b0918ba68ee54b56d7ef5bae28
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2479,7 +2479,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2001-04-06
-* product  = Reference(DiphtheriaTetanusPertussisProduct5a1c64b0918ba68ee54b56d7ef5bae28) 
+* product  = Reference(DiphtheriaTetanusPertussProduct5a1c64b0918ba68ee54b56d7ef5bae28) 
 
 // Source Record Row //: 56
 //  Date of Prequalification: (25/10/2001)
@@ -2542,7 +2542,7 @@ Instance: PreQualDB12fb747f41e6d859143205f2bd28df6d
 InstanceOf: PreQualDB
 * number.value = "12fb747f41e6d859143205f2bd28df6d"
 * dateOfPrequal = 2013-10-02
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Easyfive-TT"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -2550,7 +2550,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct12fb747f41e6d859143205f2bd28df6d
+Instance: DiphtheriaTetanusPertussProduct12fb747f41e6d859143205f2bd28df6d
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2559,11 +2559,11 @@ Usage: #example
   * value = "Easyfive-TT"
 * manufacturer = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) // Panacea Biotec Ltd.
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual12fb747f41e6d859143205f2bd28df6d
+Instance: DiphtheriaTetanusPertussPreQual12fb747f41e6d859143205f2bd28df6d
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2571,7 +2571,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2013-10-02
-* product  = Reference(DiphtheriaTetanusPertussisProduct12fb747f41e6d859143205f2bd28df6d) 
+* product  = Reference(DiphtheriaTetanusPertussProduct12fb747f41e6d859143205f2bd28df6d) 
 
 // Source Record Row //: 58
 //  Date of Prequalification: (02/10/2013)
@@ -2588,7 +2588,7 @@ Instance: PreQualDB2d58e4391e9ba4d20ca0c3d8c72d96f7
 InstanceOf: PreQualDB
 * number.value = "2d58e4391e9ba4d20ca0c3d8c72d96f7"
 * dateOfPrequal = 2013-10-02
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Easyfive-TT"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -2596,7 +2596,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct2d58e4391e9ba4d20ca0c3d8c72d96f7
+Instance: DiphtheriaTetanusPertussProduct2d58e4391e9ba4d20ca0c3d8c72d96f7
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2605,11 +2605,11 @@ Usage: #example
   * value = "Easyfive-TT"
 * manufacturer = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) // Panacea Biotec Ltd.
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual2d58e4391e9ba4d20ca0c3d8c72d96f7
+Instance: DiphtheriaTetanusPertussPreQual2d58e4391e9ba4d20ca0c3d8c72d96f7
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2617,7 +2617,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2013-10-02
-* product  = Reference(DiphtheriaTetanusPertussisProduct2d58e4391e9ba4d20ca0c3d8c72d96f7) 
+* product  = Reference(DiphtheriaTetanusPertussProduct2d58e4391e9ba4d20ca0c3d8c72d96f7) 
 
 // Source Record Row //: 59
 //  Date of Prequalification: (01/01/1987)
@@ -2772,7 +2772,7 @@ Instance: PreQualDB572546ba96967b25cb56ce1c3118d492
 InstanceOf: PreQualDB
 * number.value = "572546ba96967b25cb56ce1c3118d492"
 * dateOfPrequal = 2019-11-12
-* vaccineType = #EbolaZairerVSVGZEBOVGPliveattenuated
+* vaccineType = #EbolaZairerVSVGZEBOVGPli
 * commercialName = "ERVEBO"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -2780,7 +2780,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: EbolaZairerVSVGZEBOVGPliveProduct572546ba96967b25cb56ce1c3118d492
+Instance: EbolaZairerVSVGZEBOVGPliProduct572546ba96967b25cb56ce1c3118d492
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2789,11 +2789,11 @@ Usage: #example
   * value = "ERVEBO"
 * manufacturer = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) // Merck Sharp & Dohme LLC
 * doseQuantity =  1 'doses'
-* classification = #EbolaZairerVSVGZEBOVGPliveattenuated
+* classification = #EbolaZairerVSVGZEBOVGPli
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: EbolaZairerVSVGZEBOVGPlivePreQual572546ba96967b25cb56ce1c3118d492
+Instance: EbolaZairerVSVGZEBOVGPliPreQual572546ba96967b25cb56ce1c3118d492
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2801,7 +2801,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2019-11-12
-* product  = Reference(EbolaZairerVSVGZEBOVGPliveProduct572546ba96967b25cb56ce1c3118d492) 
+* product  = Reference(EbolaZairerVSVGZEBOVGPliProduct572546ba96967b25cb56ce1c3118d492) 
 
 // Source Record Row //: 63
 //  Date of Prequalification: (10/02/2016)
@@ -2818,7 +2818,7 @@ Instance: PreQualDBeb16babfc019543822b1248f0c4f5efb
 InstanceOf: PreQualDB
 * number.value = "eb16babfc019543822b1248f0c4f5efb"
 * dateOfPrequal = 2016-02-10
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Eupenta"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -2826,7 +2826,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: DiphtheriaTetanusPertussisProducteb16babfc019543822b1248f0c4f5efb
+Instance: DiphtheriaTetanusPertussProducteb16babfc019543822b1248f0c4f5efb
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2835,11 +2835,11 @@ Usage: #example
   * value = "Eupenta"
 * manufacturer = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) // LG Chem Ltd
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQualeb16babfc019543822b1248f0c4f5efb
+Instance: DiphtheriaTetanusPertussPreQualeb16babfc019543822b1248f0c4f5efb
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2847,7 +2847,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2016-02-10
-* product  = Reference(DiphtheriaTetanusPertussisProducteb16babfc019543822b1248f0c4f5efb) 
+* product  = Reference(DiphtheriaTetanusPertussProducteb16babfc019543822b1248f0c4f5efb) 
 
 // Source Record Row //: 64
 //  Date of Prequalification: (10/02/2016)
@@ -2864,7 +2864,7 @@ Instance: PreQualDB1eed9868d0ea11bb49b16959c60a360b
 InstanceOf: PreQualDB
 * number.value = "1eed9868d0ea11bb49b16959c60a360b"
 * dateOfPrequal = 2016-02-10
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Eupenta"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -2872,7 +2872,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: DiphtheriaTetanusPertussisProduct1eed9868d0ea11bb49b16959c60a360b
+Instance: DiphtheriaTetanusPertussProduct1eed9868d0ea11bb49b16959c60a360b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2881,11 +2881,11 @@ Usage: #example
   * value = "Eupenta"
 * manufacturer = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) // LG Chem Ltd
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual1eed9868d0ea11bb49b16959c60a360b
+Instance: DiphtheriaTetanusPertussPreQual1eed9868d0ea11bb49b16959c60a360b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2893,7 +2893,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2016-02-10
-* product  = Reference(DiphtheriaTetanusPertussisProduct1eed9868d0ea11bb49b16959c60a360b) 
+* product  = Reference(DiphtheriaTetanusPertussProduct1eed9868d0ea11bb49b16959c60a360b) 
 
 // Source Record Row //: 65
 //  Date of Prequalification: (01/06/2021)
@@ -2910,7 +2910,7 @@ Instance: PreQualDB4973b233658a4cbd408c0de40f17b98e
 InstanceOf: PreQualDB
 * number.value = "4973b233658a4cbd408c0de40f17b98e"
 * dateOfPrequal = 2021-06-01
-* vaccineType = #PolioVaccineInactivatedSabinsIPV
+* vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Eupolio Inj."
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -2918,7 +2918,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: PolioVaccineInactivatedSabProduct4973b233658a4cbd408c0de40f17b98e
+Instance: PolioVaccineInactivatedSProduct4973b233658a4cbd408c0de40f17b98e
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2927,11 +2927,11 @@ Usage: #example
   * value = "Eupolio Inj."
 * manufacturer = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) // LG Chem Ltd
 * doseQuantity =  1 'doses'
-* classification = #PolioVaccineInactivatedSabinsIPV
+* classification = #PolioVaccineInactivatedS
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedSabPreQual4973b233658a4cbd408c0de40f17b98e
+Instance: PolioVaccineInactivatedSPreQual4973b233658a4cbd408c0de40f17b98e
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2939,7 +2939,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2021-06-01
-* product  = Reference(PolioVaccineInactivatedSabProduct4973b233658a4cbd408c0de40f17b98e) 
+* product  = Reference(PolioVaccineInactivatedSProduct4973b233658a4cbd408c0de40f17b98e) 
 
 // Source Record Row //: 66
 //  Date of Prequalification: (21/12/2020)
@@ -2956,7 +2956,7 @@ Instance: PreQualDB98053b33525df31d7d71d278c5b0f85b
 InstanceOf: PreQualDB
 * number.value = "98053b33525df31d7d71d278c5b0f85b"
 * dateOfPrequal = 2020-12-21
-* vaccineType = #PolioVaccineInactivatedSabinsIPV
+* vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Eupolio Inj."
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -2964,7 +2964,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: PolioVaccineInactivatedSabProduct98053b33525df31d7d71d278c5b0f85b
+Instance: PolioVaccineInactivatedSProduct98053b33525df31d7d71d278c5b0f85b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -2973,11 +2973,11 @@ Usage: #example
   * value = "Eupolio Inj."
 * manufacturer = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) // LG Chem Ltd
 * doseQuantity =  5 'doses'
-* classification = #PolioVaccineInactivatedSabinsIPV
+* classification = #PolioVaccineInactivatedS
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedSabPreQual98053b33525df31d7d71d278c5b0f85b
+Instance: PolioVaccineInactivatedSPreQual98053b33525df31d7d71d278c5b0f85b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -2985,7 +2985,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2020-12-21
-* product  = Reference(PolioVaccineInactivatedSabProduct98053b33525df31d7d71d278c5b0f85b) 
+* product  = Reference(PolioVaccineInactivatedSProduct98053b33525df31d7d71d278c5b0f85b) 
 
 // Source Record Row //: 67
 //  Date of Prequalification: (21/01/2020)
@@ -3278,7 +3278,7 @@ Instance: PreQualDBa89f2f55b13476e29d6da6bcb5142d75
 InstanceOf: PreQualDB
 * number.value = "a89f2f55b13476e29d6da6bcb5142d75"
 * dateOfPrequal = 2025-01-09
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "FLU-M®"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -3286,7 +3286,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Centro para el Control Estatal de la Calidad de los Medicamentos"
 
 
-Instance: InfluenzaseasonalTrivalentProducta89f2f55b13476e29d6da6bcb5142d75
+Instance: InfluenzaseasonalTrivaleProducta89f2f55b13476e29d6da6bcb5142d75
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3295,11 +3295,11 @@ Usage: #example
   * value = "FLU-M®"
 * manufacturer = Reference(Manufacturer8ab31a781c8d4c81ccd71cece39e4654) // Saint Petersburg Scientific Research Institute of Vaccines and Serums of the FMBA of Russia
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQuala89f2f55b13476e29d6da6bcb5142d75
+Instance: InfluenzaseasonalTrivalePreQuala89f2f55b13476e29d6da6bcb5142d75
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3307,7 +3307,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder882e1c1bff3f30753e4f4da0e0917ec0) // Centro para el Control Estatal de la Calidad de los Medicamentos
 * validityPeriod.start = 2025-01-09
-* product  = Reference(InfluenzaseasonalTrivalentProducta89f2f55b13476e29d6da6bcb5142d75) 
+* product  = Reference(InfluenzaseasonalTrivaleProducta89f2f55b13476e29d6da6bcb5142d75) 
 
 // Source Record Row //: 74
 //  Date of Prequalification: (04/11/2015)
@@ -3324,7 +3324,7 @@ Instance: PreQualDBb8bd577779a9b5257ed0af90ebc14af2
 InstanceOf: PreQualDB
 * number.value = "b8bd577779a9b5257ed0af90ebc14af2"
 * dateOfPrequal = 2015-11-04
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "Fluzone Quadrivalent (labelled as FluQuadri in other markets)"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3332,7 +3332,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
 
 
-Instance: InfluenzaseasonalQuadrivalProductb8bd577779a9b5257ed0af90ebc14af2
+Instance: InfluenzaseasonalQuadrivProductb8bd577779a9b5257ed0af90ebc14af2
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3341,11 +3341,11 @@ Usage: #example
   * value = "Fluzone Quadrivalent (labelled as FluQuadri in other markets)"
 * manufacturer = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) // Sanofi Pasteur Inc.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQualb8bd577779a9b5257ed0af90ebc14af2
+Instance: InfluenzaseasonalQuadrivPreQualb8bd577779a9b5257ed0af90ebc14af2
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3353,7 +3353,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 * validityPeriod.start = 2015-11-04
-* product  = Reference(InfluenzaseasonalQuadrivalProductb8bd577779a9b5257ed0af90ebc14af2) 
+* product  = Reference(InfluenzaseasonalQuadrivProductb8bd577779a9b5257ed0af90ebc14af2) 
 
 // Source Record Row //: 75
 //  Date of Prequalification: (04/11/2015)
@@ -3370,7 +3370,7 @@ Instance: PreQualDB75711711764268cf68c1a5c9c64e32e1
 InstanceOf: PreQualDB
 * number.value = "75711711764268cf68c1a5c9c64e32e1"
 * dateOfPrequal = 2015-11-04
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "Fluzone Quadrivalent (labelled as FluQuadri in other markets)"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -3378,7 +3378,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
 
 
-Instance: InfluenzaseasonalQuadrivalProduct75711711764268cf68c1a5c9c64e32e1
+Instance: InfluenzaseasonalQuadrivProduct75711711764268cf68c1a5c9c64e32e1
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3387,11 +3387,11 @@ Usage: #example
   * value = "Fluzone Quadrivalent (labelled as FluQuadri in other markets)"
 * manufacturer = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) // Sanofi Pasteur Inc.
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQual75711711764268cf68c1a5c9c64e32e1
+Instance: InfluenzaseasonalQuadrivPreQual75711711764268cf68c1a5c9c64e32e1
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3399,7 +3399,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 * validityPeriod.start = 2015-11-04
-* product  = Reference(InfluenzaseasonalQuadrivalProduct75711711764268cf68c1a5c9c64e32e1) 
+* product  = Reference(InfluenzaseasonalQuadrivProduct75711711764268cf68c1a5c9c64e32e1) 
 
 // Source Record Row //: 76
 //  Date of Prequalification: (09/07/2024)
@@ -3416,7 +3416,7 @@ Instance: PreQualDB46209cdc7449e49203b2a95792b84b24
 InstanceOf: PreQualDB
 * number.value = "46209cdc7449e49203b2a95792b84b24"
 * dateOfPrequal = 2024-07-09
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Fluzone® (Fluprevli™ in other markets)"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -3424,7 +3424,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "US Food and Drug Administration- Office of Vaccine Research and Review"
 
 
-Instance: InfluenzaseasonalTrivalentProduct46209cdc7449e49203b2a95792b84b24
+Instance: InfluenzaseasonalTrivaleProduct46209cdc7449e49203b2a95792b84b24
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3433,11 +3433,11 @@ Usage: #example
   * value = "Fluzone® (Fluprevli™ in other markets)"
 * manufacturer = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) // Sanofi Pasteur Inc.
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQual46209cdc7449e49203b2a95792b84b24
+Instance: InfluenzaseasonalTrivalePreQual46209cdc7449e49203b2a95792b84b24
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3445,7 +3445,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderdedcc6176011f2d420244b5c4f3dfeec) // US Food and Drug Administration- Office of Vaccine Research and Review
 * validityPeriod.start = 2024-07-09
-* product  = Reference(InfluenzaseasonalTrivalentProduct46209cdc7449e49203b2a95792b84b24) 
+* product  = Reference(InfluenzaseasonalTrivaleProduct46209cdc7449e49203b2a95792b84b24) 
 
 // Source Record Row //: 77
 //  Date of Prequalification: (16/12/2009)
@@ -3462,7 +3462,7 @@ Instance: PreQualDBff84c4accf7ef0320c23b92afff79857
 InstanceOf: PreQualDB
 * number.value = "ff84c4accf7ef0320c23b92afff79857"
 * dateOfPrequal = 2009-12-16
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Focetria"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -3470,7 +3470,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "CBER/FDA"
 
 
-Instance: InfluenzaPandemicHNProductff84c4accf7ef0320c23b92afff79857
+Instance: InfluenzaPandemicH1N1Productff84c4accf7ef0320c23b92afff79857
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3479,11 +3479,11 @@ Usage: #example
   * value = "Focetria"
 * manufacturer = Reference(Manufacturerfe4fadac9251b55f416ee57a84018bfe) // Seqirus Vaccines Limited
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaPandemicHNPreQualff84c4accf7ef0320c23b92afff79857
+Instance: InfluenzaPandemicH1N1PreQualff84c4accf7ef0320c23b92afff79857
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3491,7 +3491,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 * validityPeriod.start = 2009-12-16
-* product  = Reference(InfluenzaPandemicHNProductff84c4accf7ef0320c23b92afff79857) 
+* product  = Reference(InfluenzaPandemicH1N1Productff84c4accf7ef0320c23b92afff79857) 
 
 // Source Record Row //: 78
 //  Date of Prequalification: (09/02/2018)
@@ -3508,7 +3508,7 @@ Instance: PreQualDB62c786cf817b9e1bc004016d9127dc88
 InstanceOf: PreQualDB
 * number.value = "62c786cf817b9e1bc004016d9127dc88"
 * dateOfPrequal = 2018-02-09
-* vaccineType = #HumanPapillomavirusNinevalent
+* vaccineType = #HumanPapillomavirusNinev
 * commercialName = "Gardasil 9"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3516,7 +3516,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: HumanPapillomavirusNinevalProduct62c786cf817b9e1bc004016d9127dc88
+Instance: HumanPapillomavirusNinevProduct62c786cf817b9e1bc004016d9127dc88
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3525,11 +3525,11 @@ Usage: #example
   * value = "Gardasil 9"
 * manufacturer = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) // Merck Sharp & Dohme LLC
 * doseQuantity =  1 'doses'
-* classification = #HumanPapillomavirusNinevalent
+* classification = #HumanPapillomavirusNinev
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HumanPapillomavirusNinevalPreQual62c786cf817b9e1bc004016d9127dc88
+Instance: HumanPapillomavirusNinevPreQual62c786cf817b9e1bc004016d9127dc88
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3537,7 +3537,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2018-02-09
-* product  = Reference(HumanPapillomavirusNinevalProduct62c786cf817b9e1bc004016d9127dc88) 
+* product  = Reference(HumanPapillomavirusNinevProduct62c786cf817b9e1bc004016d9127dc88) 
 
 // Source Record Row //: 79
 //  Date of Prequalification: (20/05/2009)
@@ -3554,7 +3554,7 @@ Instance: PreQualDBe5bba5ce02f9f36d136570b210caafda
 InstanceOf: PreQualDB
 * number.value = "e5bba5ce02f9f36d136570b210caafda"
 * dateOfPrequal = 2009-05-20
-* vaccineType = #HumanPapillomavirusQuadrivalent
+* vaccineType = #HumanPapillomavirusQuadr
 * commercialName = "Gardasil"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3562,7 +3562,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: HumanPapillomavirusQuadrivProducte5bba5ce02f9f36d136570b210caafda
+Instance: HumanPapillomavirusQuadrProducte5bba5ce02f9f36d136570b210caafda
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3571,11 +3571,11 @@ Usage: #example
   * value = "Gardasil"
 * manufacturer = Reference(Manufacturer6ac873e2c3883c85ec03dd0edc89ba75) // Merck Sharp & Dohme LLC
 * doseQuantity =  1 'doses'
-* classification = #HumanPapillomavirusQuadrivalent
+* classification = #HumanPapillomavirusQuadr
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HumanPapillomavirusQuadrivPreQuale5bba5ce02f9f36d136570b210caafda
+Instance: HumanPapillomavirusQuadrPreQuale5bba5ce02f9f36d136570b210caafda
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3583,7 +3583,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2009-05-20
-* product  = Reference(HumanPapillomavirusQuadrivProducte5bba5ce02f9f36d136570b210caafda) 
+* product  = Reference(HumanPapillomavirusQuadrProducte5bba5ce02f9f36d136570b210caafda) 
 
 // Source Record Row //: 80
 //  Date of Prequalification: (12/04/2011)
@@ -3600,7 +3600,7 @@ Instance: PreQualDB9efdee3070cf4423d7f67b4f0688eb6d
 InstanceOf: PreQualDB
 * number.value = "9efdee3070cf4423d7f67b4f0688eb6d"
 * dateOfPrequal = 2011-04-12
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "GC FLU  inj"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3608,7 +3608,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalTrivalentProduct9efdee3070cf4423d7f67b4f0688eb6d
+Instance: InfluenzaseasonalTrivaleProduct9efdee3070cf4423d7f67b4f0688eb6d
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3617,11 +3617,11 @@ Usage: #example
   * value = "GC FLU  inj"
 * manufacturer = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) // GC Biopharma Corp.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQual9efdee3070cf4423d7f67b4f0688eb6d
+Instance: InfluenzaseasonalTrivalePreQual9efdee3070cf4423d7f67b4f0688eb6d
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3629,7 +3629,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2011-04-12
-* product  = Reference(InfluenzaseasonalTrivalentProduct9efdee3070cf4423d7f67b4f0688eb6d) 
+* product  = Reference(InfluenzaseasonalTrivaleProduct9efdee3070cf4423d7f67b4f0688eb6d) 
 
 // Source Record Row //: 81
 //  Date of Prequalification: (07/11/2012)
@@ -3646,7 +3646,7 @@ Instance: PreQualDBd000cbe0858ef13d327819b556a60cf8
 InstanceOf: PreQualDB
 * number.value = "d000cbe0858ef13d327819b556a60cf8"
 * dateOfPrequal = 2012-11-07
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "GC FLU Multi inj."
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -3654,7 +3654,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalTrivalentProductd000cbe0858ef13d327819b556a60cf8
+Instance: InfluenzaseasonalTrivaleProductd000cbe0858ef13d327819b556a60cf8
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3663,11 +3663,11 @@ Usage: #example
   * value = "GC FLU Multi inj."
 * manufacturer = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) // GC Biopharma Corp.
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQuald000cbe0858ef13d327819b556a60cf8
+Instance: InfluenzaseasonalTrivalePreQuald000cbe0858ef13d327819b556a60cf8
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3675,7 +3675,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2012-11-07
-* product  = Reference(InfluenzaseasonalTrivalentProductd000cbe0858ef13d327819b556a60cf8) 
+* product  = Reference(InfluenzaseasonalTrivaleProductd000cbe0858ef13d327819b556a60cf8) 
 
 // Source Record Row //: 82
 //  Date of Prequalification: (21/12/2016)
@@ -3692,7 +3692,7 @@ Instance: PreQualDB89ec04a26c0e9729ffc48a7071f553b1
 InstanceOf: PreQualDB
 * number.value = "89ec04a26c0e9729ffc48a7071f553b1"
 * dateOfPrequal = 2016-12-21
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "GC FLU Quadrivalent inj."
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3700,7 +3700,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalQuadrivalProduct89ec04a26c0e9729ffc48a7071f553b1
+Instance: InfluenzaseasonalQuadrivProduct89ec04a26c0e9729ffc48a7071f553b1
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3709,11 +3709,11 @@ Usage: #example
   * value = "GC FLU Quadrivalent inj."
 * manufacturer = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) // GC Biopharma Corp.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQual89ec04a26c0e9729ffc48a7071f553b1
+Instance: InfluenzaseasonalQuadrivPreQual89ec04a26c0e9729ffc48a7071f553b1
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3721,7 +3721,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2016-12-21
-* product  = Reference(InfluenzaseasonalQuadrivalProduct89ec04a26c0e9729ffc48a7071f553b1) 
+* product  = Reference(InfluenzaseasonalQuadrivProduct89ec04a26c0e9729ffc48a7071f553b1) 
 
 // Source Record Row //: 83
 //  Date of Prequalification: (03/04/2017)
@@ -3738,7 +3738,7 @@ Instance: PreQualDB43c19f57e0a46abb7a95870013ac5c7d
 InstanceOf: PreQualDB
 * number.value = "43c19f57e0a46abb7a95870013ac5c7d"
 * dateOfPrequal = 2017-04-03
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "GC FLU Quadrivalent Multi inj."
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -3746,7 +3746,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalQuadrivalProduct43c19f57e0a46abb7a95870013ac5c7d
+Instance: InfluenzaseasonalQuadrivProduct43c19f57e0a46abb7a95870013ac5c7d
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3755,11 +3755,11 @@ Usage: #example
   * value = "GC FLU Quadrivalent Multi inj."
 * manufacturer = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) // GC Biopharma Corp.
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQual43c19f57e0a46abb7a95870013ac5c7d
+Instance: InfluenzaseasonalQuadrivPreQual43c19f57e0a46abb7a95870013ac5c7d
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3767,7 +3767,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2017-04-03
-* product  = Reference(InfluenzaseasonalQuadrivalProduct43c19f57e0a46abb7a95870013ac5c7d) 
+* product  = Reference(InfluenzaseasonalQuadrivProduct43c19f57e0a46abb7a95870013ac5c7d) 
 
 // Source Record Row //: 84
 //  Date of Prequalification: (11/05/2010)
@@ -3784,7 +3784,7 @@ Instance: PreQualDB19991c4edc490fed743fc6c12cb1174e
 InstanceOf: PreQualDB
 * number.value = "19991c4edc490fed743fc6c12cb1174e"
 * dateOfPrequal = 2010-05-11
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Green Flu-S"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3792,7 +3792,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaPandemicHNProduct19991c4edc490fed743fc6c12cb1174e
+Instance: InfluenzaPandemicH1N1Product19991c4edc490fed743fc6c12cb1174e
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3801,11 +3801,11 @@ Usage: #example
   * value = "Green Flu-S"
 * manufacturer = Reference(Manufacturer276d2e4e45134d0b90fed7fbf1a8ab42) // GC Biopharma Corp.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaPandemicHNPreQual19991c4edc490fed743fc6c12cb1174e
+Instance: InfluenzaPandemicH1N1PreQual19991c4edc490fed743fc6c12cb1174e
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3813,7 +3813,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2010-05-11
-* product  = Reference(InfluenzaPandemicHNProduct19991c4edc490fed743fc6c12cb1174e) 
+* product  = Reference(InfluenzaPandemicH1N1Product19991c4edc490fed743fc6c12cb1174e) 
 
 // Source Record Row //: 85
 //  Date of Prequalification: (17/11/2008)
@@ -3830,7 +3830,7 @@ Instance: PreQualDB440cad7be125a9ef4d8629d5a9bad7fb
 InstanceOf: PreQualDB
 * number.value = "440cad7be125a9ef4d8629d5a9bad7fb"
 * dateOfPrequal = 2008-11-17
-* vaccineType = #Haemophilusinfluenzaetypeb
+* vaccineType = #Haemophilusinfluenzaetyp
 * commercialName = "Haemophilus influenzae type b Conjugate Vaccine"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3838,7 +3838,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: HaemophilusinfluenzaetypebProduct440cad7be125a9ef4d8629d5a9bad7fb
+Instance: HaemophilusinfluenzaetypProduct440cad7be125a9ef4d8629d5a9bad7fb
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3847,11 +3847,11 @@ Usage: #example
   * value = "Haemophilus influenzae type b Conjugate Vaccine"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #Haemophilusinfluenzaetypeb
+* classification = #Haemophilusinfluenzaetyp
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HaemophilusinfluenzaetypebPreQual440cad7be125a9ef4d8629d5a9bad7fb
+Instance: HaemophilusinfluenzaetypPreQual440cad7be125a9ef4d8629d5a9bad7fb
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3859,7 +3859,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2008-11-17
-* product  = Reference(HaemophilusinfluenzaetypebProduct440cad7be125a9ef4d8629d5a9bad7fb) 
+* product  = Reference(HaemophilusinfluenzaetypProduct440cad7be125a9ef4d8629d5a9bad7fb) 
 
 // Source Record Row //: 86
 //  Date of Prequalification: (19/07/2013)
@@ -3876,7 +3876,7 @@ Instance: PreQualDBfd182f59ce3db1fde7546539d04930af
 InstanceOf: PreQualDB
 * number.value = "fd182f59ce3db1fde7546539d04930af"
 * dateOfPrequal = 2013-07-19
-* vaccineType = #HepatitisAHumanDiploidCellInactivatedAdult
+* vaccineType = #HepatitisAHumanDiploidCe
 * commercialName = "Havrix 1440 Adult"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3884,7 +3884,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: HepatitisAHumanDiploidCellProductfd182f59ce3db1fde7546539d04930af
+Instance: HepatitisAHumanDiploidCeProductfd182f59ce3db1fde7546539d04930af
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3893,11 +3893,11 @@ Usage: #example
   * value = "Havrix 1440 Adult"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  1 'doses'
-* classification = #HepatitisAHumanDiploidCellInactivatedAdult
+* classification = #HepatitisAHumanDiploidCe
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HepatitisAHumanDiploidCellPreQualfd182f59ce3db1fde7546539d04930af
+Instance: HepatitisAHumanDiploidCePreQualfd182f59ce3db1fde7546539d04930af
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3905,7 +3905,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2013-07-19
-* product  = Reference(HepatitisAHumanDiploidCellProductfd182f59ce3db1fde7546539d04930af) 
+* product  = Reference(HepatitisAHumanDiploidCeProductfd182f59ce3db1fde7546539d04930af) 
 
 // Source Record Row //: 87
 //  Date of Prequalification: (19/07/2013)
@@ -3922,7 +3922,7 @@ Instance: PreQualDB439d8674406bfe3331e8c584388d856a
 InstanceOf: PreQualDB
 * number.value = "439d8674406bfe3331e8c584388d856a"
 * dateOfPrequal = 2013-07-19
-* vaccineType = #HepatitisAHumanDiploidCellInactivatedPaediatric
+* vaccineType = #HepatitisAHumanDiploidCe
 * commercialName = "Havrix 720 Junior"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3930,7 +3930,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: HepatitisAHumanDiploidCellProduct439d8674406bfe3331e8c584388d856a
+Instance: HepatitisAHumanDiploidCeProduct439d8674406bfe3331e8c584388d856a
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3939,11 +3939,11 @@ Usage: #example
   * value = "Havrix 720 Junior"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  1 'doses'
-* classification = #HepatitisAHumanDiploidCellInactivatedPaediatric
+* classification = #HepatitisAHumanDiploidCe
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HepatitisAHumanDiploidCellPreQual439d8674406bfe3331e8c584388d856a
+Instance: HepatitisAHumanDiploidCePreQual439d8674406bfe3331e8c584388d856a
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3951,7 +3951,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2013-07-19
-* product  = Reference(HepatitisAHumanDiploidCellProduct439d8674406bfe3331e8c584388d856a) 
+* product  = Reference(HepatitisAHumanDiploidCeProduct439d8674406bfe3331e8c584388d856a) 
 
 // Source Record Row //: 88
 //  Date of Prequalification: (22/12/2017)
@@ -3968,7 +3968,7 @@ Instance: PreQualDBa5faa151828304427a06c494c914cf51
 InstanceOf: PreQualDB
 * number.value = "a5faa151828304427a06c494c914cf51"
 * dateOfPrequal = 2017-12-22
-* vaccineType = #HepatitisAHumanDiploidCellInactivatedPaediatric
+* vaccineType = #HepatitisAHumanDiploidCe
 * commercialName = "HEALIVE"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -3976,7 +3976,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: HepatitisAHumanDiploidCellProducta5faa151828304427a06c494c914cf51
+Instance: HepatitisAHumanDiploidCeProducta5faa151828304427a06c494c914cf51
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -3985,11 +3985,11 @@ Usage: #example
   * value = "HEALIVE"
 * manufacturer = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) // Sinovac Biotech Co. Ltd
 * doseQuantity =  1 'doses'
-* classification = #HepatitisAHumanDiploidCellInactivatedPaediatric
+* classification = #HepatitisAHumanDiploidCe
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HepatitisAHumanDiploidCellPreQuala5faa151828304427a06c494c914cf51
+Instance: HepatitisAHumanDiploidCePreQuala5faa151828304427a06c494c914cf51
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -3997,7 +3997,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2017-12-22
-* product  = Reference(HepatitisAHumanDiploidCellProducta5faa151828304427a06c494c914cf51) 
+* product  = Reference(HepatitisAHumanDiploidCeProducta5faa151828304427a06c494c914cf51) 
 
 // Source Record Row //: 89
 //  Date of Prequalification: (22/12/2017)
@@ -4014,7 +4014,7 @@ Instance: PreQualDB9a88ce73248fd8e938fc40dd1b1cad9d
 InstanceOf: PreQualDB
 * number.value = "9a88ce73248fd8e938fc40dd1b1cad9d"
 * dateOfPrequal = 2017-12-22
-* vaccineType = #HepatitisAHumanDiploidCellInactivatedAdult
+* vaccineType = #HepatitisAHumanDiploidCe
 * commercialName = "HEALIVE"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4022,7 +4022,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: HepatitisAHumanDiploidCellProduct9a88ce73248fd8e938fc40dd1b1cad9d
+Instance: HepatitisAHumanDiploidCeProduct9a88ce73248fd8e938fc40dd1b1cad9d
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4031,11 +4031,11 @@ Usage: #example
   * value = "HEALIVE"
 * manufacturer = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) // Sinovac Biotech Co. Ltd
 * doseQuantity =  1 'doses'
-* classification = #HepatitisAHumanDiploidCellInactivatedAdult
+* classification = #HepatitisAHumanDiploidCe
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HepatitisAHumanDiploidCellPreQual9a88ce73248fd8e938fc40dd1b1cad9d
+Instance: HepatitisAHumanDiploidCePreQual9a88ce73248fd8e938fc40dd1b1cad9d
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4043,7 +4043,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2017-12-22
-* product  = Reference(HepatitisAHumanDiploidCellProduct9a88ce73248fd8e938fc40dd1b1cad9d) 
+* product  = Reference(HepatitisAHumanDiploidCeProduct9a88ce73248fd8e938fc40dd1b1cad9d) 
 
 // Source Record Row //: 90
 //  Date of Prequalification: (11/12/2001)
@@ -4336,7 +4336,7 @@ Instance: PreQualDB485e4da6b08de97dd47deb76977c0096
 InstanceOf: PreQualDB
 * number.value = "485e4da6b08de97dd47deb76977c0096"
 * dateOfPrequal = 2024-03-21
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "HEXASIIL"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4344,7 +4344,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct485e4da6b08de97dd47deb76977c0096
+Instance: DiphtheriaTetanusPertussProduct485e4da6b08de97dd47deb76977c0096
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4353,11 +4353,11 @@ Usage: #example
   * value = "HEXASIIL"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual485e4da6b08de97dd47deb76977c0096
+Instance: DiphtheriaTetanusPertussPreQual485e4da6b08de97dd47deb76977c0096
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4365,7 +4365,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2024-03-21
-* product  = Reference(DiphtheriaTetanusPertussisProduct485e4da6b08de97dd47deb76977c0096) 
+* product  = Reference(DiphtheriaTetanusPertussProduct485e4da6b08de97dd47deb76977c0096) 
 
 // Source Record Row //: 97
 //  Date of Prequalification: (21/03/2024)
@@ -4382,7 +4382,7 @@ Instance: PreQualDB8649cf4eaa2f780ea94bd7bb4ad1ee14
 InstanceOf: PreQualDB
 * number.value = "8649cf4eaa2f780ea94bd7bb4ad1ee14"
 * dateOfPrequal = 2024-03-21
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "HEXASIIL"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -4390,7 +4390,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct8649cf4eaa2f780ea94bd7bb4ad1ee14
+Instance: DiphtheriaTetanusPertussProduct8649cf4eaa2f780ea94bd7bb4ad1ee14
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4399,11 +4399,11 @@ Usage: #example
   * value = "HEXASIIL"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual8649cf4eaa2f780ea94bd7bb4ad1ee14
+Instance: DiphtheriaTetanusPertussPreQual8649cf4eaa2f780ea94bd7bb4ad1ee14
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4411,7 +4411,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2024-03-21
-* product  = Reference(DiphtheriaTetanusPertussisProduct8649cf4eaa2f780ea94bd7bb4ad1ee14) 
+* product  = Reference(DiphtheriaTetanusPertussProduct8649cf4eaa2f780ea94bd7bb4ad1ee14) 
 
 // Source Record Row //: 98
 //  Date of Prequalification: (19/12/2014)
@@ -4428,7 +4428,7 @@ Instance: PreQualDBd33e45f59fce778b20ca845bfc9c4069
 InstanceOf: PreQualDB
 * number.value = "d33e45f59fce778b20ca845bfc9c4069"
 * dateOfPrequal = 2014-12-19
-* vaccineType = #DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Hexaxim"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4436,7 +4436,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: DiphtheriaTetanusPertussisProductd33e45f59fce778b20ca845bfc9c4069
+Instance: DiphtheriaTetanusPertussProductd33e45f59fce778b20ca845bfc9c4069
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4445,11 +4445,11 @@ Usage: #example
   * value = "Hexaxim"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQuald33e45f59fce778b20ca845bfc9c4069
+Instance: DiphtheriaTetanusPertussPreQuald33e45f59fce778b20ca845bfc9c4069
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4457,7 +4457,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2014-12-19
-* product  = Reference(DiphtheriaTetanusPertussisProductd33e45f59fce778b20ca845bfc9c4069) 
+* product  = Reference(DiphtheriaTetanusPertussProductd33e45f59fce778b20ca845bfc9c4069) 
 
 // Source Record Row //: 99
 //  Date of Prequalification: (25/05/2018)
@@ -4474,7 +4474,7 @@ Instance: PreQualDB21668840cd6b06f65014b682cf2ba700
 InstanceOf: PreQualDB
 * number.value = "21668840cd6b06f65014b682cf2ba700"
 * dateOfPrequal = 2018-05-25
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "IL-YANG FLU Vaccine INJ."
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4482,7 +4482,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalTrivalentProduct21668840cd6b06f65014b682cf2ba700
+Instance: InfluenzaseasonalTrivaleProduct21668840cd6b06f65014b682cf2ba700
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4491,11 +4491,11 @@ Usage: #example
   * value = "IL-YANG FLU Vaccine INJ."
 * manufacturer = Reference(Manufacturerf9f224bc27689ea68ccb637fbb1bdcbe) // IL-YANG PHARMACEUTICAL CO., LTD.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQual21668840cd6b06f65014b682cf2ba700
+Instance: InfluenzaseasonalTrivalePreQual21668840cd6b06f65014b682cf2ba700
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4503,7 +4503,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2018-05-25
-* product  = Reference(InfluenzaseasonalTrivalentProduct21668840cd6b06f65014b682cf2ba700) 
+* product  = Reference(InfluenzaseasonalTrivaleProduct21668840cd6b06f65014b682cf2ba700) 
 
 // Source Record Row //: 100
 //  Date of Prequalification: (18/09/2014)
@@ -4520,7 +4520,7 @@ Instance: PreQualDB6a7e1bc10d8222ece1c3687f5dd111bd
 InstanceOf: PreQualDB
 * number.value = "6a7e1bc10d8222ece1c3687f5dd111bd"
 * dateOfPrequal = 2014-09-18
-* vaccineType = #JapaneseEncephalitisVaccineliveattenuated
+* vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "IMOJEV MD"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * numDoses = 4
@@ -4528,7 +4528,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Thai Food and Drug Administration"
 
 
-Instance: JapaneseEncephalitisVaccinProduct6a7e1bc10d8222ece1c3687f5dd111bd
+Instance: JapaneseEncephalitisVaccProduct6a7e1bc10d8222ece1c3687f5dd111bd
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4537,11 +4537,11 @@ Usage: #example
   * value = "IMOJEV MD"
 * manufacturer = Reference(Manufacturerec552798f4f5cdcf689ae9f0a1b981c9) // Global Biotech Products Co., Ltd
 * doseQuantity =  4 'doses'
-* classification = #JapaneseEncephalitisVaccineliveattenuated
+* classification = #JapaneseEncephalitisVacc
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Twovialsetactiveexcipient
 
-Instance: JapaneseEncephalitisVaccinPreQual6a7e1bc10d8222ece1c3687f5dd111bd
+Instance: JapaneseEncephalitisVaccPreQual6a7e1bc10d8222ece1c3687f5dd111bd
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4549,7 +4549,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holdere8eb5f70e506c7842b83c70e164f250b) // Thai Food and Drug Administration
 * validityPeriod.start = 2014-09-18
-* product  = Reference(JapaneseEncephalitisVaccinProduct6a7e1bc10d8222ece1c3687f5dd111bd) 
+* product  = Reference(JapaneseEncephalitisVaccProduct6a7e1bc10d8222ece1c3687f5dd111bd) 
 
 // Source Record Row //: 101
 //  Date of Prequalification: (22/07/1997)
@@ -4566,7 +4566,7 @@ Instance: PreQualDB2ee2df079049becbdb4b335d7f12f0cf
 InstanceOf: PreQualDB
 * number.value = "2ee2df079049becbdb4b335d7f12f0cf"
 * dateOfPrequal = 1997-07-22
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "IMOVAX dT adult"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -4574,7 +4574,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
 
 
-Instance: DiphtheriaTetanusreducedanProduct2ee2df079049becbdb4b335d7f12f0cf
+Instance: DiphtheriaTetanusreducedProduct2ee2df079049becbdb4b335d7f12f0cf
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4583,11 +4583,11 @@ Usage: #example
   * value = "IMOVAX dT adult"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQual2ee2df079049becbdb4b335d7f12f0cf
+Instance: DiphtheriaTetanusreducedPreQual2ee2df079049becbdb4b335d7f12f0cf
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4595,7 +4595,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 1997-07-22
-* product  = Reference(DiphtheriaTetanusreducedanProduct2ee2df079049becbdb4b335d7f12f0cf) 
+* product  = Reference(DiphtheriaTetanusreducedProduct2ee2df079049becbdb4b335d7f12f0cf) 
 
 // Source Record Row //: 102
 //  Date of Prequalification: (09/12/2005)
@@ -4612,7 +4612,7 @@ Instance: PreQualDBd326dc377e5bfa346bdef779f69f25c6
 InstanceOf: PreQualDB
 * number.value = "d326dc377e5bfa346bdef779f69f25c6"
 * dateOfPrequal = 2005-12-09
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "IMOVAX POLIO"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -4620,7 +4620,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
 
 
-Instance: PolioVaccineInactivatedIPVProductd326dc377e5bfa346bdef779f69f25c6
+Instance: PolioVaccineInactivatedIProductd326dc377e5bfa346bdef779f69f25c6
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4629,11 +4629,11 @@ Usage: #example
   * value = "IMOVAX POLIO"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQuald326dc377e5bfa346bdef779f69f25c6
+Instance: PolioVaccineInactivatedIPreQuald326dc377e5bfa346bdef779f69f25c6
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4641,7 +4641,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 2005-12-09
-* product  = Reference(PolioVaccineInactivatedIPVProductd326dc377e5bfa346bdef779f69f25c6) 
+* product  = Reference(PolioVaccineInactivatedIProductd326dc377e5bfa346bdef779f69f25c6) 
 
 // Source Record Row //: 103
 //  Date of Prequalification: (13/09/2024)
@@ -4658,7 +4658,7 @@ Instance: PreQualDBf6cb784aa5dfdce08f5a78b5527abc89
 InstanceOf: PreQualDB
 * number.value = "f6cb784aa5dfdce08f5a78b5527abc89"
 * dateOfPrequal = 2024-09-13
-* vaccineType = #SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara
+* vaccineType = #SmallpoxandMpoxvaccineLi
 * commercialName = "Imvanex® (also approved under the name of JYNNEOS by the USFDA and IMVAMUNE by Health Canada)"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4666,7 +4666,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: SmallpoxandMpoxvaccineLiveProductf6cb784aa5dfdce08f5a78b5527abc89
+Instance: SmallpoxandMpoxvaccineLiProductf6cb784aa5dfdce08f5a78b5527abc89
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4675,11 +4675,11 @@ Usage: #example
   * value = "Imvanex® (also approved under the name of JYNNEOS by the USFDA and IMVAMUNE by Health Canada)"
 * manufacturer = Reference(Manufacturerb10be994cf96fb2336833b00f003c781) // Bavarian Nordic A/S
 * doseQuantity =  1 'doses'
-* classification = #SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara
+* classification = #SmallpoxandMpoxvaccineLi
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: SmallpoxandMpoxvaccineLivePreQualf6cb784aa5dfdce08f5a78b5527abc89
+Instance: SmallpoxandMpoxvaccineLiPreQualf6cb784aa5dfdce08f5a78b5527abc89
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4687,7 +4687,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2024-09-13
-* product  = Reference(SmallpoxandMpoxvaccineLiveProductf6cb784aa5dfdce08f5a78b5527abc89) 
+* product  = Reference(SmallpoxandMpoxvaccineLiProductf6cb784aa5dfdce08f5a78b5527abc89) 
 
 // Source Record Row //: 104
 //  Date of Prequalification: (28/01/2010)
@@ -4704,7 +4704,7 @@ Instance: PreQualDB9ad0ddf702ff73fc825cbb2fa6b7fe05
 InstanceOf: PreQualDB
 * number.value = "9ad0ddf702ff73fc825cbb2fa6b7fe05"
 * dateOfPrequal = 2010-01-28
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4712,7 +4712,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "CBER/FDA"
 
 
-Instance: InfluenzaPandemicHNProduct9ad0ddf702ff73fc825cbb2fa6b7fe05
+Instance: InfluenzaPandemicH1N1Product9ad0ddf702ff73fc825cbb2fa6b7fe05
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4721,11 +4721,11 @@ Usage: #example
   * value = "Influenza A (H1N1) 2009 monovalent vaccine"
 * manufacturer = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) // Sanofi Pasteur Inc.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaPandemicHNPreQual9ad0ddf702ff73fc825cbb2fa6b7fe05
+Instance: InfluenzaPandemicH1N1PreQual9ad0ddf702ff73fc825cbb2fa6b7fe05
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4733,7 +4733,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 * validityPeriod.start = 2010-01-28
-* product  = Reference(InfluenzaPandemicHNProduct9ad0ddf702ff73fc825cbb2fa6b7fe05) 
+* product  = Reference(InfluenzaPandemicH1N1Product9ad0ddf702ff73fc825cbb2fa6b7fe05) 
 
 // Source Record Row //: 105
 //  Date of Prequalification: (28/01/2010)
@@ -4750,7 +4750,7 @@ Instance: PreQualDB75e0929085f8d8c0ad44c23e6f046cfd
 InstanceOf: PreQualDB
 * number.value = "75e0929085f8d8c0ad44c23e6f046cfd"
 * dateOfPrequal = 2010-01-28
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -4758,7 +4758,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "CBER/FDA"
 
 
-Instance: InfluenzaPandemicHNProduct75e0929085f8d8c0ad44c23e6f046cfd
+Instance: InfluenzaPandemicH1N1Product75e0929085f8d8c0ad44c23e6f046cfd
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4767,11 +4767,11 @@ Usage: #example
   * value = "Influenza A (H1N1) 2009 monovalent vaccine"
 * manufacturer = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) // Sanofi Pasteur Inc.
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaPandemicHNPreQual75e0929085f8d8c0ad44c23e6f046cfd
+Instance: InfluenzaPandemicH1N1PreQual75e0929085f8d8c0ad44c23e6f046cfd
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4779,7 +4779,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 * validityPeriod.start = 2010-01-28
-* product  = Reference(InfluenzaPandemicHNProduct75e0929085f8d8c0ad44c23e6f046cfd) 
+* product  = Reference(InfluenzaPandemicH1N1Product75e0929085f8d8c0ad44c23e6f046cfd) 
 
 // Source Record Row //: 106
 //  Date of Prequalification: (25/02/2010)
@@ -4796,7 +4796,7 @@ Instance: PreQualDB2bc9f68ddd32e2ae7e08a3145bd845a5
 InstanceOf: PreQualDB
 * number.value = "2bc9f68ddd32e2ae7e08a3145bd845a5"
 * dateOfPrequal = 2010-02-25
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Influenza A (H1N1) 2009 monovalent vaccine"
 * presentation.coding.code = #Sprayer
 * numDoses = 1
@@ -4804,7 +4804,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "CBER/FDA"
 
 
-Instance: InfluenzaPandemicHNProduct2bc9f68ddd32e2ae7e08a3145bd845a5
+Instance: InfluenzaPandemicH1N1Product2bc9f68ddd32e2ae7e08a3145bd845a5
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4813,11 +4813,11 @@ Usage: #example
   * value = "Influenza A (H1N1) 2009 monovalent vaccine"
 * manufacturer = Reference(Manufacturerbb9ce89d45920603ccfcff0bfebb8001) // MedImmune
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Sprayer
 
-Instance: InfluenzaPandemicHNPreQual2bc9f68ddd32e2ae7e08a3145bd845a5
+Instance: InfluenzaPandemicH1N1PreQual2bc9f68ddd32e2ae7e08a3145bd845a5
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4825,7 +4825,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 * validityPeriod.start = 2010-02-25
-* product  = Reference(InfluenzaPandemicHNProduct2bc9f68ddd32e2ae7e08a3145bd845a5) 
+* product  = Reference(InfluenzaPandemicH1N1Product2bc9f68ddd32e2ae7e08a3145bd845a5) 
 
 // Source Record Row //: 107
 //  Date of Prequalification: (26/04/2021)
@@ -4842,7 +4842,7 @@ Instance: PreQualDB75933de52159c3c6d7af8ecb4ee1846c
 InstanceOf: PreQualDB
 * number.value = "75933de52159c3c6d7af8ecb4ee1846c"
 * dateOfPrequal = 2021-04-26
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "influenza trivalent vaccine (split virion, inactivated)"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -4850,7 +4850,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agencia Nacional da Vigilancia Sanitaria"
 
 
-Instance: InfluenzaseasonalTrivalentProduct75933de52159c3c6d7af8ecb4ee1846c
+Instance: InfluenzaseasonalTrivaleProduct75933de52159c3c6d7af8ecb4ee1846c
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4859,11 +4859,11 @@ Usage: #example
   * value = "influenza trivalent vaccine (split virion, inactivated)"
 * manufacturer = Reference(Manufacturerb106bc6348d33747910cb3b5f5cba551) // Instituto Butantan
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQual75933de52159c3c6d7af8ecb4ee1846c
+Instance: InfluenzaseasonalTrivalePreQual75933de52159c3c6d7af8ecb4ee1846c
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4871,7 +4871,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder4f8fc03badb0c3d6e38e661418a4934c) // Agencia Nacional da Vigilancia Sanitaria
 * validityPeriod.start = 2021-04-26
-* product  = Reference(InfluenzaseasonalTrivalentProduct75933de52159c3c6d7af8ecb4ee1846c) 
+* product  = Reference(InfluenzaseasonalTrivaleProduct75933de52159c3c6d7af8ecb4ee1846c) 
 
 // Source Record Row //: 108
 //  Date of Prequalification: (09/06/2015)
@@ -4888,7 +4888,7 @@ Instance: PreQualDB59b650df0c7bf6ee7565c5fd17f0400f
 InstanceOf: PreQualDB
 * number.value = "59b650df0c7bf6ee7565c5fd17f0400f"
 * dateOfPrequal = 2015-06-09
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Influenza Vaccine (Split virion, inactivated)"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4896,7 +4896,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: InfluenzaseasonalTrivalentProduct59b650df0c7bf6ee7565c5fd17f0400f
+Instance: InfluenzaseasonalTrivaleProduct59b650df0c7bf6ee7565c5fd17f0400f
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4905,11 +4905,11 @@ Usage: #example
   * value = "Influenza Vaccine (Split virion, inactivated)"
 * manufacturer = Reference(Manufacturer9665a97e22c6e4be184702aa67d9cbe9) // Hualan Biological Bacterin Inc.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQual59b650df0c7bf6ee7565c5fd17f0400f
+Instance: InfluenzaseasonalTrivalePreQual59b650df0c7bf6ee7565c5fd17f0400f
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4917,7 +4917,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2015-06-09
-* product  = Reference(InfluenzaseasonalTrivalentProduct59b650df0c7bf6ee7565c5fd17f0400f) 
+* product  = Reference(InfluenzaseasonalTrivaleProduct59b650df0c7bf6ee7565c5fd17f0400f) 
 
 // Source Record Row //: 109
 //  Date of Prequalification: (20/10/2023)
@@ -4934,7 +4934,7 @@ Instance: PreQualDBee7b5dad7c62430504355239680f96be
 InstanceOf: PreQualDB
 * number.value = "ee7b5dad7c62430504355239680f96be"
 * dateOfPrequal = 2023-10-20
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Influenza Vaccine (Split Virion), Inactivated"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4942,7 +4942,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: InfluenzaseasonalTrivalentProductee7b5dad7c62430504355239680f96be
+Instance: InfluenzaseasonalTrivaleProductee7b5dad7c62430504355239680f96be
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4951,11 +4951,11 @@ Usage: #example
   * value = "Influenza Vaccine (Split Virion), Inactivated"
 * manufacturer = Reference(Manufactureref4ebd6887468425e609c837fd64c975) // Changchun Institute of Biological Products Co., Ltd
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQualee7b5dad7c62430504355239680f96be
+Instance: InfluenzaseasonalTrivalePreQualee7b5dad7c62430504355239680f96be
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -4963,7 +4963,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2023-10-20
-* product  = Reference(InfluenzaseasonalTrivalentProductee7b5dad7c62430504355239680f96be) 
+* product  = Reference(InfluenzaseasonalTrivaleProductee7b5dad7c62430504355239680f96be) 
 
 // Source Record Row //: 110
 //  Date of Prequalification: (19/02/2024)
@@ -4980,7 +4980,7 @@ Instance: PreQualDBc9c2b451e091197b2a248c49eaaa1b97
 InstanceOf: PreQualDB
 * number.value = "c9c2b451e091197b2a248c49eaaa1b97"
 * dateOfPrequal = 2024-02-19
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "Influvac® Tetra"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -4988,7 +4988,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
 
 
-Instance: InfluenzaseasonalQuadrivalProductc9c2b451e091197b2a248c49eaaa1b97
+Instance: InfluenzaseasonalQuadrivProductc9c2b451e091197b2a248c49eaaa1b97
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -4997,11 +4997,11 @@ Usage: #example
   * value = "Influvac® Tetra"
 * manufacturer = Reference(Manufacturerd2113c7f14dd346f92ebf77f96935322) // Abbott Biologicals BV
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQualc9c2b451e091197b2a248c49eaaa1b97
+Instance: InfluenzaseasonalQuadrivPreQualc9c2b451e091197b2a248c49eaaa1b97
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -5009,7 +5009,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 * validityPeriod.start = 2024-02-19
-* product  = Reference(InfluenzaseasonalQuadrivalProductc9c2b451e091197b2a248c49eaaa1b97) 
+* product  = Reference(InfluenzaseasonalQuadrivProductc9c2b451e091197b2a248c49eaaa1b97) 
 
 // Source Record Row //: 111
 //  Date of Prequalification: (23/12/2010)
@@ -5026,7 +5026,7 @@ Instance: PreQualDB9ed323685ea94d800d5351889a0aa0ed
 InstanceOf: PreQualDB
 * number.value = "9ed323685ea94d800d5351889a0aa0ed"
 * dateOfPrequal = 2010-12-23
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "IPV Vaccine AJV"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -5034,7 +5034,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Danish Medicines Agency"
 
 
-Instance: PolioVaccineInactivatedIPVProduct9ed323685ea94d800d5351889a0aa0ed
+Instance: PolioVaccineInactivatedIProduct9ed323685ea94d800d5351889a0aa0ed
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -5043,11 +5043,11 @@ Usage: #example
   * value = "IPV Vaccine AJV"
 * manufacturer = Reference(Manufacturer2861c762e570422c9a439d2e146ef1e9) // AJ Vaccines A/S
 * doseQuantity =  1 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQual9ed323685ea94d800d5351889a0aa0ed
+Instance: PolioVaccineInactivatedIPreQual9ed323685ea94d800d5351889a0aa0ed
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -5055,7 +5055,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder1a0e5ea84210f3aa10f60f001c703d0a) // Danish Medicines Agency
 * validityPeriod.start = 2010-12-23
-* product  = Reference(PolioVaccineInactivatedIPVProduct9ed323685ea94d800d5351889a0aa0ed) 
+* product  = Reference(PolioVaccineInactivatedIProduct9ed323685ea94d800d5351889a0aa0ed) 
 
 // Source Record Row //: 112
 //  Date of Prequalification: (08/10/2013)
@@ -5072,7 +5072,7 @@ Instance: PreQualDB56c9764b13eacf4b65de0f018cec0596
 InstanceOf: PreQualDB
 * number.value = "56c9764b13eacf4b65de0f018cec0596"
 * dateOfPrequal = 2013-10-08
-* vaccineType = #JapaneseEncephalitisVaccineliveattenuated
+* vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * numDoses = 1
@@ -5080,7 +5080,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: JapaneseEncephalitisVaccinProduct56c9764b13eacf4b65de0f018cec0596
+Instance: JapaneseEncephalitisVaccProduct56c9764b13eacf4b65de0f018cec0596
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -5089,11 +5089,11 @@ Usage: #example
   * value = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
 * manufacturer = Reference(Manufacturer8ca6c2b4b28bd7ccdf56e1771bbe1c50) // Chengdu Institute of Biological Products Co.,Ltd
 * doseQuantity =  1 'doses'
-* classification = #JapaneseEncephalitisVaccineliveattenuated
+* classification = #JapaneseEncephalitisVacc
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Twovialsetactiveexcipient
 
-Instance: JapaneseEncephalitisVaccinPreQual56c9764b13eacf4b65de0f018cec0596
+Instance: JapaneseEncephalitisVaccPreQual56c9764b13eacf4b65de0f018cec0596
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -5101,7 +5101,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2013-10-08
-* product  = Reference(JapaneseEncephalitisVaccinProduct56c9764b13eacf4b65de0f018cec0596) 
+* product  = Reference(JapaneseEncephalitisVaccProduct56c9764b13eacf4b65de0f018cec0596) 
 
 // Source Record Row //: 113
 //  Date of Prequalification: (08/10/2013)
@@ -5118,7 +5118,7 @@ Instance: PreQualDB99742dd9e458be23d518d1e1706774a9
 InstanceOf: PreQualDB
 * number.value = "99742dd9e458be23d518d1e1706774a9"
 * dateOfPrequal = 2013-10-08
-* vaccineType = #JapaneseEncephalitisVaccineliveattenuated
+* vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * numDoses = 5
@@ -5126,7 +5126,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: JapaneseEncephalitisVaccinProduct99742dd9e458be23d518d1e1706774a9
+Instance: JapaneseEncephalitisVaccProduct99742dd9e458be23d518d1e1706774a9
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -5135,11 +5135,11 @@ Usage: #example
   * value = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
 * manufacturer = Reference(Manufacturer8ca6c2b4b28bd7ccdf56e1771bbe1c50) // Chengdu Institute of Biological Products Co.,Ltd
 * doseQuantity =  5 'doses'
-* classification = #JapaneseEncephalitisVaccineliveattenuated
+* classification = #JapaneseEncephalitisVacc
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Twovialsetactiveexcipient
 
-Instance: JapaneseEncephalitisVaccinPreQual99742dd9e458be23d518d1e1706774a9
+Instance: JapaneseEncephalitisVaccPreQual99742dd9e458be23d518d1e1706774a9
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -5147,7 +5147,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2013-10-08
-* product  = Reference(JapaneseEncephalitisVaccinProduct99742dd9e458be23d518d1e1706774a9) 
+* product  = Reference(JapaneseEncephalitisVaccProduct99742dd9e458be23d518d1e1706774a9) 
 
 // Source Record Row //: 114
 //  Date of Prequalification: (03/08/2016)
@@ -5164,7 +5164,7 @@ Instance: PreQualDBcadc07ae976f7cde20ba89dc11d2c12f
 InstanceOf: PreQualDB
 * number.value = "cadc07ae976f7cde20ba89dc11d2c12f"
 * dateOfPrequal = 2016-08-03
-* vaccineType = #JapaneseEncephalitisVaccineInactivatedµgPediatric
+* vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "JEEV® (3µg)"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -5172,7 +5172,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: JapaneseEncephalitisVaccinProductcadc07ae976f7cde20ba89dc11d2c12f
+Instance: JapaneseEncephalitisVaccProductcadc07ae976f7cde20ba89dc11d2c12f
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -5181,11 +5181,11 @@ Usage: #example
   * value = "JEEV® (3µg)"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  1 'doses'
-* classification = #JapaneseEncephalitisVaccineInactivatedµgPediatric
+* classification = #JapaneseEncephalitisVacc
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: JapaneseEncephalitisVaccinPreQualcadc07ae976f7cde20ba89dc11d2c12f
+Instance: JapaneseEncephalitisVaccPreQualcadc07ae976f7cde20ba89dc11d2c12f
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -5193,7 +5193,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2016-08-03
-* product  = Reference(JapaneseEncephalitisVaccinProductcadc07ae976f7cde20ba89dc11d2c12f) 
+* product  = Reference(JapaneseEncephalitisVaccProductcadc07ae976f7cde20ba89dc11d2c12f) 
 
 // Source Record Row //: 115
 //  Date of Prequalification: (02/10/2018)
@@ -5210,7 +5210,7 @@ Instance: PreQualDBe6be4176d71df74dad9d3b6d9d05a265
 InstanceOf: PreQualDB
 * number.value = "e6be4176d71df74dad9d3b6d9d05a265"
 * dateOfPrequal = 2018-10-02
-* vaccineType = #JapaneseEncephalitisVaccineInactivatedµgPediatric
+* vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "JEEV® (3µg)"
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -5218,7 +5218,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: JapaneseEncephalitisVaccinProducte6be4176d71df74dad9d3b6d9d05a265
+Instance: JapaneseEncephalitisVaccProducte6be4176d71df74dad9d3b6d9d05a265
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -5227,11 +5227,11 @@ Usage: #example
   * value = "JEEV® (3µg)"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  5 'doses'
-* classification = #JapaneseEncephalitisVaccineInactivatedµgPediatric
+* classification = #JapaneseEncephalitisVacc
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: JapaneseEncephalitisVaccinPreQuale6be4176d71df74dad9d3b6d9d05a265
+Instance: JapaneseEncephalitisVaccPreQuale6be4176d71df74dad9d3b6d9d05a265
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -5239,7 +5239,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2018-10-02
-* product  = Reference(JapaneseEncephalitisVaccinProducte6be4176d71df74dad9d3b6d9d05a265) 
+* product  = Reference(JapaneseEncephalitisVaccProducte6be4176d71df74dad9d3b6d9d05a265) 
 
 // Source Record Row //: 116
 //  Date of Prequalification: (12/07/2013)
@@ -5256,7 +5256,7 @@ Instance: PreQualDB4917ad5f6acb3a73d0ba8068571fe0f7
 InstanceOf: PreQualDB
 * number.value = "4917ad5f6acb3a73d0ba8068571fe0f7"
 * dateOfPrequal = 2013-07-12
-* vaccineType = #JapaneseEncephalitisVaccineInactivatedµg
+* vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "JEEV® (6µg)"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -5264,7 +5264,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: JapaneseEncephalitisVaccinProduct4917ad5f6acb3a73d0ba8068571fe0f7
+Instance: JapaneseEncephalitisVaccProduct4917ad5f6acb3a73d0ba8068571fe0f7
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -5273,11 +5273,11 @@ Usage: #example
   * value = "JEEV® (6µg)"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  1 'doses'
-* classification = #JapaneseEncephalitisVaccineInactivatedµg
+* classification = #JapaneseEncephalitisVacc
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: JapaneseEncephalitisVaccinPreQual4917ad5f6acb3a73d0ba8068571fe0f7
+Instance: JapaneseEncephalitisVaccPreQual4917ad5f6acb3a73d0ba8068571fe0f7
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -5285,7 +5285,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2013-07-12
-* product  = Reference(JapaneseEncephalitisVaccinProduct4917ad5f6acb3a73d0ba8068571fe0f7) 
+* product  = Reference(JapaneseEncephalitisVaccProduct4917ad5f6acb3a73d0ba8068571fe0f7) 
 
 // Source Record Row //: 117
 //  Date of Prequalification: (02/10/2018)
@@ -5302,7 +5302,7 @@ Instance: PreQualDB021b190392c943db9cce63d9cdc78d77
 InstanceOf: PreQualDB
 * number.value = "021b190392c943db9cce63d9cdc78d77"
 * dateOfPrequal = 2018-10-02
-* vaccineType = #JapaneseEncephalitisVaccineInactivatedµg
+* vaccineType = #JapaneseEncephalitisVacc
 * commercialName = "JEEV® (6µg)"
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -5310,7 +5310,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: JapaneseEncephalitisVaccinProduct021b190392c943db9cce63d9cdc78d77
+Instance: JapaneseEncephalitisVaccProduct021b190392c943db9cce63d9cdc78d77
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -5319,11 +5319,11 @@ Usage: #example
   * value = "JEEV® (6µg)"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  5 'doses'
-* classification = #JapaneseEncephalitisVaccineInactivatedµg
+* classification = #JapaneseEncephalitisVacc
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: JapaneseEncephalitisVaccinPreQual021b190392c943db9cce63d9cdc78d77
+Instance: JapaneseEncephalitisVaccPreQual021b190392c943db9cce63d9cdc78d77
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -5331,7 +5331,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2018-10-02
-* product  = Reference(JapaneseEncephalitisVaccinProduct021b190392c943db9cce63d9cdc78d77) 
+* product  = Reference(JapaneseEncephalitisVaccProduct021b190392c943db9cce63d9cdc78d77) 
 
 // Source Record Row //: 118
 //  Date of Prequalification: (24/09/2019)
@@ -6130,7 +6130,7 @@ Instance: PreQualDB07b17ac143be49b488788542af5029a1
 InstanceOf: PreQualDB
 * number.value = "07b17ac143be49b488788542af5029a1"
 * dateOfPrequal = 2014-03-21
-* vaccineType = #MeningococcalACYWconjugatevaccine
+* vaccineType = #MeningococcalACYW135conj
 * commercialName = "Menactra"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -6138,7 +6138,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "CBER/FDA"
 
 
-Instance: MeningococcalACYWconjugateProduct07b17ac143be49b488788542af5029a1
+Instance: MeningococcalACYW135conjProduct07b17ac143be49b488788542af5029a1
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6147,11 +6147,11 @@ Usage: #example
   * value = "Menactra"
 * manufacturer = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) // Sanofi Pasteur Inc.
 * doseQuantity =  1 'doses'
-* classification = #MeningococcalACYWconjugatevaccine
+* classification = #MeningococcalACYW135conj
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: MeningococcalACYWconjugatePreQual07b17ac143be49b488788542af5029a1
+Instance: MeningococcalACYW135conjPreQual07b17ac143be49b488788542af5029a1
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6159,7 +6159,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e1b11883ce4b543ae4774b29f067e5d) // CBER/FDA
 * validityPeriod.start = 2014-03-21
-* product  = Reference(MeningococcalACYWconjugateProduct07b17ac143be49b488788542af5029a1) 
+* product  = Reference(MeningococcalACYW135conjProduct07b17ac143be49b488788542af5029a1) 
 
 // Source Record Row //: 136
 //  Date of Prequalification: (06/07/2023)
@@ -6176,7 +6176,7 @@ Instance: PreQualDB4a48211ad14f81c082effc8d3e70e259
 InstanceOf: PreQualDB
 * number.value = "4a48211ad14f81c082effc8d3e70e259"
 * dateOfPrequal = 2023-07-06
-* vaccineType = #MenigococcalACYWXPolysaccharideconjugate
+* vaccineType = #MenigococcalACYWXPolysac
 * commercialName = "MenFive™"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 1
@@ -6184,7 +6184,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: MenigococcalACYWXPolysacchProduct4a48211ad14f81c082effc8d3e70e259
+Instance: MenigococcalACYWXPolysacProduct4a48211ad14f81c082effc8d3e70e259
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6193,11 +6193,11 @@ Usage: #example
   * value = "MenFive™"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #MenigococcalACYWXPolysaccharideconjugate
+* classification = #MenigococcalACYWXPolysac
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: MenigococcalACYWXPolysacchPreQual4a48211ad14f81c082effc8d3e70e259
+Instance: MenigococcalACYWXPolysacPreQual4a48211ad14f81c082effc8d3e70e259
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6205,7 +6205,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2023-07-06
-* product  = Reference(MenigococcalACYWXPolysacchProduct4a48211ad14f81c082effc8d3e70e259) 
+* product  = Reference(MenigococcalACYWXPolysacProduct4a48211ad14f81c082effc8d3e70e259) 
 
 // Source Record Row //: 137
 //  Date of Prequalification: (06/07/2023)
@@ -6222,7 +6222,7 @@ Instance: PreQualDB93c01db9966db02cbff5f9f554a7cf2b
 InstanceOf: PreQualDB
 * number.value = "93c01db9966db02cbff5f9f554a7cf2b"
 * dateOfPrequal = 2023-07-06
-* vaccineType = #MenigococcalACYWXPolysaccharideconjugate
+* vaccineType = #MenigococcalACYWXPolysac
 * commercialName = "MenFive™"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 5
@@ -6230,7 +6230,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: MenigococcalACYWXPolysacchProduct93c01db9966db02cbff5f9f554a7cf2b
+Instance: MenigococcalACYWXPolysacProduct93c01db9966db02cbff5f9f554a7cf2b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6239,11 +6239,11 @@ Usage: #example
   * value = "MenFive™"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  5 'doses'
-* classification = #MenigococcalACYWXPolysaccharideconjugate
+* classification = #MenigococcalACYWXPolysac
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: MenigococcalACYWXPolysacchPreQual93c01db9966db02cbff5f9f554a7cf2b
+Instance: MenigococcalACYWXPolysacPreQual93c01db9966db02cbff5f9f554a7cf2b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6251,7 +6251,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2023-07-06
-* product  = Reference(MenigococcalACYWXPolysacchProduct93c01db9966db02cbff5f9f554a7cf2b) 
+* product  = Reference(MenigococcalACYWXPolysacProduct93c01db9966db02cbff5f9f554a7cf2b) 
 
 // Source Record Row //: 138
 //  Date of Prequalification: (30/12/2014)
@@ -6268,7 +6268,7 @@ Instance: PreQualDBd7efb0a67a79b36058ac74f4a7919d9a
 InstanceOf: PreQualDB
 * number.value = "d7efb0a67a79b36058ac74f4a7919d9a"
 * dateOfPrequal = 2014-12-30
-* vaccineType = #MeningococcalAConjugateµg
+* vaccineType = #MeningococcalAConjugate5
 * commercialName = "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 10
@@ -6276,7 +6276,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: MeningococcalAConjugateµgProductd7efb0a67a79b36058ac74f4a7919d9a
+Instance: MeningococcalAConjugate5Productd7efb0a67a79b36058ac74f4a7919d9a
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6285,11 +6285,11 @@ Usage: #example
   * value = "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #MeningococcalAConjugateµg
+* classification = #MeningococcalAConjugate5
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: MeningococcalAConjugateµgPreQuald7efb0a67a79b36058ac74f4a7919d9a
+Instance: MeningococcalAConjugate5PreQuald7efb0a67a79b36058ac74f4a7919d9a
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6297,7 +6297,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-12-30
-* product  = Reference(MeningococcalAConjugateµgProductd7efb0a67a79b36058ac74f4a7919d9a) 
+* product  = Reference(MeningococcalAConjugate5Productd7efb0a67a79b36058ac74f4a7919d9a) 
 
 // Source Record Row //: 139
 //  Date of Prequalification: (23/06/2010)
@@ -6314,7 +6314,7 @@ Instance: PreQualDB42537006144d056ef08a6fc0979008aa
 InstanceOf: PreQualDB
 * number.value = "42537006144d056ef08a6fc0979008aa"
 * dateOfPrequal = 2010-06-23
-* vaccineType = #MeningococcalAConjugateµg
+* vaccineType = #MeningococcalAConjugate1
 * commercialName = "Meningococcal A Conjugate MenAfriVac"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 10
@@ -6322,7 +6322,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: MeningococcalAConjugateµgProduct42537006144d056ef08a6fc0979008aa
+Instance: MeningococcalAConjugate1Product42537006144d056ef08a6fc0979008aa
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6331,11 +6331,11 @@ Usage: #example
   * value = "Meningococcal A Conjugate MenAfriVac"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #MeningococcalAConjugateµg
+* classification = #MeningococcalAConjugate1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: MeningococcalAConjugateµgPreQual42537006144d056ef08a6fc0979008aa
+Instance: MeningococcalAConjugate1PreQual42537006144d056ef08a6fc0979008aa
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6343,7 +6343,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-06-23
-* product  = Reference(MeningococcalAConjugateµgProduct42537006144d056ef08a6fc0979008aa) 
+* product  = Reference(MeningococcalAConjugate1Product42537006144d056ef08a6fc0979008aa) 
 
 // Source Record Row //: 140
 //  Date of Prequalification: (28/01/2022)
@@ -6360,7 +6360,7 @@ Instance: PreQualDBac37e246375ebaa6610a13a12edf2c98
 InstanceOf: PreQualDB
 * number.value = "ac37e246375ebaa6610a13a12edf2c98"
 * dateOfPrequal = 2022-01-28
-* vaccineType = #MeningococcalACYWTetanusToxoidconjugatevaccine
+* vaccineType = #MeningococcalACYW135Teta
 * commercialName = "MenQuadfi"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -6368,7 +6368,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: MeningococcalACYWTetanusToProductac37e246375ebaa6610a13a12edf2c98
+Instance: MeningococcalACYW135TetaProductac37e246375ebaa6610a13a12edf2c98
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6377,11 +6377,11 @@ Usage: #example
   * value = "MenQuadfi"
 * manufacturer = Reference(Manufacturerd3495bd72a1f17054e37ef7e638bf2db) // Sanofi Pasteur Inc.
 * doseQuantity =  1 'doses'
-* classification = #MeningococcalACYWTetanusToxoidconjugatevaccine
+* classification = #MeningococcalACYW135Teta
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: MeningococcalACYWTetanusToPreQualac37e246375ebaa6610a13a12edf2c98
+Instance: MeningococcalACYW135TetaPreQualac37e246375ebaa6610a13a12edf2c98
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6389,7 +6389,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2022-01-28
-* product  = Reference(MeningococcalACYWTetanusToProductac37e246375ebaa6610a13a12edf2c98) 
+* product  = Reference(MeningococcalACYW135TetaProductac37e246375ebaa6610a13a12edf2c98) 
 
 // Source Record Row //: 141
 //  Date of Prequalification: (31/07/2013)
@@ -6406,7 +6406,7 @@ Instance: PreQualDB749366c68fd56a27b8e93b2271974df4
 InstanceOf: PreQualDB
 * number.value = "749366c68fd56a27b8e93b2271974df4"
 * dateOfPrequal = 2013-07-31
-* vaccineType = #MeningococcalACYWconjugatevaccine
+* vaccineType = #MeningococcalACYW135conj
 * commercialName = "Menveo"
 * presentation.coding.code = #Twovialsetactiveactive
 * numDoses = 1
@@ -6414,7 +6414,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: MeningococcalACYWconjugateProduct749366c68fd56a27b8e93b2271974df4
+Instance: MeningococcalACYW135conjProduct749366c68fd56a27b8e93b2271974df4
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6423,11 +6423,11 @@ Usage: #example
   * value = "Menveo"
 * manufacturer = Reference(Manufacturer678c4e5ce93124225bcbea0ae277657f) // GlaxoSmithKline Vaccines S.r.l.
 * doseQuantity =  1 'doses'
-* classification = #MeningococcalACYWconjugatevaccine
+* classification = #MeningococcalACYW135conj
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Twovialsetactiveactive
 
-Instance: MeningococcalACYWconjugatePreQual749366c68fd56a27b8e93b2271974df4
+Instance: MeningococcalACYW135conjPreQual749366c68fd56a27b8e93b2271974df4
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6435,7 +6435,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2013-07-31
-* product  = Reference(MeningococcalACYWconjugateProduct749366c68fd56a27b8e93b2271974df4) 
+* product  = Reference(MeningococcalACYW135conjProduct749366c68fd56a27b8e93b2271974df4) 
 
 // Source Record Row //: 142
 //  Date of Prequalification: (03/11/2009)
@@ -6452,7 +6452,7 @@ Instance: PreQualDB6b2b4cf5bbc143adb3de579888125267
 InstanceOf: PreQualDB
 * number.value = "6b2b4cf5bbc143adb3de579888125267"
 * dateOfPrequal = 2009-11-03
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -6460,7 +6460,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: PolioVaccineOralOPVMonovalProduct6b2b4cf5bbc143adb3de579888125267
+Instance: PolioVaccineOralOPVMonovProduct6b2b4cf5bbc143adb3de579888125267
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6469,11 +6469,11 @@ Usage: #example
   * value = "Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1)"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQual6b2b4cf5bbc143adb3de579888125267
+Instance: PolioVaccineOralOPVMonovPreQual6b2b4cf5bbc143adb3de579888125267
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6481,7 +6481,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2009-11-03
-* product  = Reference(PolioVaccineOralOPVMonovalProduct6b2b4cf5bbc143adb3de579888125267) 
+* product  = Reference(PolioVaccineOralOPVMonovProduct6b2b4cf5bbc143adb3de579888125267) 
 
 // Source Record Row //: 143
 //  Date of Prequalification: (21/06/2019)
@@ -6498,7 +6498,7 @@ Instance: PreQualDB1314f3a622cbae516279dabc6e1abb37
 InstanceOf: PreQualDB
 * number.value = "1314f3a622cbae516279dabc6e1abb37"
 * dateOfPrequal = 2019-06-21
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Monovalent Oral Poliomyelitis Vaccine Type 2"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -6506,7 +6506,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: PolioVaccineOralOPVMonovalProduct1314f3a622cbae516279dabc6e1abb37
+Instance: PolioVaccineOralOPVMonovProduct1314f3a622cbae516279dabc6e1abb37
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6515,11 +6515,11 @@ Usage: #example
   * value = "Monovalent Oral Poliomyelitis Vaccine Type 2"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQual1314f3a622cbae516279dabc6e1abb37
+Instance: PolioVaccineOralOPVMonovPreQual1314f3a622cbae516279dabc6e1abb37
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6527,7 +6527,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2019-06-21
-* product  = Reference(PolioVaccineOralOPVMonovalProduct1314f3a622cbae516279dabc6e1abb37) 
+* product  = Reference(PolioVaccineOralOPVMonovProduct1314f3a622cbae516279dabc6e1abb37) 
 
 // Source Record Row //: 144
 //  Date of Prequalification: (03/11/2009)
@@ -6544,7 +6544,7 @@ Instance: PreQualDB8f91e1eaf754f5b0a02bf5f70dbdf596
 InstanceOf: PreQualDB
 * number.value = "8f91e1eaf754f5b0a02bf5f70dbdf596"
 * dateOfPrequal = 2009-11-03
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Monovalent type 1 Oral Poliomyelitis vaccine, IP (mOPV1)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -6552,7 +6552,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVMonovalProduct8f91e1eaf754f5b0a02bf5f70dbdf596
+Instance: PolioVaccineOralOPVMonovProduct8f91e1eaf754f5b0a02bf5f70dbdf596
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6561,11 +6561,11 @@ Usage: #example
   * value = "Monovalent type 1 Oral Poliomyelitis vaccine, IP (mOPV1)"
 * manufacturer = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) // Haffkine Bio Pharmaceutical Corporation Ltd
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQual8f91e1eaf754f5b0a02bf5f70dbdf596
+Instance: PolioVaccineOralOPVMonovPreQual8f91e1eaf754f5b0a02bf5f70dbdf596
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6573,7 +6573,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2009-11-03
-* product  = Reference(PolioVaccineOralOPVMonovalProduct8f91e1eaf754f5b0a02bf5f70dbdf596) 
+* product  = Reference(PolioVaccineOralOPVMonovProduct8f91e1eaf754f5b0a02bf5f70dbdf596) 
 
 // Source Record Row //: 145
 //  Date of Prequalification: (15/07/2022)
@@ -6636,7 +6636,7 @@ Instance: PreQualDBc0a304667cb0844ba02916c1b4c36253
 InstanceOf: PreQualDB
 * number.value = "c0a304667cb0844ba02916c1b4c36253"
 * dateOfPrequal = 2021-04-27
-* vaccineType = #EbolavaccineMVABNFilorecombinant
+* vaccineType = #EbolavaccineMVABNFilorec
 * commercialName = "Mvabea"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -6644,7 +6644,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: EbolavaccineMVABNFilorecomProductc0a304667cb0844ba02916c1b4c36253
+Instance: EbolavaccineMVABNFilorecProductc0a304667cb0844ba02916c1b4c36253
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6653,11 +6653,11 @@ Usage: #example
   * value = "Mvabea"
 * manufacturer = Reference(Manufacturer424af495e78f8d5efdacca2db1db8f9b) // Janssen Cilag International N.V.
 * doseQuantity =  1 'doses'
-* classification = #EbolavaccineMVABNFilorecombinant
+* classification = #EbolavaccineMVABNFilorec
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: EbolavaccineMVABNFilorecomPreQualc0a304667cb0844ba02916c1b4c36253
+Instance: EbolavaccineMVABNFilorecPreQualc0a304667cb0844ba02916c1b4c36253
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6665,7 +6665,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2021-04-27
-* product  = Reference(EbolavaccineMVABNFilorecomProductc0a304667cb0844ba02916c1b4c36253) 
+* product  = Reference(EbolavaccineMVABNFilorecProductc0a304667cb0844ba02916c1b4c36253) 
 
 // Source Record Row //: 147
 //  Date of Prequalification: (26/03/2009)
@@ -6820,7 +6820,7 @@ Instance: PreQualDB259be5c5f4f8733e41bd023acb3ae54d
 InstanceOf: PreQualDB
 * number.value = "259be5c5f4f8733e41bd023acb3ae54d"
 * dateOfPrequal = 2012-11-26
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze-Dried"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 1
@@ -6828,7 +6828,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: InfluenzaPandemicHNProduct259be5c5f4f8733e41bd023acb3ae54d
+Instance: InfluenzaPandemicH1N1Product259be5c5f4f8733e41bd023acb3ae54d
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6837,11 +6837,11 @@ Usage: #example
   * value = "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze-Dried"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: InfluenzaPandemicHNPreQual259be5c5f4f8733e41bd023acb3ae54d
+Instance: InfluenzaPandemicH1N1PreQual259be5c5f4f8733e41bd023acb3ae54d
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6849,7 +6849,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2012-11-26
-* product  = Reference(InfluenzaPandemicHNProduct259be5c5f4f8733e41bd023acb3ae54d) 
+* product  = Reference(InfluenzaPandemicH1N1Product259be5c5f4f8733e41bd023acb3ae54d) 
 
 // Source Record Row //: 151
 //  Date of Prequalification: (26/11/2012)
@@ -6866,7 +6866,7 @@ Instance: PreQualDB23a326304ea2be5388d9842c9cbb427d
 InstanceOf: PreQualDB
 * number.value = "23a326304ea2be5388d9842c9cbb427d"
 * dateOfPrequal = 2012-11-26
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze-Dried"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 5
@@ -6874,7 +6874,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: InfluenzaPandemicHNProduct23a326304ea2be5388d9842c9cbb427d
+Instance: InfluenzaPandemicH1N1Product23a326304ea2be5388d9842c9cbb427d
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6883,11 +6883,11 @@ Usage: #example
   * value = "NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze-Dried"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  5 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: InfluenzaPandemicHNPreQual23a326304ea2be5388d9842c9cbb427d
+Instance: InfluenzaPandemicH1N1PreQual23a326304ea2be5388d9842c9cbb427d
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6895,7 +6895,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2012-11-26
-* product  = Reference(InfluenzaPandemicHNProduct23a326304ea2be5388d9842c9cbb427d) 
+* product  = Reference(InfluenzaPandemicH1N1Product23a326304ea2be5388d9842c9cbb427d) 
 
 // Source Record Row //: 152
 //  Date of Prequalification: (30/09/2015)
@@ -6912,7 +6912,7 @@ Instance: PreQualDB26599a49559057a0e371cec5d178f650
 InstanceOf: PreQualDB
 * number.value = "26599a49559057a0e371cec5d178f650"
 * dateOfPrequal = 2015-09-30
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Nasovac-S Influenza Vaccine, Live, Attenuated (Human)"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 1
@@ -6920,7 +6920,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: InfluenzaseasonalTrivalentProduct26599a49559057a0e371cec5d178f650
+Instance: InfluenzaseasonalTrivaleProduct26599a49559057a0e371cec5d178f650
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6929,11 +6929,11 @@ Usage: #example
   * value = "Nasovac-S Influenza Vaccine, Live, Attenuated (Human)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: InfluenzaseasonalTrivalentPreQual26599a49559057a0e371cec5d178f650
+Instance: InfluenzaseasonalTrivalePreQual26599a49559057a0e371cec5d178f650
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6941,7 +6941,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2015-09-30
-* product  = Reference(InfluenzaseasonalTrivalentProduct26599a49559057a0e371cec5d178f650) 
+* product  = Reference(InfluenzaseasonalTrivaleProduct26599a49559057a0e371cec5d178f650) 
 
 // Source Record Row //: 153
 //  Date of Prequalification: (31/08/2016)
@@ -6958,7 +6958,7 @@ Instance: PreQualDB4053086b444e4441a7c5ebcad4e55c7b
 InstanceOf: PreQualDB
 * number.value = "4053086b444e4441a7c5ebcad4e55c7b"
 * dateOfPrequal = 2016-08-31
-* vaccineType = #MeningococcalACYWconjugatevaccine
+* vaccineType = #MeningococcalACYW135conj
 * commercialName = "Nimenrix"
 * presentation.coding.code = #VialAmpoule
 * numDoses = 1
@@ -6966,7 +6966,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: MeningococcalACYWconjugateProduct4053086b444e4441a7c5ebcad4e55c7b
+Instance: MeningococcalACYW135conjProduct4053086b444e4441a7c5ebcad4e55c7b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -6975,11 +6975,11 @@ Usage: #example
   * value = "Nimenrix"
 * manufacturer = Reference(Manufacturer4c7bd357ca5e34506d2325abf61a6d5c) // Pfizer Europe MA EEIG
 * doseQuantity =  1 'doses'
-* classification = #MeningococcalACYWconjugatevaccine
+* classification = #MeningococcalACYW135conj
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #VialAmpoule
 
-Instance: MeningococcalACYWconjugatePreQual4053086b444e4441a7c5ebcad4e55c7b
+Instance: MeningococcalACYW135conjPreQual4053086b444e4441a7c5ebcad4e55c7b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -6987,7 +6987,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2016-08-31
-* product  = Reference(MeningococcalACYWconjugateProduct4053086b444e4441a7c5ebcad4e55c7b) 
+* product  = Reference(MeningococcalACYW135conjProduct4053086b444e4441a7c5ebcad4e55c7b) 
 
 // Source Record Row //: 154
 //  Date of Prequalification: (06/07/2011)
@@ -7004,7 +7004,7 @@ Instance: PreQualDB65e9ec90be91668e4ae2d52bec02f209
 InstanceOf: PreQualDB
 * number.value = "65e9ec90be91668e4ae2d52bec02f209"
 * dateOfPrequal = 2011-07-06
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "none"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -7012,7 +7012,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: DiphtheriaTetanusreducedanProduct65e9ec90be91668e4ae2d52bec02f209
+Instance: DiphtheriaTetanusreducedProduct65e9ec90be91668e4ae2d52bec02f209
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7021,11 +7021,11 @@ Usage: #example
   * value = "none"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQual65e9ec90be91668e4ae2d52bec02f209
+Instance: DiphtheriaTetanusreducedPreQual65e9ec90be91668e4ae2d52bec02f209
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7033,7 +7033,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2011-07-06
-* product  = Reference(DiphtheriaTetanusreducedanProduct65e9ec90be91668e4ae2d52bec02f209) 
+* product  = Reference(DiphtheriaTetanusreducedProduct65e9ec90be91668e4ae2d52bec02f209) 
 
 // Source Record Row //: 155
 //  Date of Prequalification: (17/09/2014)
@@ -7050,7 +7050,7 @@ Instance: PreQualDB03e2e246b44859298212f066b3ece2be
 InstanceOf: PreQualDB
 * number.value = "03e2e246b44859298212f066b3ece2be"
 * dateOfPrequal = 2014-09-17
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -7058,7 +7058,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusreducedanProduct03e2e246b44859298212f066b3ece2be
+Instance: DiphtheriaTetanusreducedProduct03e2e246b44859298212f066b3ece2be
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7067,11 +7067,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQual03e2e246b44859298212f066b3ece2be
+Instance: DiphtheriaTetanusreducedPreQual03e2e246b44859298212f066b3ece2be
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7079,7 +7079,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-09-17
-* product  = Reference(DiphtheriaTetanusreducedanProduct03e2e246b44859298212f066b3ece2be) 
+* product  = Reference(DiphtheriaTetanusreducedProduct03e2e246b44859298212f066b3ece2be) 
 
 // Source Record Row //: 156
 //  Date of Prequalification: (17/09/2014)
@@ -7096,7 +7096,7 @@ Instance: PreQualDB4b4bf9ea54c0fd19a8decf32b590d2de
 InstanceOf: PreQualDB
 * number.value = "4b4bf9ea54c0fd19a8decf32b590d2de"
 * dateOfPrequal = 2014-09-17
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -7104,7 +7104,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusreducedanProduct4b4bf9ea54c0fd19a8decf32b590d2de
+Instance: DiphtheriaTetanusreducedProduct4b4bf9ea54c0fd19a8decf32b590d2de
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7113,11 +7113,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQual4b4bf9ea54c0fd19a8decf32b590d2de
+Instance: DiphtheriaTetanusreducedPreQual4b4bf9ea54c0fd19a8decf32b590d2de
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7125,7 +7125,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-09-17
-* product  = Reference(DiphtheriaTetanusreducedanProduct4b4bf9ea54c0fd19a8decf32b590d2de) 
+* product  = Reference(DiphtheriaTetanusreducedProduct4b4bf9ea54c0fd19a8decf32b590d2de) 
 
 // Source Record Row //: 157
 //  Date of Prequalification: (09/03/2020)
@@ -7142,7 +7142,7 @@ Instance: PreQualDBe2513625b766eaeb7478eebdae534eb6
 InstanceOf: PreQualDB
 * number.value = "e2513625b766eaeb7478eebdae534eb6"
 * dateOfPrequal = 2020-03-09
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -7150,7 +7150,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusreducedanProducte2513625b766eaeb7478eebdae534eb6
+Instance: DiphtheriaTetanusreducedProducte2513625b766eaeb7478eebdae534eb6
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7159,11 +7159,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  20 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQuale2513625b766eaeb7478eebdae534eb6
+Instance: DiphtheriaTetanusreducedPreQuale2513625b766eaeb7478eebdae534eb6
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7171,7 +7171,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2020-03-09
-* product  = Reference(DiphtheriaTetanusreducedanProducte2513625b766eaeb7478eebdae534eb6) 
+* product  = Reference(DiphtheriaTetanusreducedProducte2513625b766eaeb7478eebdae534eb6) 
 
 // Source Record Row //: 158
 //  Date of Prequalification: (12/07/2012)
@@ -7326,7 +7326,7 @@ Instance: PreQualDB237f17e96cc17d6d7a912cbe4e6ac109
 InstanceOf: PreQualDB
 * number.value = "237f17e96cc17d6d7a912cbe4e6ac109"
 * dateOfPrequal = 2012-05-18
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -7334,7 +7334,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct237f17e96cc17d6d7a912cbe4e6ac109
+Instance: DiphtheriaTetanusPertussProduct237f17e96cc17d6d7a912cbe4e6ac109
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7343,11 +7343,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual237f17e96cc17d6d7a912cbe4e6ac109
+Instance: DiphtheriaTetanusPertussPreQual237f17e96cc17d6d7a912cbe4e6ac109
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7355,7 +7355,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2012-05-18
-* product  = Reference(DiphtheriaTetanusPertussisProduct237f17e96cc17d6d7a912cbe4e6ac109) 
+* product  = Reference(DiphtheriaTetanusPertussProduct237f17e96cc17d6d7a912cbe4e6ac109) 
 
 // Source Record Row //: 162
 //  Date of Prequalification: (27/11/2014)
@@ -7372,7 +7372,7 @@ Instance: PreQualDB025d4a1113d25f34789f1b63a1d4c8a1
 InstanceOf: PreQualDB
 * number.value = "025d4a1113d25f34789f1b63a1d4c8a1"
 * dateOfPrequal = 2014-11-27
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
 * presentation.coding.code = #Vial
 * numDoses = 2
@@ -7380,7 +7380,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct025d4a1113d25f34789f1b63a1d4c8a1
+Instance: DiphtheriaTetanusPertussProduct025d4a1113d25f34789f1b63a1d4c8a1
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7389,11 +7389,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  2 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual025d4a1113d25f34789f1b63a1d4c8a1
+Instance: DiphtheriaTetanusPertussPreQual025d4a1113d25f34789f1b63a1d4c8a1
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7401,7 +7401,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-11-27
-* product  = Reference(DiphtheriaTetanusPertussisProduct025d4a1113d25f34789f1b63a1d4c8a1) 
+* product  = Reference(DiphtheriaTetanusPertussProduct025d4a1113d25f34789f1b63a1d4c8a1) 
 
 // Source Record Row //: 163
 //  Date of Prequalification: (27/11/2014)
@@ -7418,7 +7418,7 @@ Instance: PreQualDB620c76720b271dbea669eaa6682bea0e
 InstanceOf: PreQualDB
 * number.value = "620c76720b271dbea669eaa6682bea0e"
 * dateOfPrequal = 2014-11-27
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -7426,7 +7426,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct620c76720b271dbea669eaa6682bea0e
+Instance: DiphtheriaTetanusPertussProduct620c76720b271dbea669eaa6682bea0e
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7435,11 +7435,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  5 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual620c76720b271dbea669eaa6682bea0e
+Instance: DiphtheriaTetanusPertussPreQual620c76720b271dbea669eaa6682bea0e
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7447,7 +7447,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-11-27
-* product  = Reference(DiphtheriaTetanusPertussisProduct620c76720b271dbea669eaa6682bea0e) 
+* product  = Reference(DiphtheriaTetanusPertussProduct620c76720b271dbea669eaa6682bea0e) 
 
 // Source Record Row //: 164
 //  Date of Prequalification: (18/05/2012)
@@ -7464,7 +7464,7 @@ Instance: PreQualDB6b6da598a5243bc82961c974d198b5f2
 InstanceOf: PreQualDB
 * number.value = "6b6da598a5243bc82961c974d198b5f2"
 * dateOfPrequal = 2012-05-18
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -7472,7 +7472,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct6b6da598a5243bc82961c974d198b5f2
+Instance: DiphtheriaTetanusPertussProduct6b6da598a5243bc82961c974d198b5f2
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7481,11 +7481,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid)."
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual6b6da598a5243bc82961c974d198b5f2
+Instance: DiphtheriaTetanusPertussPreQual6b6da598a5243bc82961c974d198b5f2
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7493,7 +7493,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2012-05-18
-* product  = Reference(DiphtheriaTetanusPertussisProduct6b6da598a5243bc82961c974d198b5f2) 
+* product  = Reference(DiphtheriaTetanusPertussProduct6b6da598a5243bc82961c974d198b5f2) 
 
 // Source Record Row //: 165
 //  Date of Prequalification: (01/09/2011)
@@ -7510,7 +7510,7 @@ Instance: PreQualDB7031531d074faa9b756f0142a85fe1a5
 InstanceOf: PreQualDB
 * number.value = "7031531d074faa9b756f0142a85fe1a5"
 * dateOfPrequal = 2011-09-01
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted)."
 * presentation.coding.code = #Twovialsetactiveactive
 * numDoses = 1
@@ -7518,7 +7518,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct7031531d074faa9b756f0142a85fe1a5
+Instance: DiphtheriaTetanusPertussProduct7031531d074faa9b756f0142a85fe1a5
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7527,11 +7527,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted)."
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Twovialsetactiveactive
 
-Instance: DiphtheriaTetanusPertussisPreQual7031531d074faa9b756f0142a85fe1a5
+Instance: DiphtheriaTetanusPertussPreQual7031531d074faa9b756f0142a85fe1a5
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7539,7 +7539,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2011-09-01
-* product  = Reference(DiphtheriaTetanusPertussisProduct7031531d074faa9b756f0142a85fe1a5) 
+* product  = Reference(DiphtheriaTetanusPertussProduct7031531d074faa9b756f0142a85fe1a5) 
 
 // Source Record Row //: 166
 //  Date of Prequalification: (01/09/2011)
@@ -7556,7 +7556,7 @@ Instance: PreQualDB173ff9463a8e21454f5f8b77c8f3dd34
 InstanceOf: PreQualDB
 * number.value = "173ff9463a8e21454f5f8b77c8f3dd34"
 * dateOfPrequal = 2011-09-01
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted)."
 * presentation.coding.code = #Twovialsetactiveactive
 * numDoses = 10
@@ -7564,7 +7564,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct173ff9463a8e21454f5f8b77c8f3dd34
+Instance: DiphtheriaTetanusPertussProduct173ff9463a8e21454f5f8b77c8f3dd34
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7573,11 +7573,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted)."
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Twovialsetactiveactive
 
-Instance: DiphtheriaTetanusPertussisPreQual173ff9463a8e21454f5f8b77c8f3dd34
+Instance: DiphtheriaTetanusPertussPreQual173ff9463a8e21454f5f8b77c8f3dd34
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7585,7 +7585,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2011-09-01
-* product  = Reference(DiphtheriaTetanusPertussisProduct173ff9463a8e21454f5f8b77c8f3dd34) 
+* product  = Reference(DiphtheriaTetanusPertussProduct173ff9463a8e21454f5f8b77c8f3dd34) 
 
 // Source Record Row //: 167
 //  Date of Prequalification: (31/07/2014)
@@ -7602,7 +7602,7 @@ Instance: PreQualDB4b73b5c11f95be231559f05e3d36fdfb
 InstanceOf: PreQualDB
 * number.value = "4b73b5c11f95be231559f05e3d36fdfb"
 * dateOfPrequal = 2014-07-31
-* vaccineType = #DiphtheriaTetanusPertussiswholecell
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -7610,7 +7610,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProduct4b73b5c11f95be231559f05e3d36fdfb
+Instance: DiphtheriaTetanusPertussProduct4b73b5c11f95be231559f05e3d36fdfb
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7619,11 +7619,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  1 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecell
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual4b73b5c11f95be231559f05e3d36fdfb
+Instance: DiphtheriaTetanusPertussPreQual4b73b5c11f95be231559f05e3d36fdfb
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7631,7 +7631,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-07-31
-* product  = Reference(DiphtheriaTetanusPertussisProduct4b73b5c11f95be231559f05e3d36fdfb) 
+* product  = Reference(DiphtheriaTetanusPertussProduct4b73b5c11f95be231559f05e3d36fdfb) 
 
 // Source Record Row //: 168
 //  Date of Prequalification: (31/07/2014)
@@ -7648,7 +7648,7 @@ Instance: PreQualDBc9cf1c20b532e0fe75714876da1f4a20
 InstanceOf: PreQualDB
 * number.value = "c9cf1c20b532e0fe75714876da1f4a20"
 * dateOfPrequal = 2014-07-31
-* vaccineType = #DiphtheriaTetanusPertussiswholecell
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -7656,7 +7656,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: DiphtheriaTetanusPertussisProductc9cf1c20b532e0fe75714876da1f4a20
+Instance: DiphtheriaTetanusPertussProductc9cf1c20b532e0fe75714876da1f4a20
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7665,11 +7665,11 @@ Usage: #example
   * value = "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecell
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQualc9cf1c20b532e0fe75714876da1f4a20
+Instance: DiphtheriaTetanusPertussPreQualc9cf1c20b532e0fe75714876da1f4a20
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7677,7 +7677,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-07-31
-* product  = Reference(DiphtheriaTetanusPertussisProductc9cf1c20b532e0fe75714876da1f4a20) 
+* product  = Reference(DiphtheriaTetanusPertussProductc9cf1c20b532e0fe75714876da1f4a20) 
 
 // Source Record Row //: 169
 //  Date of Prequalification: (14/01/2016)
@@ -7694,7 +7694,7 @@ Instance: PreQualDBe65316944cbf44cd53a931bcf1a9b84e
 InstanceOf: PreQualDB
 * number.value = "e65316944cbf44cd53a931bcf1a9b84e"
 * dateOfPrequal = 2016-01-14
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "ORAL MONOVALENT TYPE 2 POLIOMYELITIS VACCINE (mOPV2)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -7702,7 +7702,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
 
 
-Instance: PolioVaccineOralOPVMonovalProducte65316944cbf44cd53a931bcf1a9b84e
+Instance: PolioVaccineOralOPVMonovProducte65316944cbf44cd53a931bcf1a9b84e
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7711,11 +7711,11 @@ Usage: #example
   * value = "ORAL MONOVALENT TYPE 2 POLIOMYELITIS VACCINE (mOPV2)"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQuale65316944cbf44cd53a931bcf1a9b84e
+Instance: PolioVaccineOralOPVMonovPreQuale65316944cbf44cd53a931bcf1a9b84e
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7723,7 +7723,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 2016-01-14
-* product  = Reference(PolioVaccineOralOPVMonovalProducte65316944cbf44cd53a931bcf1a9b84e) 
+* product  = Reference(PolioVaccineOralOPVMonovProducte65316944cbf44cd53a931bcf1a9b84e) 
 
 // Source Record Row //: 170
 //  Date of Prequalification: (31/08/2020)
@@ -7740,7 +7740,7 @@ Instance: PreQualDB257be1ac0783a7b3d341afdb8cb40cd7
 InstanceOf: PreQualDB
 * number.value = "257be1ac0783a7b3d341afdb8cb40cd7"
 * dateOfPrequal = 2020-08-31
-* vaccineType = #PolioVaccineOralOPVTrivalent
+* vaccineType = #PolioVaccineOralOPVTriva
 * commercialName = "Oral Poliomyelitis Vaccines (Oral Drops)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -7748,7 +7748,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: PolioVaccineOralOPVTrivaleProduct257be1ac0783a7b3d341afdb8cb40cd7
+Instance: PolioVaccineOralOPVTrivaProduct257be1ac0783a7b3d341afdb8cb40cd7
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7757,11 +7757,11 @@ Usage: #example
   * value = "Oral Poliomyelitis Vaccines (Oral Drops)"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVTrivalent
+* classification = #PolioVaccineOralOPVTriva
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVTrivalePreQual257be1ac0783a7b3d341afdb8cb40cd7
+Instance: PolioVaccineOralOPVTrivaPreQual257be1ac0783a7b3d341afdb8cb40cd7
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7769,7 +7769,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2020-08-31
-* product  = Reference(PolioVaccineOralOPVTrivaleProduct257be1ac0783a7b3d341afdb8cb40cd7) 
+* product  = Reference(PolioVaccineOralOPVTrivaProduct257be1ac0783a7b3d341afdb8cb40cd7) 
 
 // Source Record Row //: 171
 //  Date of Prequalification: (18/12/2020)
@@ -7786,7 +7786,7 @@ Instance: PreQualDB06b4345aa879ee56217791b845127c50
 InstanceOf: PreQualDB
 * number.value = "06b4345aa879ee56217791b845127c50"
 * dateOfPrequal = 2020-12-18
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH5N1
 * commercialName = "Pandemic Live Attenuated Vaccine"
 * presentation.coding.code = #Sprayer
 * numDoses = 1
@@ -7794,7 +7794,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: InfluenzaPandemicHNProduct06b4345aa879ee56217791b845127c50
+Instance: InfluenzaPandemicH5N1Product06b4345aa879ee56217791b845127c50
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7803,11 +7803,11 @@ Usage: #example
   * value = "Pandemic Live Attenuated Vaccine"
 * manufacturer = Reference(Manufacturer967d3d36fa4b4a47b110511d7f596d9a) // AstraZeneca Pharmaceuticals LP.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH5N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Sprayer
 
-Instance: InfluenzaPandemicHNPreQual06b4345aa879ee56217791b845127c50
+Instance: InfluenzaPandemicH5N1PreQual06b4345aa879ee56217791b845127c50
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7815,7 +7815,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2020-12-18
-* product  = Reference(InfluenzaPandemicHNProduct06b4345aa879ee56217791b845127c50) 
+* product  = Reference(InfluenzaPandemicH5N1Product06b4345aa879ee56217791b845127c50) 
 
 // Source Record Row //: 172
 //  Date of Prequalification: (22/01/2010)
@@ -7832,7 +7832,7 @@ Instance: PreQualDB419758a8ade11f5d91b68ee96bdb4b47
 InstanceOf: PreQualDB
 * number.value = "419758a8ade11f5d91b68ee96bdb4b47"
 * dateOfPrequal = 2010-01-22
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Panenza"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -7840,7 +7840,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
 
 
-Instance: InfluenzaPandemicHNProduct419758a8ade11f5d91b68ee96bdb4b47
+Instance: InfluenzaPandemicH1N1Product419758a8ade11f5d91b68ee96bdb4b47
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7849,11 +7849,11 @@ Usage: #example
   * value = "Panenza"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaPandemicHNPreQual419758a8ade11f5d91b68ee96bdb4b47
+Instance: InfluenzaPandemicH1N1PreQual419758a8ade11f5d91b68ee96bdb4b47
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7861,7 +7861,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 2010-01-22
-* product  = Reference(InfluenzaPandemicHNProduct419758a8ade11f5d91b68ee96bdb4b47) 
+* product  = Reference(InfluenzaPandemicH1N1Product419758a8ade11f5d91b68ee96bdb4b47) 
 
 // Source Record Row //: 173
 //  Date of Prequalification: (01/12/2009)
@@ -7878,7 +7878,7 @@ Instance: PreQualDB6fdea1bee1bc671366583db8d4d5e5a8
 InstanceOf: PreQualDB
 * number.value = "6fdea1bee1bc671366583db8d4d5e5a8"
 * dateOfPrequal = 2009-12-01
-* vaccineType = #InfluenzaPandemicHN
+* vaccineType = #InfluenzaPandemicH1N1
 * commercialName = "Panvax"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -7886,7 +7886,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Therapeutic Goods Administration"
 
 
-Instance: InfluenzaPandemicHNProduct6fdea1bee1bc671366583db8d4d5e5a8
+Instance: InfluenzaPandemicH1N1Product6fdea1bee1bc671366583db8d4d5e5a8
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7895,11 +7895,11 @@ Usage: #example
   * value = "Panvax"
 * manufacturer = Reference(Manufacturer414bf493c71eaa3be2581a09156c72c4) // Seqirus Limited
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaPandemicHN
+* classification = #InfluenzaPandemicH1N1
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaPandemicHNPreQual6fdea1bee1bc671366583db8d4d5e5a8
+Instance: InfluenzaPandemicH1N1PreQual6fdea1bee1bc671366583db8d4d5e5a8
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7907,7 +7907,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holdera19fa8208437c02d8a7db64f5d62c226) // Therapeutic Goods Administration
 * validityPeriod.start = 2009-12-01
-* product  = Reference(InfluenzaPandemicHNProduct6fdea1bee1bc671366583db8d4d5e5a8) 
+* product  = Reference(InfluenzaPandemicH1N1Product6fdea1bee1bc671366583db8d4d5e5a8) 
 
 // Source Record Row //: 174
 //  Date of Prequalification: (19/12/2014)
@@ -7924,7 +7924,7 @@ Instance: PreQualDB19bceea70750407b17840ebc8b098010
 InstanceOf: PreQualDB
 * number.value = "19bceea70750407b17840ebc8b098010"
 * dateOfPrequal = 2014-12-19
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Pentabio"
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -7932,7 +7932,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: DiphtheriaTetanusPertussisProduct19bceea70750407b17840ebc8b098010
+Instance: DiphtheriaTetanusPertussProduct19bceea70750407b17840ebc8b098010
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7941,11 +7941,11 @@ Usage: #example
   * value = "Pentabio"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  5 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQual19bceea70750407b17840ebc8b098010
+Instance: DiphtheriaTetanusPertussPreQual19bceea70750407b17840ebc8b098010
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7953,7 +7953,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2014-12-19
-* product  = Reference(DiphtheriaTetanusPertussisProduct19bceea70750407b17840ebc8b098010) 
+* product  = Reference(DiphtheriaTetanusPertussProduct19bceea70750407b17840ebc8b098010) 
 
 // Source Record Row //: 175
 //  Date of Prequalification: (19/12/2014)
@@ -7970,7 +7970,7 @@ Instance: PreQualDBf52f4568faac4a81f0ba44350720046b
 InstanceOf: PreQualDB
 * number.value = "f52f4568faac4a81f0ba44350720046b"
 * dateOfPrequal = 2014-12-19
-* vaccineType = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* vaccineType = #DiphtheriaTetanusPertuss
 * commercialName = "Pentabio"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -7978,7 +7978,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: DiphtheriaTetanusPertussisProductf52f4568faac4a81f0ba44350720046b
+Instance: DiphtheriaTetanusPertussProductf52f4568faac4a81f0ba44350720046b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -7987,11 +7987,11 @@ Usage: #example
   * value = "Pentabio"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb
+* classification = #DiphtheriaTetanusPertuss
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusPertussisPreQualf52f4568faac4a81f0ba44350720046b
+Instance: DiphtheriaTetanusPertussPreQualf52f4568faac4a81f0ba44350720046b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -7999,7 +7999,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2014-12-19
-* product  = Reference(DiphtheriaTetanusPertussisProductf52f4568faac4a81f0ba44350720046b) 
+* product  = Reference(DiphtheriaTetanusPertussProductf52f4568faac4a81f0ba44350720046b) 
 
 // Source Record Row //: 176
 //  Date of Prequalification: (21/04/2020)
@@ -8016,7 +8016,7 @@ Instance: PreQualDBf7cd3e0473cc796a6c1b2f28a3e9fe49
 InstanceOf: PreQualDB
 * number.value = "f7cd3e0473cc796a6c1b2f28a3e9fe49"
 * dateOfPrequal = 2020-04-21
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Picovax"
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -8024,7 +8024,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Danish Medicines Agency"
 
 
-Instance: PolioVaccineInactivatedIPVProductf7cd3e0473cc796a6c1b2f28a3e9fe49
+Instance: PolioVaccineInactivatedIProductf7cd3e0473cc796a6c1b2f28a3e9fe49
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8033,11 +8033,11 @@ Usage: #example
   * value = "Picovax"
 * manufacturer = Reference(Manufacturer2861c762e570422c9a439d2e146ef1e9) // AJ Vaccines A/S
 * doseQuantity =  5 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQualf7cd3e0473cc796a6c1b2f28a3e9fe49
+Instance: PolioVaccineInactivatedIPreQualf7cd3e0473cc796a6c1b2f28a3e9fe49
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8045,7 +8045,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder1a0e5ea84210f3aa10f60f001c703d0a) // Danish Medicines Agency
 * validityPeriod.start = 2020-04-21
-* product  = Reference(PolioVaccineInactivatedIPVProductf7cd3e0473cc796a6c1b2f28a3e9fe49) 
+* product  = Reference(PolioVaccineInactivatedIProductf7cd3e0473cc796a6c1b2f28a3e9fe49) 
 
 // Source Record Row //: 177
 //  Date of Prequalification: (18/12/2019)
@@ -8200,7 +8200,7 @@ Instance: PreQualDB4648a4b6d1840eaff023f19fd965e00f
 InstanceOf: PreQualDB
 * number.value = "4648a4b6d1840eaff023f19fd965e00f"
 * dateOfPrequal = 2009-10-29
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono T1"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -8208,7 +8208,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: PolioVaccineOralOPVMonovalProduct4648a4b6d1840eaff023f19fd965e00f
+Instance: PolioVaccineOralOPVMonovProduct4648a4b6d1840eaff023f19fd965e00f
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8217,11 +8217,11 @@ Usage: #example
   * value = "Polio Sabin Mono T1"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQual4648a4b6d1840eaff023f19fd965e00f
+Instance: PolioVaccineOralOPVMonovPreQual4648a4b6d1840eaff023f19fd965e00f
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8229,7 +8229,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-10-29
-* product  = Reference(PolioVaccineOralOPVMonovalProduct4648a4b6d1840eaff023f19fd965e00f) 
+* product  = Reference(PolioVaccineOralOPVMonovProduct4648a4b6d1840eaff023f19fd965e00f) 
 
 // Source Record Row //: 181
 //  Date of Prequalification: (29/10/2009)
@@ -8246,7 +8246,7 @@ Instance: PreQualDB59bf6e6638359d3ffee0d752ecb4cef6
 InstanceOf: PreQualDB
 * number.value = "59bf6e6638359d3ffee0d752ecb4cef6"
 * dateOfPrequal = 2009-10-29
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono T1"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -8254,7 +8254,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: PolioVaccineOralOPVMonovalProduct59bf6e6638359d3ffee0d752ecb4cef6
+Instance: PolioVaccineOralOPVMonovProduct59bf6e6638359d3ffee0d752ecb4cef6
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8263,11 +8263,11 @@ Usage: #example
   * value = "Polio Sabin Mono T1"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQual59bf6e6638359d3ffee0d752ecb4cef6
+Instance: PolioVaccineOralOPVMonovPreQual59bf6e6638359d3ffee0d752ecb4cef6
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8275,7 +8275,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-10-29
-* product  = Reference(PolioVaccineOralOPVMonovalProduct59bf6e6638359d3ffee0d752ecb4cef6) 
+* product  = Reference(PolioVaccineOralOPVMonovProduct59bf6e6638359d3ffee0d752ecb4cef6) 
 
 // Source Record Row //: 182
 //  Date of Prequalification: (05/10/2010)
@@ -8292,7 +8292,7 @@ Instance: PreQualDB842d974d46519183fe1a32dadb7dc0c8
 InstanceOf: PreQualDB
 * number.value = "842d974d46519183fe1a32dadb7dc0c8"
 * dateOfPrequal = 2010-10-05
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono Three (oral)"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -8300,7 +8300,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: PolioVaccineOralOPVMonovalProduct842d974d46519183fe1a32dadb7dc0c8
+Instance: PolioVaccineOralOPVMonovProduct842d974d46519183fe1a32dadb7dc0c8
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8309,11 +8309,11 @@ Usage: #example
   * value = "Polio Sabin Mono Three (oral)"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQual842d974d46519183fe1a32dadb7dc0c8
+Instance: PolioVaccineOralOPVMonovPreQual842d974d46519183fe1a32dadb7dc0c8
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8321,7 +8321,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2010-10-05
-* product  = Reference(PolioVaccineOralOPVMonovalProduct842d974d46519183fe1a32dadb7dc0c8) 
+* product  = Reference(PolioVaccineOralOPVMonovProduct842d974d46519183fe1a32dadb7dc0c8) 
 
 // Source Record Row //: 183
 //  Date of Prequalification: (05/10/2010)
@@ -8338,7 +8338,7 @@ Instance: PreQualDB67373800372f840cf41ba721b864809b
 InstanceOf: PreQualDB
 * number.value = "67373800372f840cf41ba721b864809b"
 * dateOfPrequal = 2010-10-05
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono Three (oral)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -8346,7 +8346,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: PolioVaccineOralOPVMonovalProduct67373800372f840cf41ba721b864809b
+Instance: PolioVaccineOralOPVMonovProduct67373800372f840cf41ba721b864809b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8355,11 +8355,11 @@ Usage: #example
   * value = "Polio Sabin Mono Three (oral)"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQual67373800372f840cf41ba721b864809b
+Instance: PolioVaccineOralOPVMonovPreQual67373800372f840cf41ba721b864809b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8367,7 +8367,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2010-10-05
-* product  = Reference(PolioVaccineOralOPVMonovalProduct67373800372f840cf41ba721b864809b) 
+* product  = Reference(PolioVaccineOralOPVMonovProduct67373800372f840cf41ba721b864809b) 
 
 // Source Record Row //: 184
 //  Date of Prequalification: (11/05/2011)
@@ -8384,7 +8384,7 @@ Instance: PreQualDB316bda2890397e5d5c8f6bd6daca17b2
 InstanceOf: PreQualDB
 * number.value = "316bda2890397e5d5c8f6bd6daca17b2"
 * dateOfPrequal = 2011-05-11
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono Two (oral)"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -8392,7 +8392,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: PolioVaccineOralOPVMonovalProduct316bda2890397e5d5c8f6bd6daca17b2
+Instance: PolioVaccineOralOPVMonovProduct316bda2890397e5d5c8f6bd6daca17b2
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8401,11 +8401,11 @@ Usage: #example
   * value = "Polio Sabin Mono Two (oral)"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQual316bda2890397e5d5c8f6bd6daca17b2
+Instance: PolioVaccineOralOPVMonovPreQual316bda2890397e5d5c8f6bd6daca17b2
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8413,7 +8413,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2011-05-11
-* product  = Reference(PolioVaccineOralOPVMonovalProduct316bda2890397e5d5c8f6bd6daca17b2) 
+* product  = Reference(PolioVaccineOralOPVMonovProduct316bda2890397e5d5c8f6bd6daca17b2) 
 
 // Source Record Row //: 185
 //  Date of Prequalification: (11/05/2011)
@@ -8430,7 +8430,7 @@ Instance: PreQualDBe17e788736b15bc3134190fc95999323
 InstanceOf: PreQualDB
 * number.value = "e17e788736b15bc3134190fc95999323"
 * dateOfPrequal = 2011-05-11
-* vaccineType = #PolioVaccineOralOPVMonovalentType
+* vaccineType = #PolioVaccineOralOPVMonov
 * commercialName = "Polio Sabin Mono Two (oral)"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -8438,7 +8438,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: PolioVaccineOralOPVMonovalProducte17e788736b15bc3134190fc95999323
+Instance: PolioVaccineOralOPVMonovProducte17e788736b15bc3134190fc95999323
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8447,11 +8447,11 @@ Usage: #example
   * value = "Polio Sabin Mono Two (oral)"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVMonovalentType
+* classification = #PolioVaccineOralOPVMonov
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVMonovalPreQuale17e788736b15bc3134190fc95999323
+Instance: PolioVaccineOralOPVMonovPreQuale17e788736b15bc3134190fc95999323
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8459,7 +8459,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2011-05-11
-* product  = Reference(PolioVaccineOralOPVMonovalProducte17e788736b15bc3134190fc95999323) 
+* product  = Reference(PolioVaccineOralOPVMonovProducte17e788736b15bc3134190fc95999323) 
 
 // Source Record Row //: 186
 //  Date of Prequalification: (29/10/2009)
@@ -8476,7 +8476,7 @@ Instance: PreQualDBc29e53e8046c41eed131d9a1266f0388
 InstanceOf: PreQualDB
 * number.value = "c29e53e8046c41eed131d9a1266f0388"
 * dateOfPrequal = 2009-10-29
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Polio Sabin One and Three"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -8484,7 +8484,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: PolioVaccineOralOPVBivalenProductc29e53e8046c41eed131d9a1266f0388
+Instance: PolioVaccineOralOPVBivalProductc29e53e8046c41eed131d9a1266f0388
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8493,11 +8493,11 @@ Usage: #example
   * value = "Polio Sabin One and Three"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQualc29e53e8046c41eed131d9a1266f0388
+Instance: PolioVaccineOralOPVBivalPreQualc29e53e8046c41eed131d9a1266f0388
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8505,7 +8505,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-10-29
-* product  = Reference(PolioVaccineOralOPVBivalenProductc29e53e8046c41eed131d9a1266f0388) 
+* product  = Reference(PolioVaccineOralOPVBivalProductc29e53e8046c41eed131d9a1266f0388) 
 
 // Source Record Row //: 187
 //  Date of Prequalification: (29/10/2009)
@@ -8522,7 +8522,7 @@ Instance: PreQualDB32b7151f4bb6680929ab3cc234aa0bfd
 InstanceOf: PreQualDB
 * number.value = "32b7151f4bb6680929ab3cc234aa0bfd"
 * dateOfPrequal = 2009-10-29
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Polio Sabin One and Three"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -8530,7 +8530,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Federal Agency for Medicines and Health Products"
 
 
-Instance: PolioVaccineOralOPVBivalenProduct32b7151f4bb6680929ab3cc234aa0bfd
+Instance: PolioVaccineOralOPVBivalProduct32b7151f4bb6680929ab3cc234aa0bfd
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8539,11 +8539,11 @@ Usage: #example
   * value = "Polio Sabin One and Three"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQual32b7151f4bb6680929ab3cc234aa0bfd
+Instance: PolioVaccineOralOPVBivalPreQual32b7151f4bb6680929ab3cc234aa0bfd
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8551,7 +8551,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-10-29
-* product  = Reference(PolioVaccineOralOPVBivalenProduct32b7151f4bb6680929ab3cc234aa0bfd) 
+* product  = Reference(PolioVaccineOralOPVBivalProduct32b7151f4bb6680929ab3cc234aa0bfd) 
 
 // Source Record Row //: 188
 //  Date of Prequalification: (06/12/2010)
@@ -8568,7 +8568,7 @@ Instance: PreQualDBf7021252eb8b4bf61bbe3bd4b896e77d
 InstanceOf: PreQualDB
 * number.value = "f7021252eb8b4bf61bbe3bd4b896e77d"
 * dateOfPrequal = 2010-12-06
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis vaccine"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -8576,7 +8576,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
 
 
-Instance: PolioVaccineInactivatedIPVProductf7021252eb8b4bf61bbe3bd4b896e77d
+Instance: PolioVaccineInactivatedIProductf7021252eb8b4bf61bbe3bd4b896e77d
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8585,11 +8585,11 @@ Usage: #example
   * value = "Poliomyelitis vaccine"
 * manufacturer = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) // Bilthoven Biologicals B.V.
 * doseQuantity =  1 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQualf7021252eb8b4bf61bbe3bd4b896e77d
+Instance: PolioVaccineInactivatedIPreQualf7021252eb8b4bf61bbe3bd4b896e77d
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8597,7 +8597,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 * validityPeriod.start = 2010-12-06
-* product  = Reference(PolioVaccineInactivatedIPVProductf7021252eb8b4bf61bbe3bd4b896e77d) 
+* product  = Reference(PolioVaccineInactivatedIProductf7021252eb8b4bf61bbe3bd4b896e77d) 
 
 // Source Record Row //: 189
 //  Date of Prequalification: (29/07/2024)
@@ -8614,7 +8614,7 @@ Instance: PreQualDB54b1cae84db8613eaeefaf06aa55a6e9
 InstanceOf: PreQualDB
 * number.value = "54b1cae84db8613eaeefaf06aa55a6e9"
 * dateOfPrequal = 2024-07-29
-* vaccineType = #PolioVaccineNovelOralnOPVType
+* vaccineType = #PolioVaccineNovelOralnOP
 * commercialName = "Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -8622,7 +8622,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineNovelOralnOPVTProduct54b1cae84db8613eaeefaf06aa55a6e9
+Instance: PolioVaccineNovelOralnOPProduct54b1cae84db8613eaeefaf06aa55a6e9
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8631,11 +8631,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineNovelOralnOPVType
+* classification = #PolioVaccineNovelOralnOP
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineNovelOralnOPVTPreQual54b1cae84db8613eaeefaf06aa55a6e9
+Instance: PolioVaccineNovelOralnOPPreQual54b1cae84db8613eaeefaf06aa55a6e9
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8643,7 +8643,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2024-07-29
-* product  = Reference(PolioVaccineNovelOralnOPVTProduct54b1cae84db8613eaeefaf06aa55a6e9) 
+* product  = Reference(PolioVaccineNovelOralnOPProduct54b1cae84db8613eaeefaf06aa55a6e9) 
 
 // Source Record Row //: 190
 //  Date of Prequalification: (27/12/2023)
@@ -8660,7 +8660,7 @@ Instance: PreQualDB47c6363d4eaf1b8a710f73def9bf29f6
 InstanceOf: PreQualDB
 * number.value = "47c6363d4eaf1b8a710f73def9bf29f6"
 * dateOfPrequal = 2023-12-27
-* vaccineType = #PolioVaccineNovelOralnOPVType
+* vaccineType = #PolioVaccineNovelOralnOP
 * commercialName = "Polio Vaccine - Novel Oral (nOPV) Type 2"
 * presentation.coding.code = #Vial
 * numDoses = 50
@@ -8668,7 +8668,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Agency of Drug and Food Control Indonesia"
 
 
-Instance: PolioVaccineNovelOralnOPVTProduct47c6363d4eaf1b8a710f73def9bf29f6
+Instance: PolioVaccineNovelOralnOPProduct47c6363d4eaf1b8a710f73def9bf29f6
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8677,11 +8677,11 @@ Usage: #example
   * value = "Polio Vaccine - Novel Oral (nOPV) Type 2"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  50 'doses'
-* classification = #PolioVaccineNovelOralnOPVType
+* classification = #PolioVaccineNovelOralnOP
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineNovelOralnOPVTPreQual47c6363d4eaf1b8a710f73def9bf29f6
+Instance: PolioVaccineNovelOralnOPPreQual47c6363d4eaf1b8a710f73def9bf29f6
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8689,7 +8689,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2023-12-27
-* product  = Reference(PolioVaccineNovelOralnOPVTProduct47c6363d4eaf1b8a710f73def9bf29f6) 
+* product  = Reference(PolioVaccineNovelOralnOPProduct47c6363d4eaf1b8a710f73def9bf29f6) 
 
 // Source Record Row //: 191
 //  Date of Prequalification: (29/07/2024)
@@ -8706,7 +8706,7 @@ Instance: PreQualDB76330e8a95782f9f0ea96ed8df410912
 InstanceOf: PreQualDB
 * number.value = "76330e8a95782f9f0ea96ed8df410912"
 * dateOfPrequal = 2024-07-29
-* vaccineType = #PolioVaccineNovelOralnOPVType
+* vaccineType = #PolioVaccineNovelOralnOP
 * commercialName = "Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2"
 * presentation.coding.code = #Vial
 * numDoses = 50
@@ -8714,7 +8714,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineNovelOralnOPVTProduct76330e8a95782f9f0ea96ed8df410912
+Instance: PolioVaccineNovelOralnOPProduct76330e8a95782f9f0ea96ed8df410912
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8723,11 +8723,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  50 'doses'
-* classification = #PolioVaccineNovelOralnOPVType
+* classification = #PolioVaccineNovelOralnOP
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineNovelOralnOPVTPreQual76330e8a95782f9f0ea96ed8df410912
+Instance: PolioVaccineNovelOralnOPPreQual76330e8a95782f9f0ea96ed8df410912
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8735,7 +8735,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2024-07-29
-* product  = Reference(PolioVaccineNovelOralnOPVTProduct76330e8a95782f9f0ea96ed8df410912) 
+* product  = Reference(PolioVaccineNovelOralnOPProduct76330e8a95782f9f0ea96ed8df410912) 
 
 // Source Record Row //: 192
 //  Date of Prequalification: (28/10/2016)
@@ -8752,7 +8752,7 @@ Instance: PreQualDB96b2460444287b692b2289a59f9d8ff0
 InstanceOf: PreQualDB
 * number.value = "96b2460444287b692b2289a59f9d8ff0"
 * dateOfPrequal = 2016-10-28
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis Vaccine (Inactivated)"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -8760,7 +8760,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineInactivatedIPVProduct96b2460444287b692b2289a59f9d8ff0
+Instance: PolioVaccineInactivatedIProduct96b2460444287b692b2289a59f9d8ff0
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8769,11 +8769,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Inactivated)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQual96b2460444287b692b2289a59f9d8ff0
+Instance: PolioVaccineInactivatedIPreQual96b2460444287b692b2289a59f9d8ff0
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8781,7 +8781,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2016-10-28
-* product  = Reference(PolioVaccineInactivatedIPVProduct96b2460444287b692b2289a59f9d8ff0) 
+* product  = Reference(PolioVaccineInactivatedIProduct96b2460444287b692b2289a59f9d8ff0) 
 
 // Source Record Row //: 193
 //  Date of Prequalification: (28/10/2016)
@@ -8798,7 +8798,7 @@ Instance: PreQualDB748ca7add0fd187501dd3a12c1d2c7ec
 InstanceOf: PreQualDB
 * number.value = "748ca7add0fd187501dd3a12c1d2c7ec"
 * dateOfPrequal = 2016-10-28
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis Vaccine (Inactivated)"
 * presentation.coding.code = #Vial
 * numDoses = 2
@@ -8806,7 +8806,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineInactivatedIPVProduct748ca7add0fd187501dd3a12c1d2c7ec
+Instance: PolioVaccineInactivatedIProduct748ca7add0fd187501dd3a12c1d2c7ec
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8815,11 +8815,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Inactivated)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  2 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQual748ca7add0fd187501dd3a12c1d2c7ec
+Instance: PolioVaccineInactivatedIPreQual748ca7add0fd187501dd3a12c1d2c7ec
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8827,7 +8827,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2016-10-28
-* product  = Reference(PolioVaccineInactivatedIPVProduct748ca7add0fd187501dd3a12c1d2c7ec) 
+* product  = Reference(PolioVaccineInactivatedIProduct748ca7add0fd187501dd3a12c1d2c7ec) 
 
 // Source Record Row //: 194
 //  Date of Prequalification: (28/10/2016)
@@ -8844,7 +8844,7 @@ Instance: PreQualDB186e9a5e7f8d849190410641a6352d91
 InstanceOf: PreQualDB
 * number.value = "186e9a5e7f8d849190410641a6352d91"
 * dateOfPrequal = 2016-10-28
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis Vaccine (Inactivated)"
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -8852,7 +8852,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineInactivatedIPVProduct186e9a5e7f8d849190410641a6352d91
+Instance: PolioVaccineInactivatedIProduct186e9a5e7f8d849190410641a6352d91
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8861,11 +8861,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Inactivated)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  5 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQual186e9a5e7f8d849190410641a6352d91
+Instance: PolioVaccineInactivatedIPreQual186e9a5e7f8d849190410641a6352d91
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8873,7 +8873,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2016-10-28
-* product  = Reference(PolioVaccineInactivatedIPVProduct186e9a5e7f8d849190410641a6352d91) 
+* product  = Reference(PolioVaccineInactivatedIProduct186e9a5e7f8d849190410641a6352d91) 
 
 // Source Record Row //: 195
 //  Date of Prequalification: (11/07/2019)
@@ -8890,7 +8890,7 @@ Instance: PreQualDB82aa38d8c40107a51160a14e219d0796
 InstanceOf: PreQualDB
 * number.value = "82aa38d8c40107a51160a14e219d0796"
 * dateOfPrequal = 2019-07-11
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis Vaccine (Inactivated)"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -8898,7 +8898,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineInactivatedIPVProduct82aa38d8c40107a51160a14e219d0796
+Instance: PolioVaccineInactivatedIProduct82aa38d8c40107a51160a14e219d0796
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8907,11 +8907,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Inactivated)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQual82aa38d8c40107a51160a14e219d0796
+Instance: PolioVaccineInactivatedIPreQual82aa38d8c40107a51160a14e219d0796
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8919,7 +8919,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2019-07-11
-* product  = Reference(PolioVaccineInactivatedIPVProduct82aa38d8c40107a51160a14e219d0796) 
+* product  = Reference(PolioVaccineInactivatedIProduct82aa38d8c40107a51160a14e219d0796) 
 
 // Source Record Row //: 196
 //  Date of Prequalification: (21/12/2017)
@@ -8936,7 +8936,7 @@ Instance: PreQualDB756b50d1047d7e92674342044a986a4e
 InstanceOf: PreQualDB
 * number.value = "756b50d1047d7e92674342044a986a4e"
 * dateOfPrequal = 2017-12-21
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Poliomyelitis Vaccine (live, oral attenuated, human Diploid Cell), type 1 and 3"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -8944,7 +8944,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: PolioVaccineOralOPVBivalenProduct756b50d1047d7e92674342044a986a4e
+Instance: PolioVaccineOralOPVBivalProduct756b50d1047d7e92674342044a986a4e
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8953,11 +8953,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (live, oral attenuated, human Diploid Cell), type 1 and 3"
 * manufacturer = Reference(Manufacturer2d992993bbbada34f402e9f6bcf502f9) // Beijing Institute of Biological Products Co., Ltd.
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQual756b50d1047d7e92674342044a986a4e
+Instance: PolioVaccineOralOPVBivalPreQual756b50d1047d7e92674342044a986a4e
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -8965,7 +8965,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2017-12-21
-* product  = Reference(PolioVaccineOralOPVBivalenProduct756b50d1047d7e92674342044a986a4e) 
+* product  = Reference(PolioVaccineOralOPVBivalProduct756b50d1047d7e92674342044a986a4e) 
 
 // Source Record Row //: 197
 //  Date of Prequalification: (22/10/2014)
@@ -8982,7 +8982,7 @@ Instance: PreQualDBee81d656f40e814fe6127f50b03bcc14
 InstanceOf: PreQualDB
 * number.value = "ee81d656f40e814fe6127f50b03bcc14"
 * dateOfPrequal = 2014-10-22
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Poliomyelitis Vaccine (Oral), Bivalent types 1 and 3"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -8990,7 +8990,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVBivalenProductee81d656f40e814fe6127f50b03bcc14
+Instance: PolioVaccineOralOPVBivalProductee81d656f40e814fe6127f50b03bcc14
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -8999,11 +8999,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Oral), Bivalent types 1 and 3"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQualee81d656f40e814fe6127f50b03bcc14
+Instance: PolioVaccineOralOPVBivalPreQualee81d656f40e814fe6127f50b03bcc14
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9011,7 +9011,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-10-22
-* product  = Reference(PolioVaccineOralOPVBivalenProductee81d656f40e814fe6127f50b03bcc14) 
+* product  = Reference(PolioVaccineOralOPVBivalProductee81d656f40e814fe6127f50b03bcc14) 
 
 // Source Record Row //: 198
 //  Date of Prequalification: (04/02/2013)
@@ -9028,7 +9028,7 @@ Instance: PreQualDB9d40322fd2d0521e4fcc74d7aefba759
 InstanceOf: PreQualDB
 * number.value = "9d40322fd2d0521e4fcc74d7aefba759"
 * dateOfPrequal = 2013-02-04
-* vaccineType = #PolioVaccineOralOPVBivalentTypesand
+* vaccineType = #PolioVaccineOralOPVBival
 * commercialName = "Poliomyelitis Vaccine (Oral), Bivalent types 1 and 3"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -9036,7 +9036,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVBivalenProduct9d40322fd2d0521e4fcc74d7aefba759
+Instance: PolioVaccineOralOPVBivalProduct9d40322fd2d0521e4fcc74d7aefba759
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9045,11 +9045,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Oral), Bivalent types 1 and 3"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVBivalentTypesand
+* classification = #PolioVaccineOralOPVBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVBivalenPreQual9d40322fd2d0521e4fcc74d7aefba759
+Instance: PolioVaccineOralOPVBivalPreQual9d40322fd2d0521e4fcc74d7aefba759
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9057,7 +9057,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2013-02-04
-* product  = Reference(PolioVaccineOralOPVBivalenProduct9d40322fd2d0521e4fcc74d7aefba759) 
+* product  = Reference(PolioVaccineOralOPVBivalProduct9d40322fd2d0521e4fcc74d7aefba759) 
 
 // Source Record Row //: 199
 //  Date of Prequalification: (06/06/2022)
@@ -9074,7 +9074,7 @@ Instance: PreQualDB6ba6c7e79492766c1300067676e9b373
 InstanceOf: PreQualDB
 * number.value = "6ba6c7e79492766c1300067676e9b373"
 * dateOfPrequal = 2022-06-06
-* vaccineType = #PolioVaccineInactivatedSabinsIPV
+* vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -9082,7 +9082,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: PolioVaccineInactivatedSabProduct6ba6c7e79492766c1300067676e9b373
+Instance: PolioVaccineInactivatedSProduct6ba6c7e79492766c1300067676e9b373
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9091,11 +9091,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
 * manufacturer = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) // Sinovac Biotech Co. Ltd
 * doseQuantity =  1 'doses'
-* classification = #PolioVaccineInactivatedSabinsIPV
+* classification = #PolioVaccineInactivatedS
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedSabPreQual6ba6c7e79492766c1300067676e9b373
+Instance: PolioVaccineInactivatedSPreQual6ba6c7e79492766c1300067676e9b373
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9103,7 +9103,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2022-06-06
-* product  = Reference(PolioVaccineInactivatedSabProduct6ba6c7e79492766c1300067676e9b373) 
+* product  = Reference(PolioVaccineInactivatedSProduct6ba6c7e79492766c1300067676e9b373) 
 
 // Source Record Row //: 200
 //  Date of Prequalification: (15/02/2022)
@@ -9120,7 +9120,7 @@ Instance: PreQualDBf270bc4b812c58c3c151b4801d1df3e4
 InstanceOf: PreQualDB
 * number.value = "f270bc4b812c58c3c151b4801d1df3e4"
 * dateOfPrequal = 2022-02-15
-* vaccineType = #PolioVaccineInactivatedSabinsIPV
+* vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -9128,7 +9128,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: PolioVaccineInactivatedSabProductf270bc4b812c58c3c151b4801d1df3e4
+Instance: PolioVaccineInactivatedSProductf270bc4b812c58c3c151b4801d1df3e4
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9137,11 +9137,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
 * manufacturer = Reference(Manufacturer2d992993bbbada34f402e9f6bcf502f9) // Beijing Institute of Biological Products Co., Ltd.
 * doseQuantity =  1 'doses'
-* classification = #PolioVaccineInactivatedSabinsIPV
+* classification = #PolioVaccineInactivatedS
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedSabPreQualf270bc4b812c58c3c151b4801d1df3e4
+Instance: PolioVaccineInactivatedSPreQualf270bc4b812c58c3c151b4801d1df3e4
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9149,7 +9149,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2022-02-15
-* product  = Reference(PolioVaccineInactivatedSabProductf270bc4b812c58c3c151b4801d1df3e4) 
+* product  = Reference(PolioVaccineInactivatedSProductf270bc4b812c58c3c151b4801d1df3e4) 
 
 // Source Record Row //: 201
 //  Date of Prequalification: (29/08/2024)
@@ -9166,7 +9166,7 @@ Instance: PreQualDBee376e242477548f8dc005b49480172e
 InstanceOf: PreQualDB
 * number.value = "ee376e242477548f8dc005b49480172e"
 * dateOfPrequal = 2024-08-29
-* vaccineType = #PolioVaccineInactivatedSabinsIPV
+* vaccineType = #PolioVaccineInactivatedS
 * commercialName = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -9174,7 +9174,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: PolioVaccineInactivatedSabProductee376e242477548f8dc005b49480172e
+Instance: PolioVaccineInactivatedSProductee376e242477548f8dc005b49480172e
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9183,11 +9183,11 @@ Usage: #example
   * value = "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
 * manufacturer = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) // Sinovac Biotech Co. Ltd
 * doseQuantity =  5 'doses'
-* classification = #PolioVaccineInactivatedSabinsIPV
+* classification = #PolioVaccineInactivatedS
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedSabPreQualee376e242477548f8dc005b49480172e
+Instance: PolioVaccineInactivatedSPreQualee376e242477548f8dc005b49480172e
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9195,7 +9195,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2024-08-29
-* product  = Reference(PolioVaccineInactivatedSabProductee376e242477548f8dc005b49480172e) 
+* product  = Reference(PolioVaccineInactivatedSProductee376e242477548f8dc005b49480172e) 
 
 // Source Record Row //: 202
 //  Date of Prequalification: (28/11/2014)
@@ -9212,7 +9212,7 @@ Instance: PreQualDBc500d5a6129d6e855e24e22ca1215100
 InstanceOf: PreQualDB
 * number.value = "c500d5a6129d6e855e24e22ca1215100"
 * dateOfPrequal = 2014-11-28
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis vaccine multidose"
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -9220,7 +9220,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
 
 
-Instance: PolioVaccineInactivatedIPVProductc500d5a6129d6e855e24e22ca1215100
+Instance: PolioVaccineInactivatedIProductc500d5a6129d6e855e24e22ca1215100
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9229,11 +9229,11 @@ Usage: #example
   * value = "Poliomyelitis vaccine multidose"
 * manufacturer = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) // Bilthoven Biologicals B.V.
 * doseQuantity =  5 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQualc500d5a6129d6e855e24e22ca1215100
+Instance: PolioVaccineInactivatedIPreQualc500d5a6129d6e855e24e22ca1215100
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9241,7 +9241,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 * validityPeriod.start = 2014-11-28
-* product  = Reference(PolioVaccineInactivatedIPVProductc500d5a6129d6e855e24e22ca1215100) 
+* product  = Reference(PolioVaccineInactivatedIProductc500d5a6129d6e855e24e22ca1215100) 
 
 // Source Record Row //: 203
 //  Date of Prequalification: (29/02/2024)
@@ -9258,7 +9258,7 @@ Instance: PreQualDB9b966db885a1921afe76256a18641d8d
 InstanceOf: PreQualDB
 * number.value = "9b966db885a1921afe76256a18641d8d"
 * dateOfPrequal = 2024-02-29
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "Poliomyelitis vaccine multidose"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -9266,7 +9266,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
 
 
-Instance: PolioVaccineInactivatedIPVProduct9b966db885a1921afe76256a18641d8d
+Instance: PolioVaccineInactivatedIProduct9b966db885a1921afe76256a18641d8d
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9275,11 +9275,11 @@ Usage: #example
   * value = "Poliomyelitis vaccine multidose"
 * manufacturer = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) // Bilthoven Biologicals B.V.
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQual9b966db885a1921afe76256a18641d8d
+Instance: PolioVaccineInactivatedIPreQual9b966db885a1921afe76256a18641d8d
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9287,7 +9287,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 * validityPeriod.start = 2024-02-29
-* product  = Reference(PolioVaccineInactivatedIPVProduct9b966db885a1921afe76256a18641d8d) 
+* product  = Reference(PolioVaccineInactivatedIProduct9b966db885a1921afe76256a18641d8d) 
 
 // Source Record Row //: 204
 //  Date of Prequalification: (02/02/2006)
@@ -9304,7 +9304,7 @@ Instance: PreQualDBabb65c70eb19b87f6aee9e60a2df9058
 InstanceOf: PreQualDB
 * number.value = "abb65c70eb19b87f6aee9e60a2df9058"
 * dateOfPrequal = 2006-02-02
-* vaccineType = #PolioVaccineOralOPVTrivalent
+* vaccineType = #PolioVaccineOralOPVTriva
 * commercialName = "Polioviral vaccine"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -9312,7 +9312,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineOralOPVTrivaleProductabb65c70eb19b87f6aee9e60a2df9058
+Instance: PolioVaccineOralOPVTrivaProductabb65c70eb19b87f6aee9e60a2df9058
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9321,11 +9321,11 @@ Usage: #example
   * value = "Polioviral vaccine"
 * manufacturer = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) // Haffkine Bio Pharmaceutical Corporation Ltd
 * doseQuantity =  20 'doses'
-* classification = #PolioVaccineOralOPVTrivalent
+* classification = #PolioVaccineOralOPVTriva
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineOralOPVTrivalePreQualabb65c70eb19b87f6aee9e60a2df9058
+Instance: PolioVaccineOralOPVTrivaPreQualabb65c70eb19b87f6aee9e60a2df9058
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9333,7 +9333,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2006-02-02
-* product  = Reference(PolioVaccineOralOPVTrivaleProductabb65c70eb19b87f6aee9e60a2df9058) 
+* product  = Reference(PolioVaccineOralOPVTrivaProductabb65c70eb19b87f6aee9e60a2df9058) 
 
 // Source Record Row //: 205
 //  Date of Prequalification: (20/08/2010)
@@ -9534,7 +9534,7 @@ Instance: PreQualDB72e07792f80ca772d9f34bd2f7912816
 InstanceOf: PreQualDB
 * number.value = "72e07792f80ca772d9f34bd2f7912816"
 * dateOfPrequal = 2024-05-09
-* vaccineType = #DengueTetravalentliveattenuated
+* vaccineType = #DengueTetravalentliveatt
 * commercialName = "Qdenga"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * numDoses = 1
@@ -9542,7 +9542,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: DengueTetravalentliveattenProduct72e07792f80ca772d9f34bd2f7912816
+Instance: DengueTetravalentliveattProduct72e07792f80ca772d9f34bd2f7912816
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9551,11 +9551,11 @@ Usage: #example
   * value = "Qdenga"
 * manufacturer = Reference(Manufacturer5f32e67b1efb37f098e1afd1fe7b6a6c) // Takeda GmbH.
 * doseQuantity =  1 'doses'
-* classification = #DengueTetravalentliveattenuated
+* classification = #DengueTetravalentliveatt
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Twovialsetactiveexcipient
 
-Instance: DengueTetravalentliveattenPreQual72e07792f80ca772d9f34bd2f7912816
+Instance: DengueTetravalentliveattPreQual72e07792f80ca772d9f34bd2f7912816
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9563,7 +9563,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2024-05-09
-* product  = Reference(DengueTetravalentliveattenProduct72e07792f80ca772d9f34bd2f7912816) 
+* product  = Reference(DengueTetravalentliveattProduct72e07792f80ca772d9f34bd2f7912816) 
 
 // Source Record Row //: 210
 //  Date of Prequalification: (26/04/2010)
@@ -9580,7 +9580,7 @@ Instance: PreQualDB9113d2945e9e823a910c744b6a3c49dc
 InstanceOf: PreQualDB
 * number.value = "9113d2945e9e823a910c744b6a3c49dc"
 * dateOfPrequal = 2010-04-26
-* vaccineType = #Haemophilusinfluenzaetypeb
+* vaccineType = #Haemophilusinfluenzaetyp
 * commercialName = "Quimi-Hib"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -9588,7 +9588,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Centro para el Control Estatal de la Calidad de los Medicamentos"
 
 
-Instance: HaemophilusinfluenzaetypebProduct9113d2945e9e823a910c744b6a3c49dc
+Instance: HaemophilusinfluenzaetypProduct9113d2945e9e823a910c744b6a3c49dc
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -9597,11 +9597,11 @@ Usage: #example
   * value = "Quimi-Hib"
 * manufacturer = Reference(Manufacturered6da65a10ba47d41a68dc24525ab5c4) // Centro de Ingenieria Genetica y Biotecnologia
 * doseQuantity =  1 'doses'
-* classification = #Haemophilusinfluenzaetypeb
+* classification = #Haemophilusinfluenzaetyp
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HaemophilusinfluenzaetypebPreQual9113d2945e9e823a910c744b6a3c49dc
+Instance: HaemophilusinfluenzaetypPreQual9113d2945e9e823a910c744b6a3c49dc
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -9609,7 +9609,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder882e1c1bff3f30753e4f4da0e0917ec0) // Centro para el Control Estatal de la Calidad de los Medicamentos
 * validityPeriod.start = 2010-04-26
-* product  = Reference(HaemophilusinfluenzaetypebProduct9113d2945e9e823a910c744b6a3c49dc) 
+* product  = Reference(HaemophilusinfluenzaetypProduct9113d2945e9e823a910c744b6a3c49dc) 
 
 // Source Record Row //: 211
 //  Date of Prequalification: (19/12/2023)
@@ -10638,7 +10638,7 @@ Instance: PreQualDBb772d8562aa5a13f13c190fe90fd7bd4
 InstanceOf: PreQualDB
 * number.value = "b772d8562aa5a13f13c190fe90fd7bd4"
 * dateOfPrequal = 2018-05-25
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Serinflu"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -10646,7 +10646,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Medicines Evaluation Board (MEB)"
 
 
-Instance: InfluenzaseasonalTrivalentProductb772d8562aa5a13f13c190fe90fd7bd4
+Instance: InfluenzaseasonalTrivaleProductb772d8562aa5a13f13c190fe90fd7bd4
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -10655,11 +10655,11 @@ Usage: #example
   * value = "Serinflu"
 * manufacturer = Reference(Manufacturerd2113c7f14dd346f92ebf77f96935322) // Abbott Biologicals BV
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQualb772d8562aa5a13f13c190fe90fd7bd4
+Instance: InfluenzaseasonalTrivalePreQualb772d8562aa5a13f13c190fe90fd7bd4
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -10667,7 +10667,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 * validityPeriod.start = 2018-05-25
-* product  = Reference(InfluenzaseasonalTrivalentProductb772d8562aa5a13f13c190fe90fd7bd4) 
+* product  = Reference(InfluenzaseasonalTrivaleProductb772d8562aa5a13f13c190fe90fd7bd4) 
 
 // Source Record Row //: 234
 //  Date of Prequalification: (29/09/2011)
@@ -10730,7 +10730,7 @@ Instance: PreQualDBe62fe3a055634b5be7fab5fb1ed0a06a
 InstanceOf: PreQualDB
 * number.value = "e62fe3a055634b5be7fab5fb1ed0a06a"
 * dateOfPrequal = 2018-10-01
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "ShanIPV™"
 * presentation.coding.code = #Vial
 * numDoses = 5
@@ -10738,7 +10738,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineInactivatedIPVProducte62fe3a055634b5be7fab5fb1ed0a06a
+Instance: PolioVaccineInactivatedIProducte62fe3a055634b5be7fab5fb1ed0a06a
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -10747,11 +10747,11 @@ Usage: #example
   * value = "ShanIPV™"
 * manufacturer = Reference(Manufacturera48efaff80414137ccbaa002140195c6) // Sanofi Healthcare India Private Limited
 * doseQuantity =  5 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQuale62fe3a055634b5be7fab5fb1ed0a06a
+Instance: PolioVaccineInactivatedIPreQuale62fe3a055634b5be7fab5fb1ed0a06a
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -10759,7 +10759,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2018-10-01
-* product  = Reference(PolioVaccineInactivatedIPVProducte62fe3a055634b5be7fab5fb1ed0a06a) 
+* product  = Reference(PolioVaccineInactivatedIProducte62fe3a055634b5be7fab5fb1ed0a06a) 
 
 // Source Record Row //: 236
 //  Date of Prequalification: (22/04/2022)
@@ -10776,7 +10776,7 @@ Instance: PreQualDB09cfaf377450bd8a7720ffc4074251b2
 InstanceOf: PreQualDB
 * number.value = "09cfaf377450bd8a7720ffc4074251b2"
 * dateOfPrequal = 2022-04-22
-* vaccineType = #PolioVaccineInactivatedIPV
+* vaccineType = #PolioVaccineInactivatedI
 * commercialName = "ShanIPV™"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -10784,7 +10784,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Central Drugs Standard Control Organization"
 
 
-Instance: PolioVaccineInactivatedIPVProduct09cfaf377450bd8a7720ffc4074251b2
+Instance: PolioVaccineInactivatedIProduct09cfaf377450bd8a7720ffc4074251b2
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -10793,11 +10793,11 @@ Usage: #example
   * value = "ShanIPV™"
 * manufacturer = Reference(Manufacturera48efaff80414137ccbaa002140195c6) // Sanofi Healthcare India Private Limited
 * doseQuantity =  10 'doses'
-* classification = #PolioVaccineInactivatedIPV
+* classification = #PolioVaccineInactivatedI
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: PolioVaccineInactivatedIPVPreQual09cfaf377450bd8a7720ffc4074251b2
+Instance: PolioVaccineInactivatedIPreQual09cfaf377450bd8a7720ffc4074251b2
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -10805,7 +10805,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2022-04-22
-* product  = Reference(PolioVaccineInactivatedIPVProduct09cfaf377450bd8a7720ffc4074251b2) 
+* product  = Reference(PolioVaccineInactivatedIProduct09cfaf377450bd8a7720ffc4074251b2) 
 
 // Source Record Row //: 237
 //  Date of Prequalification: (14/10/2022)
@@ -10868,7 +10868,7 @@ Instance: PreQualDB44ab81d91df0da99c769de14c18717ce
 InstanceOf: PreQualDB
 * number.value = "44ab81d91df0da99c769de14c18717ce"
 * dateOfPrequal = 2019-12-27
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "SKYCellflu Quadrivalent inj."
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -10876,7 +10876,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalQuadrivalProduct44ab81d91df0da99c769de14c18717ce
+Instance: InfluenzaseasonalQuadrivProduct44ab81d91df0da99c769de14c18717ce
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -10885,11 +10885,11 @@ Usage: #example
   * value = "SKYCellflu Quadrivalent inj."
 * manufacturer = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) // SK Bioscience Co., Ltd.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQual44ab81d91df0da99c769de14c18717ce
+Instance: InfluenzaseasonalQuadrivPreQual44ab81d91df0da99c769de14c18717ce
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -10897,7 +10897,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2019-12-27
-* product  = Reference(InfluenzaseasonalQuadrivalProduct44ab81d91df0da99c769de14c18717ce) 
+* product  = Reference(InfluenzaseasonalQuadrivProduct44ab81d91df0da99c769de14c18717ce) 
 
 // Source Record Row //: 239
 //  Date of Prequalification: (27/12/2019)
@@ -10914,7 +10914,7 @@ Instance: PreQualDBf3381c7abe4477ccbb4b840f72e416db
 InstanceOf: PreQualDB
 * number.value = "f3381c7abe4477ccbb4b840f72e416db"
 * dateOfPrequal = 2019-12-27
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "SKYCellflu Quadrivalent Multi inj."
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -10922,7 +10922,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalQuadrivalProductf3381c7abe4477ccbb4b840f72e416db
+Instance: InfluenzaseasonalQuadrivProductf3381c7abe4477ccbb4b840f72e416db
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -10931,11 +10931,11 @@ Usage: #example
   * value = "SKYCellflu Quadrivalent Multi inj."
 * manufacturer = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) // SK Bioscience Co., Ltd.
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQualf3381c7abe4477ccbb4b840f72e416db
+Instance: InfluenzaseasonalQuadrivPreQualf3381c7abe4477ccbb4b840f72e416db
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -10943,7 +10943,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2019-12-27
-* product  = Reference(InfluenzaseasonalQuadrivalProductf3381c7abe4477ccbb4b840f72e416db) 
+* product  = Reference(InfluenzaseasonalQuadrivProductf3381c7abe4477ccbb4b840f72e416db) 
 
 // Source Record Row //: 240
 //  Date of Prequalification: (15/05/2019)
@@ -10960,7 +10960,7 @@ Instance: PreQualDBf19316839fecd5b707bd519e75a70325
 InstanceOf: PreQualDB
 * number.value = "f19316839fecd5b707bd519e75a70325"
 * dateOfPrequal = 2019-05-15
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "SKYCellflu® inj."
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -10968,7 +10968,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalTrivalentProductf19316839fecd5b707bd519e75a70325
+Instance: InfluenzaseasonalTrivaleProductf19316839fecd5b707bd519e75a70325
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -10977,11 +10977,11 @@ Usage: #example
   * value = "SKYCellflu® inj."
 * manufacturer = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) // SK Bioscience Co., Ltd.
 * doseQuantity =  1 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQualf19316839fecd5b707bd519e75a70325
+Instance: InfluenzaseasonalTrivalePreQualf19316839fecd5b707bd519e75a70325
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -10989,7 +10989,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2019-05-15
-* product  = Reference(InfluenzaseasonalTrivalentProductf19316839fecd5b707bd519e75a70325) 
+* product  = Reference(InfluenzaseasonalTrivaleProductf19316839fecd5b707bd519e75a70325) 
 
 // Source Record Row //: 241
 //  Date of Prequalification: (08/04/2019)
@@ -11006,7 +11006,7 @@ Instance: PreQualDB4f2078f43c644358e8e5026514ac396f
 InstanceOf: PreQualDB
 * number.value = "4f2078f43c644358e8e5026514ac396f"
 * dateOfPrequal = 2019-04-08
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "SKYCellflu® Multi inj."
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -11014,7 +11014,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Ministry of Food and Drug Safety"
 
 
-Instance: InfluenzaseasonalTrivalentProduct4f2078f43c644358e8e5026514ac396f
+Instance: InfluenzaseasonalTrivaleProduct4f2078f43c644358e8e5026514ac396f
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -11023,11 +11023,11 @@ Usage: #example
   * value = "SKYCellflu® Multi inj."
 * manufacturer = Reference(Manufactureraa666a19f78cbee9dd669c80a6d26264) // SK Bioscience Co., Ltd.
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQual4f2078f43c644358e8e5026514ac396f
+Instance: InfluenzaseasonalTrivalePreQual4f2078f43c644358e8e5026514ac396f
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -11035,7 +11035,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2019-04-08
-* product  = Reference(InfluenzaseasonalTrivalentProduct4f2078f43c644358e8e5026514ac396f) 
+* product  = Reference(InfluenzaseasonalTrivaleProduct4f2078f43c644358e8e5026514ac396f) 
 
 // Source Record Row //: 242
 //  Date of Prequalification: (21/02/2024)
@@ -11466,7 +11466,7 @@ Instance: PreQualDB1942024dbb931d5afdc37d89b552645b
 InstanceOf: PreQualDB
 * number.value = "1942024dbb931d5afdc37d89b552645b"
 * dateOfPrequal = 2006-05-09
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Tetadif"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -11474,7 +11474,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Bulgarian Drug Agency"
 
 
-Instance: DiphtheriaTetanusreducedanProduct1942024dbb931d5afdc37d89b552645b
+Instance: DiphtheriaTetanusreducedProduct1942024dbb931d5afdc37d89b552645b
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -11483,11 +11483,11 @@ Usage: #example
   * value = "Tetadif"
 * manufacturer = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) // BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)
 * doseQuantity =  10 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQual1942024dbb931d5afdc37d89b552645b
+Instance: DiphtheriaTetanusreducedPreQual1942024dbb931d5afdc37d89b552645b
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -11495,7 +11495,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 * validityPeriod.start = 2006-05-09
-* product  = Reference(DiphtheriaTetanusreducedanProduct1942024dbb931d5afdc37d89b552645b) 
+* product  = Reference(DiphtheriaTetanusreducedProduct1942024dbb931d5afdc37d89b552645b) 
 
 // Source Record Row //: 252
 //  Date of Prequalification: (09/05/2006)
@@ -11512,7 +11512,7 @@ Instance: PreQualDB6126bbb0791131c7ad563b276e0e66b2
 InstanceOf: PreQualDB
 * number.value = "6126bbb0791131c7ad563b276e0e66b2"
 * dateOfPrequal = 2006-05-09
-* vaccineType = #DiphtheriaTetanusreducedantigencontent
+* vaccineType = #DiphtheriaTetanusreduced
 * commercialName = "Tetadif"
 * presentation.coding.code = #Vial
 * numDoses = 20
@@ -11520,7 +11520,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Bulgarian Drug Agency"
 
 
-Instance: DiphtheriaTetanusreducedanProduct6126bbb0791131c7ad563b276e0e66b2
+Instance: DiphtheriaTetanusreducedProduct6126bbb0791131c7ad563b276e0e66b2
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -11529,11 +11529,11 @@ Usage: #example
   * value = "Tetadif"
 * manufacturer = Reference(Manufacturer2585f5811b96894d7db293b0d615bb70) // BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)
 * doseQuantity =  20 'doses'
-* classification = #DiphtheriaTetanusreducedantigencontent
+* classification = #DiphtheriaTetanusreduced
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: DiphtheriaTetanusreducedanPreQual6126bbb0791131c7ad563b276e0e66b2
+Instance: DiphtheriaTetanusreducedPreQual6126bbb0791131c7ad563b276e0e66b2
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -11541,7 +11541,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder16459c07439e6aaed1f2e9703b7b8f74) // Bulgarian Drug Agency
 * validityPeriod.start = 2006-05-09
-* product  = Reference(DiphtheriaTetanusreducedanProduct6126bbb0791131c7ad563b276e0e66b2) 
+* product  = Reference(DiphtheriaTetanusreducedProduct6126bbb0791131c7ad563b276e0e66b2) 
 
 // Source Record Row //: 253
 //  Date of Prequalification: (04/04/1995)
@@ -12202,7 +12202,7 @@ Instance: PreQualDBfc90a87e7b7b2bc9e61c0e81f26e0499
 InstanceOf: PreQualDB
 * number.value = "fc90a87e7b7b2bc9e61c0e81f26e0499"
 * dateOfPrequal = 2011-06-30
-* vaccineType = #InfluenzaseasonalTrivalent
+* vaccineType = #InfluenzaseasonalTrivale
 * commercialName = "Vaxigrip"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -12210,7 +12210,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
 
 
-Instance: InfluenzaseasonalTrivalentProductfc90a87e7b7b2bc9e61c0e81f26e0499
+Instance: InfluenzaseasonalTrivaleProductfc90a87e7b7b2bc9e61c0e81f26e0499
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -12219,11 +12219,11 @@ Usage: #example
   * value = "Vaxigrip"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalTrivalent
+* classification = #InfluenzaseasonalTrivale
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalTrivalentPreQualfc90a87e7b7b2bc9e61c0e81f26e0499
+Instance: InfluenzaseasonalTrivalePreQualfc90a87e7b7b2bc9e61c0e81f26e0499
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -12231,7 +12231,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 2011-06-30
-* product  = Reference(InfluenzaseasonalTrivalentProductfc90a87e7b7b2bc9e61c0e81f26e0499) 
+* product  = Reference(InfluenzaseasonalTrivaleProductfc90a87e7b7b2bc9e61c0e81f26e0499) 
 
 // Source Record Row //: 268
 //  Date of Prequalification: (15/10/2020)
@@ -12248,7 +12248,7 @@ Instance: PreQualDB308795d47110f2d3404894a50fcfd086
 InstanceOf: PreQualDB
 * number.value = "308795d47110f2d3404894a50fcfd086"
 * dateOfPrequal = 2020-10-15
-* vaccineType = #InfluenzaseasonalQuadrivalent
+* vaccineType = #InfluenzaseasonalQuadriv
 * commercialName = "VaxigripTetra"
 * presentation.coding.code = #Vial
 * numDoses = 10
@@ -12256,7 +12256,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé"
 
 
-Instance: InfluenzaseasonalQuadrivalProduct308795d47110f2d3404894a50fcfd086
+Instance: InfluenzaseasonalQuadrivProduct308795d47110f2d3404894a50fcfd086
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -12265,11 +12265,11 @@ Usage: #example
   * value = "VaxigripTetra"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  10 'doses'
-* classification = #InfluenzaseasonalQuadrivalent
+* classification = #InfluenzaseasonalQuadriv
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: InfluenzaseasonalQuadrivalPreQual308795d47110f2d3404894a50fcfd086
+Instance: InfluenzaseasonalQuadrivPreQual308795d47110f2d3404894a50fcfd086
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -12277,7 +12277,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 2020-10-15
-* product  = Reference(InfluenzaseasonalQuadrivalProduct308795d47110f2d3404894a50fcfd086) 
+* product  = Reference(InfluenzaseasonalQuadrivProduct308795d47110f2d3404894a50fcfd086) 
 
 // Source Record Row //: 269
 //  Date of Prequalification: (06/02/2019)
@@ -12386,7 +12386,7 @@ Instance: PreQualDB78425b1ecfc4c878d41013a9577cb8c5
 InstanceOf: PreQualDB
 * number.value = "78425b1ecfc4c878d41013a9577cb8c5"
 * dateOfPrequal = 2024-08-02
-* vaccineType = #HumanPapillomavirusBivalent
+* vaccineType = #HumanPapillomavirusBival
 * commercialName = "Walrinvax®"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -12394,7 +12394,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "National Medical Products Administration"
 
 
-Instance: HumanPapillomavirusBivalenProduct78425b1ecfc4c878d41013a9577cb8c5
+Instance: HumanPapillomavirusBivalProduct78425b1ecfc4c878d41013a9577cb8c5
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -12403,11 +12403,11 @@ Usage: #example
   * value = "Walrinvax®"
 * manufacturer = Reference(Manufacturera0a9fdcc73416a522cb3985e47a4cc05) // Yuxi Zerun Biotechnology Co., Ltd
 * doseQuantity =  1 'doses'
-* classification = #HumanPapillomavirusBivalent
+* classification = #HumanPapillomavirusBival
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: HumanPapillomavirusBivalenPreQual78425b1ecfc4c878d41013a9577cb8c5
+Instance: HumanPapillomavirusBivalPreQual78425b1ecfc4c878d41013a9577cb8c5
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -12415,7 +12415,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2024-08-02
-* product  = Reference(HumanPapillomavirusBivalenProduct78425b1ecfc4c878d41013a9577cb8c5) 
+* product  = Reference(HumanPapillomavirusBivalProduct78425b1ecfc4c878d41013a9577cb8c5) 
 
 // Source Record Row //: 272
 //  Date of Prequalification: (17/10/2001)
@@ -12570,7 +12570,7 @@ Instance: PreQualDBf39fc141db4912f2b5fb9c96843686db
 InstanceOf: PreQualDB
 * number.value = "f39fc141db4912f2b5fb9c96843686db"
 * dateOfPrequal = 2021-04-27
-* vaccineType = #EbolavaccineAdZEBOVGPrecombinant
+* vaccineType = #EbolavaccineAd26ZEBOVGPr
 * commercialName = "Zabdeno"
 * presentation.coding.code = #Vial
 * numDoses = 1
@@ -12578,7 +12578,7 @@ InstanceOf: PreQualDB
 * responsibleNRA.text = "European Medicines Agency"
 
 
-Instance: EbolavaccineAdZEBOVGPrecomProductf39fc141db4912f2b5fb9c96843686db
+Instance: EbolavaccineAd26ZEBOVGPrProductf39fc141db4912f2b5fb9c96843686db
 InstanceOf: Product
 Usage: #example
 * status = #active
@@ -12587,11 +12587,11 @@ Usage: #example
   * value = "Zabdeno"
 * manufacturer = Reference(Manufacturer424af495e78f8d5efdacca2db1db8f9b) // Janssen Cilag International N.V.
 * doseQuantity =  1 'doses'
-* classification = #EbolavaccineAdZEBOVGPrecombinant
+* classification = #EbolavaccineAd26ZEBOVGPr
 * unitOfUse.coding.code = #doses
 * dosageForm.coding.code = #Vial
 
-Instance: EbolavaccineAdZEBOVGPrecomPreQualf39fc141db4912f2b5fb9c96843686db
+Instance: EbolavaccineAd26ZEBOVGPrPreQualf39fc141db4912f2b5fb9c96843686db
 InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
@@ -12599,7 +12599,7 @@ Usage: #example
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2021-04-27
-* product  = Reference(EbolavaccineAdZEBOVGPrecomProductf39fc141db4912f2b5fb9c96843686db) 
+* product  = Reference(EbolavaccineAd26ZEBOVGPrProductf39fc141db4912f2b5fb9c96843686db) 
 
 // Source Record Row //: 276
 //  Date of Prequalification: (21/10/2024)

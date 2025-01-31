@@ -64,7 +64,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
     sort | \
     uniq | \
     awk  '{
-    CMD="echo \""$0"\" | sed '\''s/[^[:alpha:]]//g'\''"
+    CMD="echo \""$0"\" | sed '\''s/[^[:alnum:]]//g'\''"
     CMD|getline CODE
     close(CMD)
     print "* #"CODE" \""$0"\""
@@ -138,13 +138,13 @@ NR > 1{
 
   VAX=gensub(/"/, "", "g" , $2)
 
-  CMD="echo \""VAX"\" | sed '\''s/[^[:alpha:]]//g'\''"
+  CMD="echo \""VAX"\" | sed '\''s/[^[:alnum:]]//g'\''"
   CMD|getline VAXTYPE
   close(CMD)
-  SHORTVAXTYPE=substr(VAXTYPE,1,26)
+  SHORTVAXTYPE=substr(VAXTYPE,1,24)
 
   PRESENTATION=gensub(/"/, "", "g" , $4)
-  CMD="echo \""PRESENTATION"\" | sed '\''s/[^[:alpha:]]//g'\''"
+  CMD="echo \""PRESENTATION"\" | sed '\''s/[^[:alnum:]]//g'\''"
   CMD|getline PRESENTATIONCODE
   close(CMD)
 
@@ -188,7 +188,7 @@ NR > 1{
   print "InstanceOf: PreQualDB"
   print "* number.value = \""MD5"\""
   print "* dateOfPrequal = "VDATE
-  print "* vaccineType = #"VAXTYPE 
+  print "* vaccineType = #"SHORTVAXTYPE 
   print "* commercialName = \""COMMERCIALNAME"\""
   print "* presentation.coding.code = #"PRESENTATIONCODE
   if ( $5 ) {
@@ -209,7 +209,7 @@ NR > 1{
   if ( $5 ) {
     print "* doseQuantity =  " $5  " '\''doses'\''"
   }   
-  print "* classification = #"VAXTYPE 
+  print "* classification = #"SHORTVAXTYPE 
   print "* unitOfUse.coding.code = #doses"
   print "* dosageForm.coding.code = #"PRESENTATIONCODE
   print ""
