@@ -11,6 +11,77 @@ set -e
 
 
 
+#generate presentations
+
+
+
+echo "Alias: \$presentation = http://smart.who.int/icvp/CodeSystem/PreQualPresentation
+CodeSystem: PreQualPresentation
+Title : \"WHO PreQualificaiton Vaccine Presentations\"
+Description: \"WHO PreQualificaiton Vaccine Presentations\"
+
+" >  input/fsh/codesystems/prequal_presentation.fsh
+
+awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
+
+  NR>1  {
+    print gensub(/"/, "", "g" , $4)
+  }' input/data/prequalified_vaccines.csv | \
+    sort | \
+    uniq | \
+    awk  '{
+    CMD="echo \""$0"\" | sed '\''s/[^[:alpha:]]//g'\''"
+    CMD|getline CODE
+    close(CMD)
+    print "* #"CODE" \""$0"\""
+
+}' >>  input/fsh/codesystems/prequal_presentation.fsh
+
+
+echo "Alias: \$preQualPresentation = http://smart.who.int/icvp/CodeSystem/PreQualPresentation
+ValueSet: PreQualPresentation
+Title : \"WHO PreQualificaiton Presentation \"
+Description: \"WHO PreQualificaiton Presentation\"
+
+
+* include codes from system \$preQualPresentation
+
+" >  input/fsh/valuesets/prequal_presentation.fsh
+
+#generate vaccine type
+echo "Alias: \$vaccinetype = http://smart.who.int/icvp/CodeSystem/PreQualVaccineType
+CodeSystem: PreQualVaccineType
+Title : \"WHO PreQualificaiton Vaccine VaccineTypes\"
+Description: \"WHO PreQualificaiton Vaccine VaccineTypes\"
+
+" >  input/fsh/codesystems/preQualVaccineTypes.fsh
+
+awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
+
+  NR>1  {
+    print gensub(/"/, "", "g" , $4)
+  }' input/data/prequalified_vaccines.csv | \
+    sort | \
+    uniq | \
+    awk  '{
+    CMD="echo \""$0"\" | sed '\''s/[^[:alpha:]]//g'\''"
+    CMD|getline CODE
+    close(CMD)
+    print "* #"CODE" \""$0"\""
+
+}' >>  input/fsh/codesystems/preQualVaccineTypes.fsh
+
+
+echo "Alias: \$preQualVaccineType = http://smart.who.int/icvp/CodeSystem/PreQualVaccineType
+ValueSet: PreQualVaccineType
+Title : \"WHO PreQualificaiton VaccineType \"
+Description: \"WHO PreQualificaiton VaccineType\"
+
+
+* include codes from system \$preQualVaccineType
+
+" >  input/fsh/valuesets/PreQualVacccineTypes.fsh
+
 #generate manufacturers
 
 echo "Alias: \$orgType = http://terminology.hl7.org/CodeSystem/organization-type" >  input/fsh/examples/prequal_database_manufacturers.fsh
@@ -40,7 +111,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
 
 #generate prequal holder 
 echo "Alias: \$orgType = http://terminology.hl7.org/CodeSystem/organization-type" >  input/fsh/examples/prequal_database_holders.fsh
-awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>7  {
+awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>1  {
     print gensub(/"/, "", "g" , $7)
 }' input/data/prequalified_vaccines.csv | \
     sort | \
@@ -61,29 +132,21 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>7  {
 }' >>  input/fsh/examples/prequal_database_holders.fsh
 
 # generate TradeProducts and TradeProductAuthorizations
-awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
+awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
+NR > 1{
 
 
-  VAXTYPES["Yellow Fever"] = "YellowFever"
-  VAXTYPES["Polio Vaccine - Oral (OPV) Monovalent Type 1"] = "PolioOralMonovalentT1"
-  VAXTYPES["Polio Vaccine - Oral (OPV) Monovalent Type 2"] = "PolioOralMonovalentT2"
-  VAXTYPES["Polio Vaccine - Oral (OPV) Monovalent Type 3"] = "PolioOralMonovalentT3"
-  VAXTYPES["Polio Vaccine - Inactivated (IPV)"] = "PolioInactived"
-  VAXTYPES["Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"] = "PolioOralBivalentT1T3"
-  VAXTYPES["Polio Vaccine - Inactivated Sabin (sIPV)"] = "PolioInactivatedSabin"
-  VAXTYPES["Polio Vaccine - Novel Oral (nOPV) Type 2"] = "PolioNovelOralT2"
-  VAXTYPES["Polio Vaccine - Oral (OPV) Trivalent"] = "PolioOralTrivalent"
-  VAXTYPES["Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"] = "DTPHepHaemPolio"
-  VAXTYPES["Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"] = "DTPacellularHepHaemPolio"
+  VAX=gensub(/"/, "", "g" , $2)
 
+  CMD="echo \""VAX"\" | sed '\''s/[^[:alpha:]]//g'\''"
+  CMD|getline VAXTYPE
+  close(CMD)
 
-  VAX=gensub(/"/, "", "g" , $2);
+  PRESENTATION=gensub(/"/, "", "g" , $4)
+  CMD="echo \""PRESENTATION"\" | sed '\''s/[^[:alpha:]]//g'\''"
+  CMD|getline PRESENTATIONCODE
+  close(CMD)
 
-  if (! (VAX in VAXTYPES))  {
-    print "// Skipping Row " NR " (" VAX ")"
-    next
-  }
-  VAXTYPE = VAXTYPES[VAX]
 
   # change dd/mm/yyyy 2/3/2015 to yyyy/mm/dd 2015/3/2
   VDATE = gensub(/^([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/,"\\3-\\2-\\1","g",$1)
@@ -104,6 +167,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   close(CMD)
 
   COUNTRY=gensub(/"/, "", "g" , $7)
+  COMMERCIALNAME=gensub(/"/, "", "g" , $3)
 
 
 
@@ -111,24 +175,42 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   print "// Source Record Row //: " NR
   print "//  Date of Prequalification: ("$1")"
   print "//  Vaccine Type: ("VAX")"
-  print "//  Commercial Name: ("$3")"
-  print "//  Presentation: ("$4")"
+  print "//  Commercial Name: ("COMMERCIALNAME")"
+  print "//  Presentation: ("PRESENTATION")"
   print "//  No. of doses: ("$5")"
   print "//  Manufacturer: ("MANUFACTURER")"
   print "//  Responsible NRA: ("HOLDER")"
   print "//  md5(ROW): " MD5
   print "//"
+  print ""
+  print "Instance: PreQualDB"MD5
+  print "InstanceOf: PreQualDB"
+  print "* number.value = \""MD5"\""
+  print "* dateOfPrequal = "VDATE
+  print "* vaccineType = #"VAXTYPE 
+  print "* commercialName = \""COMMERCIALNAME"\""
+  print "* presentation.coding.code = #"PRESENTATIONCODE
+  if ( $5 ) {
+    print "* numDoses = "$5
+  }   
+  print "* manufacturer.text = \""MANUFACTURER"\""
+  print "* responsibleNRA.text = \""HOLDER"\""
+  print ""    
+  print ""    
   print "Instance: "VAXTYPE"Product"MD5
   print "InstanceOf: Product"
   print "Usage: #example"
   print "* status = #active"
   print "* name"
   print "  * nameType = #official"
-  print "  * value = \""   VAX  "\""
+  print "  * value = \""   COMMERCIALNAME  "\""
   print "* manufacturer = Reference(Manufacturer"MD5MANUFACTURER") // "MANUFACTURER
-  print "* doseQuantity =  " $5  " '\''doses'\''"
+  if ( $5 ) {
+    print "* doseQuantity =  " $5  " '\''doses'\''"
+  }   
   print "* classification = #"VAXTYPE 
   print "* unitOfUse.coding.code = #doses"
+  print "* dosageForm.coding.code = #"PRESENTATIONCODE
   print ""
   print "Instance: "VAXTYPE"PreQual" MD5
   print "InstanceOf: ProductAuthorization"

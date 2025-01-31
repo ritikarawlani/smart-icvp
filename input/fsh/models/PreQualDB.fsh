@@ -21,7 +21,7 @@ Columns of the CSV are as follows
 * vaccineType 1..1 CodeableConcept "Vaccine Type"
 * commercialName 1..1 string "Commercial Name"
 * presentation 1..1 CodeableConcept "Presentation"
-* numDoses 1..1 decimal "Number of doses"
+* numDoses 0..1 decimal "Number of doses"
 * manufacturer 1..1 CodeableConcept "Manufacturer"
 * responsibleNRA 1..1 CodeableConcept "Responsible NRA"
 
