@@ -29,25 +29,26 @@
 //  md5(ROW): 70dd357b6e2a76ef58c303440ca6b122
 //
 Instance: PolioOralTrivalentProduct70dd357b6e2a76ef58c303440ca6b122
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Trivalent"
+  * value = "Polio Vaccine - Oral (OPV) Trivalent"
 * manufacturer = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) // Bharat Biotech International Limited
 * doseQuantity =  10 'doses'
 * classification = #PolioOralTrivalent
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralTrivalentPreQual70dd357b6e2a76ef58c303440ca6b122
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2015-03-20
-* tradeProduct  = Reference(PolioOralTrivalentProduct70dd357b6e2a76ef58c303440ca6b122) 
+* product  = Reference(PolioOralTrivalentProduct70dd357b6e2a76ef58c303440ca6b122) 
 
 // Source Record Row //: 21
 //  Date of Prequalification: (20/03/2015)
@@ -60,25 +61,26 @@ Usage: #example
 //  md5(ROW): d7254358b1748a5d3cddd9b75dd07d57
 //
 Instance: PolioOralTrivalentProductd7254358b1748a5d3cddd9b75dd07d57
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Trivalent"
+  * value = "Polio Vaccine - Oral (OPV) Trivalent"
 * manufacturer = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) // Bharat Biotech International Limited
 * doseQuantity =  20 'doses'
 * classification = #PolioOralTrivalent
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralTrivalentPreQuald7254358b1748a5d3cddd9b75dd07d57
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2015-03-20
-* tradeProduct  = Reference(PolioOralTrivalentProductd7254358b1748a5d3cddd9b75dd07d57) 
+* product  = Reference(PolioOralTrivalentProductd7254358b1748a5d3cddd9b75dd07d57) 
 
 // Source Record Row //: 22
 //  Date of Prequalification: (25/08/2017)
@@ -91,25 +93,26 @@ Usage: #example
 //  md5(ROW): cf5662c281218ca179357df3e9e414ac
 //
 Instance: PolioOralBivalentT1T3Productcf5662c281218ca179357df3e9e414ac
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) // Bharat Biotech International Limited
 * doseQuantity =  10 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQualcf5662c281218ca179357df3e9e414ac
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2017-08-25
-* tradeProduct  = Reference(PolioOralBivalentT1T3Productcf5662c281218ca179357df3e9e414ac) 
+* product  = Reference(PolioOralBivalentT1T3Productcf5662c281218ca179357df3e9e414ac) 
 
 // Source Record Row //: 23
 //  Date of Prequalification: (20/03/2015)
@@ -122,25 +125,26 @@ Usage: #example
 //  md5(ROW): 42d1155e2d6ee0c1b54aca384a2c5e7e
 //
 Instance: PolioOralBivalentT1T3Product42d1155e2d6ee0c1b54aca384a2c5e7e
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturer3de533d1ec8864ae7870eec52fa36f5f) // Bharat Biotech International Limited
 * doseQuantity =  20 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQual42d1155e2d6ee0c1b54aca384a2c5e7e
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2015-03-20
-* tradeProduct  = Reference(PolioOralBivalentT1T3Product42d1155e2d6ee0c1b54aca384a2c5e7e) 
+* product  = Reference(PolioOralBivalentT1T3Product42d1155e2d6ee0c1b54aca384a2c5e7e) 
 
 // Source Record Row //: 24
 //  Date of Prequalification: (16/11/2021)
@@ -153,25 +157,26 @@ Usage: #example
 //  md5(ROW): 23c7b98c9946add033b5e9cb81308cf0
 //
 Instance: PolioOralBivalentT1T3Product23c7b98c9946add033b5e9cb81308cf0
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) // Panacea Biotec Ltd.
 * doseQuantity =  10 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQual23c7b98c9946add033b5e9cb81308cf0
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2021-11-16
-* tradeProduct  = Reference(PolioOralBivalentT1T3Product23c7b98c9946add033b5e9cb81308cf0) 
+* product  = Reference(PolioOralBivalentT1T3Product23c7b98c9946add033b5e9cb81308cf0) 
 
 // Source Record Row //: 25
 //  Date of Prequalification: (07/12/2018)
@@ -184,25 +189,26 @@ Usage: #example
 //  md5(ROW): ede6bd9749ec7d4dcc601439edafca9b
 //
 Instance: PolioOralBivalentT1T3Productede6bd9749ec7d4dcc601439edafca9b
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturerc2bdd66b313f2e6cd406a1abc55b7662) // Panacea Biotec Ltd.
 * doseQuantity =  20 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQualede6bd9749ec7d4dcc601439edafca9b
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2018-12-07
-* tradeProduct  = Reference(PolioOralBivalentT1T3Productede6bd9749ec7d4dcc601439edafca9b) 
+* product  = Reference(PolioOralBivalentT1T3Productede6bd9749ec7d4dcc601439edafca9b) 
 
 // Source Record Row //: 26
 //  Date of Prequalification: (05/11/2015)
@@ -215,25 +221,26 @@ Usage: #example
 //  md5(ROW): f93751fae6a7f3178d96589e6382e3ed
 //
 Instance: PolioOralBivalentT1T3Productf93751fae6a7f3178d96589e6382e3ed
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  10 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQualf93751fae6a7f3178d96589e6382e3ed
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2015-11-05
-* tradeProduct  = Reference(PolioOralBivalentT1T3Productf93751fae6a7f3178d96589e6382e3ed) 
+* product  = Reference(PolioOralBivalentT1T3Productf93751fae6a7f3178d96589e6382e3ed) 
 
 // Source Record Row //: 27
 //  Date of Prequalification: (26/05/2010)
@@ -246,25 +253,26 @@ Usage: #example
 //  md5(ROW): a72a5ac164a25ab5d52a2a1c20164eb2
 //
 Instance: PolioOralBivalentT1T3Producta72a5ac164a25ab5d52a2a1c20164eb2
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  20 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQuala72a5ac164a25ab5d52a2a1c20164eb2
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2010-05-26
-* tradeProduct  = Reference(PolioOralBivalentT1T3Producta72a5ac164a25ab5d52a2a1c20164eb2) 
+* product  = Reference(PolioOralBivalentT1T3Producta72a5ac164a25ab5d52a2a1c20164eb2) 
 
 // Source Record Row //: 28
 //  Date of Prequalification: (19/03/2010)
@@ -277,25 +285,26 @@ Usage: #example
 //  md5(ROW): 3521e0a2725fab5dba5f6dd12c43baa9
 //
 Instance: PolioOralBivalentT1T3Product3521e0a2725fab5dba5f6dd12c43baa9
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) // Haffkine Bio Pharmaceutical Corporation Ltd
 * doseQuantity =  20 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQual3521e0a2725fab5dba5f6dd12c43baa9
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2010-03-19
-* tradeProduct  = Reference(PolioOralBivalentT1T3Product3521e0a2725fab5dba5f6dd12c43baa9) 
+* product  = Reference(PolioOralBivalentT1T3Product3521e0a2725fab5dba5f6dd12c43baa9) 
 // Skipping Row 29 (Diphtheria-Tetanus-Pertussis (acellular))
 // Skipping Row 30 (Human Papillomavirus (Bivalent))
 // Skipping Row 31 (Influenza, Pandemic (H1N1))
@@ -344,25 +353,26 @@ Usage: #example
 //  md5(ROW): 4973b233658a4cbd408c0de40f17b98e
 //
 Instance: PolioInactivatedSabinProduct4973b233658a4cbd408c0de40f17b98e
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated Sabin (sIPV)"
+  * value = "Polio Vaccine - Inactivated Sabin (sIPV)"
 * manufacturer = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) // LG Chem Ltd
 * doseQuantity =  1 'doses'
 * classification = #PolioInactivatedSabin
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivatedSabinPreQual4973b233658a4cbd408c0de40f17b98e
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2021-06-01
-* tradeProduct  = Reference(PolioInactivatedSabinProduct4973b233658a4cbd408c0de40f17b98e) 
+* product  = Reference(PolioInactivatedSabinProduct4973b233658a4cbd408c0de40f17b98e) 
 
 // Source Record Row //: 66
 //  Date of Prequalification: (21/12/2020)
@@ -375,25 +385,26 @@ Usage: #example
 //  md5(ROW): 98053b33525df31d7d71d278c5b0f85b
 //
 Instance: PolioInactivatedSabinProduct98053b33525df31d7d71d278c5b0f85b
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated Sabin (sIPV)"
+  * value = "Polio Vaccine - Inactivated Sabin (sIPV)"
 * manufacturer = Reference(Manufacturer29572539ce532a0953cc4d2accb7c34a) // LG Chem Ltd
 * doseQuantity =  5 'doses'
 * classification = #PolioInactivatedSabin
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivatedSabinPreQual98053b33525df31d7d71d278c5b0f85b
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderae5713a228923e62356fb12e2b9f901d) // Ministry of Food and Drug Safety
 * validityPeriod.start = 2020-12-21
-* tradeProduct  = Reference(PolioInactivatedSabinProduct98053b33525df31d7d71d278c5b0f85b) 
+* product  = Reference(PolioInactivatedSabinProduct98053b33525df31d7d71d278c5b0f85b) 
 // Skipping Row 67 (Hepatitis B (Paediatric))
 // Skipping Row 68 (Hepatitis B)
 // Skipping Row 69 (Hepatitis B)
@@ -435,25 +446,26 @@ Usage: #example
 //  md5(ROW): 485e4da6b08de97dd47deb76977c0096
 //
 Instance: DTPHepHaemPolioProduct485e4da6b08de97dd47deb76977c0096
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+  * value = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
 * classification = #DTPHepHaemPolio
 * unitOfUse.coding.code = #doses
 
 Instance: DTPHepHaemPolioPreQual485e4da6b08de97dd47deb76977c0096
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2024-03-21
-* tradeProduct  = Reference(DTPHepHaemPolioProduct485e4da6b08de97dd47deb76977c0096) 
+* product  = Reference(DTPHepHaemPolioProduct485e4da6b08de97dd47deb76977c0096) 
 
 // Source Record Row //: 97
 //  Date of Prequalification: (21/03/2024)
@@ -466,25 +478,26 @@ Usage: #example
 //  md5(ROW): 8649cf4eaa2f780ea94bd7bb4ad1ee14
 //
 Instance: DTPHepHaemPolioProduct8649cf4eaa2f780ea94bd7bb4ad1ee14
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+  * value = "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
 * classification = #DTPHepHaemPolio
 * unitOfUse.coding.code = #doses
 
 Instance: DTPHepHaemPolioPreQual8649cf4eaa2f780ea94bd7bb4ad1ee14
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2024-03-21
-* tradeProduct  = Reference(DTPHepHaemPolioProduct8649cf4eaa2f780ea94bd7bb4ad1ee14) 
+* product  = Reference(DTPHepHaemPolioProduct8649cf4eaa2f780ea94bd7bb4ad1ee14) 
 
 // Source Record Row //: 98
 //  Date of Prequalification: (19/12/2014)
@@ -497,25 +510,26 @@ Usage: #example
 //  md5(ROW): d33e45f59fce778b20ca845bfc9c4069
 //
 Instance: DTPacellularHepHaemPolioProductd33e45f59fce778b20ca845bfc9c4069
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+  * value = "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  1 'doses'
 * classification = #DTPacellularHepHaemPolio
 * unitOfUse.coding.code = #doses
 
 Instance: DTPacellularHepHaemPolioPreQuald33e45f59fce778b20ca845bfc9c4069
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder2bddc24efc1cb4981f2f472fe835cc41) // European Medicines Agency
 * validityPeriod.start = 2014-12-19
-* tradeProduct  = Reference(DTPacellularHepHaemPolioProductd33e45f59fce778b20ca845bfc9c4069) 
+* product  = Reference(DTPacellularHepHaemPolioProductd33e45f59fce778b20ca845bfc9c4069) 
 // Skipping Row 99 (Influenza, seasonal (Trivalent))
 // Skipping Row 100 (Japanese Encephalitis Vaccine (live, attenuated))
 // Skipping Row 101 (Diphtheria-Tetanus (reduced antigen content))
@@ -531,25 +545,26 @@ Usage: #example
 //  md5(ROW): d326dc377e5bfa346bdef779f69f25c6
 //
 Instance: PolioInactivedProductd326dc377e5bfa346bdef779f69f25c6
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  10 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQuald326dc377e5bfa346bdef779f69f25c6
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 2005-12-09
-* tradeProduct  = Reference(PolioInactivedProductd326dc377e5bfa346bdef779f69f25c6) 
+* product  = Reference(PolioInactivedProductd326dc377e5bfa346bdef779f69f25c6) 
 // Skipping Row 103 (Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara))
 // Skipping Row 104 (Influenza, Pandemic (H1N1))
 // Skipping Row 105 (Influenza, Pandemic (H1N1))
@@ -570,25 +585,26 @@ Usage: #example
 //  md5(ROW): 9ed323685ea94d800d5351889a0aa0ed
 //
 Instance: PolioInactivedProduct9ed323685ea94d800d5351889a0aa0ed
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturer2861c762e570422c9a439d2e146ef1e9) // AJ Vaccines A/S
 * doseQuantity =  1 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQual9ed323685ea94d800d5351889a0aa0ed
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder1a0e5ea84210f3aa10f60f001c703d0a) // Danish Medicines Agency
 * validityPeriod.start = 2010-12-23
-* tradeProduct  = Reference(PolioInactivedProduct9ed323685ea94d800d5351889a0aa0ed) 
+* product  = Reference(PolioInactivedProduct9ed323685ea94d800d5351889a0aa0ed) 
 // Skipping Row 112 (Japanese Encephalitis Vaccine (live, attenuated))
 // Skipping Row 113 (Japanese Encephalitis Vaccine (live, attenuated))
 // Skipping Row 114 (Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric))
@@ -631,25 +647,26 @@ Usage: #example
 //  md5(ROW): 6b2b4cf5bbc143adb3de579888125267
 //
 Instance: PolioOralMonovalentT1Product6b2b4cf5bbc143adb3de579888125267
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  20 'doses'
 * classification = #PolioOralMonovalentT1
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT1PreQual6b2b4cf5bbc143adb3de579888125267
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2009-11-03
-* tradeProduct  = Reference(PolioOralMonovalentT1Product6b2b4cf5bbc143adb3de579888125267) 
+* product  = Reference(PolioOralMonovalentT1Product6b2b4cf5bbc143adb3de579888125267) 
 
 // Source Record Row //: 143
 //  Date of Prequalification: (21/06/2019)
@@ -662,25 +679,26 @@ Usage: #example
 //  md5(ROW): 1314f3a622cbae516279dabc6e1abb37
 //
 Instance: PolioOralMonovalentT2Product1314f3a622cbae516279dabc6e1abb37
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  20 'doses'
 * classification = #PolioOralMonovalentT2
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT2PreQual1314f3a622cbae516279dabc6e1abb37
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2019-06-21
-* tradeProduct  = Reference(PolioOralMonovalentT2Product1314f3a622cbae516279dabc6e1abb37) 
+* product  = Reference(PolioOralMonovalentT2Product1314f3a622cbae516279dabc6e1abb37) 
 
 // Source Record Row //: 144
 //  Date of Prequalification: (03/11/2009)
@@ -693,25 +711,26 @@ Usage: #example
 //  md5(ROW): 8f91e1eaf754f5b0a02bf5f70dbdf596
 //
 Instance: PolioOralMonovalentT1Product8f91e1eaf754f5b0a02bf5f70dbdf596
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
 * manufacturer = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) // Haffkine Bio Pharmaceutical Corporation Ltd
 * doseQuantity =  20 'doses'
 * classification = #PolioOralMonovalentT1
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT1PreQual8f91e1eaf754f5b0a02bf5f70dbdf596
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2009-11-03
-* tradeProduct  = Reference(PolioOralMonovalentT1Product8f91e1eaf754f5b0a02bf5f70dbdf596) 
+* product  = Reference(PolioOralMonovalentT1Product8f91e1eaf754f5b0a02bf5f70dbdf596) 
 // Skipping Row 145 (Malaria)
 // Skipping Row 146 (Ebola vaccine (MVA-BN-Filo [recombinant]))
 
@@ -726,25 +745,26 @@ Usage: #example
 //  md5(ROW): 95dd021427d11cc5b1e993a2346ae125
 //
 Instance: YellowFeverProduct95dd021427d11cc5b1e993a2346ae125
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturer9f078889f4903702762d00303f0ff713) // Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of Sciences
 * doseQuantity =  2 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQual95dd021427d11cc5b1e993a2346ae125
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderf8a24c02753aa7a5f43198884d058a6b) // Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation
 * validityPeriod.start = 2009-03-26
-* tradeProduct  = Reference(YellowFeverProduct95dd021427d11cc5b1e993a2346ae125) 
+* product  = Reference(YellowFeverProduct95dd021427d11cc5b1e993a2346ae125) 
 
 // Source Record Row //: 148
 //  Date of Prequalification: (26/03/2009)
@@ -757,25 +777,26 @@ Usage: #example
 //  md5(ROW): ded6dc4f66c4eec9178bd13b7fdba477
 //
 Instance: YellowFeverProductded6dc4f66c4eec9178bd13b7fdba477
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturer9f078889f4903702762d00303f0ff713) // Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of Sciences
 * doseQuantity =  5 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQualded6dc4f66c4eec9178bd13b7fdba477
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderf8a24c02753aa7a5f43198884d058a6b) // Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation
 * validityPeriod.start = 2009-03-26
-* tradeProduct  = Reference(YellowFeverProductded6dc4f66c4eec9178bd13b7fdba477) 
+* product  = Reference(YellowFeverProductded6dc4f66c4eec9178bd13b7fdba477) 
 
 // Source Record Row //: 149
 //  Date of Prequalification: (26/03/2009)
@@ -788,25 +809,26 @@ Usage: #example
 //  md5(ROW): 42c7d74ee190836754548484817630fb
 //
 Instance: YellowFeverProduct42c7d74ee190836754548484817630fb
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturer9f078889f4903702762d00303f0ff713) // Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of Sciences
 * doseQuantity =  10 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQual42c7d74ee190836754548484817630fb
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderf8a24c02753aa7a5f43198884d058a6b) // Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation
 * validityPeriod.start = 2009-03-26
-* tradeProduct  = Reference(YellowFeverProduct42c7d74ee190836754548484817630fb) 
+* product  = Reference(YellowFeverProduct42c7d74ee190836754548484817630fb) 
 // Skipping Row 150 (Influenza, Pandemic (H1N1))
 // Skipping Row 151 (Influenza, Pandemic (H1N1))
 // Skipping Row 152 (Influenza, seasonal (Trivalent))
@@ -838,25 +860,26 @@ Usage: #example
 //  md5(ROW): e65316944cbf44cd53a931bcf1a9b84e
 //
 Instance: PolioOralMonovalentT2Producte65316944cbf44cd53a931bcf1a9b84e
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  20 'doses'
 * classification = #PolioOralMonovalentT2
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT2PreQuale65316944cbf44cd53a931bcf1a9b84e
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 2016-01-14
-* tradeProduct  = Reference(PolioOralMonovalentT2Producte65316944cbf44cd53a931bcf1a9b84e) 
+* product  = Reference(PolioOralMonovalentT2Producte65316944cbf44cd53a931bcf1a9b84e) 
 
 // Source Record Row //: 170
 //  Date of Prequalification: (31/08/2020)
@@ -869,25 +892,26 @@ Usage: #example
 //  md5(ROW): 257be1ac0783a7b3d341afdb8cb40cd7
 //
 Instance: PolioOralTrivalentProduct257be1ac0783a7b3d341afdb8cb40cd7
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Trivalent"
+  * value = "Polio Vaccine - Oral (OPV) Trivalent"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  20 'doses'
 * classification = #PolioOralTrivalent
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralTrivalentPreQual257be1ac0783a7b3d341afdb8cb40cd7
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2020-08-31
-* tradeProduct  = Reference(PolioOralTrivalentProduct257be1ac0783a7b3d341afdb8cb40cd7) 
+* product  = Reference(PolioOralTrivalentProduct257be1ac0783a7b3d341afdb8cb40cd7) 
 // Skipping Row 171 (Influenza, Pandemic (H5N1))
 // Skipping Row 172 (Influenza, Pandemic (H1N1))
 // Skipping Row 173 (Influenza, Pandemic (H1N1))
@@ -905,25 +929,26 @@ Usage: #example
 //  md5(ROW): f7cd3e0473cc796a6c1b2f28a3e9fe49
 //
 Instance: PolioInactivedProductf7cd3e0473cc796a6c1b2f28a3e9fe49
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturer2861c762e570422c9a439d2e146ef1e9) // AJ Vaccines A/S
 * doseQuantity =  5 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQualf7cd3e0473cc796a6c1b2f28a3e9fe49
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder1a0e5ea84210f3aa10f60f001c703d0a) // Danish Medicines Agency
 * validityPeriod.start = 2020-04-21
-* tradeProduct  = Reference(PolioInactivedProductf7cd3e0473cc796a6c1b2f28a3e9fe49) 
+* product  = Reference(PolioInactivedProductf7cd3e0473cc796a6c1b2f28a3e9fe49) 
 // Skipping Row 177 (Pneumococcal (conjugate))
 // Skipping Row 178 (Pneumococcal (conjugate))
 // Skipping Row 179 (Pneumococcal (conjugate))
@@ -939,25 +964,26 @@ Usage: #example
 //  md5(ROW): 4648a4b6d1840eaff023f19fd965e00f
 //
 Instance: PolioOralMonovalentT1Product4648a4b6d1840eaff023f19fd965e00f
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  10 'doses'
 * classification = #PolioOralMonovalentT1
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT1PreQual4648a4b6d1840eaff023f19fd965e00f
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-10-29
-* tradeProduct  = Reference(PolioOralMonovalentT1Product4648a4b6d1840eaff023f19fd965e00f) 
+* product  = Reference(PolioOralMonovalentT1Product4648a4b6d1840eaff023f19fd965e00f) 
 
 // Source Record Row //: 181
 //  Date of Prequalification: (29/10/2009)
@@ -970,25 +996,26 @@ Usage: #example
 //  md5(ROW): 59bf6e6638359d3ffee0d752ecb4cef6
 //
 Instance: PolioOralMonovalentT1Product59bf6e6638359d3ffee0d752ecb4cef6
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 1"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  20 'doses'
 * classification = #PolioOralMonovalentT1
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT1PreQual59bf6e6638359d3ffee0d752ecb4cef6
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-10-29
-* tradeProduct  = Reference(PolioOralMonovalentT1Product59bf6e6638359d3ffee0d752ecb4cef6) 
+* product  = Reference(PolioOralMonovalentT1Product59bf6e6638359d3ffee0d752ecb4cef6) 
 
 // Source Record Row //: 182
 //  Date of Prequalification: (05/10/2010)
@@ -1001,25 +1028,26 @@ Usage: #example
 //  md5(ROW): 842d974d46519183fe1a32dadb7dc0c8
 //
 Instance: PolioOralMonovalentT3Product842d974d46519183fe1a32dadb7dc0c8
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 3"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 3"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  10 'doses'
 * classification = #PolioOralMonovalentT3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT3PreQual842d974d46519183fe1a32dadb7dc0c8
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2010-10-05
-* tradeProduct  = Reference(PolioOralMonovalentT3Product842d974d46519183fe1a32dadb7dc0c8) 
+* product  = Reference(PolioOralMonovalentT3Product842d974d46519183fe1a32dadb7dc0c8) 
 
 // Source Record Row //: 183
 //  Date of Prequalification: (05/10/2010)
@@ -1032,25 +1060,26 @@ Usage: #example
 //  md5(ROW): 67373800372f840cf41ba721b864809b
 //
 Instance: PolioOralMonovalentT3Product67373800372f840cf41ba721b864809b
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 3"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 3"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  20 'doses'
 * classification = #PolioOralMonovalentT3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT3PreQual67373800372f840cf41ba721b864809b
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2010-10-05
-* tradeProduct  = Reference(PolioOralMonovalentT3Product67373800372f840cf41ba721b864809b) 
+* product  = Reference(PolioOralMonovalentT3Product67373800372f840cf41ba721b864809b) 
 
 // Source Record Row //: 184
 //  Date of Prequalification: (11/05/2011)
@@ -1063,25 +1092,26 @@ Usage: #example
 //  md5(ROW): 316bda2890397e5d5c8f6bd6daca17b2
 //
 Instance: PolioOralMonovalentT2Product316bda2890397e5d5c8f6bd6daca17b2
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  10 'doses'
 * classification = #PolioOralMonovalentT2
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT2PreQual316bda2890397e5d5c8f6bd6daca17b2
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2011-05-11
-* tradeProduct  = Reference(PolioOralMonovalentT2Product316bda2890397e5d5c8f6bd6daca17b2) 
+* product  = Reference(PolioOralMonovalentT2Product316bda2890397e5d5c8f6bd6daca17b2) 
 
 // Source Record Row //: 185
 //  Date of Prequalification: (11/05/2011)
@@ -1094,25 +1124,26 @@ Usage: #example
 //  md5(ROW): e17e788736b15bc3134190fc95999323
 //
 Instance: PolioOralMonovalentT2Producte17e788736b15bc3134190fc95999323
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
+  * value = "Polio Vaccine - Oral (OPV) Monovalent Type 2"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  20 'doses'
 * classification = #PolioOralMonovalentT2
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralMonovalentT2PreQuale17e788736b15bc3134190fc95999323
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2011-05-11
-* tradeProduct  = Reference(PolioOralMonovalentT2Producte17e788736b15bc3134190fc95999323) 
+* product  = Reference(PolioOralMonovalentT2Producte17e788736b15bc3134190fc95999323) 
 
 // Source Record Row //: 186
 //  Date of Prequalification: (29/10/2009)
@@ -1125,25 +1156,26 @@ Usage: #example
 //  md5(ROW): c29e53e8046c41eed131d9a1266f0388
 //
 Instance: PolioOralBivalentT1T3Productc29e53e8046c41eed131d9a1266f0388
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  10 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQualc29e53e8046c41eed131d9a1266f0388
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-10-29
-* tradeProduct  = Reference(PolioOralBivalentT1T3Productc29e53e8046c41eed131d9a1266f0388) 
+* product  = Reference(PolioOralBivalentT1T3Productc29e53e8046c41eed131d9a1266f0388) 
 
 // Source Record Row //: 187
 //  Date of Prequalification: (29/10/2009)
@@ -1156,25 +1188,26 @@ Usage: #example
 //  md5(ROW): 32b7151f4bb6680929ab3cc234aa0bfd
 //
 Instance: PolioOralBivalentT1T3Product32b7151f4bb6680929ab3cc234aa0bfd
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturer4aae9edcf98a96e279fa66b5aea8734b) // GlaxoSmithKline Biologicals SA
 * doseQuantity =  20 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQual32b7151f4bb6680929ab3cc234aa0bfd
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder9d0bcbafd44313239342da3bef3ef53f) // Federal Agency for Medicines and Health Products
 * validityPeriod.start = 2009-10-29
-* tradeProduct  = Reference(PolioOralBivalentT1T3Product32b7151f4bb6680929ab3cc234aa0bfd) 
+* product  = Reference(PolioOralBivalentT1T3Product32b7151f4bb6680929ab3cc234aa0bfd) 
 
 // Source Record Row //: 188
 //  Date of Prequalification: (06/12/2010)
@@ -1187,25 +1220,26 @@ Usage: #example
 //  md5(ROW): f7021252eb8b4bf61bbe3bd4b896e77d
 //
 Instance: PolioInactivedProductf7021252eb8b4bf61bbe3bd4b896e77d
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) // Bilthoven Biologicals B.V.
 * doseQuantity =  1 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQualf7021252eb8b4bf61bbe3bd4b896e77d
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 * validityPeriod.start = 2010-12-06
-* tradeProduct  = Reference(PolioInactivedProductf7021252eb8b4bf61bbe3bd4b896e77d) 
+* product  = Reference(PolioInactivedProductf7021252eb8b4bf61bbe3bd4b896e77d) 
 
 // Source Record Row //: 189
 //  Date of Prequalification: (29/07/2024)
@@ -1218,25 +1252,26 @@ Usage: #example
 //  md5(ROW): 54b1cae84db8613eaeefaf06aa55a6e9
 //
 Instance: PolioNovelOralT2Product54b1cae84db8613eaeefaf06aa55a6e9
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Novel Oral (nOPV) Type 2"
+  * value = "Polio Vaccine - Novel Oral (nOPV) Type 2"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  20 'doses'
 * classification = #PolioNovelOralT2
 * unitOfUse.coding.code = #doses
 
 Instance: PolioNovelOralT2PreQual54b1cae84db8613eaeefaf06aa55a6e9
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2024-07-29
-* tradeProduct  = Reference(PolioNovelOralT2Product54b1cae84db8613eaeefaf06aa55a6e9) 
+* product  = Reference(PolioNovelOralT2Product54b1cae84db8613eaeefaf06aa55a6e9) 
 
 // Source Record Row //: 190
 //  Date of Prequalification: (27/12/2023)
@@ -1249,25 +1284,26 @@ Usage: #example
 //  md5(ROW): 47c6363d4eaf1b8a710f73def9bf29f6
 //
 Instance: PolioNovelOralT2Product47c6363d4eaf1b8a710f73def9bf29f6
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Novel Oral (nOPV) Type 2"
+  * value = "Polio Vaccine - Novel Oral (nOPV) Type 2"
 * manufacturer = Reference(Manufacturer6355046c91dfbfdfa71929dc29d73c9d) // PT Bio Farma (Persero)
 * doseQuantity =  50 'doses'
 * classification = #PolioNovelOralT2
 * unitOfUse.coding.code = #doses
 
 Instance: PolioNovelOralT2PreQual47c6363d4eaf1b8a710f73def9bf29f6
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderd657ebe4e6eb95264d5bb7f4375c95b2) // National Agency of Drug and Food Control Indonesia
 * validityPeriod.start = 2023-12-27
-* tradeProduct  = Reference(PolioNovelOralT2Product47c6363d4eaf1b8a710f73def9bf29f6) 
+* product  = Reference(PolioNovelOralT2Product47c6363d4eaf1b8a710f73def9bf29f6) 
 
 // Source Record Row //: 191
 //  Date of Prequalification: (29/07/2024)
@@ -1280,25 +1316,26 @@ Usage: #example
 //  md5(ROW): 76330e8a95782f9f0ea96ed8df410912
 //
 Instance: PolioNovelOralT2Product76330e8a95782f9f0ea96ed8df410912
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Novel Oral (nOPV) Type 2"
+  * value = "Polio Vaccine - Novel Oral (nOPV) Type 2"
 * manufacturer = Reference(Manufacturer890d3908ec053a76141fdda37d251358) // Biological E. Limited
 * doseQuantity =  50 'doses'
 * classification = #PolioNovelOralT2
 * unitOfUse.coding.code = #doses
 
 Instance: PolioNovelOralT2PreQual76330e8a95782f9f0ea96ed8df410912
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2024-07-29
-* tradeProduct  = Reference(PolioNovelOralT2Product76330e8a95782f9f0ea96ed8df410912) 
+* product  = Reference(PolioNovelOralT2Product76330e8a95782f9f0ea96ed8df410912) 
 
 // Source Record Row //: 192
 //  Date of Prequalification: (28/10/2016)
@@ -1311,25 +1348,26 @@ Usage: #example
 //  md5(ROW): 96b2460444287b692b2289a59f9d8ff0
 //
 Instance: PolioInactivedProduct96b2460444287b692b2289a59f9d8ff0
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  1 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQual96b2460444287b692b2289a59f9d8ff0
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2016-10-28
-* tradeProduct  = Reference(PolioInactivedProduct96b2460444287b692b2289a59f9d8ff0) 
+* product  = Reference(PolioInactivedProduct96b2460444287b692b2289a59f9d8ff0) 
 
 // Source Record Row //: 193
 //  Date of Prequalification: (28/10/2016)
@@ -1342,25 +1380,26 @@ Usage: #example
 //  md5(ROW): 748ca7add0fd187501dd3a12c1d2c7ec
 //
 Instance: PolioInactivedProduct748ca7add0fd187501dd3a12c1d2c7ec
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  2 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQual748ca7add0fd187501dd3a12c1d2c7ec
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2016-10-28
-* tradeProduct  = Reference(PolioInactivedProduct748ca7add0fd187501dd3a12c1d2c7ec) 
+* product  = Reference(PolioInactivedProduct748ca7add0fd187501dd3a12c1d2c7ec) 
 
 // Source Record Row //: 194
 //  Date of Prequalification: (28/10/2016)
@@ -1373,25 +1412,26 @@ Usage: #example
 //  md5(ROW): 186e9a5e7f8d849190410641a6352d91
 //
 Instance: PolioInactivedProduct186e9a5e7f8d849190410641a6352d91
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  5 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQual186e9a5e7f8d849190410641a6352d91
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2016-10-28
-* tradeProduct  = Reference(PolioInactivedProduct186e9a5e7f8d849190410641a6352d91) 
+* product  = Reference(PolioInactivedProduct186e9a5e7f8d849190410641a6352d91) 
 
 // Source Record Row //: 195
 //  Date of Prequalification: (11/07/2019)
@@ -1404,25 +1444,26 @@ Usage: #example
 //  md5(ROW): 82aa38d8c40107a51160a14e219d0796
 //
 Instance: PolioInactivedProduct82aa38d8c40107a51160a14e219d0796
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQual82aa38d8c40107a51160a14e219d0796
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2019-07-11
-* tradeProduct  = Reference(PolioInactivedProduct82aa38d8c40107a51160a14e219d0796) 
+* product  = Reference(PolioInactivedProduct82aa38d8c40107a51160a14e219d0796) 
 
 // Source Record Row //: 196
 //  Date of Prequalification: (21/12/2017)
@@ -1435,25 +1476,26 @@ Usage: #example
 //  md5(ROW): 756b50d1047d7e92674342044a986a4e
 //
 Instance: PolioOralBivalentT1T3Product756b50d1047d7e92674342044a986a4e
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturer2d992993bbbada34f402e9f6bcf502f9) // Beijing Institute of Biological Products Co., Ltd.
 * doseQuantity =  20 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQual756b50d1047d7e92674342044a986a4e
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2017-12-21
-* tradeProduct  = Reference(PolioOralBivalentT1T3Product756b50d1047d7e92674342044a986a4e) 
+* product  = Reference(PolioOralBivalentT1T3Product756b50d1047d7e92674342044a986a4e) 
 
 // Source Record Row //: 197
 //  Date of Prequalification: (22/10/2014)
@@ -1466,25 +1508,26 @@ Usage: #example
 //  md5(ROW): ee81d656f40e814fe6127f50b03bcc14
 //
 Instance: PolioOralBivalentT1T3Productee81d656f40e814fe6127f50b03bcc14
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  10 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQualee81d656f40e814fe6127f50b03bcc14
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2014-10-22
-* tradeProduct  = Reference(PolioOralBivalentT1T3Productee81d656f40e814fe6127f50b03bcc14) 
+* product  = Reference(PolioOralBivalentT1T3Productee81d656f40e814fe6127f50b03bcc14) 
 
 // Source Record Row //: 198
 //  Date of Prequalification: (04/02/2013)
@@ -1497,25 +1540,26 @@ Usage: #example
 //  md5(ROW): 9d40322fd2d0521e4fcc74d7aefba759
 //
 Instance: PolioOralBivalentT1T3Product9d40322fd2d0521e4fcc74d7aefba759
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+  * value = "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
 * manufacturer = Reference(Manufacturera3c5a4eb0b7b835971a6b14a663b03f0) // Serum Institute of India Pvt. Ltd.
 * doseQuantity =  20 'doses'
 * classification = #PolioOralBivalentT1T3
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralBivalentT1T3PreQual9d40322fd2d0521e4fcc74d7aefba759
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2013-02-04
-* tradeProduct  = Reference(PolioOralBivalentT1T3Product9d40322fd2d0521e4fcc74d7aefba759) 
+* product  = Reference(PolioOralBivalentT1T3Product9d40322fd2d0521e4fcc74d7aefba759) 
 
 // Source Record Row //: 199
 //  Date of Prequalification: (06/06/2022)
@@ -1528,25 +1572,26 @@ Usage: #example
 //  md5(ROW): 6ba6c7e79492766c1300067676e9b373
 //
 Instance: PolioInactivatedSabinProduct6ba6c7e79492766c1300067676e9b373
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated Sabin (sIPV)"
+  * value = "Polio Vaccine - Inactivated Sabin (sIPV)"
 * manufacturer = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) // Sinovac Biotech Co. Ltd
 * doseQuantity =  1 'doses'
 * classification = #PolioInactivatedSabin
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivatedSabinPreQual6ba6c7e79492766c1300067676e9b373
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2022-06-06
-* tradeProduct  = Reference(PolioInactivatedSabinProduct6ba6c7e79492766c1300067676e9b373) 
+* product  = Reference(PolioInactivatedSabinProduct6ba6c7e79492766c1300067676e9b373) 
 
 // Source Record Row //: 200
 //  Date of Prequalification: (15/02/2022)
@@ -1559,25 +1604,26 @@ Usage: #example
 //  md5(ROW): f270bc4b812c58c3c151b4801d1df3e4
 //
 Instance: PolioInactivatedSabinProductf270bc4b812c58c3c151b4801d1df3e4
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated Sabin (sIPV)"
+  * value = "Polio Vaccine - Inactivated Sabin (sIPV)"
 * manufacturer = Reference(Manufacturer2d992993bbbada34f402e9f6bcf502f9) // Beijing Institute of Biological Products Co., Ltd.
 * doseQuantity =  1 'doses'
 * classification = #PolioInactivatedSabin
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivatedSabinPreQualf270bc4b812c58c3c151b4801d1df3e4
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2022-02-15
-* tradeProduct  = Reference(PolioInactivatedSabinProductf270bc4b812c58c3c151b4801d1df3e4) 
+* product  = Reference(PolioInactivatedSabinProductf270bc4b812c58c3c151b4801d1df3e4) 
 
 // Source Record Row //: 201
 //  Date of Prequalification: (29/08/2024)
@@ -1590,25 +1636,26 @@ Usage: #example
 //  md5(ROW): ee376e242477548f8dc005b49480172e
 //
 Instance: PolioInactivatedSabinProductee376e242477548f8dc005b49480172e
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated Sabin (sIPV)"
+  * value = "Polio Vaccine - Inactivated Sabin (sIPV)"
 * manufacturer = Reference(Manufacturer25034c2714a4acf5214f1059ae33d421) // Sinovac Biotech Co. Ltd
 * doseQuantity =  5 'doses'
 * classification = #PolioInactivatedSabin
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivatedSabinPreQualee376e242477548f8dc005b49480172e
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc424924392c85a776f0b4f039550525e) // National Medical Products Administration
 * validityPeriod.start = 2024-08-29
-* tradeProduct  = Reference(PolioInactivatedSabinProductee376e242477548f8dc005b49480172e) 
+* product  = Reference(PolioInactivatedSabinProductee376e242477548f8dc005b49480172e) 
 
 // Source Record Row //: 202
 //  Date of Prequalification: (28/11/2014)
@@ -1621,25 +1668,26 @@ Usage: #example
 //  md5(ROW): c500d5a6129d6e855e24e22ca1215100
 //
 Instance: PolioInactivedProductc500d5a6129d6e855e24e22ca1215100
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) // Bilthoven Biologicals B.V.
 * doseQuantity =  5 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQualc500d5a6129d6e855e24e22ca1215100
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 * validityPeriod.start = 2014-11-28
-* tradeProduct  = Reference(PolioInactivedProductc500d5a6129d6e855e24e22ca1215100) 
+* product  = Reference(PolioInactivedProductc500d5a6129d6e855e24e22ca1215100) 
 
 // Source Record Row //: 203
 //  Date of Prequalification: (29/02/2024)
@@ -1652,25 +1700,26 @@ Usage: #example
 //  md5(ROW): 9b966db885a1921afe76256a18641d8d
 //
 Instance: PolioInactivedProduct9b966db885a1921afe76256a18641d8d
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturerfefd8c6591ca9269680a9eed305f1768) // Bilthoven Biologicals B.V.
 * doseQuantity =  10 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQual9b966db885a1921afe76256a18641d8d
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder6e8de3a819aacf6c115c4b553367fcfd) // Medicines Evaluation Board (MEB)
 * validityPeriod.start = 2024-02-29
-* tradeProduct  = Reference(PolioInactivedProduct9b966db885a1921afe76256a18641d8d) 
+* product  = Reference(PolioInactivedProduct9b966db885a1921afe76256a18641d8d) 
 
 // Source Record Row //: 204
 //  Date of Prequalification: (02/02/2006)
@@ -1683,25 +1732,26 @@ Usage: #example
 //  md5(ROW): abb65c70eb19b87f6aee9e60a2df9058
 //
 Instance: PolioOralTrivalentProductabb65c70eb19b87f6aee9e60a2df9058
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Oral (OPV) Trivalent"
+  * value = "Polio Vaccine - Oral (OPV) Trivalent"
 * manufacturer = Reference(Manufacturer58b7a037851c2368f282dfc79396bab7) // Haffkine Bio Pharmaceutical Corporation Ltd
 * doseQuantity =  20 'doses'
 * classification = #PolioOralTrivalent
 * unitOfUse.coding.code = #doses
 
 Instance: PolioOralTrivalentPreQualabb65c70eb19b87f6aee9e60a2df9058
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2006-02-02
-* tradeProduct  = Reference(PolioOralTrivalentProductabb65c70eb19b87f6aee9e60a2df9058) 
+* product  = Reference(PolioOralTrivalentProductabb65c70eb19b87f6aee9e60a2df9058) 
 // Skipping Row 205 (Pneumococcal (conjugate))
 // Skipping Row 206 (Pneumococcal (conjugate))
 // Skipping Row 207 (Measles, Mumps and Rubella)
@@ -1744,25 +1794,26 @@ Usage: #example
 //  md5(ROW): e62fe3a055634b5be7fab5fb1ed0a06a
 //
 Instance: PolioInactivedProducte62fe3a055634b5be7fab5fb1ed0a06a
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturera48efaff80414137ccbaa002140195c6) // Sanofi Healthcare India Private Limited
 * doseQuantity =  5 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQuale62fe3a055634b5be7fab5fb1ed0a06a
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2018-10-01
-* tradeProduct  = Reference(PolioInactivedProducte62fe3a055634b5be7fab5fb1ed0a06a) 
+* product  = Reference(PolioInactivedProducte62fe3a055634b5be7fab5fb1ed0a06a) 
 
 // Source Record Row //: 236
 //  Date of Prequalification: (22/04/2022)
@@ -1775,25 +1826,26 @@ Usage: #example
 //  md5(ROW): 09cfaf377450bd8a7720ffc4074251b2
 //
 Instance: PolioInactivedProduct09cfaf377450bd8a7720ffc4074251b2
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Polio Vaccine - Inactivated (IPV)"
+  * value = "Polio Vaccine - Inactivated (IPV)"
 * manufacturer = Reference(Manufacturera48efaff80414137ccbaa002140195c6) // Sanofi Healthcare India Private Limited
 * doseQuantity =  10 'doses'
 * classification = #PolioInactived
 * unitOfUse.coding.code = #doses
 
 Instance: PolioInactivedPreQual09cfaf377450bd8a7720ffc4074251b2
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderc9e66595b19588284601f80b5321babf) // Central Drugs Standard Control Organization
 * validityPeriod.start = 2022-04-22
-* tradeProduct  = Reference(PolioInactivedProduct09cfaf377450bd8a7720ffc4074251b2) 
+* product  = Reference(PolioInactivedProduct09cfaf377450bd8a7720ffc4074251b2) 
 
 // Source Record Row //: 237
 //  Date of Prequalification: (14/10/2022)
@@ -1806,25 +1858,26 @@ Usage: #example
 //  md5(ROW): a72d752a75badd7e33bb96f261eac666
 //
 Instance: YellowFeverProducta72d752a75badd7e33bb96f261eac666
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturer9f078889f4903702762d00303f0ff713) // Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of Sciences
 * doseQuantity =  10 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQuala72d752a75badd7e33bb96f261eac666
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holderf8a24c02753aa7a5f43198884d058a6b) // Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation
 * validityPeriod.start = 2022-10-14
-* tradeProduct  = Reference(YellowFeverProducta72d752a75badd7e33bb96f261eac666) 
+* product  = Reference(YellowFeverProducta72d752a75badd7e33bb96f261eac666) 
 // Skipping Row 238 (Influenza, seasonal (Quadrivalent))
 // Skipping Row 239 (Influenza, seasonal (Quadrivalent))
 // Skipping Row 240 (Influenza, seasonal (Trivalent))
@@ -1843,25 +1896,26 @@ Usage: #example
 //  md5(ROW): 7e6bac61531f2943ec146a5152f26de8
 //
 Instance: YellowFeverProduct7e6bac61531f2943ec146a5152f26de8
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturerfca41003618e5d38b1d6e5d20833ca98) // Institut Pasteur de Dakar
 * doseQuantity =  5 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQual7e6bac61531f2943ec146a5152f26de8
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder3035628061665a8f22ec1b8f2fabf749) // Ministère de la Santé publique
 * validityPeriod.start = 2001-03-20
-* tradeProduct  = Reference(YellowFeverProduct7e6bac61531f2943ec146a5152f26de8) 
+* product  = Reference(YellowFeverProduct7e6bac61531f2943ec146a5152f26de8) 
 
 // Source Record Row //: 245
 //  Date of Prequalification: (20/03/2001)
@@ -1874,25 +1928,26 @@ Usage: #example
 //  md5(ROW): 83b74943e21289d183eb515e4f69d62e
 //
 Instance: YellowFeverProduct83b74943e21289d183eb515e4f69d62e
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturerfca41003618e5d38b1d6e5d20833ca98) // Institut Pasteur de Dakar
 * doseQuantity =  10 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQual83b74943e21289d183eb515e4f69d62e
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder3035628061665a8f22ec1b8f2fabf749) // Ministère de la Santé publique
 * validityPeriod.start = 2001-03-20
-* tradeProduct  = Reference(YellowFeverProduct83b74943e21289d183eb515e4f69d62e) 
+* product  = Reference(YellowFeverProduct83b74943e21289d183eb515e4f69d62e) 
 
 // Source Record Row //: 246
 //  Date of Prequalification: (20/03/2001)
@@ -1905,25 +1960,26 @@ Usage: #example
 //  md5(ROW): 2c594b69b8b6b5d4b77a22d7ef6ae760
 //
 Instance: YellowFeverProduct2c594b69b8b6b5d4b77a22d7ef6ae760
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturerfca41003618e5d38b1d6e5d20833ca98) // Institut Pasteur de Dakar
 * doseQuantity =  20 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQual2c594b69b8b6b5d4b77a22d7ef6ae760
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder3035628061665a8f22ec1b8f2fabf749) // Ministère de la Santé publique
 * validityPeriod.start = 2001-03-20
-* tradeProduct  = Reference(YellowFeverProduct2c594b69b8b6b5d4b77a22d7ef6ae760) 
+* product  = Reference(YellowFeverProduct2c594b69b8b6b5d4b77a22d7ef6ae760) 
 
 // Source Record Row //: 247
 //  Date of Prequalification: (01/01/1987)
@@ -1936,25 +1992,26 @@ Usage: #example
 //  md5(ROW): a640b9f1e3bf870989c9f7498a0ae5a1
 //
 Instance: YellowFeverProducta640b9f1e3bf870989c9f7498a0ae5a1
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturerf18703fb02e156a8ae879e4216f6c561) // Sanofi Pasteur
 * doseQuantity =  10 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQuala640b9f1e3bf870989c9f7498a0ae5a1
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder8eb86d98ba040b2a687a07ab85f659e2) // Agence nationale de sécurité du médicament et des produits de santé
 * validityPeriod.start = 1987-01-01
-* tradeProduct  = Reference(YellowFeverProducta640b9f1e3bf870989c9f7498a0ae5a1) 
+* product  = Reference(YellowFeverProducta640b9f1e3bf870989c9f7498a0ae5a1) 
 // Skipping Row 248 (Pneumococcal (conjugate))
 // Skipping Row 249 (Pneumococcal (conjugate))
 // Skipping Row 250 (Pneumococcal (conjugate))
@@ -1991,25 +2048,26 @@ Usage: #example
 //  md5(ROW): 687886afca59bc5df06e1dd4c0613080
 //
 Instance: YellowFeverProduct687886afca59bc5df06e1dd4c0613080
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturer51a62ec68a89ce14cf95679495b66719) // Bio-Manguinhos/Fiocruz
 * doseQuantity =  5 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQual687886afca59bc5df06e1dd4c0613080
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder4f8fc03badb0c3d6e38e661418a4934c) // Agencia Nacional da Vigilancia Sanitaria
 * validityPeriod.start = 2001-10-17
-* tradeProduct  = Reference(YellowFeverProduct687886afca59bc5df06e1dd4c0613080) 
+* product  = Reference(YellowFeverProduct687886afca59bc5df06e1dd4c0613080) 
 
 // Source Record Row //: 273
 //  Date of Prequalification: (10/12/2007)
@@ -2022,25 +2080,26 @@ Usage: #example
 //  md5(ROW): 4e129a70f41a1880e67260e06b25330c
 //
 Instance: YellowFeverProduct4e129a70f41a1880e67260e06b25330c
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturer51a62ec68a89ce14cf95679495b66719) // Bio-Manguinhos/Fiocruz
 * doseQuantity =  10 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQual4e129a70f41a1880e67260e06b25330c
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder4f8fc03badb0c3d6e38e661418a4934c) // Agencia Nacional da Vigilancia Sanitaria
 * validityPeriod.start = 2007-12-10
-* tradeProduct  = Reference(YellowFeverProduct4e129a70f41a1880e67260e06b25330c) 
+* product  = Reference(YellowFeverProduct4e129a70f41a1880e67260e06b25330c) 
 
 // Source Record Row //: 274
 //  Date of Prequalification: (17/10/2001)
@@ -2053,24 +2112,25 @@ Usage: #example
 //  md5(ROW): b16c68782d6fcb1e171cae388f96083a
 //
 Instance: YellowFeverProductb16c68782d6fcb1e171cae388f96083a
-InstanceOf: TradeProductModel
+InstanceOf: Product
 Usage: #example
 * status = #active
-* tradeProductName
+* name
   * nameType = #official
-  * name = "Yellow Fever"
+  * value = "Yellow Fever"
 * manufacturer = Reference(Manufacturer51a62ec68a89ce14cf95679495b66719) // Bio-Manguinhos/Fiocruz
 * doseQuantity =  50 'doses'
 * classification = #YellowFever
 * unitOfUse.coding.code = #doses
 
 Instance: YellowFeverPreQualb16c68782d6fcb1e171cae388f96083a
-InstanceOf: RegulatedTradeProductModel
+InstanceOf: ProductAuthorization
 Usage: #example
 * status = #active
+* type = #prequal
 * jurisdiction.coding.display = "WHO"
 * holder = Reference(Holder4f8fc03badb0c3d6e38e661418a4934c) // Agencia Nacional da Vigilancia Sanitaria
 * validityPeriod.start = 2001-10-17
-* tradeProduct  = Reference(YellowFeverProductb16c68782d6fcb1e171cae388f96083a) 
+* product  = Reference(YellowFeverProductb16c68782d6fcb1e171cae388f96083a) 
 // Skipping Row 275 (Ebola vaccine (Ad26.ZEBOV-GP [recombinant]))
 // Skipping Row 276 (Typhoid (Conjugate))

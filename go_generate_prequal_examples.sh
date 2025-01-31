@@ -60,7 +60,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>7  {
   print "* type = $orgType#govt"
 }' >>  input/fsh/examples/prequal_database_holders.fsh
 
-# generate TradeProducts and RegulatedTradeProducts
+# generate TradeProducts and TradeProductAuthorizations
 awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
 
 
@@ -119,25 +119,26 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '{
   print "//  md5(ROW): " MD5
   print "//"
   print "Instance: "VAXTYPE"Product"MD5
-  print "InstanceOf: TradeProductModel"
+  print "InstanceOf: Product"
   print "Usage: #example"
   print "* status = #active"
-  print "* tradeProductName"
+  print "* name"
   print "  * nameType = #official"
-  print "  * name = \""   VAX  "\""
+  print "  * value = \""   VAX  "\""
   print "* manufacturer = Reference(Manufacturer"MD5MANUFACTURER") // "MANUFACTURER
   print "* doseQuantity =  " $5  " '\''doses'\''"
   print "* classification = #"VAXTYPE 
   print "* unitOfUse.coding.code = #doses"
   print ""
   print "Instance: "VAXTYPE"PreQual" MD5
-  print "InstanceOf: RegulatedTradeProductModel"
+  print "InstanceOf: ProductAuthorization"
   print "Usage: #example"
   print "* status = #active"
+  print "* type = #prequal"
   print "* jurisdiction.coding.display = \"WHO\""
   print "* holder = Reference(Holder"MD5HOLDER") // "HOLDER
   print "* validityPeriod.start = "VDATE
-  print "* tradeProduct  = Reference("VAXTYPE"Product"MD5") " 
+  print "* product  = Reference("VAXTYPE"Product"MD5") " 
 
 }' input/data/prequalified_vaccines.csv >  input/fsh/examples/prequal_database_products.fsh
 
