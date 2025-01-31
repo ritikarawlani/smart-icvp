@@ -141,6 +141,7 @@ NR > 1{
   CMD="echo \""VAX"\" | sed '\''s/[^[:alpha:]]//g'\''"
   CMD|getline VAXTYPE
   close(CMD)
+  SHORTVAXTYPE=substr(VAXTYPE,1,26)
 
   PRESENTATION=gensub(/"/, "", "g" , $4)
   CMD="echo \""PRESENTATION"\" | sed '\''s/[^[:alpha:]]//g'\''"
@@ -197,7 +198,7 @@ NR > 1{
   print "* responsibleNRA.text = \""HOLDER"\""
   print ""    
   print ""    
-  print "Instance: "VAXTYPE"Product"MD5
+  print "Instance: "SHORTVAXTYPE"Product"MD5
   print "InstanceOf: Product"
   print "Usage: #example"
   print "* status = #active"
@@ -212,7 +213,7 @@ NR > 1{
   print "* unitOfUse.coding.code = #doses"
   print "* dosageForm.coding.code = #"PRESENTATIONCODE
   print ""
-  print "Instance: "VAXTYPE"PreQual" MD5
+  print "Instance: "SHORTVAXTYPE"PreQual" MD5
   print "InstanceOf: ProductAuthorization"
   print "Usage: #example"
   print "* status = #active"
@@ -220,7 +221,7 @@ NR > 1{
   print "* jurisdiction.coding.display = \"WHO\""
   print "* holder = Reference(Holder"MD5HOLDER") // "HOLDER
   print "* validityPeriod.start = "VDATE
-  print "* product  = Reference("VAXTYPE"Product"MD5") " 
+  print "* product  = Reference("SHORTVAXTYPE"Product"MD5") " 
 
 }' input/data/prequalified_vaccines.csv >  input/fsh/examples/prequal_database_products.fsh
 
