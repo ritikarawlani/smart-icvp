@@ -70,6 +70,13 @@ Usage: #example
 * name = "Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation"
 * type = $orgType#govt
 
+Instance: Holder7843fc4c2ba4a16be181e1dee79c6805
+InstanceOf: IHE.mCSD.Organization
+Usage: #example
+* active = true
+* name = "Health Canada - Santé Canada"
+* type = $orgType#govt
+
 Instance: Holder8913347cddb70b882ded62c093ec157b
 InstanceOf: IHE.mCSD.Organization
 Usage: #example

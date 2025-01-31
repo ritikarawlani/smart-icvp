@@ -1,7 +1,7 @@
-Alias: $vaccinetype = http://smart.who.int/icvp/CodeSystem/PreQualVaccineType
-CodeSystem: PreQualVaccineType
-Title : "WHO PreQualificaiton Vaccine VaccineTypes"
-Description: "WHO PreQualificaiton Vaccine VaccineTypes"
+Alias: $presentation = http://smart.who.int/icvp/CodeSystem/PreQualPresentation
+CodeSystem: PreQualPresentation
+Title : "WHO PreQualificaiton Vaccine Presentations"
+Description: "WHO PreQualificaiton Vaccine Presentations"
 
 
 * #Ampoule "Ampoule"
