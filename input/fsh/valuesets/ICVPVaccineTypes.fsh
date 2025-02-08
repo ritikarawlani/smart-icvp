@@ -1,4 +1,4 @@
-Alias: $PreQualVaccineType = http://smart.who.int/icvp/CodeSystem/PreQualVaccineType
+Alias: $ICVPVaccineType = http://smart.who.int/icvp/CodeSystem/ICVPVaccineType
 
 ValueSet: ICVPQualVaccineType
 Title : "Vaccine Types for use in the ICVP"

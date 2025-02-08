@@ -18,7 +18,7 @@ Description : "Digital Vaccination Certificate - Bundle"
 * entry contains
     composition 1..1 and
     patient 1..1 and
-    immunization 0..* 
+    immunization 1..* 
 * entry[composition].resource 1..
 * entry[composition].resource only DVCComposition
 * entry[patient].resource 1..

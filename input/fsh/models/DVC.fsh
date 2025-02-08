@@ -15,3 +15,9 @@ Description:  "Data elements for Digital Vaccination Certificate."
 * guardian 0..1 string "Parent/Guardian" "Name of Parent or Guardian"
 * issuer 0..1 Reference(Organization) "Document issuer" "Document issuer"
 * vaccineDetails 1..* VaccineDetails "Vaccine Details" "Vaccine Details"
+
+
+Invariant: is-a-prequal-vaccine-record
+Description: "Checks if vaccine is on the WHO PreQual or EUL listing"
+Expression: "vaccineDetails.vaccineProduct.conformsTo('ICVPVaccineProductDetails')"
+Severity: #error

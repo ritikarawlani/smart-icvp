@@ -1,11 +1,11 @@
+Alias: $DVCImmunization = http://smart.who.int/icvp/StructureDefinition/DVCImmunization
 Alias: $VaccineProduct = http://smart.who.int/icvp/StructureDefinition/VaccineProduct
 Alias: $PreQualVaccineType = http://smart.who.int/icvp/ValueSet/PreQualVaccineType
+Alias: $PreQualVaccineIDs = http://smart.who.int/icvp/ValueSets/PreQualProductIDs
 Alias: $doseNumberCodeableConcept = http://smart.who.int/icvp/StructureDefinition/DoseNumberCodeableConcept
 
 Profile: DVCImmunization
-//
-// Parent: ImmunizationUvIps
-// Id: DVC-ImmunizationUvIps
+Parent: Immunization
 Id: DVCImmunization
 Title: "DVC Immunization"
 Description: "This profile represents Immunization record for Digital Vaccine Certificates"
@@ -28,8 +28,9 @@ Description: "This profile represents Immunization record for Digital Vaccine Ce
 * protocolApplied[protocolAppliedAuthority].targetDisease ^label = "Disease or agent targeted"
 * protocolApplied[protocolAppliedAuthority].doseNumber[x] 1..1 MS
 * protocolApplied[protocolAppliedAuthority].doseNumber[x].extension contains $doseNumberCodeableConcept named DoseNumberCodeableConcept 1..1
-* obeys has-a-vaccine-product  
-* obeys has-a-pre-qual-vaccine-type
+* extension contains VaccineProduct named vaccineProduct 1..1 MS
+* extension[vaccineProduct].valueIdentifier obeys is-a-prequal-product-id
+* vaccineCode obeys has-a-pre-qual-vaccine-type
 
 
 Extension: VaccineProduct
@@ -41,23 +42,19 @@ In FHIR R6, this could also be a reference to an InventoryItem
 Context: Immunization
 //
 // note: for FHIR R6 we want something like:
-//  value[x] only from Identifier or Reference(InventoryItem)
-* value[x] only from Identifier
+//  value[x] only from code or Reference(InventoryItem)
+* value[x] only Identifier 
 
-Invariant: has-a-vaccine-product
-Description:
-"""Check if there is a business identifier of a vaccine product in a product catalogue.
 
-In FHIR R6, this could also be a reference to an InventoryItem
-"""
-* extension contains VaccineProduct named vaccineProduct 1..1 MS
-
+Invariant: has-a-pre-qual-vaccine-product-id-code
+Description: "Ensure vaccine type is from the prequal vaccine database"
+Severity: #error
+Expression: "memberOf('http://smart.who.int/pcmt-vaxprequal/ValueSets/PreQualProductIDs')"
 
 Invariant: has-a-pre-qual-vaccine-type
 Description: "Ensure vaccine type is from the prequal vaccine database"
-* vaccineCode from $PreQualVaccineType (required)
-
-
+Severity: #error
+Expression: "memberOf('http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType')"
 
 
 Extension: DoseNumberCodeableConcept

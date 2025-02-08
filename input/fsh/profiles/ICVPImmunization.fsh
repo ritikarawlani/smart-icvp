@@ -11,10 +11,11 @@ The ICVP product catalogue consists of vaccines listed in the list of Prequalifi
 
 In FHIR R6, this could also be a reference to an InventoryItem
 "
-* obeys has-an-icvp-qual-vaccine-type
+* vaccineCode obeys has-an-icvp-vaccine-type
 
 
-Invariant: has-an-icvp-vaccine-product
+
+Invariant: has-an-icvp-vaccine-product-id-code
 Description:
 """Check if there is a business identifier of a vaccine product in the ICVP product catalogue,  The ICVP product catalogue consists of vaccines listed in the list of Prequalified Vaccines and the Emergency Use Listing.
  - https://extranet.who.int/prequal/vaccines/prequalified-vaccines
@@ -22,4 +23,11 @@ Description:
 
 In FHIR R6, this could also be a reference to an InventoryItem
 """
-* vaccineCode from $ICVPQualVaccineType (required)
+Severity: #error
+Expression: "memberOf('http://smart.who.int/icvp/ValueSets/ICVPProductIDs')"
+
+
+Invariant: has-an-icvp-vaccine-type
+Description: "Ensure vaccine type is from the prequal vaccine database for ICVP vaccines"
+Severity: #error
+Expression: "memberOf('http://smart.who.int/pcmt-vaxprequal/CodeSystem/ICVPVaccineType')"

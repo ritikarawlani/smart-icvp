@@ -8,7 +8,13 @@ Description:  "Vaccine Data elements for the Model International Certificate of 
 * ^status = #active
 * ^experimental = true
 
+* vaccineProduct obeys is-a-icvp-product-id
 
+Invariant: is-a-icvp-product-id
+Description: "Product ID comes from the PreQual Databatase"
+Expression: "
 
-* disease from ICVPDiseaseTargeted (required)
-* vaccineClassification from ICVPVaccineCodes (required)
+system = 'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIDs'
+
+"
+Severity: #error
