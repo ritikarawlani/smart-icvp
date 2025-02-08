@@ -16,7 +16,7 @@ Usage: #example
 * vaccineDetails[=].date = "2024-01-23"
 * vaccineDetails[=].clinicianName = "DR. A"
 * vaccineDetails[=].manufacturer = "PFIZER"
-* vaccineDetails[=].batchNo = "12345"
+* vaccineDetails[=].batchNo.coding.display = "12345"
 * vaccineDetails[=].validityPeriod.start = "2024-01-31"
 * vaccineDetails[=].doseNumber.coding.code = #FirstDose
 * vaccineDetails[=].doseNumber.coding.display = "First Dose"
