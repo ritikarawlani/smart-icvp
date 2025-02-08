@@ -30,7 +30,7 @@ Description: "This profile represents Immunization record for Digital Vaccine Ce
 * protocolApplied[protocolAppliedAuthority].doseNumber[x].extension contains $doseNumberCodeableConcept named DoseNumberCodeableConcept 1..1
 * extension contains VaccineProduct named vaccineProduct 1..1 MS
 * extension[vaccineProduct].valueIdentifier obeys is-a-prequal-product-id
-* vaccineCode obeys has-a-pre-qual-vaccine-type
+* vaccineCode obeys has-a-prequal-vaccine-type
 
 
 Extension: VaccineProduct
@@ -46,12 +46,12 @@ Context: Immunization
 * value[x] only Identifier 
 
 
-Invariant: has-a-pre-qual-vaccine-product-id-code
+Invariant: has-a-prequal-vaccine-product-id-code
 Description: "Ensure vaccine type is from the prequal vaccine database"
 Severity: #error
 Expression: "memberOf('http://smart.who.int/pcmt-vaxprequal/ValueSets/PreQualProductIDs')"
 
-Invariant: has-a-pre-qual-vaccine-type
+Invariant: has-a-prequal-vaccine-type
 Description: "Ensure vaccine type is from the prequal vaccine database"
 Severity: #error
 Expression: "memberOf('http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType')"

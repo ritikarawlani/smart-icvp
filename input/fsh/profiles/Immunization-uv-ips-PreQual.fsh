@@ -4,14 +4,14 @@
 // Alias: $PreQualVaccineIDs = http://smart.who.int/icvp/ValueSets/PreQualProductIDs
 // Alias: $doseNumberCodeableConcept = http://smart.who.int/icvp/StructureDefinition/DoseNumberCodeableConcept
 
-Profile: DVCImmunizationIPS
+Profile: Immunization-uv-ips-PreQual
 Parent: Immunization-uv-ips
-Id: DVCImmunizationIPS
-Title: "DVC Immunization for IPS"
-Description: "This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates"
+Id: Immunization-uv-ips-PreQual
+Title: "DVC - WHO PreQual Immunization for IPS"
+Description: "This profile represents an IPS Immunization record that can be mapped onto a Digital Vaccine Certificates using the WHO PreQual Database"
 
 * extension contains VaccineProduct named vaccineProduct 1..1 MS
-* extension[vaccineProduct] obeys has-a-pre-qual-vaccine-product-id-code
-* vaccineCode obeys has-a-pre-qual-vaccine-type
+* extension[vaccineProduct] obeys has-a-prequal-vaccine-product-id-code
+* vaccineCode obeys has-a-prequal-vaccine-type
 
 
