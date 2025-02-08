@@ -1,4 +1,6 @@
-Logical: ModelVaccineDetails
+Alias: $Product = http://smart.who.int/pcmt/StructureDefinition/Product
+
+Logical: VaccineDetails
 Title: "DVC - Vaccine Details"
 Description:  "Vaccine Data elements for the Digital Vaccination Certificates"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
@@ -7,18 +9,21 @@ Description:  "Vaccine Data elements for the Digital Vaccination Certificates"
 * ^status = #active
 * ^experimental = true
 
-* doseNumber 1..1 CodeableConcept "Dose Number" "Dose Number"
-* doseNumber from DoseNumber (required)
-* disease 1..1 Coding "Disease" "Name of disease or condition vaccinated or received prophylaxis against"
-* disease from DiseaseTargeted (required)
+* vaccineProduct 1..1 Identifier or reference($Product) "Vaccine product information (note: use InventoryItem in FHIR R6)"
+* date 1..1 date "Date" "Date of vaccine"
+* issuer 0..1 Reference(Organization) "Issuing Organization" "Relevant authoring reponsible for issuing the certificate, or for overseeing the administration center"
+* clinicianName 0..1 string "Name of supervising clinician" "Name of supervising clinician, or relevant authority responsible for issuing this certificate, or for overseeing the administering centre"
+//* manufacturerId 0..1 Identifier "Manufacture ID" "Manufacturer ID"
+* batchNo 1..1 CodeableConcept "Batch No" "Batch No"
 * vaccineClassification 0..1 CodeableConcept "Vaccine code" "Vaccine or prophylaxis classification code"
 * vaccineClassification from DVCVaccines (required)
-* vaccineTradeItem 0..1 Identifier "vaccine trade item id" "Vaccine trade item id"
-* date 1..1 date "Date" "Date of vaccine"
-* clinicianName 0..1 string "Name of supervising clinician" "Name of supervising clinician, or relevant authority responsible for issuing this certificate, or for overseeing the administering centre"
-* issuer 0..1 Reference(Organization) "Issuing Organization" "Relevant authoring reponsible for issuing the certificate, or for overseeing the administration center"
-* manufacturerId 0..1 Identifier "Manufacture ID" "Manufacturer ID"
-* manufacturer 0..1 string "Name of Manufacturer of vaccine" "Name Manufacturer of vaccine"
-* batchNo 1..1 CodeableConcept "Batch No" "Batch No"
 * validityPeriod 0..1 Period "Certificate validity period" "Certificate validity period"
+* obeys must-have-issuer-or-clinician
+
+Invariant: must-have-issuer-or-clinician
+Description: "Either issuer or clinicianName must be present"
+Expression: "issuer.exists() or clinicianName.exists()"
+Severity: #error
+
+
 

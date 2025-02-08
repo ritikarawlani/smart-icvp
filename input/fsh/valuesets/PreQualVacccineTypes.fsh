@@ -1,9 +1,0 @@
-Alias: $preQualVaccineType = http://smart.who.int/icvp/CodeSystem/PreQualVaccineType
-ValueSet: PreQualVaccineType
-Title : "WHO PreQualificaiton VaccineType "
-Description: "WHO PreQualificaiton VaccineType"
-
-
-* include codes from system $preQualVaccineType
-
-
