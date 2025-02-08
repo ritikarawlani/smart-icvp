@@ -9,7 +9,8 @@ Description:  "Vaccine Data elements for the Digital Vaccination Certificates"
 * ^status = #active
 * ^experimental = true
 
-* vaccineProduct[x] 1..1 Identifier or reference($Product) "Vaccine Product" "Vaccine product information (note: use InventoryItem in FHIR R6)" 
+* vaccineProduct 1..1 Identifier "Vaccine Product" "Vaccine product information (note: use InventoryItem in FHIR R6)"
+//* vaccineProduct[x] 1..1 Identifier or reference($Product) "Vaccine Product" "Vaccine product information (note: use InventoryItem in FHIR R6)" 
 * date 1..1 date "Date" "Date of vaccine"
 * issuer 0..1 Reference(Organization) "Issuing Organization" "Relevant authoring reponsible for issuing the certificate, or for overseeing the administration center"
 * clinicianName 0..1 string "Name of supervising clinician" "Name of supervising clinician, or relevant authority responsible for issuing this certificate, or for overseeing the administering centre"

@@ -17,8 +17,8 @@ Usage: #example
 //* vaccineDetails[=].vaccineClassification.coding.code = #XM28X5
 //* vaccineDetails[=].vaccineClassification.coding.system = "http://id.who.int/icd/release/11/mms"
 
-* vaccineDetails[0].vaccineProduct.valueIdentifier.system = $PreQualProductIDs
-* vaccineDetails[=].vaccineProduct.valueIdentifier.value = $ExampleProductID
+* vaccineDetails[0].vaccineProduct.system = $PreQualProductIDs
+* vaccineDetails[=].vaccineProduct.value = $ExampleProductID
 * vaccineDetails[0].date = "2024-01-23"
 * vaccineDetails[=].clinicianName = "DR. A"
 //* vaccineDetails[=].manufacturer = "PFIZER"

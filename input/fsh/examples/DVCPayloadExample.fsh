@@ -8,6 +8,7 @@ Usage: #example
 * s = #female
 * ntl = #IND
 * gn = "Test Guardian name"
+* v.vp = "PolioVaccineOralOPVBivalProduct756b50d1047d7e92674342044a986a4e"
 * v.dt = "2024-01-23"
 * v.cn = "Test Clinician name"
 * v.bo = "12345"

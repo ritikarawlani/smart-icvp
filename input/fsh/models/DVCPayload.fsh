@@ -14,7 +14,7 @@ Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Tok
 * gn 0..1 string "Parent or Guardian Name"
  // Vaccination group -------------------------------------------------------
 * v 1..1 BackboneElement "Vaccination Group (see element details)"
-  * vp 1..1 value "ICVP Product Catalog ID"
+  * vp 1..1 string "ICVP Product Catalog ID"
   * dt 1..1 date "Date of vaccination, YYYY-MM-DD format"
   * cn 0..1 string "Name of supervising clinician"
   * is 0..1 id "Certificate issuer id (referenced organization)"
