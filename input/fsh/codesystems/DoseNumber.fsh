@@ -1,4 +1,4 @@
-CodeSystem: doseNumber
+CodeSystem: DoseNumber
 Title: "Dose Number"
 Description: "Dose Number Code System"
 
