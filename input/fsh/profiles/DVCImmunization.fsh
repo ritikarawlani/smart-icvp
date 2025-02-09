@@ -46,6 +46,12 @@ Context: Immunization
 * value[x] only Identifier 
 
 
+Invariant: has-a-vaccine-product-id-code
+Description: "Ensure there is a vaccine product if code. A more robust expression is needed here"
+Severity: #error
+Expression: "exists()"
+//to do: better expresssion
+
 Invariant: has-a-prequal-vaccine-product-id-code
 Description: "Ensure vaccine type is from the prequal vaccine database"
 Severity: #error
