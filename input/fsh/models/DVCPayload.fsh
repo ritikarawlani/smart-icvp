@@ -1,3 +1,5 @@
+Alias: $identifierType = http://terminology.hl7.org/CodeSystem/v2-0203
+
 Logical:         DVCPayload
 Title:           "DVC HCERT Payload"
 Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Token Logical Model"
@@ -11,6 +13,8 @@ Description:     "Payload for Digital Vaccination Certificate - DVC CBOR Web Tok
 * s 0..1 code "Sex"
 * ntl 0..1 code "Nationality"
 * nid 0..1 string "National Identification Document"
+* ndt 0..1 code "National ID Document Type"
+* ndt from $identifierType (extensible)
 * gn 0..1 string "Parent or Guardian Name"
  // Vaccination group -------------------------------------------------------
 * v 1..1 BackboneElement "Vaccination Group (see element details)"

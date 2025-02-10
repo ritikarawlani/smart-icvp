@@ -1,5 +1,6 @@
 Alias: $loinc = http://loinc.org
 
+
 Instance: DVCDocExampleA
 InstanceOf: DVCBundle
 Description: "Example ICVP Document"
@@ -47,17 +48,19 @@ Usage: #inline
 
 
 
+
 Instance: 175863f7-fdea-4d11-92ff-f33345a560e4
 InstanceOf: DVCPatient
 Description: "Example Patient"
 Usage: #inline
 * active = true
-* identifier[+].system = "https://uidai.gov.in/"
+* identifier[+].type = $identifierType#PPN
+* identifier[=].system = "https://uidai.gov.in/"
 * identifier[=].value = "123456789012"
 * name[dvcName].text = "Test Patient"
 * gender = #female
 * birthDate = "2023-02-04"
-
+* extension[nationality].coding.code = #IND
 
 
 
