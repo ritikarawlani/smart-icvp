@@ -18,16 +18,16 @@ Description: "This profile represents Immunization record for Digital Vaccine Ce
 * performer 0.. 
 * performer.actor only Reference(MCSDPractitioner or MCSDJurisdictionOrganization)
 * performer.actor ^label = "Health worker identifier"
-* protocolApplied 1.. MS
-* protocolApplied ^slicing.discriminator.type = #type
-* protocolApplied ^slicing.discriminator.path = "authority"
-* protocolApplied ^slicing.rules = #open
-* protocolApplied contains protocolAppliedAuthority 1.. MS
-* protocolApplied[protocolAppliedAuthority].authority only Reference(MCSDJurisdictionOrganization)
-* protocolApplied[protocolAppliedAuthority].targetDisease from DiseaseTargeted (preferred)
-* protocolApplied[protocolAppliedAuthority].targetDisease ^label = "Disease or agent targeted"
-* protocolApplied[protocolAppliedAuthority].doseNumber[x] 1..1 MS
-* protocolApplied[protocolAppliedAuthority].doseNumber[x].extension contains $doseNumberCodeableConcept named DoseNumberCodeableConcept 1..1
+//* protocolApplied 1.. MS
+//* protocolApplied ^slicing.discriminator.type = #type
+//* protocolApplied ^slicing.discriminator.path = "authority"
+//* protocolApplied ^slicing.rules = #open
+//* protocolApplied contains protocolAppliedAuthority 1.. MS
+//* protocolApplied[protocolAppliedAuthority].authority only Reference(MCSDJurisdictionOrganization)
+//* protocolApplied[protocolAppliedAuthority].targetDisease from DiseaseTargeted (preferred)
+//* protocolApplied[protocolAppliedAuthority].targetDisease ^label = "Disease or agent targeted"
+//* protocolApplied[protocolAppliedAuthority].doseNumber[x] 1..1 MS
+//* protocolApplied[protocolAppliedAuthority].doseNumber[x].extension contains $doseNumberCodeableConcept named DoseNumberCodeableConcept 1..1
 * extension contains VaccineProduct named vaccineProduct 1..1 MS
 * extension[vaccineProduct].valueIdentifier obeys is-a-prequal-product-id
 * vaccineCode obeys has-a-prequal-vaccine-type
