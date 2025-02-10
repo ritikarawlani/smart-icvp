@@ -1,4 +1,3 @@
-Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 
 Profile: DVCPatient
 Parent: Patient

@@ -1,5 +1,3 @@
-Alias: $PreQualProductIDs = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIDs
-Alias: $ExampleProductID = http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineOralOPVBivalProduct756b50d1047d7e92674342044a986a4e
 Instance: DVCExample
 InstanceOf: DVC
 Description: "Example DVC model"

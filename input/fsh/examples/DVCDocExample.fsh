@@ -1,7 +1,7 @@
 Alias: $loinc = http://loinc.org
 
 
-Instance: DVCDocExampleA
+Instance: DVCDocExample
 InstanceOf: DVCBundle
 Description: "Example ICVP Document"
 Usage: #example 
@@ -60,8 +60,7 @@ Usage: #inline
 * name[dvcName].text = "Test Patient"
 * gender = #female
 * birthDate = "2023-02-04"
-* extension[nationality].coding.code = #IND
-
+* extension[nationality].extension[code].valueCodeableConcept = #IND
 
 
 Instance: bc283f8f-7092-4cc1-9d4d-8928b0341d00
