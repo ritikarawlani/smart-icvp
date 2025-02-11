@@ -1,3 +1,15 @@
+
+
+Profile: DVCSDBundle
+Parent: DVCBundle
+Id: DVCSDBundle
+Title: "DVC document Bundle with Selective Disclosure"
+Description: "DVC document Bundle with Selective Disclosure for each entry"
+* entry[composition].resource only DVCSDComposition
+* entry[patient].resource only DVCSDPatient
+* entry[immunization].resource only DVCSDImmunization
+
+
 Profile: DVCBundle
 Parent: Bundle
 Title : "Digital Vaccination Certificate - Bundle"

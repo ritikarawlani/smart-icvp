@@ -1,6 +1,6 @@
 
 Instance: DVCDocSDExample
-InstanceOf: DVCBundle
+InstanceOf: DVCSDBundle
 Description: "Example ICVP Document"
 Usage: #example 
 * language = #en-GB
