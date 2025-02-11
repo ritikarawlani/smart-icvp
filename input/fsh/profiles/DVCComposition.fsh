@@ -1,3 +1,10 @@
+Profile: DVCSDComposition
+Parent: DVCComposition
+Title : "Digital Vaccination Certificate - Composition"
+Description : "Digital Vaccination Certificate - Composition"
+* extension contains SelectiveDisclosureJWT  named SelectiveDisclosureJWT 0..1
+* text.extension contains SelectiveDisclosureJWT  named SelectiveDisclosureJWT 0..1
+
 Profile: DVCComposition
 Parent: Composition
 Title : "Digital Vaccination Certificate - Composition"
@@ -31,6 +38,6 @@ Description : "Digital Vaccination Certificate - Composition"
 * section[vaccination] ^short = "Vaccination Status Section"
 * section[vaccination] ^definition = "Vaccination Status Section lists the relvant vaccinations received by the patient"
 * section[vaccination].code = $LOINC#11369-6
-* section[vaccination].focus 1..1 MS
-* section[vaccination].focus only Reference($DVCImmunization)
+//* section[vaccination].focus 1..1 MS
+//* section[vaccination].focus only Reference($DVCImmunization)
 * section[vaccination].entry only Reference(DVCImmunization)

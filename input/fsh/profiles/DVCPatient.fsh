@@ -1,3 +1,10 @@
+Profile: DVCSDPatient
+Parent: DVCPatient
+Id: DVCSDPatient
+Title: "DVC Patient with Selective Disclosure"
+Description: "DVC Patient with Selective Disclosure"
+* extension contains SelectiveDisclosureJWT  named SelectiveDisclosureJWT 0..1
+* text.extension contains SelectiveDisclosureJWT  named SelectiveDisclosureJWT 0..1
 
 Profile: DVCPatient
 Parent: Patient
