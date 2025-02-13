@@ -24,7 +24,7 @@ Instance: 24351938-53ea-4d4f-b07b-7f557656005e
 InstanceOf: Composition
 Title : "DVC IPS Composition"
 Description: "DVC IPS Composition Example"
-Usage: #inline
+Usage: #inline  
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "d348b02a-3ab8-4cec-bbec-5186abca8c7d"
 * status = #final
