@@ -8,9 +8,9 @@ Description:  "Vaccine Data elements for the Model International Certificate of 
 * ^status = #active
 * ^experimental = true
 
-* vaccineProduct obeys is-a-icvp-product-id
+* productID obeys is-an-icvp-product-id
 
-Invariant: is-a-icvp-product-id
+Invariant: is-an-icvp-product-id
 Description: "Product ID comes from the PreQual Databatase"
 Expression: "
 

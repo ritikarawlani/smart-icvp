@@ -73,8 +73,8 @@ Usage: #inline
 * patient = Reference(urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4)
 * performer[+].actor = Reference(urn:uuid:086a66bd-63d0-442a-900f-b540f6b8cebe)
 * occurrenceDateTime = "2024-05-23"
-* extension[vaccineProduct].valueIdentifier.system = $PreQualProductIDs
-* extension[vaccineProduct].valueIdentifier.value = $ExampleProductID
+* extension[productID].valueCoding = $PreQualProductIDs#PolioVaccineOralOPVBivalProduct756b50d1047d7e92674342044a986a4e
+
 
 
 Instance: 086a66bd-63d0-442a-900f-b540f6b8cebe
