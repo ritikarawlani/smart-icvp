@@ -68,7 +68,8 @@ InstanceOf: DVCImmunization
 Description: "Example Immunization"
 Usage: #inline
 * status = #completed
-* vaccineCode.coding.code = $vaccinetype#YellowFever
+//* vaccineCode.coding.code = $vaccinetype#YellowFever
+* vaccineCode.coding.code = $ICD11#XM0N24
 * lotNumber = "67890"
 * patient = Reference(urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4)
 * performer[+].actor = Reference(urn:uuid:086a66bd-63d0-442a-900f-b540f6b8cebe)
