@@ -37,9 +37,9 @@ Usage: #inline
 * text.status = #generated
 * confidentiality = #N
 * section[demographic].title = "Patient"
-* section[demogrpahic].text.status = #generated
-* section[demogrpahic].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sample patient</div>"
-* section[demogrpahic].entry = Reference(urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4)
+* section[demographic].text.status = #generated
+* section[demographic].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sample patient</div>"
+* section[demographic].entry = Reference(urn:uuid:175863f7-fdea-4d11-92ff-f33345a560e4)
 * section[vaccination].title = "Vaccination"
 * section[vaccination].code = $loinc#11369-6 "History of Vaccination"
 * section[vaccination].text.status = #generated

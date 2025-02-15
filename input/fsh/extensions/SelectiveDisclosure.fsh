@@ -1,7 +1,7 @@
 Extension: SelectiveDisclosure
 Description: "Guidance that a document signing service with SD-JWT support should include the node.  This extension should be moved to smart-trust or a new IF such as smart-phw (personal health wallet).  The string value is the disclosure statement"
-* value[x] only coding
-* valueCoding 1.. MS
+* value[x] only code
+* valueCode 1.. MS
 
 
 Invariant: has-selective-disclosure-on-entries

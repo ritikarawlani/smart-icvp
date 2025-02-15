@@ -1,4 +1,4 @@
-AInstance: IVCP123455SD
+Instance: IVCP123455SD
 InstanceOf: ICVPSD
 Description: "Example ICVP with Selective Disclosure"
 Usage: #example 
@@ -15,12 +15,11 @@ Usage: #example
 * nationality = #IND
 * nationality.extension[SelectiveDisclosure].valueCode = DisclosureStatements#disclose-icvp-demographic-nationality
 
-* nid = "987-65-4321-000"
+* nid.value = "987-65-4321-000"
 * nid.extension[SelectiveDisclosure].valueCode = DisclosureStatements#disclose-icvp-demographic-national-id
 
 
-* vaccineDetails[+].vaccineProduct.system = $PreQualProductIDs
-* vaccineDetails[=].vaccineProduct.value = $ExampleProductID
+* vaccineDetails[+].productID =  $PreQualProductIDs#PolioVaccineOralOPVBivalProduct756b50d1047d7e92674342044a986a4e
 * vaccineDetails[=].date = "2024-05-23"
 * vaccineDetails[=].clinicianName = "DR A"
 * vaccineDetails[=].clinicianName.extension[SelectiveDisclosure].valueCode = DisclosureStatements#disclose-icvp-vaccination-clinician

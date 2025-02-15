@@ -13,6 +13,10 @@ Description: "Disclosure Statement Code System"
 
 
 
+* #disclose-icvp-demographic "Disclose full details of ICVP demograhic narrative"
+  "Agree to disclose full details your demographic information as is contained in the International Certification of Vaccination or Prophylaxsis"
+
+
 * #disclose-icvp-demographic-narrative "Disclose ICVP demograhic narrative"
   "Agree to disclose a narrative summary of your demographic information as is contained in the International Certification of Vaccination or Prophylaxsis"
 
