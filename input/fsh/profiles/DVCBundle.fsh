@@ -7,7 +7,7 @@ Title: "DVC document Bundle with Selective Disclosure"
 Description: "DVC document Bundle with Selective Disclosure for each entry"
 * entry[composition].resource only DVCSDComposition
 * entry[patient].resource only DVCSDPatient
-* entry[immunization].resource only DVCSDImmunization
+* entry[vaccination].resource only DVCSDImmunization
 
 
 Profile: DVCBundle
@@ -30,10 +30,10 @@ Description : "Digital Vaccination Certificate - Bundle"
 * entry contains
     composition 1..1 and
     patient 1..1 and
-    immunization 1..* 
+    vaccination 1..* 
 * entry[composition].resource 1..
 * entry[composition].resource only DVCComposition
 * entry[patient].resource 1..
 * entry[patient].resource only DVCPatient
-* entry[immunization].resource 1..
-* entry[immunization].resource only DVCImmunization
+* entry[vaccination].resource 1..
+* entry[vaccination].resource only DVCImmunization

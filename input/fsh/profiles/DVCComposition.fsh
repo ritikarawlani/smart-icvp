@@ -2,8 +2,10 @@ Profile: DVCSDComposition
 Parent: DVCComposition
 Title : "Digital Vaccination Certificate - Composition"
 Description : "Digital Vaccination Certificate - Composition"
-* extension contains SelectiveDisclosureJWT  named SelectiveDisclosureJWT 0..1
-* text.extension contains SelectiveDisclosureJWT  named SelectiveDisclosureJWT 0..1
+* extension contains SelectiveDisclosure  named SelectiveDisclosure 0..1
+* text.extension contains SelectiveDisclosure  named SelectiveDisclosure 0..1
+* section[vaccination].entry only Reference(DVCSDImmunization)
+* section[demographic].entry only Reference(DVCSDPatient)
 
 Profile: DVCComposition
 Parent: Composition
@@ -33,6 +35,12 @@ Description : "Digital Vaccination Certificate - Composition"
 * section ^slicing.discriminator[+].type = #type
 * section ^slicing.discriminator[=].path = "focus"
 * section ^slicing.rules = #closed
+* section contains demographic 1..1 MS
+* section[demographic] ^short = "Demographic Status Section"
+* section[demographic] ^definition = "Demographic Status Section lists the relvant demographics received by the patient"
+* section[demographic].code = $LOINC#11369-6
+* section[demographic].entry only Reference(DVCPatient)
+
 * section contains vaccination 1..1 MS
 
 * section[vaccination] ^short = "Vaccination Status Section"
