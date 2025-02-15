@@ -31,7 +31,7 @@
            }
         }
     },
-  "@id" : "http://smart.who.int/icvp/StructureDefinition-VaccineDetails.jsonld",
+  "@id" : "http://worldhealthorganization.github.io/smart-icvp/StructureDefinition-VaccineDetails.jsonld",
   "description" : "Derived from the LM for the DVC Vaccine Details. 
 * productID 1..1 Coding \"Vaccine Product\" \"Vaccine product information (note: use InventoryItem in FHIR R6)\"
 * date 1..1 date \"Date\" \"Date of vaccine\"
@@ -39,5 +39,7 @@
 * clinicianName 0..1 string \"Name of supervising clinician\" \"Name of supervising clinician, or relevant authority responsible for issuing this certificate, or for overseeing the administering centre\"
 * batchNo 1..1 CodeableConcept \"Batch No\" \"Batch No\"
 * validityPeriod 0..1 Period \"Certificate validity period\" \"Certificate validity period\"
+
+WARNING: need to change @id to smart.who.int/icvp/StructureDefinition/VaccineDetails.jsonld before publication 
 "
 }
