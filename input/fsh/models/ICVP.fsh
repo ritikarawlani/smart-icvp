@@ -30,6 +30,6 @@ Description:  "Data elements for the Model International Certificate of Vaccinat
 
 Invariant: is-an-icvp-vaccine-record
 Description: "Checks if vaccine is on the WHO PreQual or EUL listing"
-Expression: "vaccineDetails.productID.conformsTo('ICVPVaccineProductDetails')"
+Expression: "vaccineDetails.productID.conformsTo('ICVPVaccineDetails')"
 Severity: #error
 
