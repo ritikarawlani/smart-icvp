@@ -18,8 +18,6 @@ Usage: #definition
 * insert Question(guardian, Parent or Guardian Details, group, false, false)
 * item[=]
   * insert Question(guardianName, Name of Parent or Guardian, string, false, false)
-* insert Question(disease, Name of disease of condition vaccinated or received prophylaxis against, choice, false, true)
-* item[=].answerValueSet = Canonical(ICVPDiseaseTargeted)
 * insert Question(vaccineDetails,Vaccine Certificate Details,group, true, true)
 * item[=]
   * insert Question(productID, Vaccine or Prophylaxis ID, choice, false, true)
