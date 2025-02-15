@@ -9,5 +9,3 @@ Description : "Profile of the IPS Bundle for representing digital vaccination ce
 
 
 
-
-
