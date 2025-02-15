@@ -28,13 +28,13 @@
     },  
   "@id" : "http://smart.who.int/icvp/StructureDefinition-DVC.jsonld",
   "description" : "Derived from the LM for the DVC. 
-* name 1..1 string "Name" "The full name of the client"
-* dob 1..1 date "Date of Birth" "Date of Birth"
-* sex 0..1 code "Sex" "Sex"
-* nationality 0..1 code "Nationality" "Nationality"
-* nid 0..1 Identifier "National Identification Document" "National Identification Document"
-* guardian 0..1 string "Parent/Guardian" "Name of Parent or Guardian"
-* issuer 0..1 Reference(Organization) "Document issuer" "Document issuer"
-* vaccineDetails 1..* VaccineDetails "Vaccine Details" "Vaccine Details"
+* name 1..1 string \"Name\" \"The full name of the client\"
+* dob 1..1 date \"Date of Birth\" \"Date of Birth\"
+* sex 0..1 code \"Sex\" \"Sex\"
+* nationality 0..1 code \"Nationality\" \"Nationality\"
+* nid 0..1 Identifier \"National Identification Document\" \"National Identification Document\"
+* guardian 0..1 string \"Parent/Guardian\" \"Name of Parent or Guardian\"
+* issuer 0..1 Reference(Organization) \"Document issuer\" \"Document issuer\"
+* vaccineDetails 1..* VaccineDetails \"Vaccine Details\" \"Vaccine Details\"
 "
 }
