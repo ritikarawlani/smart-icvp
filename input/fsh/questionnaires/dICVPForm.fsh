@@ -1,12 +1,15 @@
-Instance: PreQual
+
+Instance: ICVP
 InstanceOf: sdc-questionnaire-extr-smap
-Description: "Questionnaire for DVC Logical Model with the WHO PreQual DB"
-Title: "DVC Model Questionnaire"
+Description: "Questionnaire for DVC Logical Model with the WHO ICVP"
+Title: "ICVP Model Questionnaire"
 Usage: #definition
 * status = #draft
 * contained[+] = http://terminology.hl7.org/ValueSet/v3-Country
+* contained[+] = ICVPProductIds
 * contained[+] = DVCRelationshipStatus
-* contained[+] = PreQualProductIds
+* contained[+] = preQualVaccines
+
 
 * insert Question(name, Full Name of the client, string, false, true)
 * insert Question(dob, Date of Birth, date, false, true)
@@ -18,12 +21,17 @@ Usage: #definition
 * insert Question(guardian, Parent or Guardian Details, group, false, false)
 * item[=]
   * insert Question(guardianName, Name of Parent or Guardian, string, false, false)
-* insert Question(disease, Name of disease of condition vaccinated or received prophylaxis against, choice, false, true)
-* item[=].answerValueSet = Canonical(ICVPDiseaseTargeted)
+  * insert Question(guardianRelationship, Relationship Status, choice, false, false)
+  * item[=].answerValueSet = Canonical(DVCRelationshipStatus)
 * insert Question(vaccineDetails,Vaccine Certificate Details,group, true, true)
 * item[=]
   * insert Question(productID, Vaccine or Prophylaxis ID, choice, false, true)
-  * item[=].answerValueSet = $PreQualProductIDsVS
+  * item[=].answerValueSet = $ICVPProductIDs
+  * insert Question(date, Date of Vaccination, date, false, true)
+  * insert Question(clinicianName, Name of supervising clinician, string, false, false)
+  * insert Question(issuer, Relevant authoring responsible for issuing the certificate\, or for overseeing the administration center, string, false, false)
+  * insert Question(manufacturerId, Manufacturer ID, string, false, false)
+  * insert Question(manufacturer, Name of Manufacturer of Vaccine, string, false, true)
   * insert Question(date, Date of Vaccination, date, false, true)
   * insert Question(clinicianName, Name of supervising clinician, string, false, false)
   * insert Question(issuer, Relevant authoring reponsible for issuing the certificate\, or for overseeing the administration center, string, false, false)
@@ -32,4 +40,3 @@ Usage: #definition
   * item[=]
     * insert Question(startDate, From, date, false, false)
     * insert Question(endDate, To, date, false, false)
-* insert Question(attachment, Upload Paper Form image or PDF, attachment, false, false)

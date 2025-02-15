@@ -1,8 +1,12 @@
+Instance: pICVPForm
+InstanceOf: sdc-questionnaire-extr-smap
+Description: "Questionnaire that models data entry into EIR during a vaccination event"
+Title: "dICVP Model Questionnaire"
+
 Instance: PreQual
 InstanceOf: sdc-questionnaire-extr-smap
 Description: "Questionnaire for DVC Logical Model with the WHO PreQual DB"
 Title: "DVC Model Questionnaire"
-Usage: #definition
 * status = #draft
 * contained[+] = http://terminology.hl7.org/ValueSet/v3-Country
 * contained[+] = DVCRelationshipStatus
