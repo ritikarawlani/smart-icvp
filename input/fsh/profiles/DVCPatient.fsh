@@ -1,4 +1,12 @@
-Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
+Profile: DVCSDPatient
+Parent: DVCPatient
+Id: DVCSDPatient
+Title: "DVC Patient with Selective Disclosure"
+Description: "DVC Patient with Selective Disclosure"
+* extension contains SelectiveDisclosure  named SelectiveDisclosure 0..1
+* text.extension contains SelectiveDisclosure  named SelectiveDisclosure 0..1
+
+
 
 Profile: DVCPatient
 Parent: Patient

@@ -1,3 +1,15 @@
+
+
+Profile: DVCSDBundle
+Parent: DVCBundle
+Id: DVCSDBundle
+Title: "DVC document Bundle with Selective Disclosure"
+Description: "DVC document Bundle with Selective Disclosure for each entry"
+* entry[composition].resource only DVCSDComposition
+* entry[demographic].resource only DVCSDPatient
+* entry[vaccination].resource only DVCSDImmunization
+
+
 Profile: DVCBundle
 Parent: Bundle
 Title : "Digital Vaccination Certificate - Bundle"
@@ -17,11 +29,11 @@ Description : "Digital Vaccination Certificate - Bundle"
 * entry ^slicing.rules = #open
 * entry contains
     composition 1..1 and
-    patient 1..1 and
-    immunization 0..* 
+    demographic 1..1 and
+    vaccination 1..* 
 * entry[composition].resource 1..
 * entry[composition].resource only DVCComposition
-* entry[patient].resource 1..
-* entry[patient].resource only DVCPatient
-* entry[immunization].resource 1..
-* entry[immunization].resource only DVCImmunization
+* entry[demographic].resource 1..
+* entry[demographic].resource only DVCPatient
+* entry[vaccination].resource 1..
+* entry[vaccination].resource only DVCImmunization

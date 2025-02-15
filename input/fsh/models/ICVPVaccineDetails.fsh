@@ -1,4 +1,5 @@
-Logical: ModelVaccineDetails
+Logical: ICVPVaccineDetails
+Parent: PreQualVaccineDetails
 Title: "ICVP - Vaccine Details"
 Description:  "Vaccine Data elements for the International Certificate of Vaccination or Prophylaxis"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
@@ -6,6 +7,7 @@ Description:  "Vaccine Data elements for the International Certificate of Vaccin
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ^status = #active
 * ^experimental = true
+
 
 * disease 1..1 Coding "Disease" "Name of disease or condition vaccinated or received prophylaxis against"
 * disease from ICVPDiseaseTargeted (required)
@@ -17,5 +19,15 @@ Description:  "Vaccine Data elements for the International Certificate of Vaccin
 * manufacturer 1..1 string "Name of Manufacturer of vaccine" "Name Manufacturer of vaccine"
 * batchNo 0..1 string "Batch No" "Batch No"
 * validityPeriod 0..1 Period "Certificate validity period" "Certificate validity period"
+* productID obeys is-an-icvp-product-id
 
+Invariant: is-an-icvp-product-id
+Description: "Product ID comes from the ICVP vaccines from the PreQual Databatase"
+Expression: "
+
+system = 'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIDs'
+
+"
+//to do: fix to use VS for ICVP
+Severity: #error
 

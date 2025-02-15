@@ -1,6 +1,5 @@
-Profile: ICVPEvent
-Parent: dICVP
-Title : "ICVP Event"
-Description : "ICVP for a single immunization event"
+Parent: ICVP
+Title : "ICVP (single)"
+Description : "ICVP for a single vaccincation event"
 
 * vaccineDetails 1..1
