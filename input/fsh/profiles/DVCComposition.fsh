@@ -2,8 +2,8 @@ Profile: DVCSDComposition
 Parent: DVCComposition
 Title : "Digital Vaccination Certificate - Composition"
 Description : "Digital Vaccination Certificate - Composition"
-* extension contains SelectiveDisclosure  named SelectiveDisclosure 0..1
-* text.extension contains SelectiveDisclosure  named SelectiveDisclosure 0..1
+* extension contains $SelectiveDisclosure  named SelectiveDisclosure 0..1
+* text.extension contains $SelectiveDisclosure  named SelectiveDisclosure 0..1
 * section[vaccination].entry only Reference(DVCSDImmunization)
 * section[demographic].entry only Reference(DVCSDPatient)
 

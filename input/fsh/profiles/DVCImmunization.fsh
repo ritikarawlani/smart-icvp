@@ -10,8 +10,8 @@ Parent: DVCImmunization
 Id: DVCSDImmunization
 Title: "DVC Immunization with Selective Disclosure"
 Description: "DVC Immunization with Selective Disclosure"
-* extension contains SelectiveDisclosure  named SelectiveDisclosure 0..1
-* text.extension contains SelectiveDisclosure  named SelectiveDisclosure 0..1
+* extension contains $SelectiveDisclosure  named SelectiveDisclosure 0..1
+* text.extension contains $SelectiveDisclosure  named SelectiveDisclosure 0..1
 
 
 Profile: DVCImmunization

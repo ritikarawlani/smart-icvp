@@ -11,8 +11,7 @@ Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-popul
 Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
 
 
-
-
+Alias: $SelectiveDisclosure = http://smart.who.int/trust-phw/StructureDefinition/SelectiveDisclosure
 Alias: $ICVPProductIds = http://smart.who.int/icvp/ValueSet/ICVPProductIds
 Alias: $ICVPProductIDs = http://smart.who.int/icvp/ValueSet/ICVPProductIds
 
