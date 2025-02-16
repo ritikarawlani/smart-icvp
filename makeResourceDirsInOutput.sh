@@ -14,6 +14,7 @@ for resource in output/*.json ; do
 	cp output/$resourceType-$resourceID.json output/$resourceType/$resourceID.json
 	cp output/$resourceType-$resourceID.xml output/$resourceType/$resourceID.xml
 	cp output/$resourceType-$resourceID.ttl output/$resourceType/$resourceID.ttl
+	cp output/$resourceType-$resourceID.html output/$resourceType/$resourceID.html
 	
 	
     fi
