@@ -16,7 +16,7 @@ for resource in output/*.json ; do
 	cp output/$resourceType-$resourceID.json output/$resourceType/$resourceID.json
 	cp output/$resourceType-$resourceID.xml output/$resourceType/$resourceID.xml
 	cp output/$resourceType-$resourceID.ttl output/$resourceType/$resourceID.ttl
-	echo "<!DOCTYPE html>
+	landingPage="<!DOCTYPE html>
 <html xml:lang='en' xmlns='http://www.w3.org/1999/xhtml' lang='en'>
 <html>
  <head>
@@ -60,7 +60,9 @@ for resource in output/*.json ; do
    </table>
  </div></div></body>
 </html>
-" >  output/$resourceType/$resourceID.html
+"
+       echo $landingPage >  output/$resourceType/$resourceID
+       echo $landingPage >  output/$resourceType/$resourceID.html
 	
 	
     fi
