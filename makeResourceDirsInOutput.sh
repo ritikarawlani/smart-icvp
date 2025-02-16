@@ -14,6 +14,7 @@ for resource in output/*.json ; do
 
 	echo "Copying output/$resourceType-$resourceID.<blah> to output/$resourceType/$resourceID.<blah>"
 	cp output/$resourceType-$resourceID.json output/$resourceType/$resourceID.json
+	cp output/$resourceType-$resourceID.json output/$resourceType/$resourceID
 	cp output/$resourceType-$resourceID.xml output/$resourceType/$resourceID.xml
 	cp output/$resourceType-$resourceID.ttl output/$resourceType/$resourceID.ttl
 	landingPage="<!DOCTYPE html>
@@ -61,7 +62,7 @@ for resource in output/*.json ; do
  </div></div></body>
 </html>
 "
-       echo $landingPage >  output/$resourceType/$resourceID
+
        echo $landingPage >  output/$resourceType/$resourceID.html
 	
 	
