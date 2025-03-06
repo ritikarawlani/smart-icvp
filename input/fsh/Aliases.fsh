@@ -18,6 +18,9 @@ Alias: $ICVPProductIDs = http://smart.who.int/icvp/ValueSet/ICVPProductIds
 Alias: $PreQualProductIDs = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIDs
 Alias: $PreQualProductIds = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIDs
 
+
+Alias: $PreQualVaccineType = http://smart.who.int/icvp/ValueSet/PreQualVaccineType
+
 Alias: $PreQualProductIDsVS = http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIDs
 Alias: $ExampleProductID = http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineOralOPVBivalProduct756b50d1047d7e92674342044a986a4e
 Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
