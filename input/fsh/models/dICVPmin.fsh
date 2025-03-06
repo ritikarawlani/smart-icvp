@@ -2,7 +2,7 @@ Alias: $identifierType = http://terminology.hl7.org/CodeSystem/v2-0203
 
 Logical:         DVCPayload
 Title:           "dICVPmin HCERT Payload"
-Description:     "Payload for digital ICVP - dICVPmin CBOR Web Token Logical Model"
+Description:     "Payload for DVC /  digital ICVP - dICVPmin CBOR Web Token Logical Model"
 
 * ^url = "http://smart.who.int/icvp/StructureDefinition/DVCPayload"
 * ^version = "1"

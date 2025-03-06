@@ -27,3 +27,16 @@ Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationalit
 
 Alias: $DisclosureStatements = http://smart.who.int/icvp/CodeSystem/DisclosureStatements
 Alias: $doseNumber = http://smart.who.int/icvp/CodeSystem/DoseNumber
+
+Alias: $PreQualDVC = http://smart.who.int/trust-phw/StructureDefinition/PreQualDVC
+Alias: $PreQualVaccineDetails = http://smart.who.int/trust-phw/StructureDefinition/PreQualVaccineDetails
+Alias: $DVC = http://smart.who.int/trust-phw/StructureDefinition/DVC
+Alias: $VaccineDetails = http://smart.who.int/trust-phw/StructureDefinition/VaccineDetails
+Alias: $Immunization-uv-ips-DVC = http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-DVC
+Alias: $Composition-uv-ips-DVC = http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-DVC
+Alias: $Bundle-uv-ips-DVC = http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-DVC
+Alias: $Immunization-uv-ips-PreQual = http://smart.who.int/trust-phw/StructureDefinition/Immunization-uv-ips-PreQual
+Alias: $Composition-uv-ips-PreQual = http://smart.who.int/trust-phw/StructureDefinition/Composition-uv-ips-PreQual
+Alias: $Bundle-uv-ips-PreQual = http://smart.who.int/trust-phw/StructureDefinition/Bundle-uv-ips-PreQual
+Alias: $DVCImmunization = http://smart.who.int/trust-phw/StructureDefinition/DVCImmunization
+Alias: $DVCRelationshipStatus = http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus

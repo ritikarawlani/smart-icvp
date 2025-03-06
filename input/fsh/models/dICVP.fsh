@@ -16,7 +16,7 @@ Description:  "Vaccine Data elements for the Digital Model International Certifi
 * vaccineTradeItem from preQualVaccines (required)
 
 Logical: dICVP
-Parent: DVC
+Parent: $DVC
 Title: "dICVP"
 Description:  "Data elements for digital International Certificate of Vaccination or Prophylaxis."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition"
