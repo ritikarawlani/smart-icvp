@@ -11,7 +11,7 @@ Description: "Questionnaire for DVC Logical Model with the WHO PreQual DB and pa
 Title: "DVC Model Questionnaire"
 * status = #draft
 * contained[+] = http://terminology.hl7.org/ValueSet/v3-Country
-* contained[+] = $DVCRelationshipStatus
+// * contained[+] = $DVCRelationshipStatus
 * contained[+] = PreQualProductIds
 * url = Canonical(pPreQual)
 * insert Question(name, Full Name of the client, string, false, true)
