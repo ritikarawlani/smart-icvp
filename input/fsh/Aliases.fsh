@@ -28,6 +28,8 @@ Alias: $nationality = http://hl7.org/fhir/StructureDefinition/patient-nationalit
 Alias: $DisclosureStatements = http://smart.who.int/icvp/CodeSystem/DisclosureStatements
 Alias: $doseNumber = http://smart.who.int/icvp/CodeSystem/DoseNumber
 
+Alias: $DVCMin = http://smart.who.int/trust-phw/StructureDefinition/DVCMin
+Alias: $DVCMinVaccineDetails = http://smart.who.int/trust-phw/StructureDefinition/DVCMinVaccineDetails
 Alias: $PreQualDVC = http://smart.who.int/trust-phw/StructureDefinition/PreQualDVC
 Alias: $PreQualVaccineDetails = http://smart.who.int/trust-phw/StructureDefinition/PreQualVaccineDetails
 Alias: $DVC = http://smart.who.int/trust-phw/StructureDefinition/DVC

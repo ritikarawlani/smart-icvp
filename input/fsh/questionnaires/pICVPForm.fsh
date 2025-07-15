@@ -12,7 +12,7 @@ Title: "DVC Model Questionnaire"
 * status = #draft
 * contained[+] = http://terminology.hl7.org/ValueSet/v3-Country
 // * contained[+] = $DVCRelationshipStatus
-* contained[+] = PreQualProductIds
+* contained[+] = ICVPProductIds
 * url = Canonical(pPreQual)
 * insert Question(name, Full Name of the client, string, false, true)
 * insert Question(dob, Date of Birth, date, false, true)
