@@ -8,7 +8,7 @@ Usage: #definition
 * contained[+] = http://terminology.hl7.org/ValueSet/v3-Country
 * contained[+] = http://terminology.hl7.org/ValueSet/v2-0001
 //* contained[+] = ICVPProductIds
-* contained[+] = http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus
+* contained[+] = $DVCRelationshipStatus
 
 
 * insert Question(name, Full Name of the client, string, false, true)
@@ -22,7 +22,7 @@ Usage: #definition
 * item[=]
   * insert Question(guardianName, Name of Parent or Guardian, string, false, false)
   * insert Question(guardianRelationship, Relationship Status, choice, false, false)
-  * item[=].answerValueSet = "http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus"
+  * item[=].answerValueSet = $DVCRelationshipStatus
 * insert Question(vaccineDetails,Vaccine Certificate Details,group, true, true)
 * item[=]
   * insert Question(productID, Vaccine or Prophylaxis ID, choice, false, true)
