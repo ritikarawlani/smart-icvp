@@ -7,7 +7,7 @@ Usage: #definition
 * status = #draft
 * contained[+] = http://terminology.hl7.org/ValueSet/v3-Country
 * contained[+] = http://terminology.hl7.org/ValueSet/v2-0001
-* contained[+] = ICVPProductIds
+//* contained[+] = ICVPProductIds
 * contained[+] = http://smart.who.int/trust-phw/ValueSet/DVCRelationshipStatus
 
 
