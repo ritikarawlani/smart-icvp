@@ -32,7 +32,7 @@ Usage: #example
 * item[=].item[+].linkId = "guardianRelationship"
 * item[=].item[=].text = "Relationship Status"
 * item[=].item[=].answer.valueCoding = $DVCRelationshipStatusCS#Parent "Parent"
-* item[+].linkId = "vaccinDetails"
+* item[+].linkId = "vaccineDetails"
 * item[=].text = "Vaccine Certificate Details"
 * item[=].item[0].linkId = "productID"
 * item[=].item[=].text = "Vaccine or Prophylaxis ID"
