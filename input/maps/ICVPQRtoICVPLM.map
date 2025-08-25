@@ -41,63 +41,43 @@ group ICVPQRtoICVPLM(source qr: QuestionnaireResponse, target lm : ICVPLogicalMo
 }
 
 group mapVaccineDetails(source s: BackboneElement, target v : ICVPVaccineDetails) {
-    s.item as item where linkId.value in ('doseNumber') then {
-            item.answer as answer then {
-                answer.value as doseNumber -> v.doseNumber = doseNumber "rule7";
-            } "rule7a";
-    } "rule7b";
-    s.item as item  where linkId.value in ('disease') then {
-            item.answer as answer then {
-                answer.value as disease -> v.disease = disease "rule8";
-            } "rule8a";
-    } "rule8b";
     s.item as item  where linkId.value in ('productID') then {
             item.answer as answer then {
-                answer.value as productID -> v.productID = productID "rule9";
-            } "rule9a";
-    } "rule9b";
-    s.item as item  where linkId.value in ('vaccineTradeItem') then {
-            item.answer as answer then {
-                answer.value as vaccine -> v.vaccineTradeItem = vaccine "rule10";
-            } "rule10a";
-    } "rule10b";
+                answer.value as productID -> v.productID = productID "rule7";
+            } "rule7a";
+    } "rule7b";
     s.item as item  where linkId.value in ('date') then {
             item.answer as answer then {
-                answer.value as date -> v.date = date "rule11";
-            } "rule11a";
-    } "rule11b";
+                answer.value as date -> v.date = date "rule8";
+            } "rule8a";
+    } "rule8b";
     s.item as item  where linkId.value in ('clinicianName') then {
             item.answer as answer then {
-                answer.value as clinicianName -> v.clinicianName = clinicianName "rule12";
-            } "rule12a";
-    } "rule12b";
-    s.item as item  where linkId.value in ('manufacturerId') then {
+                answer.value as clinicianName -> v.clinicianName = clinicianName "rule9";
+            } "rule9a";
+    } "rule9b";
+    s.item as item  where linkId.value in ('issuer') then {
             item.answer as answer then {
-                answer.value as mid -> v.manufacturerId = mid "rule13";
-            } "rule13a";
-    } "rule13b";
-    s.item as item  where linkId.value in ('manufacturer') then {
+                answer.value as issuer -> v.issuer = issuer "rule10";
+            } "rule10a";
+    } "rule10b";
+    s.item as item where linkId.value in ('batchNo.text') then {
             item.answer as answer then {
-                answer.value as manufacturer -> v.manufacturer = manufacturer "rule14";
-            } "rule14a";
-    } "rule14b";
-    s.item as item where linkId.value in ('batchNo') then {
-            item.answer as answer then {
-                answer.value as batchNo -> v.batchNo = batchNo "rule15";
-            } "rule15a";
-    } "rule15b";
+                answer.value as batchNo -> v.batchNo = batchNo "rule11";
+            } "rule11a";
+    } "rule11b";
     s.item as item where linkId.value in ('validityPeriod') then {
       item -> v.validityPeriod as period then {
       item.item  as item where linkId.value in ('startDate') then {
          item.answer as answer then {
-            answer.validityPeriod as start -> period.start = start "rule16";
-         } "rule16a";
-      } "rule16b";
+            answer.validityPeriod as start -> period.start = start "rule12";
+         } "rule12a";
+      } "rule12b";
       item.item  as item where linkId.value in ('endDate') then {
         item.answer as answer then {
-            answer.validityPeriod as end -> period.end = end "rule17";
-         } "rule17a";
-      }  "rule17b";
-     } "rule18";
-    } "rule19";        
+            answer.validityPeriod as end -> period.end = end "rule13";
+         } "rule13a";
+      }  "rule13b";
+     } "rule14";
+    } "rule15";        
 }
