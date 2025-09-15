@@ -8,7 +8,7 @@
 <!--/badges-->
 
 # WHO SMART ICVP
-This is a DRAFT SMART Guideline for International certificate of vaccination or prophylaxis
+This is a DRAFT SMART Guideline for International certificate of vaccination or prophylaxis 
 
 ## Publication
 Continuous Build: __http://WorldHealthOrganization.github.io/smart-icvp/index.html__  
